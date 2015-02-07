@@ -15,7 +15,8 @@
 	$robotobold: "roboto-bold-webfont";
 	$robotomedium: "roboto-medium-webfont";
 	$robotoregular: "roboto-regular-webfont";
-	$robotolight: "roboto-light-webfont";
+	$robotolight: "roboto-lightitalic-webfont";
+	$robotolightitalic: "roboto-light-webfont";
 	$robotothin: "roboto-thin-webfont";
 
 	@mixin font-face($family, $filename) {
@@ -44,3 +45,4 @@ $d-gradient: linear-gradient(-180deg, #EE9E19 0%, #EE7648 100%);
 
 // Images
 $folder-icon: '../img/icons';
+$folder-image: '../img';

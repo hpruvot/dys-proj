@@ -98,11 +98,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 @font-face {
   font-family: "Roboto light";
-  src: url("../fonts/roboto/roboto-light-webfont.eot");
-  src: url("../fonts/roboto/roboto-light-webfont.eot?#iefix") format("embedded-opentype");
-  src: url("../fonts/roboto/roboto-light-webfont.woff") format("woff");
-  src: url("../fonts/roboto/roboto-light-webfont.ttf") format("truetype");
-  src: url("../fonts/roboto/roboto-light-webfont.svg#08bb4ba465a902745fc23c83a5d9fdc2") format("svg");
+  src: url("../fonts/roboto/roboto-lightitalic-webfont.eot");
+  src: url("../fonts/roboto/roboto-lightitalic-webfont.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/roboto/roboto-lightitalic-webfont.woff") format("woff");
+  src: url("../fonts/roboto/roboto-lightitalic-webfont.ttf") format("truetype");
+  src: url("../fonts/roboto/roboto-lightitalic-webfont.svg#08bb4ba465a902745fc23c83a5d9fdc2") format("svg");
 }
 @font-face {
   font-family: "Roboto thin";
@@ -112,22 +112,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url("../fonts/roboto/roboto-thin-webfont.ttf") format("truetype");
   src: url("../fonts/roboto/roboto-thin-webfont.svg#08bb4ba465a902745fc23c83a5d9fdc2") format("svg");
 }
-/*$susy: (
-  columns: 16,
-  gutters: 2/7,
-);*/
-/* line 11, ../sass/partials/_grids.scss */
+/* line 4, ../sass/partials/_grids.scss */
 #left-bar {
+  width: 16%;
   float: left;
-  padding: 17px 20px 20px;
+  padding-left: 10px;
 }
 
-/* line 17, ../sass/partials/_grids.scss */
+/* line 10, ../sass/partials/_grids.scss */
 #container {
   float: left;
 }
 
-/* line 22, ../sass/partials/_grids.scss */
+/* line 14, ../sass/partials/_grids.scss */
 #right-bar {
   float: left;
 }
@@ -179,19 +176,21 @@ body {
 
 /* line 42, ../sass/partials/_elements.scss */
 .input-text {
+  font-family: "Roboto";
   background: #FFFFFF;
   border: 1px solid #9B9B9B;
-  font-size: 11.53px;
+  font-size: 1.4em;
   color: #D6D6D6;
-  letter-spacing: 1.74px;
+  /*letter-spacing: 1.74px;*/
   line-height: 13px;
+  outline: none;
 }
-/* line 49, ../sass/partials/_elements.scss */
+/* line 51, ../sass/partials/_elements.scss */
 .input-text:focus {
   box-shadow: 0px 0px 7px 0px rgba(238, 158, 24, 0.3);
 }
 
-/* line 55, ../sass/partials/_elements.scss */
+/* line 57, ../sass/partials/_elements.scss */
 .img-overlay {
   background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0) 79%, rgba(0, 0, 0, 0.6) 100%);
 }
@@ -204,49 +203,114 @@ header {
 /* line 4, ../sass/_header.scss */
 header .header-inner {
   position: fixed;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background: #FFFFFF;
 }
 
-/* line 9, ../sass/_header.scss */
+/* line 12, ../sass/_header.scss */
 #logo {
   display: inline-block;
   font-size: 3em;
   color: #3D3B3A;
   line-height: 40px;
   text-transform: uppercase;
+  width: 13%;
+  padding-left: 78px;
+  vertical-align: middle;
 }
 
-/* line 17, ../sass/_header.scss */
+/* line 23, ../sass/_header.scss */
+#search {
+  display: inline-block;
+  width: 62%;
+  text-align: center;
+  padding: 14px 0;
+}
+/* line 28, ../sass/_header.scss */
 #search form input {
   display: inline-block;
-  /* Rectangle 106: */
+  border-radius: 30px;
+  width: 57%;
   background: #EFEFEF;
   border: 1px solid #E7E7E7;
-  border-radius: 30px;
-  /* Fill 93: */
-  background: #9C9C9C;
-  /* Rechercher un artist: */
-  opacity: 0.75;
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 1.4em;
+  padding-left: 50px;
   color: #9B9B9B;
-  line-height: 19px;
+  font-weight: 300;
+  line-height: 40px;
 }
 
-/* line 34, ../sass/_header.scss */
+/* line 41, ../sass/_header.scss */
 #header-nav {
   display: inline-block;
+  width: 14%;
+  vertical-align: middle;
+}
+/* line 45, ../sass/_header.scss */
+#header-nav .item-media {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  overflow: hidden;
+  float: left;
+  margin-right: 10px;
+}
+/* line 55, ../sass/_header.scss */
+#header-nav .item-name {
+  font-size: 1.4em;
+  color: #3D3B3A;
+  line-height: 22px;
+}
+/* line 59, ../sass/_header.scss */
+#header-nav .item-name span {
+  display: inline-block;
+  background: #D8D8D8;
+  border-radius: 3px;
+  font-size: 0.9em;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-shadow: 0px 0.3px 0px rgba(0, 0, 0, 0.25);
+  margin-left: 15px;
+  line-height: 16px;
+  padding: 0 3px;
+}
+/* line 72, ../sass/_header.scss */
+#header-nav .item-followers, #header-nav .item-followings {
+  float: left;
+  color: #888888;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.2em;
+  margin-right: 5px;
+}
+/* line 80, ../sass/_header.scss */
+#header-nav .item-followers span, #header-nav .item-followings span {
+  display: inline-block;
+  color: #EE9E19;
+  font-weight: 500;
+  font-style: normal;
+  margin-right: 3px;
 }
 
-/* line 38, ../sass/_header.scss */
+/* line 90, ../sass/_header.scss */
 #upload {
-  display: inline-block;
-  background: -webkit-linear-gradient(-180deg, #EE9E19 0%, #EE7648 100%);
-  background: linear-gradient(-180deg, #ee9e19 0%, #ee7648 100%);
+  background: #EE9E19;
+  width: 72px;
+  height: 72px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
 }
-/* line 42, ../sass/_header.scss */
+/* line 98, ../sass/_header.scss */
 #upload .up-icon {
   background: url("../img/icons/upload.svg") no-repeat center center;
+  width: 100%;
+  height: 100%;
+  background-size: 40%;
 }
 
 /* MENU USER */
@@ -256,7 +320,7 @@ header .header-inner {
 }
 /* line 4, ../sass/_left.scss */
 .usr-items li {
-  padding: 19px 0;
+  padding: 15px 0 21px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 /* line 7, ../sass/_left.scss */

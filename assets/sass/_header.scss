@@ -3,6 +3,9 @@ header {
 	height: 72px;
 	.header-inner {
 		position: fixed;
+		width: 100%;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+		background: $d-white;
 	}
 }
 
@@ -12,34 +15,90 @@ header {
 	color: $d-black;
 	line-height: 40px;
 	text-transform: uppercase;
+	width: 13%;
+	padding-left: 78px;
+	vertical-align: middle;
 }
 
-#search form input{
+#search {
 	display: inline-block;
-	/* Rectangle 106: */
-	background: #EFEFEF;
-	border: 1px solid #E7E7E7;
-	border-radius: 30px;
-	/* Fill 93: */
-	background: #9C9C9C;
-	/* Rechercher un artist: */
-	opacity: 0.75;
-	font-family: "Roboto";
-	font-weight: $light;
-	font-size: 1.4em;
-	color: #9B9B9B;
-	line-height: 19px;
+	width: 62%;
+	text-align: center;
+	padding: 14px 0;
+	form input{
+		display: inline-block;
+		border-radius: 30px;
+		width: 57%;
+		background: #EFEFEF;
+		border: 1px solid #E7E7E7;
+		padding-left: 50px;
+		color: $d-grey-dark;
+		font-weight: $light;
+		line-height: 40px;
+	}
 }
 
 #header-nav {
 	display: inline-block;
+	width: 14%;
+	vertical-align: middle;
+	.item-media {
+		width: 45px;
+		height: 45px;
+		border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		overflow: hidden;
+		float: left;
+		margin-right: 10px;
+	}
+	.item-name{
+		font-size: 1.4em;
+		color: $d-black;
+		line-height: 22px;
+		span {
+			display: inline-block;
+			background: #D8D8D8;
+			border-radius: 3px;
+			font-size: 0.9em;
+			font-weight: $bold;
+			color: $d-white;
+			text-shadow: 0px 0.3px 0px rgba(0,0,0,0.25);
+			margin-left: 15px;
+			line-height: 16px;
+			padding: 0 3px;
+		}
+	}
+	.item-followers, .item-followings {
+		float: left;
+		color: #888888;
+		font-family: "Roboto";
+		font-weight: $light;
+		font-style: italic;
+		font-size: 1.2em;
+		margin-right: 5px;
+		span {
+			display: inline-block;
+			color: $d-orange;
+			font-weight: $medium;
+			font-style: normal;
+			margin-right: 3px;
+		}
+	}
 }
 
 #upload {
-	display: inline-block;
-	background: $d-webkit-gradient;
-	background: $d-gradient;
+	background: $d-orange;
+	width: 72px;
+	height: 72px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
 	.up-icon {
 		background: url('#{$folder-icon}/upload.svg') no-repeat center center;
+		width: 100%;
+		height: 100%;
+		background-size: 40%;
 	}
 }

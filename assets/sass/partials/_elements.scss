@@ -40,12 +40,14 @@ body {
 
 // INPUTS
 .input-text {
+	font-family: "Roboto";
 	background: $d-white;
 	border: 1px solid $d-grey-dark;
-	font-size: 11.53px;
+	font-size: 1.4em;
 	color: $d-grey-light;
-	letter-spacing: 1.74px;
+	/*letter-spacing: 1.74px;*/
 	line-height: 13px;
+	outline: none;
 	&:focus {
 		box-shadow: 0px 0px 7px 0px rgba(238,158,24,0.30);
 	}

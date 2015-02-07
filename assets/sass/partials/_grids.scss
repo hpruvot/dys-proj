@@ -1,25 +1,16 @@
 // Requirements
 // ============
 
-//@import "susy";
-
-/*$susy: (
-  columns: 16,
-  gutters: 2/7,
-);*/
-
 #left-bar {
-  //@include span(3 of 12 last);
+  width: 16%;
   float: left;
-  padding: 17px 20px 20px;
+  padding-left: 10px;
 }
 
 #container {
-  //@include span(6 of 12 last);
   float: left;
 }
 
 #right-bar {
-  //@include span(3 of 12 last);
   float: left;
 }
