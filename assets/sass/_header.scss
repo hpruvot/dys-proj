@@ -1,0 +1,45 @@
+header {
+	width: 100%;
+	height: 72px;
+	.header-inner {
+		position: fixed;
+	}
+}
+
+#logo {
+	display: inline-block;
+	font-size: 3em;
+	color: $d-black;
+	line-height: 40px;
+	text-transform: uppercase;
+}
+
+#search form input{
+	display: inline-block;
+	/* Rectangle 106: */
+	background: #EFEFEF;
+	border: 1px solid #E7E7E7;
+	border-radius: 30px;
+	/* Fill 93: */
+	background: #9C9C9C;
+	/* Rechercher un artist: */
+	opacity: 0.75;
+	font-family: "Roboto";
+	font-weight: $light;
+	font-size: 1.4em;
+	color: #9B9B9B;
+	line-height: 19px;
+}
+
+#header-nav {
+	display: inline-block;
+}
+
+#upload {
+	display: inline-block;
+	background: $d-webkit-gradient;
+	background: $d-gradient;
+	.up-icon {
+		background: url('#{$folder-icon}/upload.svg') no-repeat center center;
+	}
+}

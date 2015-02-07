@@ -1,0 +1,57 @@
+// RESET
+a,div,li,span {
+	font-family: "Roboto";
+	-webkit-font-smoothing: antialiased !important;
+	display: block;
+	color: $d-black;
+}
+a {
+	text-decoration: none;
+}
+
+body {
+	font-size: 62.5%;
+}
+
+// MENU
+.link {
+	color: $d-black;
+	&.menu {
+		font-family: "Roboto";
+		font-weight: $bold;
+		font-size: 12.19px;
+		line-height: 16px;
+		text-transform: uppercase;
+		&:hover span {
+			background: $d-webkit-gradient;
+			background: $d-gradient;
+    		color: transparent;
+    		-webkit-background-clip: text;
+		}
+	}
+}
+
+// CTA
+.cta {
+	background-image: $d-gradient;
+	border: 2px solid $d-orange;
+	border-radius: 40px;
+}
+
+// INPUTS
+.input-text {
+	background: $d-white;
+	border: 1px solid $d-grey-dark;
+	font-size: 11.53px;
+	color: $d-grey-light;
+	letter-spacing: 1.74px;
+	line-height: 13px;
+	&:focus {
+		box-shadow: 0px 0px 7px 0px rgba(238,158,24,0.30);
+	}
+}
+
+// IMAGES
+.img-overlay {
+	background-image: linear-gradient(-180deg, rgba(0,0,0,0.00) 79%, rgba(0,0,0,0.60) 100%);
+}

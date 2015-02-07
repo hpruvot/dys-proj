@@ -1,0 +1,73 @@
+/* MENU USER */
+.usr-items {
+	margin-bottom: 30px;
+	li {
+		padding: 19px 0;
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+		.usr-icon {
+			width: 20px;
+			height: 20px;
+			display: inline-block;
+			&.usr-profile {
+				background: url('#{$folder-icon}/user.svg');
+			}
+			&.usr-artists {
+				background: url('#{$folder-icon}/users.svg');
+			}
+			&.usr-music {
+				background: url('#{$folder-icon}/note.svg');
+			}	
+		}
+		span {
+			display: inline-block;
+			padding-left: 10px;
+		}
+	}
+}
+
+/* MENU PLAYLIST */
+.pl-title {
+	margin-bottom: 15px;
+	span {
+		padding: 12px 0;
+		font-size: $size-base;
+		text-transform: uppercase;
+		font-weight: $bold;
+	}
+	hr {
+		width: 24px;
+		border: 2px solid $d-orange;
+		float: left;
+	}
+}
+
+.pl-items {
+	li {
+		padding: 7px 0;
+		.pl-icon {
+			width: 20px;
+			height: 20px;
+			display: block;
+			float: left;
+		}
+		.pl-heart {
+			background: url('#{$folder-icon}/heart.svg') no-repeat center center;
+			background-size: 80%;
+		}
+		.pl-play {
+			background: url('#{$folder-icon}/beamed-note.svg') no-repeat center center;
+		}
+		.pl-name {
+			font-weight: $medium;
+			font-size: $size-base;
+			padding-left: 25px;
+			line-height: 20px;
+		}
+		&:hover .pl-play{
+				background: url('#{$folder-icon}/triangle-right.svg') no-repeat center center;
+				border: 1px solid $d-orange;
+				border-radius: 50%;
+				background-size: 60%;
+		}
+	}
+}
