@@ -117,14 +117,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 16%;
   float: left;
   padding-left: 10px;
+  height: 90.8%;
 }
 
-/* line 10, ../sass/partials/_grids.scss */
+/* line 11, ../sass/partials/_grids.scss */
 #container {
   float: left;
 }
 
-/* line 14, ../sass/partials/_grids.scss */
+/* line 16, ../sass/partials/_grids.scss */
 #right-bar {
   float: left;
 }
@@ -198,7 +199,7 @@ body {
 /* line 1, ../sass/_header.scss */
 header {
   width: 100%;
-  height: 72px;
+  height: 9.2%;
 }
 /* line 4, ../sass/_header.scss */
 header .header-inner {
@@ -304,8 +305,9 @@ header .header-inner {
   right: 0;
   top: 0;
   cursor: pointer;
+  border-bottom: 1px solid #EE9E19;
 }
-/* line 98, ../sass/_header.scss */
+/* line 99, ../sass/_header.scss */
 #upload .up-icon {
   background: url("../img/icons/upload.svg") no-repeat center center;
   width: 100%;
@@ -399,4 +401,13 @@ header .header-inner {
   border: 1px solid #EE9E19;
   border-radius: 50%;
   background-size: 60%;
+}
+
+/* line 1, ../sass/_upload.scss */
+#container {
+  float: right;
+  width: 81%;
+  height: 90.8%;
+  background: linear-gradient(-180deg, #ee9e19 0%, #ee7648 100%);
+  margin: 0;
 }

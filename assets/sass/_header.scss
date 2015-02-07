@@ -1,6 +1,6 @@
 header {
 	width: 100%;
-	height: 72px;
+	height: 9.2%;
 	.header-inner {
 		position: fixed;
 		width: 100%;
@@ -95,6 +95,7 @@ header {
 	right: 0;
 	top: 0;
 	cursor: pointer;
+	border-bottom: 1px solid $d-orange;
 	.up-icon {
 		background: url('#{$folder-icon}/upload.svg') no-repeat center center;
 		width: 100%;
