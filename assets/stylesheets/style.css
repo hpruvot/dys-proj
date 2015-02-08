@@ -452,13 +452,14 @@ header .header-inner {
   margin: 25px auto;
   border: 5px dashed rgba(255, 255, 255, 0.8);
   border-radius: 23px;
+  background: url("../img/icons/+.png") no-repeat center center;
 }
-/* line 39, ../sass/_upload.scss */
+/* line 40, ../sass/_upload.scss */
 .upload.inner-container .uploadZone form {
   position: relative;
   height: 100%;
 }
-/* line 43, ../sass/_upload.scss */
+/* line 44, ../sass/_upload.scss */
 .upload.inner-container .uploadZone label {
   color: #FFFFFF;
   font-size: 1.5em;
@@ -467,7 +468,7 @@ header .header-inner {
   left: 0;
   padding: 15px 50px;
 }
-/* line 51, ../sass/_upload.scss */
+/* line 52, ../sass/_upload.scss */
 .upload.inner-container .uploadZone .files {
   color: #FFFFFF;
   position: absolute;
@@ -476,7 +477,7 @@ header .header-inner {
   margin-bottom: 20px;
   font-size: 1.1em;
 }
-/* line 59, ../sass/_upload.scss */
+/* line 60, ../sass/_upload.scss */
 .upload.inner-container .uploadZone #fileToUpload {
   opacity: 0;
   width: 427px;
@@ -487,27 +488,27 @@ header .header-inner {
   top: 0;
   z-index: 5;
 }
-/* line 69, ../sass/_upload.scss */
+/* line 70, ../sass/_upload.scss */
 .upload.inner-container .uploadZone p.conditions {
   color: #FFFFFF;
   font-size: 1.3em;
   display: inline-block;
   margin-bottom: 25px;
 }
-/* line 75, ../sass/_upload.scss */
+/* line 76, ../sass/_upload.scss */
 .upload.inner-container .uploadZone input[type="checkbox"] {
   margin-right: 15px;
 }
-/* line 79, ../sass/_upload.scss */
+/* line 80, ../sass/_upload.scss */
 .upload.inner-container .uploadFooter {
   font-size: 1.3em;
   color: #FFFFFF;
 }
-/* line 82, ../sass/_upload.scss */
+/* line 83, ../sass/_upload.scss */
 .upload.inner-container .uploadFooter .ps {
   font-size: 1.5em;
 }
-/* line 85, ../sass/_upload.scss */
+/* line 86, ../sass/_upload.scss */
 .upload.inner-container .uploadFooter .premium {
   margin: 20px auto;
   color: #FFFFFF;
@@ -519,7 +520,7 @@ header .header-inner {
   text-transform: uppercase;
   cursor: pointer;
 }
-/* line 95, ../sass/_upload.scss */
+/* line 96, ../sass/_upload.scss */
 .upload.inner-container .uploadFooter .premium:hover {
   background: #FFFFFF;
   color: #EE9E19;
