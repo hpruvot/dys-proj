@@ -50,6 +50,9 @@
 .pl-items {
 	li {
 		padding: 7px 0;
+		a{
+			color: $d-black;
+		}
 		.pl-icon {
 			width: 20px;
 			height: 20px;

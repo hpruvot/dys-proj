@@ -6,10 +6,10 @@
 }
 
 .upload.inner-container {
+	color: $d-white;
 	text-align: center;
 	padding: 45px;
 	.uploadDescr {
-		color: $d-white;
 		margin-bottom: 50px;
 		.uploadTitle {
 			font-weight: $thin;
@@ -21,9 +21,9 @@
 			font-size: 2em;
 			line-height: 25px;
 			a {
-				color: $d-white;
 				text-decoration: underline;
 				display: inline-block;
+				color: $d-white;
 			}
 		}
 	}
@@ -32,16 +32,17 @@
 			width: 427px;
 			height: 283px;
 			margin: 25px auto;
-			border: 5px dashed rgba(255,255,255,0.8);
-			border-radius: 23px;
-			background: url('#{$folder-icon}/+.png') no-repeat center center;
+			&.upload1 {
+				border: 5px dashed rgba(255,255,255,0.8);
+				border-radius: 23px;
+				background: url('#{$folder-icon}/+.png') no-repeat center center;
+			}
 		}
 		form {
 			position: relative;
 			height: 100%;
 		}
 		label {
-			color: $d-white;
 			font-size: 1.5em;
 			position: absolute;
 			top: 0;
@@ -75,12 +76,27 @@
 		input[type="checkbox"] {
 			margin-right: 15px;
 		}
+		/* step 2 */
+		.track {
+			color: $d-white;
+			font-size: 2em;
+			font-weight: $medium;
+			span {
+				color: $d-white;
+				font-weight: $light;
+				font-style: italic;
+				display: inline-block;
+			}
+		}
 	}
 	.uploadFooter {
 		font-size: 1.3em;
 		color: $d-white;
 		.ps {
 			font-size: 1.5em;
+			span {
+				display: inline-block;
+			}
 		}
 		.premium {
 			margin: 20px auto;
