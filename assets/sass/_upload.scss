@@ -24,14 +24,15 @@
 			a {
 				color: $d-white;
 				text-decoration: underline;
+				display: inline-block;
 			}
 		}
 	}
 	.uploadZone {
 		.innerZone {
 			width: 427px;
-			height: 292px;
-			margin: 25px auto 20px;
+			height: 283px;
+			margin: 25px auto;
 			border: 5px dashed rgba(255,255,255,0.8);
 			border-radius: 23px;
 		}
@@ -58,7 +59,7 @@
 		#fileToUpload{
 			opacity: 0;
 			width: 427px;
-			height: 292px;
+			height: 283px;
 			position: absolute;
 			cursor: pointer;
 			left: 0;

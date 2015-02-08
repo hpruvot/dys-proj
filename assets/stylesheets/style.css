@@ -443,21 +443,22 @@ header .header-inner {
 .upload.inner-container .uploadDescr .uploadConditions a {
   color: #FFFFFF;
   text-decoration: underline;
+  display: inline-block;
 }
-/* line 31, ../sass/_upload.scss */
+/* line 32, ../sass/_upload.scss */
 .upload.inner-container .uploadZone .innerZone {
   width: 427px;
-  height: 292px;
-  margin: 25px auto 20px;
+  height: 283px;
+  margin: 25px auto;
   border: 5px dashed rgba(255, 255, 255, 0.8);
   border-radius: 23px;
 }
-/* line 38, ../sass/_upload.scss */
+/* line 39, ../sass/_upload.scss */
 .upload.inner-container .uploadZone form {
   position: relative;
   height: 100%;
 }
-/* line 42, ../sass/_upload.scss */
+/* line 43, ../sass/_upload.scss */
 .upload.inner-container .uploadZone label {
   color: #FFFFFF;
   font-size: 1.5em;
@@ -466,7 +467,7 @@ header .header-inner {
   left: 0;
   padding: 15px 50px;
 }
-/* line 50, ../sass/_upload.scss */
+/* line 51, ../sass/_upload.scss */
 .upload.inner-container .uploadZone .files {
   color: #FFFFFF;
   position: absolute;
@@ -475,38 +476,38 @@ header .header-inner {
   margin-bottom: 20px;
   font-size: 1.1em;
 }
-/* line 58, ../sass/_upload.scss */
+/* line 59, ../sass/_upload.scss */
 .upload.inner-container .uploadZone #fileToUpload {
   opacity: 0;
   width: 427px;
-  height: 292px;
+  height: 283px;
   position: absolute;
   cursor: pointer;
   left: 0;
   top: 0;
   z-index: 5;
 }
-/* line 68, ../sass/_upload.scss */
+/* line 69, ../sass/_upload.scss */
 .upload.inner-container .uploadZone p.conditions {
   color: #FFFFFF;
   font-size: 1.3em;
   display: inline-block;
   margin-bottom: 25px;
 }
-/* line 74, ../sass/_upload.scss */
+/* line 75, ../sass/_upload.scss */
 .upload.inner-container .uploadZone input[type="checkbox"] {
   margin-right: 15px;
 }
-/* line 78, ../sass/_upload.scss */
+/* line 79, ../sass/_upload.scss */
 .upload.inner-container .uploadFooter {
   font-size: 1.3em;
   color: #FFFFFF;
 }
-/* line 81, ../sass/_upload.scss */
+/* line 82, ../sass/_upload.scss */
 .upload.inner-container .uploadFooter .ps {
   font-size: 1.5em;
 }
-/* line 84, ../sass/_upload.scss */
+/* line 85, ../sass/_upload.scss */
 .upload.inner-container .uploadFooter .premium {
   margin: 20px auto;
   color: #FFFFFF;
@@ -518,7 +519,7 @@ header .header-inner {
   text-transform: uppercase;
   cursor: pointer;
 }
-/* line 94, ../sass/_upload.scss */
+/* line 95, ../sass/_upload.scss */
 .upload.inner-container .uploadFooter .premium:hover {
   background: #FFFFFF;
   color: #EE9E19;
