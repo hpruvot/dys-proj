@@ -153,14 +153,13 @@ body {
 }
 /* line 19, ../sass/partials/_elements.scss */
 .link.menu {
-  font-family: "Roboto";
   font-weight: 700;
   font-size: 12.19px;
   line-height: 16px;
   text-transform: uppercase;
   padding-left: 15px;
 }
-/* line 26, ../sass/partials/_elements.scss */
+/* line 25, ../sass/partials/_elements.scss */
 .link.menu:hover span {
   background: -webkit-linear-gradient(-180deg, #EE9E19 0%, #EE7648 100%);
   background: linear-gradient(-180deg, #ee9e19 0%, #ee7648 100%);
@@ -168,16 +167,15 @@ body {
   -webkit-background-clip: text;
 }
 
-/* line 36, ../sass/partials/_elements.scss */
+/* line 35, ../sass/partials/_elements.scss */
 .cta {
   background-image: linear-gradient(-180deg, #ee9e19 0%, #ee7648 100%);
   border: 2px solid #EE9E19;
   border-radius: 40px;
 }
 
-/* line 43, ../sass/partials/_elements.scss */
+/* line 42, ../sass/partials/_elements.scss */
 .input-text {
-  font-family: "Roboto";
   background: #FFFFFF;
   border: 1px solid #9B9B9B;
   font-size: 1.4em;
@@ -186,12 +184,12 @@ body {
   line-height: 13px;
   outline: none;
 }
-/* line 52, ../sass/partials/_elements.scss */
+/* line 50, ../sass/partials/_elements.scss */
 .input-text:focus {
   box-shadow: 0px 0px 7px 0px rgba(238, 158, 24, 0.3);
 }
 
-/* line 58, ../sass/partials/_elements.scss */
+/* line 56, ../sass/partials/_elements.scss */
 .img-overlay {
   background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0) 79%, rgba(0, 0, 0, 0.6) 100%);
 }
@@ -281,13 +279,12 @@ header .header-inner {
 #header-nav .item-followers, #header-nav .item-followings {
   float: left;
   color: #888888;
-  font-family: "Roboto";
   font-weight: 300;
   font-style: italic;
   font-size: 1.2em;
   margin-right: 5px;
 }
-/* line 80, ../sass/_header.scss */
+/* line 79, ../sass/_header.scss */
 #header-nav .item-followers span, #header-nav .item-followings span {
   display: inline-block;
   color: #EE9E19;
@@ -296,7 +293,7 @@ header .header-inner {
   margin-right: 3px;
 }
 
-/* line 90, ../sass/_header.scss */
+/* line 89, ../sass/_header.scss */
 #upload {
   background: #EE9E19;
   width: 72px;
@@ -307,7 +304,7 @@ header .header-inner {
   cursor: pointer;
   border-bottom: 1px solid #EE9E19;
 }
-/* line 99, ../sass/_header.scss */
+/* line 98, ../sass/_header.scss */
 #upload .up-icon {
   background: url("../img/icons/upload.svg") no-repeat center center;
   width: 100%;
@@ -425,32 +422,31 @@ header .header-inner {
 .upload.inner-container {
   text-align: center;
   padding: 45px;
-  font-family: "Roboto";
 }
-/* line 12, ../sass/_upload.scss */
+/* line 11, ../sass/_upload.scss */
 .upload.inner-container .uploadDescr {
   color: #FFFFFF;
   margin-bottom: 50px;
 }
-/* line 15, ../sass/_upload.scss */
+/* line 14, ../sass/_upload.scss */
 .upload.inner-container .uploadDescr .uploadTitle {
   font-weight: 100;
   font-size: 4em;
   margin-bottom: 25px;
 }
-/* line 20, ../sass/_upload.scss */
+/* line 19, ../sass/_upload.scss */
 .upload.inner-container .uploadDescr .uploadConditions {
   font-weight: 300;
   font-size: 2em;
   line-height: 25px;
 }
-/* line 24, ../sass/_upload.scss */
+/* line 23, ../sass/_upload.scss */
 .upload.inner-container .uploadDescr .uploadConditions a {
   color: #FFFFFF;
   text-decoration: underline;
   display: inline-block;
 }
-/* line 32, ../sass/_upload.scss */
+/* line 31, ../sass/_upload.scss */
 .upload.inner-container .uploadZone .innerZone {
   width: 427px;
   height: 283px;
@@ -459,12 +455,12 @@ header .header-inner {
   border-radius: 23px;
   background: url("../img/icons/+.png") no-repeat center center;
 }
-/* line 40, ../sass/_upload.scss */
+/* line 39, ../sass/_upload.scss */
 .upload.inner-container .uploadZone form {
   position: relative;
   height: 100%;
 }
-/* line 44, ../sass/_upload.scss */
+/* line 43, ../sass/_upload.scss */
 .upload.inner-container .uploadZone label {
   color: #FFFFFF;
   font-size: 1.5em;
@@ -473,7 +469,7 @@ header .header-inner {
   left: 0;
   padding: 15px 50px;
 }
-/* line 52, ../sass/_upload.scss */
+/* line 51, ../sass/_upload.scss */
 .upload.inner-container .uploadZone .files {
   color: #FFFFFF;
   position: absolute;
@@ -482,7 +478,7 @@ header .header-inner {
   margin-bottom: 20px;
   font-size: 1.1em;
 }
-/* line 60, ../sass/_upload.scss */
+/* line 59, ../sass/_upload.scss */
 .upload.inner-container .uploadZone #fileToUpload {
   opacity: 0;
   width: 427px;
@@ -493,27 +489,27 @@ header .header-inner {
   top: 0;
   z-index: 5;
 }
-/* line 70, ../sass/_upload.scss */
+/* line 69, ../sass/_upload.scss */
 .upload.inner-container .uploadZone p.conditions {
   color: #FFFFFF;
   font-size: 1.3em;
   display: inline-block;
   margin-bottom: 25px;
 }
-/* line 76, ../sass/_upload.scss */
+/* line 75, ../sass/_upload.scss */
 .upload.inner-container .uploadZone input[type="checkbox"] {
   margin-right: 15px;
 }
-/* line 80, ../sass/_upload.scss */
+/* line 79, ../sass/_upload.scss */
 .upload.inner-container .uploadFooter {
   font-size: 1.3em;
   color: #FFFFFF;
 }
-/* line 83, ../sass/_upload.scss */
+/* line 82, ../sass/_upload.scss */
 .upload.inner-container .uploadFooter .ps {
   font-size: 1.5em;
 }
-/* line 86, ../sass/_upload.scss */
+/* line 85, ../sass/_upload.scss */
 .upload.inner-container .uploadFooter .premium {
   margin: 20px auto;
   color: #FFFFFF;
@@ -525,7 +521,7 @@ header .header-inner {
   text-transform: uppercase;
   cursor: pointer;
 }
-/* line 96, ../sass/_upload.scss */
+/* line 95, ../sass/_upload.scss */
 .upload.inner-container .uploadFooter .premium:hover {
   background: #FFFFFF;
   color: #EE9E19;

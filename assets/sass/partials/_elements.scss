@@ -17,7 +17,6 @@ body {
 .link {
 	color: $d-black;
 	&.menu {
-		font-family: "Roboto";
 		font-weight: $bold;
 		font-size: 12.19px;
 		line-height: 16px;
@@ -41,7 +40,6 @@ body {
 
 // INPUTS
 .input-text {
-	font-family: "Roboto";
 	background: $d-white;
 	border: 1px solid $d-grey-dark;
 	font-size: 1.4em;
