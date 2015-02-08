@@ -1,7 +1,100 @@
 #container {
 	float: right;
 	width: 81%;
-	height: 90.8%;
 	background: $d-gradient;
 	margin: 0;
+}
+
+.upload.inner-container {
+	text-align: center;
+	padding: 45px;
+	font-family: "Roboto";
+	.uploadDescr {
+		color: $d-white;
+		margin-bottom: 50px;
+		.uploadTitle {
+			font-weight: $thin;
+			font-size: 4em;
+			margin-bottom: 25px;
+		}
+		.uploadConditions {
+			font-weight: $light;
+			font-size: 2em;
+			line-height: 25px;
+			a {
+				color: $d-white;
+				text-decoration: underline;
+			}
+		}
+	}
+	.uploadZone {
+		.innerZone {
+			width: 427px;
+			height: 292px;
+			margin: 25px auto 20px;
+			border: 5px dashed rgba(255,255,255,0.8);
+			border-radius: 23px;
+		}
+		form {
+			position: relative;
+			height: 100%;
+		}
+		label {
+			color: $d-white;
+			font-size: 1.5em;
+			position: absolute;
+			top: 0;
+			left: 0;
+			padding: 15px 50px;
+		}
+		.files {
+			color: $d-white;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			margin-bottom: 20px;
+			font-size: 1.1em;
+		}
+		#fileToUpload{
+			opacity: 0;
+			width: 427px;
+			height: 292px;
+			position: absolute;
+			cursor: pointer;
+			left: 0;
+			top: 0;
+			z-index: 5;
+		}
+		p.conditions {
+			color: $d-white;
+			font-size: 1.3em;
+			display: inline-block;
+			margin-bottom: 25px;
+		}
+		input[type="checkbox"] {
+			margin-right: 15px;
+		}
+	}
+	.uploadFooter {
+		font-size: 1.3em;
+		color: $d-white;
+		.ps {
+			font-size: 1.5em;
+		}
+		.premium {
+			margin: 20px auto;
+			color: $d-white;
+			width: 151px;
+			height: 44px;
+			line-height: 44px;
+			border: 2px solid $d-white;
+			border-radius: 40px;
+			text-transform: uppercase;
+			cursor: pointer;
+			&:hover {
+				background: $d-white;
+				color: $d-orange;
+			}
+		}
+	}
 }

@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="assets/js/jquery-1.11.2.min.js"></script>
-    <link href=' http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">
   </head> 
 
@@ -35,7 +35,7 @@
     <div id="left-bar" class="grid_3">
       <nav id="usr-nav">
         <ul class="usr-items">
-          <li><a href="" class="link menu"><div class="usr-icon usr-profile"></div><span>Mon profil</span></a></li>
+          <li class="active"><a href="" class="link menu"><div class="usr-icon usr-profile"></div><span>Mon profil</span></a></li>
           <li><a href="" class="link menu"><div class="usr-icon usr-artists"></div><span>Mes artistes suivis</span></a></li>
           <li><a href="" class="link menu"><div class="usr-icon usr-music"></div><span>Ma musique</span></a></li>
         </ul>
@@ -57,7 +57,28 @@
     </div>  
 
     <!-- MAIN CONTAINER  --> 
-    <div id="container" class="grid_10"></div>
+    <div id="container" class="grid_10">
+      <div class="upload inner-container">
+        <div class="uploadDescr">
+          <p class="uploadTitle">Prêt à envoyer votre composition ?</p>
+          <p class="uploadConditions">Vous vous apprêtez à uploader un morceau de votre cru sur DYSKIT.<br>Assurez-vous de lire les <a href="">conditions générales d’utilisation</a></p>
+        </div>
+        <div class="uploadZone">
+          <div class="innerZone">
+            <form action="#" method="post" onsubmit="return false;">
+              <input type="file" name="fileToUpload" id="fileToUpload">
+              <label tabindex="0" for="fileToUpload" class="input-file-trigger">Glissez/déposez votre fichier musical* dans cette zone ou selectionnez-le manuellement</label>
+              <p class="files">* fichiers acceptés : .mp3, .ogg, .wav</p>
+            </form>
+          </div>
+          <p class="conditions"><input type="checkbox" name="nom" value="understood">J’ai lu et compris les conditions générales d’utilisation</p>
+        </div>
+        <div class="uploadFooter">
+          <p class="ps">PS : Il vous reste encore 2 envois de musique ce mois-ci.<br>Ce n’est pas assez ?</p>
+          <a class="premium">Go premium</a>
+        </div>
+      </div>
+    </div>
     <!-- RIGHT BAR  --> 
     <div id="right-bar" class="grid_3"></div>
 
