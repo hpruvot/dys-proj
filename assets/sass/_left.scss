@@ -10,13 +10,13 @@
 			height: 20px;
 			display: inline-block;
 			&.usr-profile {
-				background: url('#{$folder-icon}/user.svg');
+				background: url('#{$folder-icon}/user.svg') no-repeat;
 			}
 			&.usr-artists {
-				background: url('#{$folder-icon}/users.svg');
+				background: url('#{$folder-icon}/users.svg') no-repeat;
 			}
 			&.usr-music {
-				background: url('#{$folder-icon}/note.svg');
+				background: url('#{$folder-icon}/note.svg') no-repeat;
 			}	
 		}
 		span {
@@ -44,7 +44,9 @@
 		float: left;
 	}
 }
-
+#pl-nav{
+	margin-left: 10px;
+}
 .pl-items {
 	li {
 		padding: 7px 0;
@@ -71,7 +73,7 @@
 				background: url('#{$folder-icon}/triangle-right.svg') no-repeat center center;
 				border: 1px solid $d-orange;
 				border-radius: 50%;
-				background-size: 60%;
+				background-size: 39%;
 		}
 	}
 }

@@ -334,15 +334,15 @@ header .header-inner {
 }
 /* line 12, ../sass/_left.scss */
 .usr-items li .usr-icon.usr-profile {
-  background: url("../img/icons/user.svg");
+  background: url("../img/icons/user.svg") no-repeat;
 }
 /* line 15, ../sass/_left.scss */
 .usr-items li .usr-icon.usr-artists {
-  background: url("../img/icons/users.svg");
+  background: url("../img/icons/users.svg") no-repeat;
 }
 /* line 18, ../sass/_left.scss */
 .usr-items li .usr-icon.usr-music {
-  background: url("../img/icons/note.svg");
+  background: url("../img/icons/note.svg") no-repeat;
 }
 /* line 22, ../sass/_left.scss */
 .usr-items li span {
@@ -373,39 +373,44 @@ header .header-inner {
   float: left;
 }
 
-/* line 49, ../sass/_left.scss */
+/* line 47, ../sass/_left.scss */
+#pl-nav {
+  margin-left: 10px;
+}
+
+/* line 51, ../sass/_left.scss */
 .pl-items li {
   padding: 7px 0;
 }
-/* line 51, ../sass/_left.scss */
+/* line 53, ../sass/_left.scss */
 .pl-items li .pl-icon {
   width: 20px;
   height: 20px;
   display: block;
   float: left;
 }
-/* line 57, ../sass/_left.scss */
+/* line 59, ../sass/_left.scss */
 .pl-items li .pl-heart {
   background: url("../img/icons/heart.svg") no-repeat center center;
   background-size: 80%;
 }
-/* line 61, ../sass/_left.scss */
+/* line 63, ../sass/_left.scss */
 .pl-items li .pl-play {
   background: url("../img/icons/beamed-note.svg") no-repeat center center;
 }
-/* line 64, ../sass/_left.scss */
+/* line 66, ../sass/_left.scss */
 .pl-items li .pl-name {
   font-weight: 500;
   font-size: 1.2em;
   padding-left: 25px;
   line-height: 20px;
 }
-/* line 70, ../sass/_left.scss */
+/* line 72, ../sass/_left.scss */
 .pl-items li:hover .pl-play {
   background: url("../img/icons/triangle-right.svg") no-repeat center center;
   border: 1px solid #EE9E19;
   border-radius: 50%;
-  background-size: 60%;
+  background-size: 39%;
 }
 
 /* line 1, ../sass/_upload.scss */

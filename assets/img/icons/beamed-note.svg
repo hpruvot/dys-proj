@@ -1,9 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Beamed_note" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
-<path d="M17,1l-0.002,13c0,1.243-1.301,3-3.748,3C12.007,17,11,16.347,11,15.125c0-1.589,1.445-2.55,3-2.55
-	c0.432,0,0.754,0.059,1,0.123V5.364L8,6.637L8,16H7.998c0,1.243-1.301,3-3.748,3C3.007,19,2,18.347,2,17.125
-	c0-1.589,1.445-2.55,3-2.55c0.432,0,0.754,0.059,1,0.123V3L17,1z"/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="15px" height="20px" viewBox="0 0 15 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 135</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Home-APP-Upload" sketch:type="MSArtboardGroup" transform="translate(-20.000000, -412.000000)" fill="#3D3B3A">
+            <g id="LEFT_BAR" sketch:type="MSLayerGroup" transform="translate(0.000000, 71.000000)">
+                <g id="Mes-Playlists" transform="translate(18.000000, 219.827535)" sketch:type="MSShapeGroup">
+                    <g id="Name_playlist" transform="translate(2.000000, 121.911917)">
+                        <path d="M4.16151209,2.28147538 L4.16353753,14.052698 C3.50729664,13.9197773 2.74775857,13.9693746 1.99227138,14.2431516 C0.292931545,14.8621258 -0.306597169,16.3659157 0.145074801,17.6018801 C0.594721336,18.8378446 1.92340659,19.3397692 3.62274643,18.720795 C5.06485603,18.1970476 6.00870867,17.0325032 5.98642889,15.9373951 L5.98642889,6.21295343 L13.1767226,4.5988592 L13.1767226,12.0688064 C12.5204817,11.9358856 11.7609436,11.9854829 11.0054564,12.25926 C9.30611659,12.8782342 8.70658788,14.382024 9.15825985,15.6179885 C9.60790639,16.853953 10.9365916,17.3558776 12.6359315,16.7369034 C14.0780411,16.213156 15.0218937,15.0486116 14.9996139,13.9535034 L14.9996139,0 L4.16151209,2.28147538" id="Fill-135"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
 </svg>
