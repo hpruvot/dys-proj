@@ -76,18 +76,6 @@
 		input[type="checkbox"] {
 			margin-right: 15px;
 		}
-		/* step 2 */
-		.track {
-			color: $d-white;
-			font-size: 2em;
-			font-weight: $medium;
-			span {
-				color: $d-white;
-				font-weight: $light;
-				font-style: italic;
-				display: inline-block;
-			}
-		}
 	}
 	.uploadFooter {
 		font-size: 1.3em;
@@ -114,4 +102,213 @@
 			}
 		}
 	}
+}
+
+.upload2 {
+	display: none;
+	&.active{
+		display: block;
+		height: 283px;
+		.progress {
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			background: #FFFFFF;
+			margin: 103px auto;
+			font-size: 2em;
+			color: $d-orange;
+			span{
+				color: $d-orange;
+				font-size: 2em;
+				font-weight: $light;
+				line-height: 100px;
+			}
+		}
+		span{
+			display: inline-block;
+			font-weight: $medium;
+			font-size: 2em;
+		}
+		p {
+			font-weight: $light;
+			font-style: italic;
+			display: inline-block;
+			font-size: 2em;
+		}
+	}
+}
+
+/* Upload forms */
+/*form styles*/
+#msform {
+	width: 610px;
+	height: 292px;
+	margin: 50px auto;
+	text-align: center;
+	position: relative;
+	background: #FAFAFA;
+	.track {
+		display: inline-block;
+		width: 100%;
+		text-align: left;
+		padding : 22px 0 17px 60px;
+		.tr-title {
+			font-weight: $thin;
+			color: $d-black;
+			font-size: 2em;
+			line-height: 2em;
+		}
+		.tr-subtitle {
+			font-weight: $light;
+			font-style: italic;
+			color: $d-orange;
+			font-size: 1.4em;
+		}
+	}
+}
+
+#msform fieldset {
+	border: 0 none;
+	padding: 0 60px;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	/*stacking fieldsets above each other*/
+	position: absolute;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+#msform input, #msform textarea {
+	border: none;
+	outline: none;
+	padding: 15px;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 96%;
+	box-sizing: border-box;
+	color: #2C3E50;
+	font-size: 13px;
+}
+/*buttons*/
+#msform .action-button {
+	height: 124px;
+	width: 32px;
+	position: absolute;
+	bottom: 51%;
+	cursor: pointer;
+	&.next {
+		background: url('#{$folder-icon}/arrow-right.png') no-repeat center center;
+		right: 13px;
+	}
+	&.previous {
+		background: url('#{$folder-icon}/arrow-left.png') no-repeat center center;
+		left: 13px;
+	}
+	&.submit {
+		height: 292px;
+		width: 82px;
+		bottom: -36px;
+		border-radius: 0;
+		background: $d-orange url('#{$folder-icon}/valid.png') no-repeat center center;
+	}
+}
+
+#coverToUpload{
+	opacity: 0;
+	width: 167px;
+	height: 44px;
+	background: #FFFFFF;
+	border: 1px solid #BBBBBB;
+	box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.10);
+	border-radius: 40px;
+}
+.input-cover-trigger {
+	width: 167px;
+	height: 44px;
+	background: #FFFFFF;
+	color: $d-black;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	border: 1px solid #BBBBBB;
+	box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.10);
+	border-radius: 40px;
+	padding: 0 !important;
+	text-align: center;
+	line-height: 44px;
+	left: 60px !important;
+	top: initial !important;
+}
+p.conditions {
+	color: $d-black;
+	font-size: 1.3em;
+	display: inline-block;
+	margin-bottom: 25px;
+}
+/*headings*/
+.fs-title {
+	font-weight: $thin;
+	font-size: 3em;
+	margin-bottom: 23px;
+	color: $d-black;
+}
+.fs-subtitle {
+	font-weight: $light;
+	font-size: 1.3em;
+	color: #666;
+	margin-bottom: 14px;
+	color: rgba(0,0,0,0.20);
+}
+/*progressbar*/
+#progressbar {
+	padding-top: 14px;
+	width: 35%;
+	margin: 14px auto;
+}
+#progressbar li {
+	list-style-type: none;
+	color: #D1D1D1;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	width: 25%;
+	float: left;
+	position: relative;
+	&.active {
+		color: $d-orange;
+	}
+}
+#progressbar li:before {
+	content: "";
+	width: 11px;
+	height: 11px;
+	line-height: 20px;
+	display: block;
+	font-size: 10px;
+	color: #333;
+	background: #D1D1D1;
+	border-radius: 50%;
+	margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 80%;
+	height: 2px;
+	background: #D1D1D1;
+	position: absolute;
+	left: -40%;
+	top: 5px;
+	z-index: 0;
+}
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+	background: $d-orange;
+	color: $d-orange;
 }

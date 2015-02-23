@@ -1,52 +1,11 @@
 $(document).ready(function(){
 
-	var form = document.getElementById('music-upload');
-	var fileSelect = document.getElementById('fileToUpload');
-	var music = document.getElementById('music-selected');
-
-	fileSelect.onchange = function(event) {
-		$('.upload1').remove();
-		$('.upload2').addClass("active");
-    	event.preventDefault();
-
-		// Update button text.
-		music.innerHTML = 'Uploading...';
-
-		// Get the selected files from the input.
-		var file = fileSelect.files[0];
-		// Create a new FormData object.
-		var formData = new FormData();
-		formData.append('file', file);
-
-		// Set up the request.
-		var xhr = new XMLHttpRequest();
-
-		// Open the connection.
-		xhr.open('POST', form.getAttribute('action'), true);
-
-		//Set up a handler for when the request finishes.
-		xhr.onload = function () {
-			console.log(file.name);
-		  if (xhr.status === 200) {
-		    // File(s) uploaded.
-		    music.innerHTML = file.name;
-		  } else {
-		    alert('An error occurred!');
-		  }
-		};
-
-		// Send the Data.
-		xhr.send(formData);
-		return false;
-	};
-
 	//jQuery time
 	var current_fs, next_fs, previous_fs; //fieldsets
 	var left, opacity, scale; //fieldset properties which we will animate
 	var animating; //flag to prevent quick multi-click glitches
 
 	$(".next").click(function(){
-		console.log("coucou");
 		if(animating) return false;
 		animating = true;
 		
@@ -65,7 +24,7 @@ $(document).ready(function(){
 				//1. scale current_fs down to 80%
 				scale = 1 - (1 - now) * 0.2;
 				//2. bring next_fs from the right(50%)
-				left = (now * 50)+"%";
+				left = (now)+"%";
 				//3. increase opacity of next_fs to 1 as it moves in
 				opacity = 1 - now;
 				current_fs.css({'transform': 'scale('+scale+')'});
@@ -100,7 +59,7 @@ $(document).ready(function(){
 				//1. scale previous_fs from 80% to 100%
 				scale = 0.8 + (1 - now) * 0.2;
 				//2. take current_fs to the right(50%) - from 0%
-				left = ((1-now) * 50)+"%";
+				left = ((1-now))+"%";
 				//3. increase opacity of previous_fs to 1 as it moves in
 				opacity = 1 - now;
 				current_fs.css({'left': left});

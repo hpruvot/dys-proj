@@ -65,6 +65,7 @@
           <p class="uploadConditions">Vous vous apprêtez à uploader un morceau de votre cru sur DYSKIT.<br>Assurez-vous de lire les <a href="">conditions générales d’utilisation</a></p>
         </div>
         <div class="uploadZone">
+
           <div class="innerZone upload1">
             <form id="music-upload" action="#" method="post" onsubmit="return false;">
               <input type="file" name="fileToUpload" id="fileToUpload">
@@ -73,8 +74,14 @@
               <p class="files">* fichiers acceptés : .mp3, .ogg, .wav</p>
             </form>
           </div>
+
+           <div class="upload2">
+            <div class="progress"><span>37</span>%</div>
+            <span>Fichier : </span><p id="music-selected"></p>
+          </div>
+
           <p class="conditions"><input type="checkbox" name="nom" value="understood">J’ai lu et compris les conditions générales d’utilisation</p>
-          <p id="music-selected" class="conditions"></p>
+      
         </div>
         <div class="uploadFooter">
           <p class="ps">PS : Il vous reste encore 2 envois de musique ce mois-ci.<br>Ce n’est pas assez ?</p>

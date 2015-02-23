@@ -1,5 +1,5 @@
 @import url(960_16_col.css);
-/* line 5, ../../../../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Users/helen/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Users/helen/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Users/helen/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Users/helen/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Users/helen/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Users/helen/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Users/helen/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Users/helen/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Users/helen/.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -449,10 +449,6 @@ header .header-inner {
   display: inline-block;
   color: #FFFFFF;
 }
-/* line 30, ../sass/_upload.scss */
-.upload.inner-container .uploadZone {
-  /* step 2 */
-}
 /* line 31, ../sass/_upload.scss */
 .upload.inner-container .uploadZone .innerZone {
   width: 427px;
@@ -510,32 +506,19 @@ header .header-inner {
   margin-right: 15px;
 }
 /* line 80, ../sass/_upload.scss */
-.upload.inner-container .uploadZone .track {
-  color: #FFFFFF;
-  font-size: 2em;
-  font-weight: 500;
-}
-/* line 84, ../sass/_upload.scss */
-.upload.inner-container .uploadZone .track span {
-  color: #FFFFFF;
-  font-weight: 300;
-  font-style: italic;
-  display: inline-block;
-}
-/* line 92, ../sass/_upload.scss */
 .upload.inner-container .uploadFooter {
   font-size: 1.3em;
   color: #FFFFFF;
 }
-/* line 95, ../sass/_upload.scss */
+/* line 83, ../sass/_upload.scss */
 .upload.inner-container .uploadFooter .ps {
   font-size: 1.5em;
 }
-/* line 97, ../sass/_upload.scss */
+/* line 85, ../sass/_upload.scss */
 .upload.inner-container .uploadFooter .ps span {
   display: inline-block;
 }
-/* line 101, ../sass/_upload.scss */
+/* line 89, ../sass/_upload.scss */
 .upload.inner-container .uploadFooter .premium {
   margin: 20px auto;
   color: #FFFFFF;
@@ -547,8 +530,259 @@ header .header-inner {
   text-transform: uppercase;
   cursor: pointer;
 }
-/* line 111, ../sass/_upload.scss */
+/* line 99, ../sass/_upload.scss */
 .upload.inner-container .uploadFooter .premium:hover {
   background: #FFFFFF;
+  color: #EE9E19;
+}
+
+/* line 107, ../sass/_upload.scss */
+.upload2 {
+  display: none;
+}
+/* line 109, ../sass/_upload.scss */
+.upload2.active {
+  display: block;
+  height: 283px;
+}
+/* line 112, ../sass/_upload.scss */
+.upload2.active .progress {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  margin: 103px auto;
+  font-size: 2em;
+  color: #EE9E19;
+}
+/* line 120, ../sass/_upload.scss */
+.upload2.active .progress span {
+  color: #EE9E19;
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 100px;
+}
+/* line 127, ../sass/_upload.scss */
+.upload2.active span {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 2em;
+}
+/* line 132, ../sass/_upload.scss */
+.upload2.active p {
+  font-weight: 300;
+  font-style: italic;
+  display: inline-block;
+  font-size: 2em;
+}
+
+/* Upload forms */
+/*form styles*/
+/* line 143, ../sass/_upload.scss */
+#msform {
+  width: 610px;
+  height: 292px;
+  margin: 50px auto;
+  text-align: center;
+  position: relative;
+  background: #FAFAFA;
+}
+/* line 150, ../sass/_upload.scss */
+#msform .track {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  padding: 22px 0 17px 60px;
+}
+/* line 155, ../sass/_upload.scss */
+#msform .track .tr-title {
+  font-weight: 100;
+  color: #3D3B3A;
+  font-size: 2em;
+  line-height: 2em;
+}
+/* line 161, ../sass/_upload.scss */
+#msform .track .tr-subtitle {
+  font-weight: 300;
+  font-style: italic;
+  color: #EE9E19;
+  font-size: 1.4em;
+}
+
+/* line 170, ../sass/_upload.scss */
+#msform fieldset {
+  border: 0 none;
+  padding: 0 60px;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  /*stacking fieldsets above each other*/
+  position: absolute;
+}
+
+/*Hide all except first fieldset*/
+/* line 180, ../sass/_upload.scss */
+#msform fieldset:not(:first-of-type) {
+  display: none;
+}
+
+/*inputs*/
+/* line 184, ../sass/_upload.scss */
+#msform input, #msform textarea {
+  border: none;
+  outline: none;
+  padding: 15px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  width: 96%;
+  box-sizing: border-box;
+  color: #2C3E50;
+  font-size: 13px;
+}
+
+/*buttons*/
+/* line 196, ../sass/_upload.scss */
+#msform .action-button {
+  height: 124px;
+  width: 32px;
+  position: absolute;
+  bottom: 51%;
+  cursor: pointer;
+}
+/* line 202, ../sass/_upload.scss */
+#msform .action-button.next {
+  background: url("../img/icons/arrow-right.png") no-repeat center center;
+  right: 13px;
+}
+/* line 206, ../sass/_upload.scss */
+#msform .action-button.previous {
+  background: url("../img/icons/arrow-left.png") no-repeat center center;
+  left: 13px;
+}
+/* line 210, ../sass/_upload.scss */
+#msform .action-button.submit {
+  height: 292px;
+  width: 82px;
+  bottom: -36px;
+  border-radius: 0;
+  background: #EE9E19 url("../img/icons/valid.png") no-repeat center center;
+}
+
+/* line 219, ../sass/_upload.scss */
+#coverToUpload {
+  opacity: 0;
+  width: 167px;
+  height: 44px;
+  background: #FFFFFF;
+  border: 1px solid #BBBBBB;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+}
+
+/* line 228, ../sass/_upload.scss */
+.input-cover-trigger {
+  width: 167px;
+  height: 44px;
+  background: #FFFFFF;
+  color: #3D3B3A;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  border: 1px solid #BBBBBB;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  padding: 0 !important;
+  text-align: center;
+  line-height: 44px;
+  left: 60px !important;
+  top: initial !important;
+}
+
+/* line 244, ../sass/_upload.scss */
+p.conditions {
+  color: #3D3B3A;
+  font-size: 1.3em;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+
+/*headings*/
+/* line 251, ../sass/_upload.scss */
+.fs-title {
+  font-weight: 100;
+  font-size: 3em;
+  margin-bottom: 23px;
+  color: #3D3B3A;
+}
+
+/* line 257, ../sass/_upload.scss */
+.fs-subtitle {
+  font-weight: 300;
+  font-size: 1.3em;
+  color: #666;
+  margin-bottom: 14px;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+/*progressbar*/
+/* line 265, ../sass/_upload.scss */
+#progressbar {
+  padding-top: 14px;
+  width: 35%;
+  margin: 14px auto;
+}
+
+/* line 270, ../sass/_upload.scss */
+#progressbar li {
+  list-style-type: none;
+  color: #D1D1D1;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  width: 25%;
+  float: left;
+  position: relative;
+}
+/* line 278, ../sass/_upload.scss */
+#progressbar li.active {
+  color: #EE9E19;
+}
+
+/* line 282, ../sass/_upload.scss */
+#progressbar li:before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  line-height: 20px;
+  display: block;
+  font-size: 10px;
+  color: #333;
+  background: #D1D1D1;
+  border-radius: 50%;
+  margin: 0 auto 5px auto;
+}
+
+/*progressbar connectors*/
+/* line 295, ../sass/_upload.scss */
+#progressbar li:after {
+  content: '';
+  width: 80%;
+  height: 2px;
+  background: #D1D1D1;
+  position: absolute;
+  left: -40%;
+  top: 5px;
+  z-index: 0;
+}
+
+/* line 305, ../sass/_upload.scss */
+#progressbar li:first-child:after {
+  /*connector not needed before the first step*/
+  content: none;
+}
+
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+/* line 311, ../sass/_upload.scss */
+#progressbar li.active:before, #progressbar li.active:after {
+  background: #EE9E19;
   color: #EE9E19;
 }
