@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="assets/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="assets/js/upload.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">
   </head> 
@@ -65,14 +66,15 @@
         </div>
         <div class="uploadZone">
           <div class="innerZone upload1">
-            <form action="#" method="post" onsubmit="return false;">
+            <form id="music-upload" action="#" method="post" onsubmit="return false;">
               <input type="file" name="fileToUpload" id="fileToUpload">
-              <input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="300000" />
+              <input type="hidden" id="music-select" name="MAX_FILE_SIZE" value="300000" />
               <label tabindex="0" for="fileToUpload" class="input-file-trigger">Glissez/déposez votre fichier musical* dans cette zone ou selectionnez-le manuellement</label>
               <p class="files">* fichiers acceptés : .mp3, .ogg, .wav</p>
             </form>
           </div>
           <p class="conditions"><input type="checkbox" name="nom" value="understood">J’ai lu et compris les conditions générales d’utilisation</p>
+          <p id="music-selected" class="conditions"></p>
         </div>
         <div class="uploadFooter">
           <p class="ps">PS : Il vous reste encore 2 envois de musique ce mois-ci.<br>Ce n’est pas assez ?</p>
