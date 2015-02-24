@@ -3,6 +3,7 @@
 	width: 81%;
 	background: $d-gradient;
 	margin: 0;
+	height: 100%;
 }
 
 .upload.inner-container {
@@ -139,7 +140,6 @@
 }
 
 /* Upload forms */
-/*form styles*/
 #msform {
 	width: 610px;
 	height: 292px;
@@ -147,11 +147,12 @@
 	text-align: center;
 	position: relative;
 	background: #FAFAFA;
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.10);
 	.track {
 		display: inline-block;
 		width: 100%;
 		text-align: left;
-		padding : 22px 0 17px 60px;
+		padding : 22px 0 17px 50px;
 		.tr-title {
 			font-weight: $thin;
 			color: $d-black;
@@ -168,13 +169,35 @@
 }
 
 #msform fieldset {
-	border: 0 none;
-	padding: 0 60px;
+	padding: 0 50px;
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
 	/*stacking fieldsets above each other*/
 	position: absolute;
+	bottom: 20px;
+	-webkit-backface-visibility: hidden;
+	p.files {
+		font-weight: $light;
+		font-size: 1.1em;
+		color: #9B9B9B;
+		line-height: 15px;
+		margin: 0;
+		bottom: -12px;
+		width: auto;
+	}
+	.cover {
+		display: block;
+		width: 112px;
+		height: 112px;
+		position: absolute;
+		background: #D8D8D8;
+		top: 30px;
+		left: 293px;
+	}
+	&.third {
+		bottom: 35px;
+	}
 }
 /*Hide all except first fieldset*/
 #msform fieldset:not(:first-of-type) {
@@ -182,10 +205,9 @@
 }
 /*inputs*/
 #msform input, #msform textarea {
-	border: none;
+	border: 1px solid #E8E8E8;
 	outline: none;
 	padding: 15px;
-	border-radius: 3px;
 	margin-bottom: 10px;
 	width: 96%;
 	box-sizing: border-box;
@@ -203,16 +225,21 @@
 		background: url('#{$folder-icon}/arrow-right.png') no-repeat center center;
 		right: 13px;
 	}
-	&.previous {
-		background: url('#{$folder-icon}/arrow-left.png') no-repeat center center;
-		left: 13px;
-	}
 	&.submit {
+		visibility: hidden;
+		opacity: 0;
 		height: 292px;
 		width: 82px;
-		bottom: -36px;
+		top: 0;
+		right: 0;
+		border: none;
 		border-radius: 0;
 		background: $d-orange url('#{$folder-icon}/valid.png') no-repeat center center;
+		@include transition(all 0.5s ease-in);
+		&.active {
+			visibility: visible;
+			opacity: 1;
+		}
 	}
 }
 
@@ -240,6 +267,12 @@
 	line-height: 44px;
 	left: 60px !important;
 	top: initial !important;
+	letter-spacing: 1px;
+	cursor: pointer;
+	@include transition(all 0.2s ease-in);
+	&:hover {
+		border: 1px solid $d-orange;
+	}
 }
 p.conditions {
 	color: $d-black;
@@ -263,7 +296,7 @@ p.conditions {
 }
 /*progressbar*/
 #progressbar {
-	padding-top: 14px;
+	padding-top: 16px;
 	width: 35%;
 	margin: 14px auto;
 }
@@ -275,14 +308,16 @@ p.conditions {
 	width: 25%;
 	float: left;
 	position: relative;
+	z-index: 2;
+	@include transition(all 0.5s ease-in);
 	&.active {
 		color: $d-orange;
 	}
 }
 #progressbar li:before {
 	content: "";
-	width: 11px;
-	height: 11px;
+	width: 10px;
+	height: 10px;
 	line-height: 20px;
 	display: block;
 	font-size: 10px;
@@ -290,17 +325,37 @@ p.conditions {
 	background: #D1D1D1;
 	border-radius: 50%;
 	margin: 0 auto 5px auto;
+	cursor: pointer;
+	@include transition(all 0.5s ease-in);
 }
 /*progressbar connectors*/
-#progressbar li:after {
-	content: '';
-	width: 80%;
+#progressbar .timeline {
+	width: 26%;
 	height: 2px;
 	background: #D1D1D1;
 	position: absolute;
-	left: -40%;
-	top: 5px;
+	left: 37%;
+	top: 20px;
 	z-index: 0;
+	.progress {
+		height: 2px;
+		position: absolute;
+		z-index: 1;
+		background: $d-orange;
+		@include transition(all 0.2s ease-in);
+		&.first {
+			width: 0%;
+		}
+		&.second {
+			width: 33.33%;
+		}
+		&.third {
+			width: 66.66%;
+		}
+		&.fourth {
+			width: 100%;
+		}
+	}
 }
 #progressbar li:first-child:after {
 	/*connector not needed before the first step*/
@@ -311,4 +366,93 @@ p.conditions {
 #progressbar li.active:before,  #progressbar li.active:after{
 	background: $d-orange;
 	color: $d-orange;
+}
+
+
+/* Select option */
+.select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px;
+}
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  color: #9B9B9B;
+  width: 380px;
+  height: 44px;
+}
+.select-styled {
+  position: absolute; 
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $d-white;
+  padding: 8px 15px;
+  color: #D6D6D6;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.938em;
+  line-height: 29px;
+  letter-spacing: 2.27px;
+  border: 1px solid #E8E8E8;
+  @include transition(all 0.2s ease-in);
+  &:after {
+    content:"";
+    background: url('#{$folder-icon}/arrow-genre.svg') no-repeat center center;
+    width: 13px;
+	height: 12px;
+    position: absolute;
+    top: 16px;
+    right: 10px;
+  }
+  &:hover {
+    color: $d-orange;
+  }
+  &:active, &.active {
+    color: $d-orange;
+    &:after {
+      top: 16px;
+      background: url('#{$folder-icon}/arrow-genre-top.svg') no-repeat center center;
+    }
+  }
+}
+
+.select-options {
+  display: none; 
+  position: absolute;
+  height: 195px;
+  overflow: auto;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-left: 1px solid #E8E8E8;
+  border-right: 1px solid #E8E8E8;
+  border-bottom: 1px solid #E8E8E8;
+  li {
+    margin: 0;
+    padding: 6px 0;
+    text-indent: 15px;
+    background: $d-white;
+	font-weight: bold;
+	font-size: 0.938em;
+	color: #9B9B9B;
+	letter-spacing: 2.27px;
+	line-height: 20px;
+	text-transform: uppercase;
+    @include transition(all 0.15s ease-in);
+    &:hover {
+      color: $d-orange;
+    }
+    &[rel="hide"] {
+      display: none;
+    }
+  }
 }

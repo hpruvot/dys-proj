@@ -61,18 +61,19 @@
     <div id="container" class="grid_10">
       <div class="upload inner-container">
         <div class="uploadDescr">
-          <p class="uploadTitle">Merci de ta contribution</p>
-          <p class="uploadConditions">Encore un petit effort.<br>Dis-nous en plus sur cette composition !</p>
+          <p class="uploadTitle">Merci de votre contribution</p>
+          <p class="uploadConditions">Encore un petit effort.<br>Dites-nous en plus sur cette composition !</p>
         </div>
         <div class="uploadZone">
             <!-- multistep form -->
             <form id="msform">
               <!-- progressbar -->
               <ul id="progressbar">
-                <li class="active">Titre</li>
-                <li>Artiste</li>
-                <li>Genre</li>
-                <li>Cover</li>
+                <li class="active fs-bullet first">Titre</li>
+                <li class="fs-bullet second">Artiste</li>
+                <li class="fs-bullet third">Genre</li>
+                <li class="fs-bullet fourth">Cover</li>
+                <div class="timeline"><div class="progress first"></div></div>
               </ul>
 
               <div class="track">
@@ -81,41 +82,49 @@
               </div>
               
               <!-- fieldsets -->
-              <fieldset>
+              <fieldset class="first">
                 <h3 class="fs-subtitle">1/4</h3>
                 <h2 class="fs-title">Son titre :</h2>
                 <input type="text" name="title"/>
                 <div class="next action-button"></div>
               </fieldset>
-              <fieldset>
+              <fieldset class="second">
                 <h3 class="fs-subtitle">2/4</h3>
                 <h2 class="fs-title">Votre nom d'artiste</h2>
                 <input type="text" name="title"/>
-                <div class="previous action-button"></div>
                 <div class="next action-button"></div>
               </fieldset>
-              <fieldset>
+              <fieldset class="third">
                 <h3 class="fs-subtitle">3/4</h3>
                 <h2 class="fs-title">Son genre</h2>
-                <input type="text" name="title"/>
-                 <div class="previous action-button"></div>
+                <select name="genre">
+                  <option value="hide">Choisissez un genre</option>
+                  <option value="value1">Hip-Hop</option> 
+                  <option value="value2">Rock</option>
+                  <option value="value3">Electro</option>
+                  <option value="value3">Jazz</option>
+                  <option value="value3">Classique</option>
+                  <option value="value3">RnB</option>
+                  <option value="value3">Alternatif</option>
+                  <option value="value3">Pop</option>
+                  <option value="value3">Variété</option>
+                  <option value="value3">Dance</option>
+                </select>
                 <div class="next action-button"></div>
               </fieldset>
-              <fieldset>
+              <fieldset class="fourth">
                 <h3 class="fs-subtitle">4/4</h3>
-                <h2 class="fs-title">Sa belle cover</h2>
+                <h2 class="fs-title">Sa belle cover* :</h2>
                 <input type="file" name="coverToUpload" id="coverToUpload" value="Parcourir">
                 <input type="hidden" id="music-select" name="MAX_FILE_SIZE" value="300000" />
                 <label tabindex="0" for="coverToUpload" class="input-cover-trigger">Parcourir</label>
+                <div class="cover">
+                  <img src="" id="cover" onerror="this.src='assets/img/icons/cover.jpg'" width="112" height="112"/>
+                </div>
                 <p class="files">* Format minimum de 500x500px.</p>
-                <div class="previous action-button"></div>
-                <input type="submit" name="submit" class="submit action-button" value="" />
               </fieldset>
+              <input type="submit" name="submit" class="submit action-button" value="" />
             </form>
-        </div>
-        <div class="uploadFooter">
-          <p class="ps">PS : Il vous reste encore <span>2</span> envois de musique ce mois-ci.<br>Ce n’est pas assez ?</p>
-          <a class="premium">Go premium</a>
         </div>
       </div>
     </div>
