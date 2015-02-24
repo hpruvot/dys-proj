@@ -241,11 +241,13 @@ header .header-inner {
 
 /* line 42, ../sass/_header.scss */
 #header-nav {
-  display: inline-block;
-  width: 14%;
+  width: 210px;
   vertical-align: middle;
+  position: absolute;
+  right: 72px;
+  top: 14px;
 }
-/* line 46, ../sass/_header.scss */
+/* line 48, ../sass/_header.scss */
 #header-nav .item-media {
   width: 45px;
   height: 45px;
@@ -256,13 +258,13 @@ header .header-inner {
   float: left;
   margin-right: 10px;
 }
-/* line 56, ../sass/_header.scss */
+/* line 58, ../sass/_header.scss */
 #header-nav .item-name {
   font-size: 1.4em;
   color: #3D3B3A;
   line-height: 22px;
 }
-/* line 60, ../sass/_header.scss */
+/* line 62, ../sass/_header.scss */
 #header-nav .item-name span {
   display: inline-block;
   background: #D8D8D8;
@@ -275,7 +277,7 @@ header .header-inner {
   line-height: 16px;
   padding: 0 3px;
 }
-/* line 73, ../sass/_header.scss */
+/* line 75, ../sass/_header.scss */
 #header-nav .item-followers, #header-nav .item-followings {
   float: left;
   color: #888888;
@@ -284,7 +286,7 @@ header .header-inner {
   font-size: 1.2em;
   margin-right: 5px;
 }
-/* line 80, ../sass/_header.scss */
+/* line 82, ../sass/_header.scss */
 #header-nav .item-followers span, #header-nav .item-followings span {
   display: inline-block;
   color: #EE9E19;
@@ -293,7 +295,7 @@ header .header-inner {
   margin-right: 3px;
 }
 
-/* line 90, ../sass/_header.scss */
+/* line 92, ../sass/_header.scss */
 #upload {
   background: #EE9E19;
   width: 72px;
@@ -304,7 +306,7 @@ header .header-inner {
   cursor: pointer;
   border-bottom: 1px solid #EE9E19;
 }
-/* line 99, ../sass/_header.scss */
+/* line 101, ../sass/_header.scss */
 #upload .up-icon {
   background: url("../img/icons/upload.svg") no-repeat center center;
   width: 100%;

@@ -40,9 +40,11 @@ header {
 }
 
 #header-nav {
-	display: inline-block;
-	width: 14%;
+	width: 210px;
 	vertical-align: middle;
+	position: absolute;
+	right: 72px;
+	top: 14px;
 	.item-media {
 		width: 45px;
 		height: 45px;
