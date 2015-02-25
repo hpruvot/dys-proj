@@ -65,7 +65,7 @@
         </div>
         <div class="uploadZone">
             <!-- multistep form -->
-            <form id="msform">
+            <form id="msform" action="" method="post">
               <!-- progressbar -->
               <ul id="progressbar">
                 <li class="active fs-bullet first">Titre</li>
@@ -77,44 +77,44 @@
 
               <div class="track">
                 <h2 class="tr-title">Votre morceau :</h2>
-                <p class="tr-subtitle">fdp.mp3</p>
+                <p class="tr-subtitle">Patrick Sébastien - le petit bonhomme en mousse.mp3</p>
               </div>
               
               <!-- fieldsets -->
               <fieldset class="first">
                 <h3 class="fs-subtitle">1/4</h3>
                 <h2 class="fs-title">Son titre :</h2>
-                <input type="text" name="title"/>
+                <input type="text" name="title" class="first" required/>
                 <div class="next action-button"></div>
               </fieldset>
               <fieldset class="second">
                 <h3 class="fs-subtitle">2/4</h3>
                 <h2 class="fs-title">Votre nom d'artiste</h2>
-                <input type="text" name="title"/>
+                <input type="text" name="artist" class="second" required/>
                 <div class="next action-button"></div>
               </fieldset>
               <fieldset class="third">
                 <h3 class="fs-subtitle">3/4</h3>
                 <h2 class="fs-title">Son genre</h2>
-                <select name="genre">
-                  <option value="hide">Choisissez un genre</option>
-                  <option value="value1">Hip-Hop</option> 
-                  <option value="value2">Rock</option>
-                  <option value="value3">Electro</option>
-                  <option value="value3">Jazz</option>
-                  <option value="value3">Classique</option>
-                  <option value="value3">RnB</option>
-                  <option value="value3">Alternatif</option>
-                  <option value="value3">Pop</option>
-                  <option value="value3">Variété</option>
-                  <option value="value3">Dance</option>
+                <select name="genre" class="third" required>
+                  <option value="">Choisissez un genre</option>
+                  <option value="hip-hop">Hip-Hop</option> 
+                  <option value="rock">Rock</option>
+                  <option value="electro">Electro</option>
+                  <option value="jazz">Jazz</option>
+                  <option value="classique">Classique</option>
+                  <option value="rnb">RnB</option>
+                  <option value="alternatif">Alternatif</option>
+                  <option value="pop">Pop</option>
+                  <option value="variete">Variété</option>
+                  <option value="dance">Dance</option>
                 </select>
                 <div class="next action-button"></div>
               </fieldset>
               <fieldset class="fourth">
                 <h3 class="fs-subtitle">4/4</h3>
                 <h2 class="fs-title">Sa belle cover* :</h2>
-                <input type="file" name="coverToUpload" id="coverToUpload" value="Parcourir">
+                <input type="file" name="coverToUpload" id="coverToUpload" value="Parcourir" class="fourth" required>
                 <input type="hidden" id="music-select" name="MAX_FILE_SIZE" value="300000" />
                 <label tabindex="0" for="coverToUpload" class="input-cover-trigger">Parcourir</label>
                 <div class="cover">

@@ -12,6 +12,18 @@ body {
 	font-size: 62.5%;
 }
 
+.clear {
+	clear: both;
+}
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
 // MENU
 .link {
 	color: $d-black;

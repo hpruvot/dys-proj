@@ -5,6 +5,10 @@ $(document).ready(function(){
 	var left, opacity, scale; //fieldset properties which we will animate
 	var animating; //flag to prevent quick multi-click glitches
 
+	/**
+	 Form animation
+	*/
+	// Click to bullets
 	$(".fs-bullet").click(function() {
 
 		// Get number of selected bullet
@@ -20,6 +24,7 @@ $(document).ready(function(){
 	    	if(animating) return false;
 			animating = true;
 
+			// Get the fieldset corresponding
 			$("fieldset").each(function(){
     			if($(this).css("display") == "block") {
     				current_fs = $(this);
@@ -28,13 +33,15 @@ $(document).ready(function(){
 
 	    });
 
-		progressbar(className[0]);
-		bullets(className[0]);
-	    timeline(className[0]);
+		// Check if values are filled
+	    checkfieldsets(className[0]);
+
 	});
 
+	// Click to next
 	$(".next").click(function() {
 
+		// Get the current fieldset
 		$("fieldset").each(function(){
 			if($(this).css("display") == "block") {
 				current_fs = $(this);
@@ -42,30 +49,122 @@ $(document).ready(function(){
 			}
 		});
 
-		progressbar(className);
-		bullets(className);
-	    timeline(className);
+		// Check if values are filled
+		checkfieldsets(className);
 
 	});
 
+	/* Check inputs values */
+	var checkfieldsets = function(number) {
+		var input1 = $("input.first");
+		var input2 = $("input.second");
+		var select = $("select.third option:selected");
+		var input3 = $("input.fourth");
 
+		var inputs = $("input");
+
+		var text1 = $(".fs-bullet.first");
+		var text2 = $(".fs-bullet.second");
+		var text3 = $(".fs-bullet.third");
+		var text4 = $(".fs-bullet.fourth");
+
+		var textError = "Oops, vous devez remplir ce champ et en avant la musique !"
+
+		// Clear class errors
+		inputs.each(function() {
+		  $(this).removeClass("error");
+		  $(this).attr("placeholder", "");
+		});
+
+		switch(number) {
+		    case "first":
+		    	progressbar(number);
+				bullets(number);
+		    	fieldsets(number);
+		        break;
+		    case "second":
+		        if(input1.val() == "") {
+		        	input1.addClass("error");
+					input1.attr("placeholder", textError);
+					text1.glowerror("error", 1000);
+		        }else {
+		        	progressbar(number);
+					bullets(number);
+		    		fieldsets(number);
+		        }
+		        break;
+		    case "third":
+		        if(input1.val() == "") {
+		        	input1.addClass("error");
+					input1.attr("placeholder", textError);
+					text1.glowerror("error", 1000);
+		        } else if(input2.val() == "") {
+					input2.addClass("error");
+					input2.attr("placeholder", textError);
+					text2.glowerror("error", 1000);
+		        } else {
+		        	progressbar(number);
+					bullets(number);
+		    		fieldsets(number);
+		        }
+		        break;
+		    case "fourth":
+		        if(input1.val() == "") {
+		        	input1.addClass("error");
+					input1.attr("placeholder", textError);
+					text1.glowerror("error", 1000);
+		        } else if(input2.val() == "") {
+					input2.addClass("error");
+					input2.attr("placeholder", textError);
+					text2.glowerror("error", 1000);
+		        } else if(select.val() == "") {
+					$('.select-styled').addClass("error");
+					text3.glowerror("error", 1000);
+		        } else {
+		        	progressbar(number);
+					bullets(number);
+		    		fieldsets(number);
+		        }
+		        break;
+		    default:
+			    progressbar(number);
+				bullets(number);
+		    	fieldsets(number);
+		}
+	}
+
+	// Bullet title glow
+	$.fn.extend({ 
+        glowerror: function(className, duration) {
+            var elements = this;
+            setTimeout(function() {
+                elements.removeClass(className);
+            }, duration);
+
+            return this.each(function() {
+                $(this).addClass(className);
+            });
+        }
+    });
+
+	/* Animate the bullets */
 	var bullets = function(number) {
 		$("#progressbar li."+number+"").addClass("active");
 		$("#progressbar li."+number+"").prevAll().addClass("active");
 		$("#progressbar li."+number+"").nextAll().removeClass("active");
 	}
 
+	/* Animate the progressbar */
 	var progressbar = function(number) {
 		$(".timeline div").removeClass();
 		$(".timeline div").addClass(number+" progress");
 	}
 
-	var timeline = function(number) {
+	/* Animate the fieldsets */
+	var fieldsets = function(number) {
 
 		next_fs = $('fieldset.'+number+'');
-		//other_fs = $('fieldset:not(.'+number+')');
 
-		
 		//show the previous fieldset
 		next_fs.show(); 
 
@@ -73,7 +172,6 @@ $(document).ready(function(){
 		current_fs.animate({opacity: 0}, {
 			step: function(now, mx) {
 				//as the opacity of current_fs reduces to 0 - stored in "now"
-				//2. take current_fs to the right(50%) - from 0%
 				left = (now)+"%";
 				//3. increase opacity of previous_fs to 1 as it moves in
 				opacity = 1 - now;
@@ -101,7 +199,9 @@ $(document).ready(function(){
 		return false;
 	})
 
-	/* Select options */
+	/**
+	 Select option for genre animation
+	*/
 	$('select').each(function(){
 	    var $this = $(this), numberOfOptions = $(this).children('option').length;
 	  
@@ -127,11 +227,9 @@ $(document).ready(function(){
 
 	    $('div.select-styled').click(function() {
 	    	if($(this).hasClass('active')){
-	    		console.log("if");
 	    		$(this).removeClass('active').next('ul.select-options').hide();
 	    	}
 	    	else{
-	    		console.log("else");
 	    		$(this).addClass('active').next('ul.select-options').show();
 	    	}
 	        
@@ -142,12 +240,13 @@ $(document).ready(function(){
 	        $styledSelect.text($(this).text()).removeClass('active');
 	        $this.val($(this).attr('rel'));
 	        $list.hide();
-	        //console.log($this.val());
 	    });
 
 	});
 
-	/* Cover upload */
+	/**
+	 Cover upload preview
+	*/
 	function readURL(input) {
 	    if (input.files && input.files[0]) {
 	        var reader = new FileReader();
@@ -159,7 +258,6 @@ $(document).ready(function(){
 	        reader.readAsDataURL(input.files[0]);
 	    }
 	}
-
 	$("#coverToUpload").change(function(){
 	    readURL(this);
 	});

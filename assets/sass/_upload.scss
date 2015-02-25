@@ -211,8 +211,14 @@
 	margin-bottom: 10px;
 	width: 96%;
 	box-sizing: border-box;
-	color: #2C3E50;
-	font-size: 13px;
+	color: rgba(61,59,58,0.7);
+	font-size: 1.2em;
+	@include transition(all 0.2s ease-in);
+	&.error {
+		box-shadow: 0px 0px 7px 0px rgba(255,104,104,0.40);
+		border: 1px solid #FF5E5E;
+		color: #9B9B9B;
+	}
 }
 /*buttons*/
 #msform .action-button {
@@ -312,6 +318,12 @@ p.conditions {
 	@include transition(all 0.5s ease-in);
 	&.active {
 		color: $d-orange;
+	}
+	&.error {
+		color: #FF5E5E;
+		&:before {
+			background: #FF5E5E !important;
+		}
 	}
 }
 #progressbar li:before {
@@ -418,6 +430,10 @@ p.conditions {
       top: 16px;
       background: url('#{$folder-icon}/arrow-genre-top.svg') no-repeat center center;
     }
+  }
+  &.error{
+	box-shadow: 0px 0px 7px 0px rgba(255,104,104,0.40);
+	border: 1px solid #FF5E5E;
   }
 }
 
