@@ -274,23 +274,12 @@ header .header-inner {
   top: 14px;
 }
 /* line 48, ../sass/_header.scss */
-#header-nav .item-media {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  overflow: hidden;
-  float: left;
-  margin-right: 10px;
-}
-/* line 58, ../sass/_header.scss */
 #header-nav .item-name {
   font-size: 1.4em;
   color: #3D3B3A;
   line-height: 22px;
 }
-/* line 62, ../sass/_header.scss */
+/* line 52, ../sass/_header.scss */
 #header-nav .item-name span {
   display: inline-block;
   background: #D8D8D8;
@@ -303,7 +292,7 @@ header .header-inner {
   line-height: 16px;
   padding: 0 3px;
 }
-/* line 75, ../sass/_header.scss */
+/* line 65, ../sass/_header.scss */
 #header-nav .item-followers, #header-nav .item-followings {
   float: left;
   color: #888888;
@@ -312,7 +301,7 @@ header .header-inner {
   font-size: 1.2em;
   margin-right: 5px;
 }
-/* line 82, ../sass/_header.scss */
+/* line 72, ../sass/_header.scss */
 #header-nav .item-followers span, #header-nav .item-followings span {
   display: inline-block;
   color: #EE9E19;
@@ -321,7 +310,19 @@ header .header-inner {
   margin-right: 3px;
 }
 
-/* line 92, ../sass/_header.scss */
+/* line 82, ../sass/_header.scss */
+.item-media {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  overflow: hidden;
+  float: left;
+  margin-right: 10px;
+}
+
+/* line 93, ../sass/_header.scss */
 #upload {
   background: #EE9E19;
   width: 72px;
@@ -332,7 +333,7 @@ header .header-inner {
   cursor: pointer;
   border-bottom: 1px solid #EE9E19;
 }
-/* line 101, ../sass/_header.scss */
+/* line 102, ../sass/_header.scss */
 #upload .up-icon {
   background: url("../img/icons/upload.svg") no-repeat center center;
   width: 100%;
@@ -380,62 +381,60 @@ header .header-inner {
 }
 
 /* MENU PLAYLIST */
-/* line 33, ../sass/_left.scss */
-.pl-title {
+/* line 34, ../sass/_left.scss */
+.inner-left .pl-title {
   margin-bottom: 15px;
 }
-/* line 35, ../sass/_left.scss */
-.pl-title span {
+/* line 36, ../sass/_left.scss */
+.inner-left .pl-title span {
   padding: 12px 0;
   font-size: 1.2em;
   text-transform: uppercase;
   font-weight: 700;
 }
-/* line 41, ../sass/_left.scss */
-.pl-title hr {
+/* line 42, ../sass/_left.scss */
+.inner-left .pl-title hr {
   width: 24px;
   border: 2px solid #EE9E19;
   float: left;
 }
-
-/* line 47, ../sass/_left.scss */
-#pl-nav {
+/* line 48, ../sass/_left.scss */
+.inner-left #pl-nav {
   margin-left: 10px;
 }
-
-/* line 51, ../sass/_left.scss */
-.pl-items li {
+/* line 52, ../sass/_left.scss */
+.inner-left .pl-items li {
   padding: 7px 0;
 }
-/* line 53, ../sass/_left.scss */
-.pl-items li a {
+/* line 54, ../sass/_left.scss */
+.inner-left .pl-items li a {
   color: #3D3B3A;
 }
-/* line 56, ../sass/_left.scss */
-.pl-items li .pl-icon {
+/* line 57, ../sass/_left.scss */
+.inner-left .pl-items li .pl-icon {
   width: 20px;
   height: 20px;
   display: block;
   float: left;
 }
-/* line 62, ../sass/_left.scss */
-.pl-items li .pl-heart {
+/* line 63, ../sass/_left.scss */
+.inner-left .pl-items li .pl-heart {
   background: url("../img/icons/heart.svg") no-repeat center center;
   background-size: 80%;
 }
-/* line 66, ../sass/_left.scss */
-.pl-items li .pl-play {
+/* line 67, ../sass/_left.scss */
+.inner-left .pl-items li .pl-play {
   background: url("../img/icons/beamed-note.svg") no-repeat center center;
 }
-/* line 69, ../sass/_left.scss */
-.pl-items li .pl-name {
+/* line 70, ../sass/_left.scss */
+.inner-left .pl-items li .pl-name {
   font-weight: 500;
   font-size: 1.2em;
   padding-left: 25px;
   line-height: 20px;
 }
-/* line 75, ../sass/_left.scss */
-.pl-items li:hover .pl-play {
+/* line 76, ../sass/_left.scss */
+.inner-left .pl-items li:hover .pl-play {
   background: url("../img/icons/triangle-right.svg") no-repeat center center;
   border: 1px solid #EE9E19;
   border-radius: 50%;
@@ -444,8 +443,8 @@ header .header-inner {
 
 /* line 1, ../sass/_upload.scss */
 .upload-container {
-  float: left;
-  width: 84%;
+  float: right;
+  width: 82%;
   background: linear-gradient(-180deg, #ee9e19 0%, #ee7648 100%);
   margin: 0;
   height: 100%;
@@ -1033,4 +1032,185 @@ p.conditions {
   height: 100%;
   background: #FBF6F2;
   color: #3D3B3A;
+}
+
+/* line 10, ../sass/_playlist.scss */
+.playlist-content {
+  overflow: hidden;
+}
+/* line 12, ../sass/_playlist.scss */
+.playlist-content .pub {
+  width: 100%;
+  height: 260px;
+  background: #D8D8D8;
+  margin-bottom: 48px;
+}
+/* line 18, ../sass/_playlist.scss */
+.playlist-content .row {
+  position: relative;
+  margin: 20px 20px 45px;
+  overflow: hidden;
+  height: 290px;
+  width: 96%;
+}
+/* line 24, ../sass/_playlist.scss */
+.playlist-content .row .hr {
+  width: 24px;
+  height: 3px;
+  background: #EE9E19;
+  margin: 10px 0 30px;
+}
+/* line 30, ../sass/_playlist.scss */
+.playlist-content .row .row-title {
+  font-weight: 700;
+  font-size: 1.3em;
+  color: #3D3B3A;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+/* line 37, ../sass/_playlist.scss */
+.playlist-content .row .playlists, .playlist-content .row .artists {
+  overflow: auto;
+  white-space: nowrap;
+  width: 100%;
+  height: 100%;
+}
+/* line 44, ../sass/_playlist.scss */
+.playlist-content .row-artists {
+  height: 340px;
+}
+
+/* line 48, ../sass/_playlist.scss */
+.pl-single {
+  display: inline-block;
+  margin-right: 17px;
+  width: 160px;
+}
+/* line 52, ../sass/_playlist.scss */
+.pl-single .pl-cover {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 10px;
+}
+/* line 57, ../sass/_playlist.scss */
+.pl-single .pl-title {
+  font-weight: 300;
+  font-size: 1.4em;
+  color: #3D3B3A;
+  line-height: 19px;
+}
+/* line 63, ../sass/_playlist.scss */
+.pl-single .pl-singer {
+  opacity: 0.69;
+  font-weight: 300;
+  font-size: 1.2em;
+  color: #3D3B3A;
+  line-height: 16px;
+  margin-bottom: 6px;
+}
+/* line 71, ../sass/_playlist.scss */
+.pl-single .pl-artist {
+  display: inline-block;
+  font-weight: 100;
+  color: rgba(61, 58, 58, 0.7);
+}
+/* line 75, ../sass/_playlist.scss */
+.pl-single .pl-artist span {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: #EE9E19;
+  line-height: 15px;
+}
+/* line 82, ../sass/_playlist.scss */
+.pl-single .pl-artist:before {
+  content: "";
+  background: url("../img/icons/pl-arrow.svg") no-repeat center center;
+  width: 7px;
+  height: 9px;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* line 93, ../sass/_playlist.scss */
+.at-single {
+  display: inline-block;
+  margin-right: 17px;
+  width: 160px;
+}
+
+/* line 102, ../sass/_playlist.scss */
+.at-header .at-name {
+  display: inline-block;
+}
+/* line 104, ../sass/_playlist.scss */
+.at-header .at-name .at-pseudo {
+  font-weight: 300;
+  font-size: 1.4em;
+  color: #3D3B3A;
+  line-height: 16px;
+  margin-bottom: 5px;
+}
+/* line 111, ../sass/_playlist.scss */
+.at-header .at-name .at-cta {
+  border: 1px solid #EE9E19;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 24px;
+  width: 75px;
+  height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  -moz-transition: all 0.1s ease-in;
+  -o-transition: all 0.1s ease-in;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+/* line 123, ../sass/_playlist.scss */
+.at-header .at-name .at-cta.follow {
+  color: #F5A623;
+}
+/* line 125, ../sass/_playlist.scss */
+.at-header .at-name .at-cta.follow:hover {
+  background: #EE9E19;
+  color: #FFFFFF;
+}
+/* line 130, ../sass/_playlist.scss */
+.at-header .at-name .at-cta.followed {
+  background: #EE9E19;
+  color: #FFFFFF;
+}
+/* line 136, ../sass/_playlist.scss */
+.at-header span {
+  opacity: 0.5;
+  font-weight: 700;
+  font-size: 0.9em;
+  color: #3D3B3A;
+  line-height: 11px;
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+
+/* line 147, ../sass/_playlist.scss */
+.row-slider {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+/* line 151, ../sass/_playlist.scss */
+.row-slider li {
+  width: 22px;
+  height: 25px;
+  display: inline-block;
+  cursor: pointer;
+}
+/* line 156, ../sass/_playlist.scss */
+.row-slider li.prev {
+  background: url("../img/icons/pl-left.png") no-repeat center center;
+}
+/* line 159, ../sass/_playlist.scss */
+.row-slider li.next {
+  background: url("../img/icons/pl-right.png") no-repeat center center;
 }

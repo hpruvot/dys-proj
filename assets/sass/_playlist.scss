@@ -7,5 +7,157 @@
 	color: $d-black;
 }
 
-.player-content {
+.playlist-content {
+	overflow: hidden;
+	.pub {
+		width: 100%;
+		height: 260px;
+		background: #D8D8D8;
+		margin-bottom: 48px;
+	}
+	.row {
+		position: relative;
+		margin: 20px 20px 45px;
+		overflow: hidden;
+		height: 290px;
+		width: 96%;
+		.hr {
+			width: 24px;
+			height: 3px;
+			background: $d-orange;
+			margin: 10px 0 30px;
+		}
+		.row-title {
+			font-weight: $bold;
+			font-size: 1.3em;
+			color: $d-black;
+			line-height: 18px;
+			text-transform: uppercase;
+		}
+		.playlists, .artists {
+			overflow: auto;
+			white-space: nowrap;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.row-artists {
+		height: 340px;
+	}
+}
+.pl-single {
+	display: inline-block;
+	margin-right: 17px;
+	width: 160px;
+	.pl-cover {
+		width: 160px;
+		height: 160px;
+		margin-bottom: 10px;
+	}
+	.pl-title {
+		font-weight: $light;
+		font-size: 1.4em;
+		color: $d-black;
+		line-height: 19px;
+	}
+	.pl-singer {
+		opacity: 0.69;
+		font-weight: $light;
+		font-size: 1.2em;
+		color: $d-black;
+		line-height: 16px;
+		margin-bottom: 6px;
+	}
+	.pl-artist {
+		display: inline-block;
+		font-weight: $thin;
+		color: rgba(61,58,58,0.70);
+		span {
+			display: inline-block;
+			font-weight: $medium;
+			font-size: 1.2em;
+			color: $d-orange;
+			line-height: 15px;
+		}
+		&:before {
+			content: "";
+			background: url('#{$folder-icon}/pl-arrow.svg') no-repeat center center;
+			width: 7px;
+			height: 9px;
+			display: inline-block;
+			margin-right: 6px;
+		}
+	}
+}
+
+.at-single {
+	display: inline-block;
+	margin-right: 17px;
+	width: 160px;
+}
+
+.at-header {
+	.at-avatar {
+	}
+	.at-name {
+		display: inline-block;
+		.at-pseudo {
+			font-weight: $light;
+			font-size: 1.4em;
+			color: $d-black;
+			line-height: 16px;
+			margin-bottom: 5px;
+		}
+		.at-cta {
+			border: 1px solid $d-orange;
+			border-radius: 40px;
+			font-weight: $bold;
+			font-size: 1em;
+			line-height: 24px;
+			width: 75px;
+			height: 24px;
+			text-align: center;
+			text-transform: uppercase;
+			cursor: pointer;
+			@include transition(all 0.1s ease-in);
+			&.follow {
+				color: #F5A623;
+				&:hover {
+					background: $d-orange;
+					color: $d-white;
+				}
+			}
+			&.followed {
+				background: $d-orange;
+				color: $d-white;
+			}
+		}
+	}
+	span {
+		opacity: 0.5;
+		font-weight: $bold;
+		font-size: 0.9em;
+		color: $d-black;
+		line-height: 11px;
+		text-transform: uppercase;
+		margin: 5px 0;
+	}
+}
+
+.row-slider {
+	position: absolute;
+	right: 0;
+	top: 20px;
+	li {
+		width: 22px;
+		height: 25px;
+		display: inline-block;
+		cursor: pointer;
+		&.prev {
+			background: url('#{$folder-icon}/pl-left.png') no-repeat center center;
+		}
+		&.next {
+			background: url('#{$folder-icon}/pl-right.png') no-repeat center center;
+		}
+	}
 }

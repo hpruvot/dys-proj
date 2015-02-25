@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Left</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Home-APP-Scroll" sketch:type="MSArtboardGroup" transform="translate(-1116.000000, -1072.000000)">
+            <g id="Center" sketch:type="MSLayerGroup" transform="translate(-7.000000, 2.000000)">
+                <g id="Les-Artistes-qui-se-sont-fait-remarquer" transform="translate(287.000000, 1046.000000)" sketch:type="MSShapeGroup">
+                    <g id="Left" transform="translate(844.500000, 32.500000) rotate(-180.000000) translate(-844.500000, -32.500000) translate(836.000000, 24.000000)">
+                        <ellipse id="Oval-38" stroke="#49403B" stroke-width="1.05" cx="8.5" cy="8.84" rx="8.5" ry="8.16"></ellipse>
+                        <path d="M6.5664111,11.872834 C6.3112599,12.1123383 6.3112599,12.5008675 6.5664111,12.7403718 C6.8211809,12.9798761 7.23480043,12.9798761 7.48995163,12.7403718 L11.1419699,9.27376889 C11.3971211,9.03426459 11.3971211,8.64573541 11.1419699,8.40623111 L7.48995163,4.93962822 C7.23480043,4.70012393 6.82137159,4.70012393 6.5664111,4.93962822 C6.3112599,5.17913251 6.3112599,5.5676617 6.5660297,5.807166 L9.56090974,8.84088705 L6.5664111,11.872834" id="Fill-162" fill="#49403B"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
