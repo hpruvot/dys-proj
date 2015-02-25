@@ -2,24 +2,23 @@
 // ============
 
 #left-bar {
-  width: 16%;
+  width: 18%;
   float: left;
   height: 100%;
   margin: 0;
   .inner-left {
   	position: fixed;
   	padding-left: 10px;
-  	width: 15%;
+  	width: 17%;
   }
 }
 
 #right-bar {
   float: left;
-  width: 16%;
   height: 100%;
   margin: 0;
+  width: 260px;
   .inner-right {
   	position: fixed;
-  	width: 15%;
   }
 }

@@ -114,7 +114,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 4, ../sass/partials/_grids.scss */
 #left-bar {
-  width: 16%;
+  width: 18%;
   float: left;
   height: 100%;
   margin: 0;
@@ -123,20 +123,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 #left-bar .inner-left {
   position: fixed;
   padding-left: 10px;
-  width: 15%;
+  width: 17%;
 }
 
 /* line 16, ../sass/partials/_grids.scss */
 #right-bar {
   float: left;
-  width: 16%;
   height: 100%;
   margin: 0;
+  width: 260px;
 }
 /* line 21, ../sass/partials/_grids.scss */
 #right-bar .inner-right {
   position: fixed;
-  width: 15%;
 }
 
 /* line 2, ../sass/partials/_elements.scss */
@@ -1028,9 +1027,10 @@ p.conditions {
 
 /* line 1, ../sass/_playlist.scss */
 .playlist-container {
-  float: right;
-  width: 68%;
-  background: linear-gradient(-180deg, #ee9e19 0%, #ee7648 100%);
+  float: left;
+  width: 63.8%;
   margin: 0;
   height: 100%;
+  background: #FBF6F2;
+  color: #3D3B3A;
 }
