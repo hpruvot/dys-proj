@@ -61,7 +61,7 @@ $(document).ready(function(){
 		var select = $("select.third option:selected");
 		var input3 = $("input.fourth");
 
-		var inputs = $("input");
+		var inputs = $("#msform input");
 
 		var text1 = $(".fs-bullet.first");
 		var text2 = $(".fs-bullet.second");
