@@ -4,14 +4,22 @@
 #left-bar {
   width: 16%;
   float: left;
-  position: fixed;
-}
-
-#container {
-  float: left;
-
+  height: 100%;
+  margin: 0;
+  .inner-left {
+  	position: fixed;
+  	padding-left: 10px;
+  	width: 15%;
+  }
 }
 
 #right-bar {
   float: left;
+  width: 16%;
+  height: 100%;
+  margin: 0;
+  .inner-right {
+  	position: fixed;
+  	width: 15%;
+  }
 }
