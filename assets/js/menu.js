@@ -23,10 +23,19 @@ $(document).ready(function(){
 	   	}
 	}
 
+	var responsive = function() {
+		if ($( window ).width() < 640 ) {
+			$("#pl-nav-resp").addClass("resp");
+		} else {
+			$("#pl-nav-resp").removeClass("resp");
+		}
+	}
+
 	//  Creating our button for smaller screens
 	var leftbar = document.getElementById('left-bar');
 	var menuElements = document.getElementById('menu');
 	menuElements.insertAdjacentHTML('beforeBegin','<button type="button" id="menutoggle" class="navtoogle" aria-hidden="true"><i aria-hidden="true" class="icon-menu"> </i></button>');
+
 
 	//  Toggle the class on click to show / hide the menu
 	document.getElementById('menutoggle').onclick = function() {
@@ -34,21 +43,12 @@ $(document).ready(function(){
 		changeClass(leftbar, 'resp active', 'resp');
 	}
 
-	// document click to hide the menu
-	// http://tympanus.net/codrops/2013/05/08/responsive-retina-ready-menu/comment-page-2/#comment-438918
-	// document.onclick = function(e) {
-	// 	var mobileButton = document.getElementById('menutoggle'),
-	// 		buttonStyle =  mobileButton.currentStyle ? mobileButton.currentStyle.display : getComputedStyle(mobileButton, null).display;
-
-	// 	if(buttonStyle === 'block' && e.target !== mobileButton && new RegExp(' ' + 'active' + ' ').test(' ' + mobileButton.className + ' ')) {
-	// 		changeClass(mobileButton, 'navtoogle active', 'navtoogle');
-	// 	}
-	// }
-
 	$(window).on("resize", function (e) {
         menutoggle();
+        responsive();
     });
 
 	menutoggle();
+	responsive();
 	
 });

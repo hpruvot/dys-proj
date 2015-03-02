@@ -176,3 +176,35 @@
 		}
 	}
 }
+
+/* RESPONSIVE */
+#pl-nav-resp {
+	display: none;
+	li.item {
+		float: left;
+		width: 33.3%;
+		height: 60px;
+		line-height: 60px;
+		text-align: center;
+		background: linear-gradient(-180deg, #49403B 0%, #2E2722 100%);
+		box-shadow: 1px 0px 0px 0px rgba(60,51,45,0.50);
+		text-transform: uppercase;
+		box-sizing: border-box;
+		border-right: 1px solid rgba(0,0,0,0.27);
+		a {
+			font-weight: $thin;
+			font-size: 1.2em;
+			color: $d-white;
+		}
+		&.active {
+			background: $d-gradient;
+			a {
+				font-weight: $medium;
+				font-size: 1.3em;
+			}
+		}
+	}
+	&.resp {
+		display: block;
+	}
+}

@@ -1528,3 +1528,41 @@ p.conditions {
 .row-slider li.next {
   background: url("../img/icons/pl-right.png") no-repeat center center;
 }
+
+/* RESPONSIVE */
+/* line 181, ../sass/_playlist.scss */
+#pl-nav-resp {
+  display: none;
+}
+/* line 183, ../sass/_playlist.scss */
+#pl-nav-resp li.item {
+  float: left;
+  width: 33.3%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: linear-gradient(-180deg, #49403b 0%, #2e2722 100%);
+  box-shadow: 1px 0px 0px 0px rgba(60, 51, 45, 0.5);
+  text-transform: uppercase;
+  box-sizing: border-box;
+  border-right: 1px solid rgba(0, 0, 0, 0.27);
+}
+/* line 194, ../sass/_playlist.scss */
+#pl-nav-resp li.item a {
+  font-weight: 100;
+  font-size: 1.2em;
+  color: #FFFFFF;
+}
+/* line 199, ../sass/_playlist.scss */
+#pl-nav-resp li.item.active {
+  background: linear-gradient(-180deg, #ee9e19 0%, #ee7648 100%);
+}
+/* line 201, ../sass/_playlist.scss */
+#pl-nav-resp li.item.active a {
+  font-weight: 500;
+  font-size: 1.3em;
+}
+/* line 207, ../sass/_playlist.scss */
+#pl-nav-resp.resp {
+  display: block;
+}
