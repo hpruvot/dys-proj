@@ -24,12 +24,14 @@ $(document).ready(function(){
 	}
 
 	//  Creating our button for smaller screens
+	var leftbar = document.getElementById('left-bar');
 	var menuElements = document.getElementById('menu');
 	menuElements.insertAdjacentHTML('beforeBegin','<button type="button" id="menutoggle" class="navtoogle" aria-hidden="true"><i aria-hidden="true" class="icon-menu"> </i></button>');
 
 	//  Toggle the class on click to show / hide the menu
 	document.getElementById('menutoggle').onclick = function() {
 		changeClass(this, 'navtoogle active', 'navtoogle');
+		changeClass(leftbar, 'resp active', 'resp');
 	}
 
 	// document click to hide the menu

@@ -1,20 +1,10 @@
 // Requirements
 // ============
 
-#right-bar {
-	height: 100%;
-	margin: 0;
-	width: 260px;
-	position: fixed;
-	right: 0;
-	background: $d-white;
-	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.30);
-	margin-top: 72px;
-}
-
 #container {
 	margin-top: 72px;
 	&.resp {
 		margin: 0 260px 0 0;
+		width: 100%;
 	}
 }
