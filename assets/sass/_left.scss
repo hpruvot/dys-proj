@@ -158,8 +158,6 @@
 	
 /* If JavaScript is disabled, the menu stays open */
 #menu {
-	max-height: 100%;
-	overflow: hidden;
 	background: $d-white;
 	.icon {
 		width: 20px;
@@ -288,6 +286,10 @@
 
 @media (max-width: 720px) {
 
+	#pl-nav {
+		margin-bottom: 73px;
+	}
+
 	/* Unhiding the styled menu link */
 	#menutoggle{
 		margin: 0;
@@ -298,14 +300,13 @@
 	#menu {
 		height: 0;
 		width: 100%;
-		overflow: hidden;
+		overflow: auto;
 	}
 	
 	/* Displaying the menu when the user has clicked on the button */
 	button.active ~ #menu{		
 		height: 100%;
 		width: 100%;
-		overflow: hidden;
 		//@include transition(height 0.4s ease-in);
 	}
 	button.navtoogle ~ #menu{	

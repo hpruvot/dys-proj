@@ -41,6 +41,7 @@ $(document).ready(function(){
 	document.getElementById('menutoggle').onclick = function() {
 		changeClass(this, 'navtoogle active', 'navtoogle');
 		changeClass(leftbar, 'resp active', 'resp');
+		$("#container").toggleClass("active");
 	}
 
 	$(window).on("resize", function (e) {
