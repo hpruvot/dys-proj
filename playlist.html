@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="assets/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="assets/js/playlist.js"></script>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">
   </head> 
@@ -61,7 +62,7 @@
     <div id="container" class="grid_10 playlist-container">
       <div class="inner-container playlist-content">
         <div class="pub"></div>
-        <div class="row">
+        <div id="pl-news" class="row">
           <h3 class="row-title">Les nouveautés de la semaine</h3>
           <span class="hr"></span>
           <nav class="row-slider">
@@ -70,44 +71,44 @@
           </nav>
           <div class="playlists">
             <div class="pl-single">
-              <div class="pl-cover"><img src="assets/img/cover.jpg"></div>
+              <div class="pl-cover"><img src="assets/img/Covers/Taylor.jpg"></div>
               <div class="pl-title">Safe & Sound</div>
               <div class="pl-singer">Taylor Swift</div>
               <div class="pl-artist">par <span>Taylor01</span></div>
             </div>
             <div class="pl-single">
-              <div class="pl-cover"><img src="assets/img/cover.jpg"></div>
+              <div class="pl-cover"><img src="assets/img/Covers/Singtank.jpg"></div>
               <div class="pl-title">Safe & Sound</div>
               <div class="pl-singer">Taylor Swift</div>
               <div class="pl-artist">par <span>Taylor01</span></div>
             </div>
             <div class="pl-single">
-              <div class="pl-cover"><img src="assets/img/cover.jpg"></div>
+              <div class="pl-cover"><img src="assets/img/Covers/absyntheminded1.jpg"></div>
               <div class="pl-title">Safe & Sound</div>
               <div class="pl-singer">Taylor Swift</div>
               <div class="pl-artist">par <span>Taylor01</span></div>
             </div>
             <div class="pl-single">
-              <div class="pl-cover"><img src="assets/img/cover.jpg"></div>
+              <div class="pl-cover"><img src="assets/img/Covers/Asa.jpg"></div>
               <div class="pl-title">Safe & Sound</div>
               <div class="pl-singer">Taylor Swift</div>
               <div class="pl-artist">par <span>Taylor01</span></div>
             </div>
             <div class="pl-single">
-              <div class="pl-cover"><img src="assets/img/cover.jpg"></div>
+              <div class="pl-cover"><img src="assets/img/Covers/Beastie.jpg"></div>
               <div class="pl-title">Safe & Sound</div>
               <div class="pl-singer">Taylor Swift</div>
               <div class="pl-artist">par <span>Taylor01</span></div>
             </div>
-            <div class="pl-single">
-              <div class="pl-cover"><img src="assets/img/cover.jpg"></div>
+            <div class="pl-single" id="last">
+              <div class="pl-cover"><img src="assets/img/Covers/Beastie.jpg"></div>
               <div class="pl-title">Safe & Sound</div>
               <div class="pl-singer">Taylor Swift</div>
               <div class="pl-artist">par <span>Taylor01</span></div>
             </div>
           </div>
         </div>
-        <div class="row">
+        <div id="pl-love" class="row">
           <h3 class="row-title">Ce que vous allez adorer</h3>
           <span class="hr"></span>
           <nav class="row-slider">
@@ -116,44 +117,44 @@
           </nav>
           <div class="playlists">
             <div class="pl-single">
-              <div class="pl-cover"><img src="assets/img/cover.jpg"></div>
+              <div class="pl-cover"><img src="assets/img/Covers/Bombay-Bicycle-Club.jpg"></div>
               <div class="pl-title">Safe & Sound</div>
               <div class="pl-singer">Taylor Swift</div>
               <div class="pl-artist">par <span>Taylor01</span></div>
             </div>
             <div class="pl-single">
-              <div class="pl-cover"><img src="assets/img/cover.jpg"></div>
+              <div class="pl-cover"><img src="assets/img/Covers/Brigitte.jpg"></div>
               <div class="pl-title">Safe & Sound</div>
               <div class="pl-singer">Taylor Swift</div>
               <div class="pl-artist">par <span>Taylor01</span></div>
             </div>
             <div class="pl-single">
-              <div class="pl-cover"><img src="assets/img/cover.jpg"></div>
+              <div class="pl-cover"><img src="assets/img/Covers/CharlieWinston.jpg"></div>
               <div class="pl-title">Safe & Sound</div>
               <div class="pl-singer">Taylor Swift</div>
               <div class="pl-artist">par <span>Taylor01</span></div>
             </div>
             <div class="pl-single">
-              <div class="pl-cover"><img src="assets/img/cover.jpg"></div>
+              <div class="pl-cover"><img src="assets/img/Covers/Chromeo.png"></div>
               <div class="pl-title">Safe & Sound</div>
               <div class="pl-singer">Taylor Swift</div>
               <div class="pl-artist">par <span>Taylor01</span></div>
             </div>
             <div class="pl-single">
-              <div class="pl-cover"><img src="assets/img/cover.jpg"></div>
+              <div class="pl-cover"><img src="assets/img/Covers/DFP.jpg"></div>
               <div class="pl-title">Safe & Sound</div>
               <div class="pl-singer">Taylor Swift</div>
               <div class="pl-artist">par <span>Taylor01</span></div>
             </div>
             <div class="pl-single">
-              <div class="pl-cover"><img src="assets/img/cover.jpg"></div>
+              <div class="pl-cover"><img src="assets/img/Covers/Duffy.jpg"></div>
               <div class="pl-title">Safe & Sound</div>
               <div class="pl-singer">Taylor Swift</div>
               <div class="pl-artist">par <span>Taylor01</span></div>
             </div>
           </div>
         </div>
-        <div class="row row-artists">
+        <div id="pl-artists" class="row row-artists">
           <h3 class="row-title">Les artistes qui se sont fait remarquer</h3>
           <span class="hr"></span>
           <nav class="row-slider">
@@ -173,7 +174,7 @@
                 <span>avec</span>
               </div>
               <div class="pl-single">
-                <div class="pl-cover"><img src="assets/img/cover.jpg"></div>
+                <div class="pl-cover"><img src="assets/img/Covers/Eliottmoss.jpg"></div>
                 <div class="pl-title">Safe & Sound</div>
                 <div class="pl-singer">Taylor Swift</div>
               </div>
@@ -191,7 +192,7 @@
                 <span>avec</span>
               </div>
               <div class="pl-single">
-                <div class="pl-cover"><img src="assets/img/cover.jpg"></div>
+                <div class="pl-cover"><img src="assets/img/Covers/Emilien.jpg"></div>
                 <div class="pl-title">Safe & Sound</div>
                 <div class="pl-singer">Taylor Swift</div>
               </div>
@@ -209,7 +210,7 @@
                 <span>avec</span>
               </div>
               <div class="pl-single">
-                <div class="pl-cover"><img src="assets/img/cover.jpg"></div>
+                <div class="pl-cover"><img src="assets/img/Covers/EmmaLouise.jpg"></div>
                 <div class="pl-title">Safe & Sound</div>
                 <div class="pl-singer">Taylor Swift</div>
               </div>
@@ -227,7 +228,7 @@
                 <span>avec</span>
               </div>
               <div class="pl-single">
-                <div class="pl-cover"><img src="assets/img/cover.jpg"></div>
+                <div class="pl-cover"><img src="assets/img/Covers/Feist.jpg"></div>
                 <div class="pl-title">Safe & Sound</div>
                 <div class="pl-singer">Taylor Swift</div>
               </div>
@@ -245,7 +246,7 @@
                 <span>avec</span>
               </div>
               <div class="pl-single">
-                <div class="pl-cover"><img src="assets/img/cover.jpg"></div>
+                <div class="pl-cover"><img src="assets/img/Covers/Fratellis.jpg"></div>
                 <div class="pl-title">Safe & Sound</div>
                 <div class="pl-singer">Taylor Swift</div>
               </div>
@@ -263,7 +264,7 @@
                 <span>avec</span>
               </div>
               <div class="pl-single">
-                <div class="pl-cover"><img src="assets/img/cover.jpg"></div>
+                <div class="pl-cover"><img src="assets/img/Covers/Little-Talks-Single.jpg"></div>
                 <div class="pl-title">Safe & Sound</div>
                 <div class="pl-singer">Taylor Swift</div>
               </div>
