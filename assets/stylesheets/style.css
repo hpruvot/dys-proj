@@ -1346,40 +1346,38 @@ p.conditions {
 /* line 15, ../sass/_playlist.scss */
 .playlist-container {
   width: 63.8%;
-  height: 100%;
   background: #FBF6F2;
   color: #3D3B3A;
   margin: 0 260px 0 18%;
 }
 
-/* line 23, ../sass/_playlist.scss */
+/* line 22, ../sass/_playlist.scss */
 .playlist-content {
   overflow: hidden;
 }
-/* line 25, ../sass/_playlist.scss */
+/* line 24, ../sass/_playlist.scss */
 .playlist-content .pub {
   width: 100%;
   height: 260px;
   background: #D8D8D8;
   margin-bottom: 48px;
 }
-/* line 31, ../sass/_playlist.scss */
+/* line 30, ../sass/_playlist.scss */
 .playlist-content .row {
   position: relative;
   margin: 20px 20px 45px;
   overflow: hidden;
   height: 290px;
   width: 96%;
-  display: none;
 }
-/* line 38, ../sass/_playlist.scss */
+/* line 36, ../sass/_playlist.scss */
 .playlist-content .row .hr {
   width: 24px;
   height: 3px;
   background: #EE9E19;
   margin: 10px 0 30px;
 }
-/* line 44, ../sass/_playlist.scss */
+/* line 42, ../sass/_playlist.scss */
 .playlist-content .row .row-title {
   font-weight: 700;
   font-size: 1.3em;
@@ -1387,7 +1385,7 @@ p.conditions {
   line-height: 18px;
   text-transform: uppercase;
 }
-/* line 51, ../sass/_playlist.scss */
+/* line 49, ../sass/_playlist.scss */
 .playlist-content .row .playlists, .playlist-content .row .artists {
   position: absolute;
   overflow: auto;
@@ -1395,36 +1393,42 @@ p.conditions {
   width: 100%;
   height: 100%;
 }
-/* line 58, ../sass/_playlist.scss */
+/* line 56, ../sass/_playlist.scss */
 .playlist-content .row.active {
   display: block;
 }
-/* line 62, ../sass/_playlist.scss */
+/* line 60, ../sass/_playlist.scss */
 .playlist-content .row-artists {
   height: 340px;
 }
 
-/* line 66, ../sass/_playlist.scss */
+/* line 64, ../sass/_playlist.scss */
 .pl-single {
   display: inline-block;
   margin-right: 17px;
   width: 160px;
 }
-/* line 70, ../sass/_playlist.scss */
+/* line 68, ../sass/_playlist.scss */
 .pl-single .pl-cover {
-  width: 160px;
-  height: 160px;
-  margin-bottom: 10px;
   overflow: hidden;
 }
-/* line 76, ../sass/_playlist.scss */
+/* line 70, ../sass/_playlist.scss */
+.pl-single .pl-cover img {
+  width: 100%;
+  height: auto;
+}
+/* line 75, ../sass/_playlist.scss */
+.pl-single .pl-infos {
+  padding: 10px;
+}
+/* line 78, ../sass/_playlist.scss */
 .pl-single .pl-title {
   font-weight: 300;
   font-size: 1.4em;
   color: #3D3B3A;
   line-height: 19px;
 }
-/* line 82, ../sass/_playlist.scss */
+/* line 84, ../sass/_playlist.scss */
 .pl-single .pl-singer {
   opacity: 0.69;
   font-weight: 300;
@@ -1433,13 +1437,12 @@ p.conditions {
   line-height: 16px;
   margin-bottom: 6px;
 }
-/* line 90, ../sass/_playlist.scss */
+/* line 92, ../sass/_playlist.scss */
 .pl-single .pl-artist {
-  display: inline-block;
   font-weight: 100;
   color: rgba(61, 58, 58, 0.7);
 }
-/* line 94, ../sass/_playlist.scss */
+/* line 95, ../sass/_playlist.scss */
 .pl-single .pl-artist span {
   display: inline-block;
   font-weight: 500;
@@ -1447,7 +1450,7 @@ p.conditions {
   color: #EE9E19;
   line-height: 15px;
 }
-/* line 101, ../sass/_playlist.scss */
+/* line 102, ../sass/_playlist.scss */
 .pl-single .pl-artist:before {
   content: "";
   background: url("../img/icons/pl-arrow.svg") no-repeat center center;
@@ -1457,18 +1460,18 @@ p.conditions {
   margin-right: 6px;
 }
 
-/* line 112, ../sass/_playlist.scss */
+/* line 113, ../sass/_playlist.scss */
 .at-single {
   display: inline-block;
   margin-right: 17px;
   width: 160px;
 }
 
-/* line 121, ../sass/_playlist.scss */
+/* line 122, ../sass/_playlist.scss */
 .at-header .at-name {
   display: inline-block;
 }
-/* line 123, ../sass/_playlist.scss */
+/* line 124, ../sass/_playlist.scss */
 .at-header .at-name .at-pseudo {
   font-weight: 300;
   font-size: 1.4em;
@@ -1476,7 +1479,7 @@ p.conditions {
   line-height: 16px;
   margin-bottom: 5px;
 }
-/* line 130, ../sass/_playlist.scss */
+/* line 131, ../sass/_playlist.scss */
 .at-header .at-name .at-cta {
   border: 1px solid #EE9E19;
   border-radius: 40px;
@@ -1493,21 +1496,21 @@ p.conditions {
   -webkit-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
 }
-/* line 142, ../sass/_playlist.scss */
+/* line 143, ../sass/_playlist.scss */
 .at-header .at-name .at-cta.follow {
   color: #F5A623;
 }
-/* line 144, ../sass/_playlist.scss */
+/* line 145, ../sass/_playlist.scss */
 .at-header .at-name .at-cta.follow:hover {
   background: #EE9E19;
   color: #FFFFFF;
 }
-/* line 149, ../sass/_playlist.scss */
+/* line 150, ../sass/_playlist.scss */
 .at-header .at-name .at-cta.followed {
   background: #EE9E19;
   color: #FFFFFF;
 }
-/* line 155, ../sass/_playlist.scss */
+/* line 156, ../sass/_playlist.scss */
 .at-header span {
   opacity: 0.5;
   font-weight: 700;
@@ -1518,36 +1521,36 @@ p.conditions {
   margin: 5px 0;
 }
 
-/* line 166, ../sass/_playlist.scss */
+/* line 167, ../sass/_playlist.scss */
 .row-slider {
   position: absolute;
   right: 0;
   top: 20px;
 }
-/* line 170, ../sass/_playlist.scss */
+/* line 171, ../sass/_playlist.scss */
 .row-slider li {
   width: 22px;
   height: 25px;
   display: inline-block;
   cursor: pointer;
 }
-/* line 175, ../sass/_playlist.scss */
+/* line 176, ../sass/_playlist.scss */
 .row-slider li.prev {
   background: url("../img/icons/pl-left.png") no-repeat center center;
 }
-/* line 178, ../sass/_playlist.scss */
+/* line 179, ../sass/_playlist.scss */
 .row-slider li.next {
   background: url("../img/icons/pl-right.png") no-repeat center center;
 }
 
 /* RESPONSIVE */
-/* line 185, ../sass/_playlist.scss */
+/* line 186, ../sass/_playlist.scss */
 #pl-nav-resp {
   display: none;
   height: 60px;
   margin-bottom: 41px;
 }
-/* line 189, ../sass/_playlist.scss */
+/* line 190, ../sass/_playlist.scss */
 #pl-nav-resp li.item {
   float: left;
   width: 33.3%;
@@ -1560,34 +1563,75 @@ p.conditions {
   box-sizing: border-box;
   border-right: 1px solid rgba(0, 0, 0, 0.27);
 }
-/* line 200, ../sass/_playlist.scss */
+/* line 201, ../sass/_playlist.scss */
 #pl-nav-resp li.item a {
   font-weight: 100;
   font-size: 1.2em;
   color: #FFFFFF;
 }
-/* line 205, ../sass/_playlist.scss */
+/* line 206, ../sass/_playlist.scss */
 #pl-nav-resp li.item.active {
   background: linear-gradient(-180deg, #ee9e19 0%, #ee7648 100%);
 }
-/* line 207, ../sass/_playlist.scss */
+/* line 208, ../sass/_playlist.scss */
 #pl-nav-resp li.item.active a {
   font-weight: 500;
   font-size: 1.3em;
 }
-/* line 213, ../sass/_playlist.scss */
+/* line 214, ../sass/_playlist.scss */
 #pl-nav-resp.resp {
   display: block;
 }
 
 @media (max-width: 640px) {
-  /* line 218, ../sass/_playlist.scss */
+  /* line 219, ../sass/_playlist.scss */
   .playlist-content .row {
     height: 100%;
+    width: 93%;
+    display: none;
+  }
+  /* line 223, ../sass/_playlist.scss */
+  .playlist-content .row .pl-single {
+    width: 33.33%;
+    float: left;
+    margin-right: 0;
+    margin-bottom: 18px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 9px;
+  }
+  /* line 231, ../sass/_playlist.scss */
+  .playlist-content .row .pl-single .pl-infos {
+    background: #F2F2F2;
+    -moz-box-shadow: 0px 1px 2px 0px #cfcfcf;
+    -webkit-box-shadow: 0px 1px 2px 0px #cfcfcf;
+    -o-box-shadow: 0px 1px 2px 0px #cfcfcf;
+    box-shadow: 0px 1px 2px 0px #cfcfcf;
+  }
+  /* line 238, ../sass/_playlist.scss */
+  .playlist-content .row .pl-single .pl-cover {
+    -moz-box-shadow: 0px 1px 2px 0px #cfcfcf;
+    -webkit-box-shadow: 0px 1px 2px 0px #cfcfcf;
+    -o-box-shadow: 0px 1px 2px 0px #cfcfcf;
+    box-shadow: 0px 1px 2px 0px #cfcfcf;
   }
 
-  /* line 221, ../sass/_playlist.scss */
+  /* line 246, ../sass/_playlist.scss */
   .playlist-content .playlists {
     white-space: normal !important;
+    margin: 0 auto;
+    overflow: hidden !important;
+    list-style: none;
+    padding: 0 !important;
+  }
+}
+@media (max-width: 540px) {
+  /* line 255, ../sass/_playlist.scss */
+  .playlist-content .row {
+    display: none;
+  }
+  /* line 257, ../sass/_playlist.scss */
+  .playlist-content .row .pl-single {
+    width: 50%;
   }
 }

@@ -14,7 +14,6 @@
 
 .playlist-container {
 	width: 63.8%;
-	height: 100%;
 	background: #FBF6F2;
 	color: $d-black;
 	margin: 0 260px 0 18%;
@@ -34,7 +33,6 @@
 		overflow: hidden;
 		height: 290px;
 		width: 96%;
-		display: none;
 		.hr {
 			width: 24px;
 			height: 3px;
@@ -68,10 +66,14 @@
 	margin-right: 17px;
 	width: 160px;
 	.pl-cover {
-		width: 160px;
-		height: 160px;
-		margin-bottom: 10px;
 		overflow: hidden;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.pl-infos {
+		padding: 10px;
 	}
 	.pl-title {
 		font-weight: $light;
@@ -88,7 +90,6 @@
 		margin-bottom: 6px;
 	}
 	.pl-artist {
-		display: inline-block;
 		font-weight: $thin;
 		color: rgba(61,58,58,0.70);
 		span {
@@ -217,8 +218,44 @@
 @media(max-width: 640px){
 	.playlist-content .row {
 		height: 100%;
+		width: 93%;
+		display: none;
+		.pl-single {
+			width: 33.33%;
+			float: left;
+			margin-right: 0;
+			margin-bottom: 18px;
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			padding: 9px;
+			.pl-infos {
+				background: #F2F2F2;
+				-moz-box-shadow: 0px 1px 2px 0px #cfcfcf;
+				-webkit-box-shadow: 0px 1px 2px 0px #cfcfcf;
+				-o-box-shadow: 0px 1px 2px 0px #cfcfcf;
+				box-shadow: 0px 1px 2px 0px #cfcfcf;
+			}
+			.pl-cover {
+				-moz-box-shadow: 0px 1px 2px 0px #cfcfcf;
+				-webkit-box-shadow: 0px 1px 2px 0px #cfcfcf;
+				-o-box-shadow: 0px 1px 2px 0px #cfcfcf;
+				box-shadow: 0px 1px 2px 0px #cfcfcf;
+			}
+		}
 	}
 	.playlist-content .playlists {
 		white-space: normal !important;
+		margin: 0 auto;
+		overflow: hidden !important;
+		list-style: none;
+		padding: 0 !important;
+	}
+}
+@media(max-width: 540px){
+	.playlist-content .row {
+		display: none;
+		.pl-single {
+			width: 50%;
+		}
 	}
 }

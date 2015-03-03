@@ -1,5 +1,16 @@
 $(document).ready(function(){
 
+	// Set height cover 
+	setTimeout(function(){
+	    var divWidth = $('.pl-cover').width();
+	    $('.pl-cover').height(divWidth);
+	}, 100);
+
+	$(window).on("resize", function (e) {
+		var divWidth = $('.pl-cover').width();
+	    $('.pl-cover').height(divWidth);
+	});
+
 	//caching
 	//the main wrapper of the gallery
 	var $fp_gallery			= $('#fp_gallery')
