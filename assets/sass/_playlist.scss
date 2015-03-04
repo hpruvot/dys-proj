@@ -21,8 +21,7 @@
 
 .playlist-content {
 	overflow: hidden;
-	width: 63%;
-	margin: 0 auto;
+	margin: 0 260px;
 	.pub {
 		width: 100%;
 		height: 260px;
@@ -31,10 +30,7 @@
 	}
 	.row {
 		position: relative;
-		margin: 20px 20px 45px;
-		overflow: hidden;
-		height: 290px;
-		width: 96%;
+		margin: 20px;
 		.hr {
 			width: 24px;
 			height: 3px;
@@ -49,10 +45,11 @@
 			text-transform: uppercase;
 		}
 		.playlists, .artists {
-			position: absolute;
 			white-space: nowrap;
 			width: 100%;
-			height: 100%;
+			margin-bottom: 30px;
+			margin-left: -10px;
+			margin-right: -10px;
 		}
 		&.active {
 			display: block;
@@ -62,10 +59,20 @@
 		height: 340px;
 	}
 }
+
+.carousel {
+	overflow: hidden;
+}
+
+
 .pl-single {
+	position: relative;
 	display: inline-block;
-	margin-right: 17px;
-	width: 18.25%;
+	width: 20%;
+	padding-left: 10px;
+	padding-right: 10px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	.pl-cover {
 		overflow: hidden;
 		img {
@@ -75,6 +82,13 @@
 	}
 	.pl-infos {
 		padding: 10px;
+		background: rgba(255,255,255,0.50);
+		-moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.15);
+		-webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.15);
+		-o-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.15);
+		box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.15);
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
 	}
 	.pl-title {
 		font-weight: $light;
@@ -113,26 +127,63 @@
 
 .at-single {
 	display: inline-block;
-	margin-right: 17px;
-	width: 18.25%;
+	width: 20%;
+	padding-left: 10px;
+	padding-right: 10px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	.pl-single {
 		width: 100%;
+		padding: 0;
 	}
 }
 
 .at-header {
+	position: relative;
+	&:before {
+		content: "";
+		width: 98%;
+		height: 80%;
+		position: absolute;
+		left: 0;
+		top: 35%;
+		z-index: 0;
+		background: $d-white;
+		border-left: 1px solid #ECECEC;
+	}
 	.at-avatar {
+		margin-right: 0;
 	}
 	.at-name {
 		display: inline-block;
+		padding-left: 10px;
+		width: 66%;
+		&:before {
+			content: "";
+			width: 69%;
+			height: 40%;
+			background: #FBF6F2;
+			display: block;
+			position: absolute;
+			top: 35%;
+			right: 2px;
+			z-index: 2;
+			border-bottom-left-radius: 5px;
+			border-bottom: 1px solid #ECECEC;
+			border-left: 1px solid #ECECEC;
+		}
 		.at-pseudo {
 			font-weight: $light;
 			font-size: 1.4em;
 			color: $d-black;
 			line-height: 16px;
 			margin-bottom: 5px;
+			position: relative;
+			z-index: 3;
 		}
 		.at-cta {
+			position: relative;
+			z-index: 3;
 			border: 1px solid $d-orange;
 			border-radius: 40px;
 			font-weight: $bold;
@@ -157,14 +208,30 @@
 			}
 		}
 	}
-	span {
-		opacity: 0.5;
-		font-weight: $bold;
-		font-size: 0.9em;
-		color: $d-black;
-		line-height: 11px;
-		text-transform: uppercase;
-		margin: 5px 0;
+	.at-span {
+		position: relative;
+		&:before {
+			content: "";
+			width: 99%;
+			height: 16px;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			background: $d-white;
+			border-left: 1px solid #ECECEC;
+			border-right: 1px solid #ECECEC;
+			border-top-right-radius: 5px;
+		}
+		span {
+			opacity: 0.5;
+			font-weight: $bold;
+			font-size: 0.9em;
+			color: $d-black;
+			line-height: 11px;
+			text-transform: uppercase;
+			padding: 5px 13px;
+			position: relative;
+		}
 	}
 }
 

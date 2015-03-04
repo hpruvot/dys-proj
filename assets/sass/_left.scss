@@ -1,5 +1,5 @@
 #left-bar {
-  width: 18%;
+  width: 260px;
   margin: 0;
   box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.30);
   position: fixed;
@@ -284,7 +284,7 @@
 }
 
 
-@media (max-width: 720px) {
+@media (max-width: 1024px) {
 
 	#pl-nav {
 		margin-bottom: 73px;

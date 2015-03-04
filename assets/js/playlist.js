@@ -24,8 +24,8 @@ $(document).ready(function(){
 
 	var slider = function(container,direction) {
 		var pl = container.find(".pl-single").closest("div");
-		var playlists = container.children().eq(3);
-		var playlistsWidth = playlists.width() + 20;
+		var playlists = container.children().eq(3).children();
+		var playlistsWidth = playlists.width() + 12;
 		var plLen = pl.length;
 
 		var prev = container.children().eq(2).children().eq(0);
