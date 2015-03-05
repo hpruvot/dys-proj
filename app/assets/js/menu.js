@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 	  /* Responsive menu function */
 	var menutoggle = function() {
-		if ($( window ).width() < 720 ) {
+		if ($( window ).width() < 1024 ) {
 	      	$("#left-bar").addClass("resp");
 	      	$("#container").addClass("resp");
 	   	} else {

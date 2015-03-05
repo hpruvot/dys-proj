@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	$(function(){
-      $("#header").load("header.html");
+      $("#header").load("header.html"); 
     });
 
     $('#pl-nav-resp .item').on('click',function () {
