@@ -71,18 +71,18 @@ body {
 
 @media(min-width: 720px) {
 	.lg-hidden {
-		display: none ;
+		display: none !important;
 	}
 }
 
 @media(max-width: 1024px) {
 	.ms-hidden {
-		display: none ;
+		display: none !important;
 	}
 }
 
 @media(max-width: 640px) {
 	.xs-hidden {
-		display: none ;
+		display: none !important;
 	}
 }

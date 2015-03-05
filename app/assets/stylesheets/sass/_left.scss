@@ -115,21 +115,21 @@
 				content: "";
 				background: url('#{$folder-icon}/loupe.svg') center center no-repeat;
 				width: 46px;
-				height: 45px;
+				height: 30px;
 				display: inline-block;
-				background-size: 40%;
+				background-size: 35%;
 				position: absolute;
 			}
 		}
 		.input-text {
 			width: 100%;
-			line-height: 40px;
+			line-height: 23px;
 			background: none;
 			border: none;
 			color: $d-white;
 			text-shadow: 0px 1px 1px rgba(0,0,0,0.20);
 			font-size: 1.5em;
-			font-weight: $thin;
+			font-weight: $light;
 			font-family: "Roboto";
 			padding-left: 35px;
 		}
@@ -240,10 +240,20 @@
 	}
 }
 
+.hamburger-slim {
+  background: transparent;
+  margin: 60px auto 40px;
+  position: relative;
+  height: 30px;
+  width: 50px;
+
+  
+}
+
 /* Styling the toggle menu link and hiding it */
 #menutoggle{
 	display: none;
-	padding: 0.5em 0.5em 0.8em;
+	padding: 0.5em 0.5em 3.3em;
 	font-family: 'Lato',Calibri,Arial,sans-serif;
 	font-weight: normal;
 	text-align: left;
@@ -252,8 +262,7 @@
 	background: none;	
 	border: none;
 	cursor: pointer;
-	width: 50px;
-	height: 72px;
+	width: 43px;
 	float: right;
 }
 
@@ -262,23 +271,42 @@
 	.icon-menu {
 		z-index: 100;
 		position: relative;
-		top: 3px;
+		top: 6px;
 		line-height: 0;
 		font-size: 1.6em;
+		background: transparent;
+		position: relative;
+		&:before,
+	  	&:after {
+		    background: #646261;
+		    backface-visibility: hidden;
+		    content: "";
+		    height: 2px;
+		    left: 0;
+		    transition: 0.75s;
+		    width: 20px;
+		}
 		&:before {
-			content: "";
-			background: url('#{$folder-icon}/menu-burger.svg') no-repeat center center;
-			background-size: 50%;
-			width: 40px;
-			height: 28px;
-			display: inline-block;
+		    box-shadow: #646261 0 14px 0 0;
+		    position: absolute;
+		    top: 4px;
+		}
+		&:after {
+		    position: absolute;
+		    top: 11px;
 		}
 	}
 	&.active {
-		.icon-menu:before {
-			content: "";
-			background: url('#{$folder-icon}/menu-burger-close.svg') no-repeat center center;
-			background-size: 50%;
+		.icon-menu {
+			&:before {
+		    	box-shadow: transparent 0 0 0 0;
+		    	top: 11px;
+		    	transform: rotate(225deg);
+		    }
+		    &:after {  
+		    	top: 11px;
+		    	transform: rotate(315deg);
+		    }
 		}
 	}
 }

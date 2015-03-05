@@ -1,14 +1,18 @@
 $(document).ready(function(){
 
 	// Set height cover 
-	setTimeout(function(){
+	// setTimeout(function(){
 	    var divWidth = $('.pl-cover').width();
+	    var avatarWidth = $('.at-avatar').width();
 	    $('.pl-cover').height(divWidth);
-	}, 100);
+	    $('.at-avatar').height(avatarWidth);
+	// }, 100);
 
 	$(window).on("resize", function (e) {
 		var divWidth = $('.pl-cover').width();
+		var avatarWidth = $('.at-avatar').width();
 	    $('.pl-cover').height(divWidth);
+	    $('.at-avatar').height(avatarWidth);
 	});
 
 	var position1 = 0;

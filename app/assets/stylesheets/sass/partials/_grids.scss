@@ -3,8 +3,10 @@
 
 #container {
 	margin-top: 72px;
+	display: inline;
+	float: left;
 	&.resp {
-		margin: 72px 260px 0 0;
+		margin: 45px 260px 0 0;
 		width: 100%;
 		&.active {
 			overflow: hidden;

@@ -104,9 +104,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 #container {
   margin-top: 72px;
+  display: inline;
+  float: left;
 }
 #container.resp {
-  margin: 72px 260px 0 0;
+  margin: 45px 260px 0 0;
   width: 100%;
 }
 #container.resp.active {
@@ -186,17 +188,17 @@ body {
 
 @media (min-width: 720px) {
   .lg-hidden {
-    display: none;
+    display: none !important;
   }
 }
 @media (max-width: 1024px) {
   .ms-hidden {
-    display: none;
+    display: none !important;
   }
 }
 @media (max-width: 640px) {
   .xs-hidden {
-    display: none;
+    display: none !important;
   }
 }
 header {
@@ -216,7 +218,7 @@ header .header-inner {
   display: inline-block;
   font-size: 3em;
   color: #3D3B3A;
-  line-height: 72px;
+  line-height: 100%;
   text-transform: uppercase;
   width: 13%;
   vertical-align: middle;
@@ -315,6 +317,11 @@ header .header-inner {
   background-size: 40%;
 }
 
+@media (max-width: 640px) {
+  header {
+    height: 45px;
+  }
+}
 #left-bar {
   width: 260px;
   margin: 0;
@@ -429,20 +436,20 @@ header .header-inner {
   content: "";
   background: url("../img/icons/loupe.svg") center center no-repeat;
   width: 46px;
-  height: 45px;
+  height: 30px;
   display: inline-block;
-  background-size: 40%;
+  background-size: 35%;
   position: absolute;
 }
 #left-bar.resp #menu .input-text {
   width: 100%;
-  line-height: 40px;
+  line-height: 23px;
   background: none;
   border: none;
   color: #FFFFFF;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
   font-size: 1.5em;
-  font-weight: 100;
+  font-weight: 300;
   font-family: "Roboto";
   padding-left: 35px;
 }
@@ -544,10 +551,18 @@ header .header-inner {
   background-size: 39%;
 }
 
+.hamburger-slim {
+  background: transparent;
+  margin: 60px auto 40px;
+  position: relative;
+  height: 30px;
+  width: 50px;
+}
+
 /* Styling the toggle menu link and hiding it */
 #menutoggle {
   display: none;
-  padding: 0.5em 0.5em 0.8em;
+  padding: 0.5em 0.5em 3.3em;
   font-family: 'Lato',Calibri,Arial,sans-serif;
   font-weight: normal;
   text-align: left;
@@ -556,8 +571,7 @@ header .header-inner {
   background: none;
   border: none;
   cursor: pointer;
-  width: 50px;
-  height: 72px;
+  width: 43px;
   float: right;
 }
 
@@ -567,22 +581,41 @@ header .header-inner {
 .navtoogle .icon-menu {
   z-index: 100;
   position: relative;
-  top: 3px;
+  top: 6px;
   line-height: 0;
   font-size: 1.6em;
+  background: transparent;
+  position: relative;
+}
+.navtoogle .icon-menu:before, .navtoogle .icon-menu:after {
+  background: #646261;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  content: "";
+  height: 2px;
+  left: 0;
+  transition: 0.75s;
+  width: 20px;
 }
 .navtoogle .icon-menu:before {
-  content: "";
-  background: url("../img/icons/menu-burger.svg") no-repeat center center;
-  background-size: 50%;
-  width: 40px;
-  height: 28px;
-  display: inline-block;
+  box-shadow: #646261 0 14px 0 0;
+  position: absolute;
+  top: 4px;
+}
+.navtoogle .icon-menu:after {
+  position: absolute;
+  top: 11px;
 }
 .navtoogle.active .icon-menu:before {
-  content: "";
-  background: url("../img/icons/menu-burger-close.svg") no-repeat center center;
-  background-size: 50%;
+  box-shadow: transparent 0 0 0 0;
+  top: 11px;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+.navtoogle.active .icon-menu:after {
+  top: 11px;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
 }
 
 @media (max-width: 1024px) {
@@ -1121,21 +1154,6 @@ p.conditions {
   display: none;
 }
 
-.fp_thumbContainer {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-
-.fp_thumbScroller {
-  position: relative;
-  overflow: hidden;
-}
-.fp_thumbScroller .container {
-  position: relative;
-  float: left;
-}
-
 .playlist-container {
   margin: 72px auto 0;
   width: 100%;
@@ -1275,6 +1293,7 @@ p.conditions {
 }
 .at-header .at-avatar {
   margin-right: 0;
+  width: 29%;
 }
 .at-header .at-name {
   display: inline-block;
@@ -1411,41 +1430,48 @@ p.conditions {
   font-weight: 500;
   font-size: 1.3em;
 }
+#pl-nav-resp li.item.active:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  margin-left: 17px;
+  border-width: 8px 8.5px 0 8.5px;
+  border-color: #ee7748 transparent transparent transparent;
+}
 #pl-nav-resp.resp {
   display: block;
 }
 
 @media (max-width: 640px) {
   .playlist-content .row {
-    height: 100%;
     width: 96%;
     margin: 0 17px;
     display: none;
   }
-  .playlist-content .row .pl-single {
+  .playlist-content .row .pl-single, .playlist-content .row .at-single {
     width: 33.33%;
     float: left;
     margin-right: 0;
     margin-bottom: 18px;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    padding-right: 18px;
   }
-  .playlist-content .row .pl-single .pl-infos {
+  .playlist-content .row .pl-single .pl-infos, .playlist-content .row .at-single .pl-infos {
     background: #F2F2F2;
     -o-box-shadow: 0px 1px 2px 0px #cfcfcf;
     box-shadow: 0px 1px 2px 0px #cfcfcf;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
   }
-  .playlist-content .row .pl-single .pl-cover {
+  .playlist-content .row .pl-single .pl-cover, .playlist-content .row .at-single .pl-cover {
     -o-box-shadow: 0px 1px 2px 0px #cfcfcf;
     box-shadow: 0px 1px 2px 0px #cfcfcf;
   }
-
-  .playlist-content .playlists {
+  .playlist-content .row .playlists, .playlist-content .row .artists {
     white-space: normal !important;
-    margin: 0 auto;
     overflow: hidden !important;
     list-style: none;
     padding: 0 !important;
@@ -1455,7 +1481,7 @@ p.conditions {
   .playlist-content .row {
     display: none;
   }
-  .playlist-content .row .pl-single {
+  .playlist-content .row .pl-single, .playlist-content .row .at-single {
     width: 50%;
   }
 }
