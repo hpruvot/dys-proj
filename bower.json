@@ -1,0 +1,16 @@
+{
+  "name": "Sync",
+  "version": "0.0.0",
+  "authors": [
+    "Pygocentrus <pierre.guilhou14@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {}
+}

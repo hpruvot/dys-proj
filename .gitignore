@@ -1,0 +1,17 @@
+.DS_Store
+*.log
+build
+*.node
+coverage
+*.orig
+.idea
+sandbox
+test/out-fixtures/*
+test/watch-*.txt
+gulp.1
+.sass-cache/
+*.sassc
+*.scssc
+dist/
+bower_components/
+node_modules/
