@@ -1,5 +1,5 @@
 #left-bar {
-  width: 18%;
+  width: 260px;
   margin: 0;
   box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.30);
   position: fixed;
@@ -115,23 +115,23 @@
 				content: "";
 				background: url('#{$folder-icon}/loupe.svg') center center no-repeat;
 				width: 46px;
-				height: 68px;
+				height: 45px;
 				display: inline-block;
-				background-size: 60%;
+				background-size: 40%;
 				position: absolute;
 			}
 		}
 		.input-text {
 			width: 100%;
-			line-height: 66px;
+			line-height: 40px;
 			background: none;
 			border: none;
 			color: $d-white;
 			text-shadow: 0px 1px 1px rgba(0,0,0,0.20);
-			font-size: 2.5em;
+			font-size: 1.5em;
 			font-weight: $thin;
 			font-family: "Roboto";
-			padding-left: 47px;
+			padding-left: 35px;
 		}
 		::-webkit-input-placeholder {
 		   color: $d-white;
@@ -284,7 +284,7 @@
 }
 
 
-@media (max-width: 720px) {
+@media (max-width: 1024px) {
 
 	#pl-nav {
 		margin-bottom: 73px;

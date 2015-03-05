@@ -112,6 +112,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 #container.resp.active {
   overflow: hidden;
 }
+#container.resp .playlist-content {
+  margin: 0;
+}
 
 a, div, li, span {
   font-family: "Roboto";
@@ -186,7 +189,7 @@ body {
     display: none;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 1024px) {
   .ms-hidden {
     display: none;
   }
@@ -292,6 +295,7 @@ header .header-inner {
   overflow: hidden;
   float: left;
   margin-right: 10px;
+  position: relative;
 }
 
 #upload {
@@ -312,7 +316,7 @@ header .header-inner {
 }
 
 #left-bar {
-  width: 18%;
+  width: 260px;
   margin: 0;
   box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
   position: fixed;
@@ -425,22 +429,22 @@ header .header-inner {
   content: "";
   background: url("../img/icons/loupe.svg") center center no-repeat;
   width: 46px;
-  height: 68px;
+  height: 45px;
   display: inline-block;
-  background-size: 60%;
+  background-size: 40%;
   position: absolute;
 }
 #left-bar.resp #menu .input-text {
   width: 100%;
-  line-height: 66px;
+  line-height: 40px;
   background: none;
   border: none;
   color: #FFFFFF;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
-  font-size: 2.5em;
+  font-size: 1.5em;
   font-weight: 100;
   font-family: "Roboto";
-  padding-left: 47px;
+  padding-left: 35px;
 }
 #left-bar.resp #menu ::-webkit-input-placeholder {
   color: #FFFFFF;
@@ -581,7 +585,7 @@ header .header-inner {
   background-size: 50%;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 1024px) {
   #pl-nav {
     margin-bottom: 73px;
   }
@@ -1133,14 +1137,15 @@ p.conditions {
 }
 
 .playlist-container {
-  width: 63.8%;
+  margin: 72px auto 0;
+  width: 100%;
   background: #FBF6F2;
   color: #3D3B3A;
-  margin: 0 260px 0 18%;
 }
 
 .playlist-content {
   overflow: hidden;
+  margin: 0 260px;
 }
 .playlist-content .pub {
   width: 100%;
@@ -1150,10 +1155,7 @@ p.conditions {
 }
 .playlist-content .row {
   position: relative;
-  margin: 20px 20px 45px;
-  overflow: hidden;
-  height: 290px;
-  width: 96%;
+  margin: 20px;
 }
 .playlist-content .row .hr {
   width: 24px;
@@ -1169,11 +1171,11 @@ p.conditions {
   text-transform: uppercase;
 }
 .playlist-content .row .playlists, .playlist-content .row .artists {
-  position: absolute;
-  overflow: auto;
   white-space: nowrap;
   width: 100%;
-  height: 100%;
+  margin-bottom: 30px;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 .playlist-content .row.active {
   display: block;
@@ -1182,10 +1184,18 @@ p.conditions {
   height: 340px;
 }
 
+.carousel {
+  overflow: hidden;
+}
+
 .pl-single {
+  position: relative;
   display: inline-block;
-  margin-right: 17px;
-  width: 160px;
+  width: 20%;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 .pl-single .pl-cover {
   overflow: hidden;
@@ -1196,6 +1206,11 @@ p.conditions {
 }
 .pl-single .pl-infos {
   padding: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  -o-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 .pl-single .pl-title {
   font-weight: 300;
@@ -1233,12 +1248,52 @@ p.conditions {
 
 .at-single {
   display: inline-block;
-  margin-right: 17px;
-  width: 160px;
+  width: 20%;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.at-single .pl-single {
+  width: 100%;
+  padding: 0;
 }
 
+.at-header {
+  position: relative;
+}
+.at-header:before {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  left: 0;
+  top: 35%;
+  z-index: 0;
+  background: #FFFFFF;
+  border-left: 1px solid #ECECEC;
+}
+.at-header .at-avatar {
+  margin-right: 0;
+}
 .at-header .at-name {
   display: inline-block;
+  padding-left: 10px;
+  width: 66%;
+}
+.at-header .at-name:before {
+  content: "";
+  width: 68%;
+  height: 40%;
+  background: #FBF6F2;
+  display: block;
+  position: absolute;
+  top: 35%;
+  right: 3px;
+  z-index: 2;
+  border-bottom-left-radius: 5px;
+  border-bottom: 1px solid #ECECEC;
+  border-left: 1px solid #ECECEC;
 }
 .at-header .at-name .at-pseudo {
   font-weight: 300;
@@ -1246,13 +1301,17 @@ p.conditions {
   color: #3D3B3A;
   line-height: 16px;
   margin-bottom: 5px;
+  position: relative;
+  z-index: 3;
 }
 .at-header .at-name .at-cta {
+  position: relative;
+  z-index: 3;
   border: 1px solid #EE9E19;
   border-radius: 40px;
   font-weight: 700;
   font-size: 1em;
-  line-height: 24px;
+  line-height: 25px;
   width: 75px;
   height: 24px;
   text-align: center;
@@ -1271,14 +1330,31 @@ p.conditions {
   background: #EE9E19;
   color: #FFFFFF;
 }
-.at-header span {
+.at-header .at-span {
+  position: relative;
+}
+.at-header .at-span:before {
+  content: "";
+  width: 61%;
+  height: 16px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background: #FFFFFF;
+  border-right: 1px solid #ECECEC;
+  border-top: 1px solid #ECECEC;
+  border-top-right-radius: 5px;
+}
+.at-header .at-span span {
   opacity: 0.5;
   font-weight: 700;
   font-size: 0.9em;
   color: #3D3B3A;
   line-height: 11px;
   text-transform: uppercase;
-  margin: 5px 0;
+  padding: 5px 13px;
+  position: relative;
 }
 
 .row-slider {
@@ -1289,7 +1365,8 @@ p.conditions {
 .row-slider li {
   width: 22px;
   height: 25px;
-  display: inline-block;
+  display: block;
+  float: left;
   cursor: pointer;
 }
 .row-slider li.prev {
@@ -1297,6 +1374,11 @@ p.conditions {
 }
 .row-slider li.next {
   background: url("../img/icons/pl-right.png") no-repeat center center;
+}
+.row-slider li.desactive {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: default;
 }
 
 /* RESPONSIVE */
@@ -1336,7 +1418,8 @@ p.conditions {
 @media (max-width: 640px) {
   .playlist-content .row {
     height: 100%;
-    width: 93%;
+    width: 96%;
+    margin: 0 17px;
     display: none;
   }
   .playlist-content .row .pl-single {
@@ -1346,12 +1429,14 @@ p.conditions {
     margin-bottom: 18px;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    padding: 9px;
+    padding-right: 18px;
   }
   .playlist-content .row .pl-single .pl-infos {
     background: #F2F2F2;
     -o-box-shadow: 0px 1px 2px 0px #cfcfcf;
     box-shadow: 0px 1px 2px 0px #cfcfcf;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
   .playlist-content .row .pl-single .pl-cover {
     -o-box-shadow: 0px 1px 2px 0px #cfcfcf;

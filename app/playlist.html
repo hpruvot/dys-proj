@@ -17,26 +17,10 @@
 
   <body>
     <!-- HEADER -->
-    <div class="header-inner">
-      <div id="logo">
-        <a href="">Dyskit</a>
-      </div>
-      <div id="search" class="ms-hidden xs-hidden searchbar resp-item">
-        <form action="#" method="post" onsubmit="return false;">
-          <input type="text" class="form-control input-text" data-ta-id="input" placeholder="Rechercher un artiste, une musique, une playlist...">
-        </form>
-      </div>
-      <div id="header-nav" class="ms-hidden xs-hidden">
-        <div class="item-media"><img src="assets/img/profile.jpg" height="50" alt=""/></div>
-        <div class="item-name">dimitrifrompari<span>PRO</span></div>
-        <div class="item-followers"><span>45</span>abonnés</div>
-        <div class="item-followings"><span>13</span>suivis</div>
-        <nav></nav>
-      </div>
-      <div id="upload" class="ms-hidden xs-hidden"><div class="up-icon"></div></div>
-    </div>
+    <header id="header">
+    </header>
 
-    <!-- LEFT BAR  -->
+    <!-- LEFT BAR  --> 
     <div id="left-bar" class="grid_3">
       <div class="inner-left">
         <div id="menu">
@@ -67,9 +51,9 @@
           </nav>
         </div>
       </div>
-    </div>
+    </div>  
 
-    <!-- MAIN CONTAINER  -->
+    <!-- MAIN CONTAINER  --> 
     <div id="container" class="grid_10 playlist-container">
       <div class="inner-container playlist-content">
         <div class="pub xs-hidden"></div>
@@ -84,56 +68,74 @@
           <h3 class="row-title">Les nouveautés de la semaine</h3>
           <span class="hr"></span>
           <nav class="row-slider xs-hidden">
-            <li class="prev"></li>
+            <li class="prev desactive"></li>
             <li class="next"></li>
           </nav>
-          <div class="playlists">
-            <div class="pl-single">
-              <div class="pl-cover"><img src="assets/img/Covers/Taylor.jpg"></div>
-              <div class="pl-infos">
-                <div class="pl-title">Safe & Sound</div>
-                <div class="pl-singer">Taylor Swift</div>
-                <div class="pl-artist xs-hidden">par <span>Taylor01</span></div>
+          <div class="carousel">
+            <div class="playlists">
+              <div class="pl-single">
+                <div class="pl-cover"><img src="assets/img/Covers/Taylor.jpg"></div>
+                <div class="pl-infos">
+                  <div class="pl-title">Safe & Sound</div>
+                  <div class="pl-singer">Taylor Swift</div>
+                  <div class="pl-artist xs-hidden">par <span>Taylor01</span></div>
+                </div>
               </div>
-            </div>
-            <div class="pl-single">
-              <div class="pl-cover"><img src="assets/img/Covers/Singtank.jpg"></div>
-              <div class="pl-infos">
-                <div class="pl-title">Safe & Sound</div>
-                <div class="pl-singer">Taylor Swift</div>
-                <div class="pl-artist xs-hidden">par <span>Taylor01</span></div>
+              <div class="pl-single">
+                <div class="pl-cover"><img src="assets/img/Covers/Singtank.jpg"></div>
+                <div class="pl-infos">
+                  <div class="pl-title">Safe & Sound</div>
+                  <div class="pl-singer">Taylor Swift</div>
+                  <div class="pl-artist xs-hidden">par <span>Taylor01</span></div>
+                </div>
               </div>
-            </div>
-            <div class="pl-single">
-              <div class="pl-cover"><img src="assets/img/Covers/absyntheminded1.jpg"></div>
-              <div class="pl-infos">
-                <div class="pl-title">Safe & Sound</div>
-                <div class="pl-singer">Taylor Swift</div>
-                <div class="pl-artist xs-hidden">par <span>Taylor01</span></div>
+              <div class="pl-single">
+                <div class="pl-cover"><img src="assets/img/Covers/absyntheminded1.jpg"></div>
+                <div class="pl-infos">
+                  <div class="pl-title">Safe & Sound</div>
+                  <div class="pl-singer">Taylor Swift</div>
+                  <div class="pl-artist xs-hidden">par <span>Taylor01</span></div>
+                </div>
               </div>
-            </div>
-            <div class="pl-single">
-              <div class="pl-cover"><img src="assets/img/Covers/Asa.jpg"></div>
-              <div class="pl-infos">
-                <div class="pl-title">Safe & Sound</div>
-                <div class="pl-singer">Taylor Swift</div>
-                <div class="pl-artist xs-hidden">par <span>Taylor01</span></div>
+              <div class="pl-single">
+                <div class="pl-cover"><img src="assets/img/Covers/Asa.jpg"></div>
+                <div class="pl-infos">
+                  <div class="pl-title">Safe & Sound</div>
+                  <div class="pl-singer">Taylor Swift</div>
+                  <div class="pl-artist xs-hidden">par <span>Taylor01</span></div>
+                </div>
               </div>
-            </div>
-            <div class="pl-single">
-              <div class="pl-cover"><img src="assets/img/Covers/Beastie.jpg"></div>
-              <div class="pl-infos">
-                <div class="pl-title">Safe & Sound</div>
-                <div class="pl-singer">Taylor Swift</div>
-                <div class="pl-artist xs-hidden">par <span>Taylor01</span></div>
+              <div class="pl-single">
+                <div class="pl-cover"><img src="assets/img/Covers/Beastie.jpg"></div>
+                <div class="pl-infos">
+                  <div class="pl-title">Safe & Sound</div>
+                  <div class="pl-singer">Taylor Swift</div>
+                  <div class="pl-artist xs-hidden">par <span>Taylor01</span></div>
+                </div>
               </div>
-            </div>
-            <div class="pl-single" id="last">
-              <div class="pl-cover"><img src="assets/img/Covers/Beastie.jpg"></div>
-              <div class="pl-infos">
-                <div class="pl-title">Safe & Sound</div>
-                <div class="pl-singer">Taylor Swift</div>
-                <div class="pl-artist xs-hidden">par <span>Taylor01</span></div>
+              <div class="pl-single">
+                <div class="pl-cover"><img src="assets/img/Covers/Beastie.jpg"></div>
+                <div class="pl-infos">
+                  <div class="pl-title">Safe & Sound</div>
+                  <div class="pl-singer">Taylor Swft</div>
+                  <div class="pl-artist xs-hidden">par <span>Taylor01</span></div>
+                </div>
+              </div>
+              <div class="pl-single">
+                <div class="pl-cover"><img src="assets/img/Covers/Beastie.jpg"></div>
+                <div class="pl-infos">
+                  <div class="pl-title">Safe & Sound</div>
+                  <div class="pl-singer">Taylor Swift</div>
+                  <div class="pl-artist xs-hidden">par <span>Taylor01</span></div>
+                </div>
+              </div>
+              <div class="pl-single">
+                <div class="pl-cover"><img src="assets/img/Covers/Beastie.jpg"></div>
+                <div class="pl-infos">
+                  <div class="pl-title">Safe & Sound</div>
+                  <div class="pl-singer">Taylor Swift</div>
+                  <div class="pl-artist xs-hidden">par <span>Taylor01</span></div>
+                </div>
               </div>
             </div>
           </div>
@@ -142,56 +144,58 @@
           <h3 class="row-title">Ce que vous allez adorer</h3>
           <span class="hr"></span>
           <nav class="row-slider xs-hidden">
-            <li class="prev"></li>
+            <li class="prev desactive"></li>
             <li class="next"></li>
           </nav>
-          <div class="playlists">
-            <div class="pl-single">
-              <div class="pl-cover"><img src="assets/img/Covers/Bombay-Bicycle-Club.jpg"></div>
-              <div class="pl-infos">
-                <div class="pl-title">Safe & Sound</div>
-                <div class="pl-singer">Taylor Swift</div>
-                <div class="pl-artist xs-hidden">par <span>Taylor01</span></div>
+          <div class="carousel">
+            <div class="playlists">
+              <div class="pl-single">
+                <div class="pl-cover"><img src="assets/img/Covers/Bombay-Bicycle-Club.jpg"></div>
+                <div class="pl-infos">
+                  <div class="pl-title">Safe & Sound</div>
+                  <div class="pl-singer">Taylor Swift</div>
+                  <div class="pl-artist xs-hidden">par <span>Taylor01</span></div>
+                </div>
               </div>
-            </div>
-            <div class="pl-single">
-              <div class="pl-cover"><img src="assets/img/Covers/Brigitte.jpg"></div>
-              <div class="pl-infos">
-                <div class="pl-title">Safe & Sound</div>
-                <div class="pl-singer">Taylor Swift</div>
-                <div class="pl-artist xs-hidden">par <span>Taylor01</span></div>
+              <div class="pl-single">
+                <div class="pl-cover"><img src="assets/img/Covers/Brigitte.jpg"></div>
+                <div class="pl-infos">
+                  <div class="pl-title">Safe & Sound</div>
+                  <div class="pl-singer">Taylor Swift</div>
+                  <div class="pl-artist xs-hidden">par <span>Taylor01</span></div>
+                </div>
               </div>
-            </div>
-            <div class="pl-single">
-              <div class="pl-cover"><img src="assets/img/Covers/CharlieWinston.jpg"></div>
-              <div class="pl-infos">
-                <div class="pl-title">Safe & Sound</div>
-                <div class="pl-singer">Taylor Swift</div>
-                <div class="pl-artist xs-hidden">par <span>Taylor01</span></div>
+              <div class="pl-single">
+                <div class="pl-cover"><img src="assets/img/Covers/CharlieWinston.jpg"></div>
+                <div class="pl-infos">
+                  <div class="pl-title">Safe & Sound</div>
+                  <div class="pl-singer">Taylor Swift</div>
+                  <div class="pl-artist xs-hidden">par <span>Taylor01</span></div>
+                </div>
               </div>
-            </div>
-            <div class="pl-single">
-              <div class="pl-cover"><img src="assets/img/Covers/Chromeo.png"></div>
-              <div class="pl-infos">
-                <div class="pl-title">Safe & Sound</div>
-                <div class="pl-singer">Taylor Swift</div>
-                <div class="pl-artist xs-hidden">par <span>Taylor01</span></div>
+              <div class="pl-single">
+                <div class="pl-cover"><img src="assets/img/Covers/Chromeo.png"></div>
+                <div class="pl-infos">
+                  <div class="pl-title">Safe & Sound</div>
+                  <div class="pl-singer">Taylor Swift</div>
+                  <div class="pl-artist xs-hidden">par <span>Taylor01</span></div>
+                </div>
               </div>
-            </div>
-            <div class="pl-single">
-              <div class="pl-cover"><img src="assets/img/Covers/DFP.jpg"></div>
-              <div class="pl-infos">
-                <div class="pl-title">Safe & Sound</div>
-                <div class="pl-singer">Taylor Swift</div>
-                <div class="pl-artist xs-hidden">par <span>Taylor01</span></div>
+              <div class="pl-single">
+                <div class="pl-cover"><img src="assets/img/Covers/DFP.jpg"></div>
+                <div class="pl-infos">
+                  <div class="pl-title">Safe & Sound</div>
+                  <div class="pl-singer">Taylor Swift</div>
+                  <div class="pl-artist xs-hidden">par <span>Taylor01</span></div>
+                </div>
               </div>
-            </div>
-            <div class="pl-single">
-              <div class="pl-cover"><img src="assets/img/Covers/Duffy.jpg"></div>
-              <div class="pl-infos">
-                <div class="pl-title">Safe & Sound</div>
-                <div class="pl-singer">Taylor Swift</div>
-                <div class="pl-artist xs-hidden">par <span>Taylor01</span></div>
+              <div class="pl-single">
+                <div class="pl-cover"><img src="assets/img/Covers/Duffy.jpg"></div>
+                <div class="pl-infos">
+                  <div class="pl-title">Safe & Sound</div>
+                  <div class="pl-singer">Taylor Swift</div>
+                  <div class="pl-artist xs-hidden">par <span>Taylor01</span></div>
+                </div>
               </div>
             </div>
           </div>
@@ -200,115 +204,129 @@
           <h3 class="row-title">Les artistes qui se sont fait remarquer</h3>
           <span class="hr"></span>
           <nav class="row-slider xs-hidden">
-            <li class="prev"></li>
+            <li class="prev desactive"></li>
             <li class="next"></li>
           </nav>
-          <div class="artists">
-            <div class="at-single">
-              <div class="at-header">
-                <div class="at-avatar item-media">
-                  <img src="assets/img/profile.jpg" height="50">
+          <div class="carousel">
+            <div class="artists">
+              <div class="at-single">
+                <div class="at-header">
+                  <div class="at-avatar item-media">
+                    <img src="assets/img/profile.jpg" height="50">
+                  </div>
+                  <div class="at-name">
+                    <div class="at-pseudo">dimitrifrompari</div>
+                    <div class="at-cta follow">Suivre</div>
+                  </div>
+                  <div class="at-span"><span>avec</span></div>
                 </div>
-                <div class="at-name">
-                  <div class="at-pseudo">dimitrifrompari</div>
-                  <div class="at-cta follow">Suivre</div>
+                <div class="pl-single">
+                  <div class="pl-cover"><img src="assets/img/Covers/Eliottmoss.jpg"></div>
+                  <div class="pl-infos">
+                    <div class="pl-title">Safe & Sound</div>
+                    <div class="pl-singer">Taylor Swift</div>
+                  </div>
                 </div>
-                <span>avec</span>
               </div>
-              <div class="pl-single">
-                <div class="pl-cover"><img src="assets/img/Covers/Eliottmoss.jpg"></div>
-                <div class="pl-title">Safe & Sound</div>
-                <div class="pl-singer">Taylor Swift</div>
-              </div>
-            </div>
 
-            <div class="at-single">
-              <div class="at-header">
-                <div class="at-avatar item-media">
-                  <img src="assets/img/profile.jpg" height="50">
+              <div class="at-single">
+                <div class="at-header">
+                  <div class="at-avatar item-media">
+                    <img src="assets/img/profile.jpg" height="50">
+                  </div>
+                  <div class="at-name">
+                    <div class="at-pseudo">LucasGlp</div>
+                    <div class="at-cta followed">Suivi</div>
+                  </div>
+                  <div class="at-span"><span>avec</span></div>
                 </div>
-                <div class="at-name">
-                  <div class="at-pseudo">LucasGlp</div>
-                  <div class="at-cta followed">Suivi</div>
+                <div class="pl-single">
+                  <div class="pl-cover"><img src="assets/img/Covers/Emilien.jpg"></div>
+                  <div class="pl-infos">
+                    <div class="pl-title">Safe & Sound</div>
+                    <div class="pl-singer">Taylor Swift</div>
+                  </div>
                 </div>
-                <span>avec</span>
               </div>
-              <div class="pl-single">
-                <div class="pl-cover"><img src="assets/img/Covers/Emilien.jpg"></div>
-                <div class="pl-title">Safe & Sound</div>
-                <div class="pl-singer">Taylor Swift</div>
-              </div>
-            </div>
 
-            <div class="at-single">
-              <div class="at-header">
-                <div class="at-avatar item-media">
-                  <img src="assets/img/profile.jpg" height="50">
+              <div class="at-single">
+                <div class="at-header">
+                  <div class="at-avatar item-media">
+                    <img src="assets/img/profile.jpg" height="50">
+                  </div>
+                  <div class="at-name">
+                    <div class="at-pseudo">dimitrifrompari</div>
+                    <div class="at-cta follow">Suivre</div>
+                  </div>
+                  <div class="at-span"><span>avec</span></div>
                 </div>
-                <div class="at-name">
-                  <div class="at-pseudo">dimitrifrompari</div>
-                  <div class="at-cta follow">Suivre</div>
+                <div class="pl-single">
+                  <div class="pl-cover"><img src="assets/img/Covers/EmmaLouise.jpg"></div>
+                  <div class="pl-infos">
+                    <div class="pl-title">Safe & Sound</div>
+                    <div class="pl-singer">Taylor Swift</div>
+                  </div>
                 </div>
-                <span>avec</span>
               </div>
-              <div class="pl-single">
-                <div class="pl-cover"><img src="assets/img/Covers/EmmaLouise.jpg"></div>
-                <div class="pl-title">Safe & Sound</div>
-                <div class="pl-singer">Taylor Swift</div>
-              </div>
-            </div>
 
-            <div class="at-single">
-              <div class="at-header">
-                <div class="at-avatar item-media">
-                  <img src="assets/img/profile.jpg" height="50">
+              <div class="at-single">
+                <div class="at-header">
+                  <div class="at-avatar item-media">
+                    <img src="assets/img/profile.jpg" height="50">
+                  </div>
+                  <div class="at-name">
+                    <div class="at-pseudo">dimitrifrompari</div>
+                    <div class="at-cta follow">Suivre</div>
+                  </div>
+                  <div class="at-span"><span>avec</span></div>
                 </div>
-                <div class="at-name">
-                  <div class="at-pseudo">dimitrifrompari</div>
-                  <div class="at-cta follow">Suivre</div>
+                <div class="pl-single">
+                  <div class="pl-cover"><img src="assets/img/Covers/Feist.jpg"></div>
+                  <div class="pl-infos">
+                    <div class="pl-title">Safe & Sound</div>
+                    <div class="pl-singer">Taylor Swift</div>
+                  </div>
                 </div>
-                <span>avec</span>
               </div>
-              <div class="pl-single">
-                <div class="pl-cover"><img src="assets/img/Covers/Feist.jpg"></div>
-                <div class="pl-title">Safe & Sound</div>
-                <div class="pl-singer">Taylor Swift</div>
-              </div>
-            </div>
 
-            <div class="at-single">
-              <div class="at-header">
-                <div class="at-avatar item-media">
-                  <img src="assets/img/profile.jpg" height="50">
+              <div class="at-single">
+                <div class="at-header">
+                  <div class="at-avatar item-media">
+                    <img src="assets/img/profile.jpg" height="50">
+                  </div>
+                  <div class="at-name">
+                    <div class="at-pseudo">dimitrifrompari</div>
+                    <div class="at-cta follow">Suivre</div>
+                  </div>
+                  <div class="at-span"><span>avec</span></div>
                 </div>
-                <div class="at-name">
-                  <div class="at-pseudo">dimitrifrompari</div>
-                  <div class="at-cta follow">Suivre</div>
+                <div class="pl-single">
+                  <div class="pl-cover"><img src="assets/img/Covers/Fratellis.jpg"></div>
+                  <div class="pl-infos">
+                    <div class="pl-title">Safe & Sound</div>
+                    <div class="pl-singer">Taylor Swift</div>
+                  </div>
                 </div>
-                <span>avec</span>
               </div>
-              <div class="pl-single">
-                <div class="pl-cover"><img src="assets/img/Covers/Fratellis.jpg"></div>
-                <div class="pl-title">Safe & Sound</div>
-                <div class="pl-singer">Taylor Swift</div>
-              </div>
-            </div>
 
-            <div class="at-single">
-              <div class="at-header">
-                <div class="at-avatar item-media">
-                  <img src="assets/img/profile.jpg" height="50">
+              <div class="at-single">
+                <div class="at-header">
+                  <div class="at-avatar item-media">
+                    <img src="assets/img/profile.jpg" height="50">
+                  </div>
+                  <div class="at-name">
+                    <div class="at-pseudo">dimitrifrompari</div>
+                    <div class="at-cta follow">Suivre</div>
+                  </div>
+                  <div class="at-span"><span>avec</span></div>
                 </div>
-                <div class="at-name">
-                  <div class="at-pseudo">dimitrifrompari</div>
-                  <div class="at-cta follow">Suivre</div>
+                <div class="pl-single">
+                  <div class="pl-cover"><img src="assets/img/Covers/Little-Talks-Single.jpg"></div>
+                  <div class="pl-infos">
+                    <div class="pl-title">Safe & Sound</div>
+                    <div class="pl-singer">Taylor Swift</div>
+                  </div>
                 </div>
-                <span>avec</span>
-              </div>
-              <div class="pl-single">
-                <div class="pl-cover"><img src="assets/img/Covers/Little-Talks-Single.jpg"></div>
-                <div class="pl-title">Safe & Sound</div>
-                <div class="pl-singer">Taylor Swift</div>
               </div>
             </div>
           </div>
@@ -316,13 +334,13 @@
       </div>
     </div>
 
-    <!-- RIGHT BAR  -->
+    <!-- RIGHT BAR  --> 
     <div id="right-bar" class="grid_3">
       <div class="inner-right player-content">
         Player
       </div>
     </div>
 
-  </body>
+  </body> 
 
 </html>
