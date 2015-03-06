@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="44px" height="40px" viewBox="0 0 44 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 78</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="One-Page-Inscription_V0" sketch:type="MSArtboardGroup" transform="translate(-498.000000, -1229.000000)" filter="url(#filter-1)" fill="#FFFFFF">
+            <g id="ARTISTE" sketch:type="MSLayerGroup" transform="translate(0.000000, 818.000000)">
+                <g id="Picto2" transform="translate(446.000000, 379.000000)" sketch:type="MSShapeGroup">
+                    <g id="Oval-5-+-Fill-78" transform="translate(24.000000, 0.000000)">
+                        <path d="M66,32 L48,32 C45.8,32 44,33.8 44,36 L44,52 L58,52 L64,58 L64,52 L66,52 C68.2,52 70,50.2 70,48 L70,36 C70,33.8 68.2,32 66,32 L66,32 Z M41.6,54.4 L41.6,42 L34,42 C31.8,42 30,43.8 30,46 L30,58 C30,60.2 31.8,62 34,62 L36,62 L36,68 L42,62 L52,62 C54.2,62 56,60.2 56,58 L56,54.3592 C55.8712,54.386 55.7364,54.4 55.6,54.4 L41.6,54.4 L41.6,54.4 Z" id="Fill-78"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

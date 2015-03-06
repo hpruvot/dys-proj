@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="33px" height="49px" viewBox="0 0 33 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Mic</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="One-Page-Inscription_V0" sketch:type="MSArtboardGroup" transform="translate(-733.000000, -1224.000000)" filter="url(#filter-1)" fill="#FFFFFF">
+            <g id="ARTISTE" sketch:type="MSLayerGroup" transform="translate(0.000000, 818.000000)">
+                <g id="Picto3" transform="translate(671.000000, 379.000000)" sketch:type="MSShapeGroup">
+                    <g id="Oval-5-+-Mic" transform="translate(29.000000, 0.000000)">
+                        <path d="M57.0896828,40.8577032 C60.9061456,40.8577032 64,37.7555506 64,33.9288516 C64,30.1021525 60.9061456,27 57.0896828,27 C53.27322,27 50.1793656,30.1021525 50.1793656,33.9288516 C50.1793656,37.7555506 53.27322,40.8577032 57.0896828,40.8577032 Z M42.1340551,53.0973965 C42.7107114,53.0973965 43.2220557,52.8370455 43.5733063,52.4329423 L55.2051957,41.6938613 C52.8961812,41.1324294 50.9798346,39.5615383 49.9467916,37.4747369 L40.7577264,49.7391875 C40.4192196,50.2135695 40.218505,50.6264575 40.218505,51.17591 C40.218505,52.2364811 41.0771175,53.0973965 42.1340551,53.0973965 Z M36.5435161,63.4203951 C40.4088653,66.3984595 46.3506549,60.7577866 46.5728746,60.5421584 C46.6365935,60.4862548 52.9041461,54.9533959 55.8256587,58.2301453 C56.4357674,58.9121692 56.6906431,59.7012086 56.6094014,60.6427849 C56.3027541,64.1335652 51.4680808,68.6569649 49.6305864,70.104868 C49.1718102,70.4666442 49.0921615,71.1342929 49.4529699,71.5942996 C49.6616494,71.8610396 49.9706862,72 50.2852983,72 C50.512297,72 50.7440746,71.9249295 50.9352314,71.7739897 C51.2355068,71.538396 58.2652969,65.952828 58.7153118,60.8304612 C58.8507145,59.2939109 58.4086645,57.9434398 57.402702,56.8157843 C56.1147833,55.3710757 53.679924,54.0812998 49.4083667,56.1369549 C47.0698822,57.2614159 45.2411491,58.891405 45.1368094,58.9848439 C43.8799536,60.1907644 39.8401739,63.2838305 37.8314349,61.7376968 C37.3941638,61.4006779 37.1695546,60.9933803 37.1225619,60.4559071 C36.964061,58.5999077 38.920232,55.929313 39.8935385,54.8112411 L42.0607784,54.053348 C42.0607784,54.053348 41.6266932,54.004632 40.604801,53.0862158 C39.6490171,52.2253004 39.3957344,51.2941062 39.3957344,51.2941062 L38.4200384,53.2810797 C37.7255022,54.0581397 34.7577933,57.5736774 35.015855,60.634 C35.1106369,61.7608568 35.6387074,62.7247946 36.5435161,63.4203951 Z" id="Mic"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
