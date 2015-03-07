@@ -26,6 +26,10 @@ body {
   min-width: initial;
   padding-top: 72px;
 }
+*{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
 // MENU
 .link {
 	color: $d-black;
