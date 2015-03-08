@@ -35,6 +35,7 @@ $(document).ready(function(){
 	var leftbar = document.getElementById('left-bar');
 	var menuElements = document.getElementById('menu');
 	if(menuElements) {
+		console.log("coucou");
 		menuElements.insertAdjacentHTML('beforeBegin','<button type="button" id="menutoggle" class="navtoogle" aria-hidden="true"><i aria-hidden="true" class="icon-menu"> </i></button>');
 	}
 

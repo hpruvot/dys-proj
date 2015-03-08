@@ -68,6 +68,9 @@
 			background: url('#{$folder-icon}/micro.svg') no-repeat center center;
 		}
 	}
+	.bloc {
+		margin-top: 160px;
+	}
 }
 
 #two {
@@ -84,19 +87,16 @@
 			background: url('#{$folder-icon}/fusee.svg') no-repeat center center;
 		}
 	}
+	.bloc {
+		margin-top: 150px;
+	}
 }
 
 #three {
-	position: relative;
-	z-index: 1;
-	article {
-		padding-top: 55px;
-		.bloc-text {
-			margin-bottom: 19px;
-		}
+	.bloc {
+		margin-top: 110px;
 	}
 	ul {
-		padding-left: 23%;
 		li{
 			margin-bottom: 48px;
 		}
@@ -114,10 +114,6 @@
 		p{
 			padding-right: 20%;
 		}
-	}
-	img {
-		right: 27%;
-		top: 0;
 	}
 }
 
@@ -152,13 +148,8 @@
 				left: 100%;
 				z-index: 11;
 			}
-			header {
-				font-family: "Roboto Condensed";
-				text-transform: uppercase;
-				font-weight: $bold;
+			h3 {
 				font-size: 1.8em;
-				color: $d-black;
-				line-height: 24px;
 			}
 			p {
 				span {
@@ -209,17 +200,25 @@
 	}
 }
 #five {
-	z-index: 1;
 	text-align: center;
 	.newsletter {
-		height: 52%;
 		background-image: $d-gradient;
 		color: $d-white;
+		padding: 45px 0;
+		article {
+			width: 35%;
+			margin: 0 auto;
+		}
 		h2 {
 			font-family: "AlpacaScarlettDemo";
 			font-size: 3em;
 			color: $d-white;
 			line-height: 40px;
+		}
+		h3 {
+			font-size: 2.5em;
+			letter-spacing: 3px;
+			margin-bottom: 32px;
 		}
 		hr {
 			width: 52px;
@@ -227,42 +226,55 @@
 			text-align: center;
 			margin-bottom: 29px;
 		}
-		h3 {
-			font-family: "Roboto Condensed";
-			font-weight: $bold;
-			font-size: 2.5em;
-			letter-spacing: 3px;
-			line-height: 33px;
-			text-transform: uppercase;
-		}
 		p{
 			font-weight: $light;
 			font-size: 2em;
 			color: #F4F4F4;
 			line-height: 30px;
 		}
-		form#newsletter .email {
-			height: 60px;
-			width: 296px;
-			background: #FFFFFF;
-			border: 1px solid #EE9E19;
-			float: left
+		form#newsletter {
+			margin-top: 3em;
+			width: 356px;
+			.email {
+				height: 60px;
+				width: 296px;
+				background: #FFFFFF;
+				border: 1px solid #EE9E19;
+				float: left;
+				margin-left: 7em;
+				padding-left: 24px;
+				text-transform: uppercase;
+				font-weight: $bold;
+				outline: none;
+				color: #D6D6D6;
+			}
+			::-webkit-input-placeholder {
+				color: #D6D6D6;
+			}
+
+			:-moz-placeholder { /* Firefox 18- */
+			   color: #D6D6D6;
+			}
+
+			::-moz-placeholder {  /* Firefox 19+ */
+			   color: #D6D6D6;
+			}
+
+			:-ms-input-placeholder {  
+			   color: #D6D6D6;
+			}
 		}
 		form#newsletter .submit {
+			position: absolute;
 			height: 60px;
 			width: 60px;
 			float: left;
-			background: #FFFFFF;
+			background: #ffffff url('#{$folder-icon}/arrow-left-orange.svg') no-repeat center center;
 			border: 1px solid #EE9E19;
+			cursor: pointer;
 		}
 	}
-	article {
-		margin: 0 auto;
-		float: none;
-		padding-top: 0;
-	}
 	.contact {
-		height: 40%;
 		.cta {
 			width: 230px;
 			height: 60px;
@@ -283,28 +295,58 @@
 	position: relative;
 	height: 100%;
 	.inner-section {
+		position: relative;
+		margin: 0 auto;
 		height: 100%;
+		max-width: 1440px;
+		padding-bottom: 80px;
 	}
-	article {
-		width: 59%;
-		float: left;
-		padding-top: 182px;
-		p {
-			font-size: 1.8em;
-			line-height: 33px;
-			color: $d-black;
-			font-weight: $thin;
-			line-height: 24px;
-			&.paragraph {
-				font-size: 2em;
-			}
+	h3 {
+		font-family: "Roboto Condensed";
+		font-weight: $bold;
+		line-height: 33px;
+		text-transform: uppercase;
+	}
+	h2.title {
+		font-family: "Roboto";
+		text-transform: uppercase;
+		margin-top: 50px;
+		font-weight: $bold;
+		font-size: 1.5em;
+		letter-spacing: 1.15px;
+		line-height: 20px;
+		text-align: center;
+		color: $d-black;
+	}
+	hr.title {
+		width: 37px;
+		border: 2px solid $d-orange;
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	.row {
+		position: relative;
+		z-index: 1;
+		&:before, &:after {
+			content: "";
+			display: table;
 		}
+		&:after{
+			clear: both;
+		}
+	}
+	.bloc {
+		position: relative;
+		z-index: 1;
+		min-height: 2px;
+		margin: 0;
+		padding: 0;
+		width: 100%;
 		.bloc-text {
 			font-weight: $thin;
 			color: $d-black;
 			margin-bottom: 30px;
-			padding-right: 140px;
-			padding-left: 23%;
+			padding-right: 80px;
 			h2 {
 				font-size: 4em;
 				color: $d-black;
@@ -313,17 +355,13 @@
 			}
 		}
 		.bloc-picto {
-			padding-left: 23%;
-			ul {
-				width: 100%;
-			}
 			li {
 				display: inline-block;
 				width: 33%;
 				text-align: center;
 				span {
-					width: 81px;
-					height: 81px;
+					width: 99px;
+					height: 99px;
 					background: $d-black;
 					border-radius: 50%;
 					margin: 0 auto;
@@ -346,49 +384,197 @@
 				text-transform: uppercase;
 			}
 		}
+		p {
+			font-size: 1.8em;
+			color: $d-black;
+			font-weight: $thin;
+			line-height: 24px;
+			&.paragraph {
+				font-size: 2em;
+				line-height: 32px;
+			}
+		}
 	}
-	aside {
-		position: relative;
+	.left {
+		width: 47%;
+		margin-left: 13.5%;
 		float: left;
+	}
+	.right {
+		width: 47%;
+		margin-right: 13.5%;
+		float: right;
+	}
+	.landing-image {
+		position: absolute;
+		pointer-events: none;
+		z-index: 1;
 		height: 100%;
-		width: 41%;
-		img {
-			bottom: 0;
-			position: absolute;
+		bottom: 0;
+		width: 100%;
+		&.landing-artist {
+			background: url('#{$folder-image}/artist.png') no-repeat bottom right;
+			margin-right: -50px;
 		}
-		&.right {
-			background-image: linear-gradient(-76deg, #ECECEC 0%, #FFFFFF 69%);
-			img {
-				right: 0;
-			}
+		&.landing-melomane {
+			background: url('#{$folder-image}/melomane.png') no-repeat bottom left;
+			margin-left: 6%;
 		}
-		&.left {
-			background-image: linear-gradient(54deg, #ECECEC 0%, #FBFBFB 66%);
-			img {
-				left: 0;
-			}
+		&.landing-iphone {
+			background: url('#{$folder-image}/iphone6app.png') no-repeat bottom right;
+			margin-right: 11%;
+			background-size: 24%;
+			background-position: 100% -100%;
+		}
+		&.imgright {
+			right: 0;	
+		}
+		&.imgleft {
+			left: 0;	
 		}
 	}
 }
 
-.inner-half-section {
-	h2 {
-		font-family: "Roboto";
-		text-transform: uppercase;
-		margin-top: 50px;
-		font-weight: $bold;
-		font-size: 1.5em;
-		letter-spacing: 1.15px;
-		line-height: 20px;
-		text-align: center;
-		color: $d-black;
-	}
-	hr {
-		width: 37px;
-		border: 2px solid $d-orange;
-		text-align: center;
-		margin-bottom: 50px;
-	}
+#equalizer {
+	position: relative;
+	width: 100%;
+	height: 375px;
+}
+
+$size: 100px;
+
+$max: $size / 2.857142857;
+$width: $max / 3.5;
+$margin: $max / 14;
+$color: $d-orange;
+
+$equalizers: 3;
+$equalizerSize: ($equalizers * $width) + ( ($equalizers - 1) * $margin );
+$bottom: ( $size - $max ) / 2;
+$left: ( $size - $equalizerSize ) / 2;
+
+// Heights
+$two: $max / 7;
+$three: $max / 4.666666667;
+$four: $max / 3.5;
+$five: $max / 2.8;
+$six: $max / 2.333333333;
+$seven: $max / 2;
+$eight: $max / 1.75;
+$nine: $max / 1.555555556;
+$ten: $max / 1.4;
+$eleven: $max / 1.272727273;
+$twelve: $max / 1.166666667;
+$thirteen: $max / 1.076923077;
+$fourteen: $max;
+
+#equalizer,
+#equalizer::before,
+#equalizer::after {
+  animation: equalize 1.25s steps(25, end) 0s infinite;
+}
+
+#equalizer::before,
+#equalizer::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: $width + $margin;
+  height: $max;
+  width: $width;
+  background-color: $color;
+}
+
+// Equalizer 2
+#equalizer::before {
+  animation-name: equalize2;
+}
+
+// Equalizer 3
+#equalizer::after {
+  left: $width * 2 + $margin * 2;
+  animation-name: equalize3;
+}
+
+@keyframes equalize {
+  0% {
+    height: $four;
+  }
+  4% {
+    height: $two;
+  }
+  8% {
+    height: $four;
+  }
+  12% {
+    height: $seven;
+  }
+  16% {
+    height: $ten;
+  }
+  20% {
+    height: $thirteen;
+  }
+  24% {
+    height: $twelve;
+  }
+  28% {
+    height: $eleven;
+  }
+  32% {
+    height: $eleven;
+  }
+  36% {
+    height: $eight;
+  }
+  40% {
+    height: $ten;
+  }
+  44% {
+    height: $ten;
+  }
+  48% {
+    height: $eleven;
+  }
+  52% {
+    height: $twelve;
+  }
+  56% {
+    height: $thirteen;
+  }
+  60% {
+    height: $twelve;
+  }
+  64% {
+    height: $twelve;
+  }
+  68% {
+    height: $eleven;
+  }
+  72% {
+    height: $ten;
+  }
+  76% {
+    height: $eleven;
+  }
+  80% {
+    height: $twelve;
+  }
+  84% {
+    height: $twelve;
+  }
+  88% {
+    height: $thirteen;
+  }
+  92% {
+    height: $ten;
+  }
+  96% {
+    height: $seven;
+  }
+  100% {
+    height: $four;
+  }
 }
 
 @media(max-width: 1040px) {

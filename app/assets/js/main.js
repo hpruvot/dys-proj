@@ -40,6 +40,7 @@ $(document).ready(function(){
 	var leftbar = document.getElementById('left-bar');
 	var menuElements = document.getElementById('menu');
 	if(menuElements) {
+		console.log("coucou");
 		menuElements.insertAdjacentHTML('beforeBegin','<button type="button" id="menutoggle" class="navtoogle" aria-hidden="true"><i aria-hidden="true" class="icon-menu"> </i></button>');
 	}
 
@@ -200,6 +201,7 @@ $(document).ready(function(){
 
 		function calculateHeight(){
 			var height = $(".slide.active").outerHeight();
+			$slider.height(height);
 		}
 
 		$(window).resize(function() {
@@ -218,6 +220,7 @@ $(document).ready(function(){
 			 resetBullets();
 			 setTimeout(resetSlides, 300);
 		}
+
 		$(document).on("click", ".bullet", function(){
 			if($(this).hasClass("active")){
 				return;
@@ -225,25 +228,31 @@ $(document).ready(function(){
 			var $activeSlide = $(".slide.active");
 			var currentIndex = $activeSlide.index();
 			var targetIndex = $(this).index();
-			console.log(targetIndex);
+			console.log($(".slide.active").index(), targetIndex);
 			var $theSlide = $(".slide:nth-child("+(targetIndex+1)+")");
 			gotoSlide($activeSlide, $theSlide, currentIndex > targetIndex ? "inactiveRight" : "inactiveLeft");
 		})
-		function addBullets(){
-			var total = $(".slide").length, index = $(".slide.active").index();
-			for (var i=0; i < total; i++){
-				var $bullet = $("<div>").addClass("bullet");
-				if(i==index){
-					$bullet.addClass("active");	
-				}
-				$bullets.append($bullet);
-			}
-		}
+
 		function resetBullets(){
 			$(".bullet.active").removeClass("active");
 			var index = $(".slide.active").index()+1;
+			console.log(index);
 			$(".bullet:nth-child("+index+")").addClass("active");
 		}
-		addBullets();
+
 		calculateHeight();	
+
+		function equalizer() {
+			var animation = document.getElementById('equalizer');
+  
+			function onAnimation( evt ) {
+				evt.stopPropagation();
+			}
+
+			animation.addEventListener('webkitAnimationStart', onAnimation, false);
+			animation.addEventListener('webkitAnimationIteration', onAnimation, false);
+			animation.addEventListener('animationStart', onAnimation, false);
+		    animation.addEventListener('animationIteration', onAnimation, false);
+		}
+		equalizer();
 })
