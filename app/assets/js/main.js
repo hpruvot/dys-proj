@@ -195,7 +195,7 @@ $(document).ready(function(){
     });
 
 });
-$(document).ready(function(){
+$(document).ready(function() {
 
 		var $slider = $(".slider"), $bullets = $(".bullets");
 
@@ -243,16 +243,21 @@ $(document).ready(function(){
 		calculateHeight();	
 
 		function equalizer() {
-			var animation = document.getElementById('equalizer');
-  
-			function onAnimation( evt ) {
-				evt.stopPropagation();
-			}
+			var winwidth = $(window).width();
+			var equalizer = $("#equalizer");
 
-			animation.addEventListener('webkitAnimationStart', onAnimation, false);
-			animation.addEventListener('webkitAnimationIteration', onAnimation, false);
-			animation.addEventListener('animationStart', onAnimation, false);
-		    animation.addEventListener('animationIteration', onAnimation, false);
+			var nbbar = (winwidth / 16 /4);
+			console.log(nbbar);
+			for(var i=1; i<=nbbar; i++) {
+				var h1 = Math.random() * (375 - 178) + 178;
+				var animation = Math.floor(Math.random() * 4 + 1);
+				for(var j=1; j<=4; j++) {
+        			$("<div class='bar'>").height(h1).css({
+    					'-webkit-animation-name': 'equalize'+ j
+					}).appendTo(equalizer);
+        		}
+			}
+			
 		}
 		equalizer();
 })

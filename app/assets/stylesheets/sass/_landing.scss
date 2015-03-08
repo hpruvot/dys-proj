@@ -435,32 +435,39 @@
 	}
 }
 
-#equalizer {
+#six {
 	position: relative;
 	width: 100%;
 	height: 375px;
+	overflow: hidden;
 }
 
-$size: 100px;
+#equalizer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
 
-$max: $size / 2.857142857;
-$width: $max / 3.5;
-$margin: $max / 14;
-$color: $d-orange;
-
-$equalizers: 3;
-$equalizerSize: ($equalizers * $width) + ( ($equalizers - 1) * $margin );
-$bottom: ( $size - $max ) / 2;
-$left: ( $size - $equalizerSize ) / 2;
+.bar {
+	background: $d-gradient;
+	width: 10px;
+	margin-right: 6px;
+	display: block;
+	display: inline-block;
+	&:first-of-type {
+		margin-left: -6px;
+	}
+}
+$max: 375;
 
 // Heights
-$two: $max / 7;
-$three: $max / 4.666666667;
-$four: $max / 3.5;
-$five: $max / 2.8;
-$six: $max / 2.333333333;
-$seven: $max / 2;
-$eight: $max / 1.75;
+$two: $max / 1.076923077;
+$three: $max / 1.166666667;
+$four: $max / 1.272727273;
+$five: $max / 1.4;
+$six: $max / 1.555555556;
+$seven: $max / 1.1;
+$eight: $max / 1.2;
 $nine: $max / 1.555555556;
 $ten: $max / 1.4;
 $eleven: $max / 1.272727273;
@@ -468,35 +475,33 @@ $twelve: $max / 1.166666667;
 $thirteen: $max / 1.076923077;
 $fourteen: $max;
 
-#equalizer,
-#equalizer::before,
-#equalizer::after {
-  animation: equalize 1.25s steps(25, end) 0s infinite;
+.bar {
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
 }
-
-#equalizer::before,
-#equalizer::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: $width + $margin;
-  height: $max;
-  width: $width;
-  background-color: $color;
+/*.bar:nth-of-type(2n+0){
+  animation: 2s steps(25, end) 0s infinite;
 }
 
 // Equalizer 2
-#equalizer::before {
-  animation-name: equalize2;
+.bar:nth-of-type(3n+0) {
+  animation: 2s steps(25, end) 0s infinite;
 }
 
 // Equalizer 3
-#equalizer::after {
-  left: $width * 2 + $margin * 2;
-  animation-name: equalize3;
+.bar:nth-of-type(5n+0) {
+  animation: 2s steps(25, end) 0s infinite;
 }
 
-@keyframes equalize {
+.bar:nth-of-type(7n+0){
+  animation: 2s steps(25, end) 0s infinite;
+}*/
+
+@keyframes equalize1 {
   0% {
     height: $four;
   }
@@ -574,6 +579,249 @@ $fourteen: $max;
   }
   100% {
     height: $four;
+  }
+}
+
+@keyframes equalize2 {
+  0% {
+    height: $two;
+  }
+  4% {
+    height: $four;
+  }
+  8% {
+    height: $three;
+  }
+  12% {
+    height: $seven;
+  }
+  16% {
+    height: $nine;
+  }
+  20% {
+    height: $fourteen;
+  }
+  24% {
+    height: $thirteen;
+  }
+  28% {
+    height: $ten;
+  }
+  32% {
+    height: $thirteen;
+  }
+  36% {
+    height: $eight;
+  }
+  40% {
+    height: $five;
+  }
+  44% {
+    height: $seven;
+  }
+  48% {
+    height: $five;
+  }
+  52% {
+    height: $two;
+  }
+  56% {
+    height: $three;
+  }
+  60% {
+    height: $two;
+  }
+  64% {
+    height: $four;
+  }
+  68% {
+    height: $seven;
+  }
+  72% {
+    height: $nine;
+  }
+  76% {
+    height: $five;
+  }
+  80% {
+    height: $six;
+  }
+  84% {
+    height: $three;
+  }
+  88% {
+    height: $nine;
+  }
+  92% {
+    height: $eight;
+  }
+  96% {
+    height: $twelve;
+  }
+  100% {
+    height: $two;
+  }
+}
+
+@keyframes equalize3 {
+  0% {
+    height: $twelve;
+  }
+  4% {
+    height: $ten;
+  }
+  8% {
+    height: $three;
+  }
+  12% {
+    height: $four;
+  }
+  16% {
+    height: $fourteen;
+  }
+  20% {
+    height: $five;
+  }
+  24% {
+    height: $eight;
+  }
+  28% {
+    height: $three;
+  }
+  32% {
+    height: $fourteen;
+  }
+  36% {
+    height: $thirteen;
+  }
+  40% {
+    height: $ten;
+  }
+  44% {
+    height: $nine;
+  }
+  48% {
+    height: $seven;
+  }
+  52% {
+    height: $three;
+  }
+  56% {
+    height: $fourteen;
+  }
+  60% {
+    height: $eight;
+  }
+  64% {
+    height: $ten;
+  }
+  68% {
+    height: $four;
+  }
+  72% {
+    height: $eleven;
+  }
+  76% {
+    height: $twelve;
+  }
+  80% {
+    height: $seven;
+  }
+  84% {
+    height: $nine;
+  }
+  88% {
+    height: $three;
+  }
+  92% {
+    height: $six;
+  }
+  96% {
+    height: $eleven;
+  }
+  100% {
+    height: $twelve;
+  }
+}
+
+@keyframes equalize4 {
+  0% {
+    height: $thirteen;
+  }
+  4% {
+    height: $fourteen;
+  }
+  8% {
+    height: $twelve;
+  }
+  12% {
+    height: $eleven;
+  }
+  16% {
+    height: $fourteen;
+  }
+  20% {
+    height: $thirteen;
+  }
+  24% {
+    height: $ten;
+  }
+  28% {
+    height: $eleven;
+  }
+  32% {
+    height: $fourteen;
+  }
+  36% {
+    height: $thirteen;
+  }
+  40% {
+    height: $twelve;
+  }
+  44% {
+    height: $fourteen;
+  }
+  48% {
+    height: $ten;
+  }
+  52% {
+    height: $twelve;
+  }
+  56% {
+    height: $eleven;
+  }
+  60% {
+    height: $ten;
+  }
+  64% {
+    height: $thirteen;
+  }
+  68% {
+    height: $fourteen;
+  }
+  72% {
+    height: $ten;
+  }
+  76% {
+    height: $eleven;
+  }
+  80% {
+    height: $twelve;
+  }
+  84% {
+    height: $ten;
+  }
+  88% {
+    height: $eleven;
+  }
+  92% {
+    height: $thirteen;
+  }
+  96% {
+    height: $eleven;
+  }
+  100% {
+    height: $thirteen;
   }
 }
 

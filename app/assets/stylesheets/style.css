@@ -117,6 +117,51 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin: 0;
 }
 
+#footer {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
+  font-family: "OpenSans";
+  font-weight: 700;
+  font-size: 1em;
+  color: #A6A6A6;
+  line-height: 14px;
+  text-transform: uppercase;
+  height: 64px;
+  line-height: 64px;
+  position: relative;
+}
+#footer .copyright {
+  text-align: center;
+}
+#footer .right {
+  position: absolute;
+  right: 5em;
+  top: 0;
+}
+#footer .mentions {
+  display: inline-block;
+  margin-right: 40px;
+}
+#footer .socials {
+  display: inline-block;
+}
+#footer .socials .social {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin: 0 12px;
+}
+#footer .socials .tw {
+  background: url("../img/icons/twitter.svg") no-repeat center center;
+}
+#footer .socials .gl {
+  background: url("../img/icons/google+.svg") no-repeat center center;
+}
+#footer .socials .fb {
+  background: url("../img/icons/facebook.svg") no-repeat center center;
+}
+
 a, div, li, span {
   font-family: "Roboto";
   -webkit-font-smoothing: antialiased !important;
@@ -624,200 +669,694 @@ body {
   left: 0;
 }
 
-#equalizer {
+#six {
   position: relative;
   width: 100%;
   height: 375px;
+  overflow: hidden;
 }
 
-#equalizer,
-#equalizer::before,
-#equalizer::after {
-  -webkit-animation: equalize 1.25s steps(25, end) 0s infinite;
-          animation: equalize 1.25s steps(25, end) 0s infinite;
-}
-
-#equalizer::before,
-#equalizer::after {
-  content: '';
+#equalizer {
   position: absolute;
+  width: 100%;
   bottom: 0;
-  left: 12.5px;
-  height: 35.0px;
-  width: 10.0px;
-  background-color: #EE9E19;
 }
 
-#equalizer::before {
-  -webkit-animation-name: equalize2;
-          animation-name: equalize2;
+.bar {
+  background: linear-gradient(-180deg, #ee9e19 0%, #ee7648 100%);
+  width: 10px;
+  margin-right: 6px;
+  display: block;
+  display: inline-block;
+}
+.bar:first-of-type {
+  margin-left: -6px;
 }
 
-#equalizer::after {
-  left: 25.0px;
-  -webkit-animation-name: equalize3;
-          animation-name: equalize3;
+.bar {
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 0s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
 }
 
-@-webkit-keyframes equalize {
+/*.bar:nth-of-type(2n+0){
+  animation: 2s steps(25, end) 0s infinite;
+}
+
+// Equalizer 2
+.bar:nth-of-type(3n+0) {
+  animation: 2s steps(25, end) 0s infinite;
+}
+
+// Equalizer 3
+.bar:nth-of-type(5n+0) {
+  animation: 2s steps(25, end) 0s infinite;
+}
+
+.bar:nth-of-type(7n+0){
+  animation: 2s steps(25, end) 0s infinite;
+}*/
+@-webkit-keyframes equalize1 {
   0% {
-    height: 10.0px;
+    height: 294.64286;
   }
   4% {
-    height: 5.0px;
+    height: 348.21429;
   }
   8% {
-    height: 10.0px;
+    height: 294.64286;
   }
   12% {
-    height: 17.5px;
+    height: 340.90909;
   }
   16% {
-    height: 25.0px;
+    height: 267.85714;
   }
   20% {
-    height: 32.5px;
+    height: 348.21429;
   }
   24% {
-    height: 30.0px;
+    height: 321.42857;
   }
   28% {
-    height: 27.5px;
+    height: 294.64286;
   }
   32% {
-    height: 27.5px;
+    height: 294.64286;
   }
   36% {
-    height: 20.0px;
+    height: 312.5;
   }
   40% {
-    height: 25.0px;
+    height: 267.85714;
   }
   44% {
-    height: 25.0px;
+    height: 267.85714;
   }
   48% {
-    height: 27.5px;
+    height: 294.64286;
   }
   52% {
-    height: 30.0px;
+    height: 321.42857;
   }
   56% {
-    height: 32.5px;
+    height: 348.21429;
   }
   60% {
-    height: 30.0px;
+    height: 321.42857;
   }
   64% {
-    height: 30.0px;
+    height: 321.42857;
   }
   68% {
-    height: 27.5px;
+    height: 294.64286;
   }
   72% {
-    height: 25.0px;
+    height: 267.85714;
   }
   76% {
-    height: 27.5px;
+    height: 294.64286;
   }
   80% {
-    height: 30.0px;
+    height: 321.42857;
   }
   84% {
-    height: 30.0px;
+    height: 321.42857;
   }
   88% {
-    height: 32.5px;
+    height: 348.21429;
   }
   92% {
-    height: 25.0px;
+    height: 267.85714;
   }
   96% {
-    height: 17.5px;
+    height: 340.90909;
   }
   100% {
-    height: 10.0px;
+    height: 294.64286;
   }
 }
-
-@keyframes equalize {
+@keyframes equalize1 {
   0% {
-    height: 10.0px;
+    height: 294.64286;
   }
   4% {
-    height: 5.0px;
+    height: 348.21429;
   }
   8% {
-    height: 10.0px;
+    height: 294.64286;
   }
   12% {
-    height: 17.5px;
+    height: 340.90909;
   }
   16% {
-    height: 25.0px;
+    height: 267.85714;
   }
   20% {
-    height: 32.5px;
+    height: 348.21429;
   }
   24% {
-    height: 30.0px;
+    height: 321.42857;
   }
   28% {
-    height: 27.5px;
+    height: 294.64286;
   }
   32% {
-    height: 27.5px;
+    height: 294.64286;
   }
   36% {
-    height: 20.0px;
+    height: 312.5;
   }
   40% {
-    height: 25.0px;
+    height: 267.85714;
   }
   44% {
-    height: 25.0px;
+    height: 267.85714;
   }
   48% {
-    height: 27.5px;
+    height: 294.64286;
   }
   52% {
-    height: 30.0px;
+    height: 321.42857;
   }
   56% {
-    height: 32.5px;
+    height: 348.21429;
   }
   60% {
-    height: 30.0px;
+    height: 321.42857;
   }
   64% {
-    height: 30.0px;
+    height: 321.42857;
   }
   68% {
-    height: 27.5px;
+    height: 294.64286;
   }
   72% {
-    height: 25.0px;
+    height: 267.85714;
   }
   76% {
-    height: 27.5px;
+    height: 294.64286;
   }
   80% {
-    height: 30.0px;
+    height: 321.42857;
   }
   84% {
-    height: 30.0px;
+    height: 321.42857;
   }
   88% {
-    height: 32.5px;
+    height: 348.21429;
   }
   92% {
-    height: 25.0px;
+    height: 267.85714;
   }
   96% {
-    height: 17.5px;
+    height: 340.90909;
   }
   100% {
-    height: 10.0px;
+    height: 294.64286;
+  }
+}
+@-webkit-keyframes equalize2 {
+  0% {
+    height: 348.21429;
+  }
+  4% {
+    height: 294.64286;
+  }
+  8% {
+    height: 321.42857;
+  }
+  12% {
+    height: 340.90909;
+  }
+  16% {
+    height: 241.07143;
+  }
+  20% {
+    height: 375;
+  }
+  24% {
+    height: 348.21429;
+  }
+  28% {
+    height: 267.85714;
+  }
+  32% {
+    height: 348.21429;
+  }
+  36% {
+    height: 312.5;
+  }
+  40% {
+    height: 267.85714;
+  }
+  44% {
+    height: 340.90909;
+  }
+  48% {
+    height: 267.85714;
+  }
+  52% {
+    height: 348.21429;
+  }
+  56% {
+    height: 321.42857;
+  }
+  60% {
+    height: 348.21429;
+  }
+  64% {
+    height: 294.64286;
+  }
+  68% {
+    height: 340.90909;
+  }
+  72% {
+    height: 241.07143;
+  }
+  76% {
+    height: 267.85714;
+  }
+  80% {
+    height: 241.07143;
+  }
+  84% {
+    height: 321.42857;
+  }
+  88% {
+    height: 241.07143;
+  }
+  92% {
+    height: 312.5;
+  }
+  96% {
+    height: 321.42857;
+  }
+  100% {
+    height: 348.21429;
+  }
+}
+@keyframes equalize2 {
+  0% {
+    height: 348.21429;
+  }
+  4% {
+    height: 294.64286;
+  }
+  8% {
+    height: 321.42857;
+  }
+  12% {
+    height: 340.90909;
+  }
+  16% {
+    height: 241.07143;
+  }
+  20% {
+    height: 375;
+  }
+  24% {
+    height: 348.21429;
+  }
+  28% {
+    height: 267.85714;
+  }
+  32% {
+    height: 348.21429;
+  }
+  36% {
+    height: 312.5;
+  }
+  40% {
+    height: 267.85714;
+  }
+  44% {
+    height: 340.90909;
+  }
+  48% {
+    height: 267.85714;
+  }
+  52% {
+    height: 348.21429;
+  }
+  56% {
+    height: 321.42857;
+  }
+  60% {
+    height: 348.21429;
+  }
+  64% {
+    height: 294.64286;
+  }
+  68% {
+    height: 340.90909;
+  }
+  72% {
+    height: 241.07143;
+  }
+  76% {
+    height: 267.85714;
+  }
+  80% {
+    height: 241.07143;
+  }
+  84% {
+    height: 321.42857;
+  }
+  88% {
+    height: 241.07143;
+  }
+  92% {
+    height: 312.5;
+  }
+  96% {
+    height: 321.42857;
+  }
+  100% {
+    height: 348.21429;
+  }
+}
+@-webkit-keyframes equalize3 {
+  0% {
+    height: 321.42857;
+  }
+  4% {
+    height: 267.85714;
+  }
+  8% {
+    height: 321.42857;
+  }
+  12% {
+    height: 294.64286;
+  }
+  16% {
+    height: 375;
+  }
+  20% {
+    height: 267.85714;
+  }
+  24% {
+    height: 312.5;
+  }
+  28% {
+    height: 321.42857;
+  }
+  32% {
+    height: 375;
+  }
+  36% {
+    height: 348.21429;
+  }
+  40% {
+    height: 267.85714;
+  }
+  44% {
+    height: 241.07143;
+  }
+  48% {
+    height: 340.90909;
+  }
+  52% {
+    height: 321.42857;
+  }
+  56% {
+    height: 375;
+  }
+  60% {
+    height: 312.5;
+  }
+  64% {
+    height: 267.85714;
+  }
+  68% {
+    height: 294.64286;
+  }
+  72% {
+    height: 294.64286;
+  }
+  76% {
+    height: 321.42857;
+  }
+  80% {
+    height: 340.90909;
+  }
+  84% {
+    height: 241.07143;
+  }
+  88% {
+    height: 321.42857;
+  }
+  92% {
+    height: 241.07143;
+  }
+  96% {
+    height: 294.64286;
+  }
+  100% {
+    height: 321.42857;
+  }
+}
+@keyframes equalize3 {
+  0% {
+    height: 321.42857;
+  }
+  4% {
+    height: 267.85714;
+  }
+  8% {
+    height: 321.42857;
+  }
+  12% {
+    height: 294.64286;
+  }
+  16% {
+    height: 375;
+  }
+  20% {
+    height: 267.85714;
+  }
+  24% {
+    height: 312.5;
+  }
+  28% {
+    height: 321.42857;
+  }
+  32% {
+    height: 375;
+  }
+  36% {
+    height: 348.21429;
+  }
+  40% {
+    height: 267.85714;
+  }
+  44% {
+    height: 241.07143;
+  }
+  48% {
+    height: 340.90909;
+  }
+  52% {
+    height: 321.42857;
+  }
+  56% {
+    height: 375;
+  }
+  60% {
+    height: 312.5;
+  }
+  64% {
+    height: 267.85714;
+  }
+  68% {
+    height: 294.64286;
+  }
+  72% {
+    height: 294.64286;
+  }
+  76% {
+    height: 321.42857;
+  }
+  80% {
+    height: 340.90909;
+  }
+  84% {
+    height: 241.07143;
+  }
+  88% {
+    height: 321.42857;
+  }
+  92% {
+    height: 241.07143;
+  }
+  96% {
+    height: 294.64286;
+  }
+  100% {
+    height: 321.42857;
+  }
+}
+@-webkit-keyframes equalize4 {
+  0% {
+    height: 348.21429;
+  }
+  4% {
+    height: 375;
+  }
+  8% {
+    height: 321.42857;
+  }
+  12% {
+    height: 294.64286;
+  }
+  16% {
+    height: 375;
+  }
+  20% {
+    height: 348.21429;
+  }
+  24% {
+    height: 267.85714;
+  }
+  28% {
+    height: 294.64286;
+  }
+  32% {
+    height: 375;
+  }
+  36% {
+    height: 348.21429;
+  }
+  40% {
+    height: 321.42857;
+  }
+  44% {
+    height: 375;
+  }
+  48% {
+    height: 267.85714;
+  }
+  52% {
+    height: 321.42857;
+  }
+  56% {
+    height: 294.64286;
+  }
+  60% {
+    height: 267.85714;
+  }
+  64% {
+    height: 348.21429;
+  }
+  68% {
+    height: 375;
+  }
+  72% {
+    height: 267.85714;
+  }
+  76% {
+    height: 294.64286;
+  }
+  80% {
+    height: 321.42857;
+  }
+  84% {
+    height: 267.85714;
+  }
+  88% {
+    height: 294.64286;
+  }
+  92% {
+    height: 348.21429;
+  }
+  96% {
+    height: 294.64286;
+  }
+  100% {
+    height: 348.21429;
+  }
+}
+@keyframes equalize4 {
+  0% {
+    height: 348.21429;
+  }
+  4% {
+    height: 375;
+  }
+  8% {
+    height: 321.42857;
+  }
+  12% {
+    height: 294.64286;
+  }
+  16% {
+    height: 375;
+  }
+  20% {
+    height: 348.21429;
+  }
+  24% {
+    height: 267.85714;
+  }
+  28% {
+    height: 294.64286;
+  }
+  32% {
+    height: 375;
+  }
+  36% {
+    height: 348.21429;
+  }
+  40% {
+    height: 321.42857;
+  }
+  44% {
+    height: 375;
+  }
+  48% {
+    height: 267.85714;
+  }
+  52% {
+    height: 321.42857;
+  }
+  56% {
+    height: 294.64286;
+  }
+  60% {
+    height: 267.85714;
+  }
+  64% {
+    height: 348.21429;
+  }
+  68% {
+    height: 375;
+  }
+  72% {
+    height: 267.85714;
+  }
+  76% {
+    height: 294.64286;
+  }
+  80% {
+    height: 321.42857;
+  }
+  84% {
+    height: 267.85714;
+  }
+  88% {
+    height: 294.64286;
+  }
+  92% {
+    height: 348.21429;
+  }
+  96% {
+    height: 294.64286;
+  }
+  100% {
+    height: 348.21429;
   }
 }
 @media (max-width: 1040px) {
