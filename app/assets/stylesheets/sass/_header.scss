@@ -154,8 +154,15 @@ header {
 	}
 }
 
+
 @media(max-width:640px) {
 	header {
 		height: 45px;
+	}
+}
+@media(max-width: 1024px) {
+	#home-header {
+		height: 45px;
+		background: none;	
 	}
 }

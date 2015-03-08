@@ -483,23 +483,6 @@ $fourteen: $max;
     -webkit-animation-direction: alternate;
     -webkit-animation-play-state: running;
 }
-/*.bar:nth-of-type(2n+0){
-  animation: 2s steps(25, end) 0s infinite;
-}
-
-// Equalizer 2
-.bar:nth-of-type(3n+0) {
-  animation: 2s steps(25, end) 0s infinite;
-}
-
-// Equalizer 3
-.bar:nth-of-type(5n+0) {
-  animation: 2s steps(25, end) 0s infinite;
-}
-
-.bar:nth-of-type(7n+0){
-  animation: 2s steps(25, end) 0s infinite;
-}*/
 
 @keyframes equalize1 {
   0% {
@@ -834,38 +817,95 @@ $fourteen: $max;
 	}
 }
 @media(max-width: 640px) {
+
 	#intro .inner-section .bloc-text {
 		width: 100%;
-	}
-	#intro .inner-section .arrowdown {
-		background: url('#{$folder-icon}/arrow-down-white.svg') no-repeat center center;
-		width: 96px;
-		height: 96px;
-		background-size: 100%;
-	}
-	.section article {
-		height: 65%;
-		width: 100% !important;
-		padding: 0;
-		.bloc-text {
-			padding: 34px;
-			text-align: center;
+		p:nth-of-type(1) {
+			font-size: 1.5em;
 		}
-		.bloc-picto {
-			padding: 0;
+		p:nth-of-type(2) {
+			font-size: 2.5em;
 		}
 	}
-	.section aside {
-		height: 35%;
+	#intro .inner-section {
+		h2 {
+			font-size: 7em;
+		}
+		h3 {
+			font-size: 2.5em;
+		}
+		.arrowdown {
+			background: url('#{$folder-icon}/arrow-down-white.svg') no-repeat center center;
+			width: 96px;
+			height: 96px;
+			background-size: 100%;
+		}
+	}
+
+	.section .left,
+	.section .right {
 		width: 100%;
+		margin: 0 17px;
+		float: none;
+	}
+
+	.section .bloc .bloc-text {
 		text-align: center;
-		img {
-			position: relative;
-			height: 100%;
+		h2 {
+			font-size: 3em;
+		}
+		p.paragraph {
+			font-size: 1.5em;
 		}
 	}
+
+	.section .landing-image {
+		background-size: 55% !important;
+		background-position: bottom center !important;
+		&.landing-artist {
+			margin-right: 0;
+		}
+	}
+
+	.section h2.title {
+		margin-top: 25px;
+	}
+
+	#one .bloc, #two .bloc, #three .bloc {
+		margin-top: 30px;
+	}
+
+	#four .img {
+		height: 228px;
+		background: url("../img/img-logo.jpg") no-repeat center center;
+	}
+
 	#four .slider article {
-		margin: 0;
+		padding-top: 0 !important;
+		width: 90%;
+		margin: 0 15px;
+		p {
+			font-size: 1.5em;
+			font-weight: $thin;
+			line-height: 20px;
+		}
+	}
+
+
+	#five .newsletter {
+		article {
+			width: 100%;
+		}
+		form#newsletter {
+			width: 100%;
+			.email {
+				width: 80%;
+				margin-left: 0;
+			}
+			.submit {
+				margin-left: -40px;
+			}
+		}
 	}
 }
 
