@@ -315,7 +315,7 @@ body {
   background: url("../img/icons/micro.svg") no-repeat center center;
 }
 #one .bloc {
-  margin-top: 160px;
+  margin-top: 147px;
 }
 
 #two {
@@ -332,9 +332,12 @@ body {
   background: url("../img/icons/fusee.svg") no-repeat center center;
 }
 #two .bloc {
-  margin-top: 150px;
+  margin-top: 157px;
 }
 
+#three .inner-section {
+  padding-bottom: 155px;
+}
 #three .bloc {
   margin-top: 110px;
 }
@@ -356,6 +359,12 @@ body {
   padding-right: 20%;
 }
 
+#four .inner-section {
+  padding-bottom: 0;
+}
+#four .row {
+  height: 410px;
+}
 #four .img {
   height: 200px;
   background: url("../img/music_bg.jpg") no-repeat center center;
@@ -363,35 +372,32 @@ body {
 }
 #four .slider {
   height: auto;
+  margin-top: 5em;
 }
 #four .slider article {
   width: 43%;
   text-align: center;
   position: absolute;
   margin: 0 28%;
-  -webkit-transform: scale(0.5, 0.5);
-          transform: scale(0.5, 0.5);
   opacity: 0;
-  transition: all .3s;
+  transition: all 1s;
 }
 #four .slider article.active {
   z-index: 10;
   left: 0;
   opacity: 1;
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
-  padding-top: 50px;
 }
-#four .slider article.inactiveLeft {
-  left: -100%;
-  z-index: 11;
-}
-#four .slider article.inactiveRight {
-  left: 100%;
-  z-index: 11;
+#four .slider article.inactive {
+  opacity: 0;
 }
 #four .slider article h3 {
   font-size: 1.8em;
+  margin-bottom: 24px;
+}
+#four .slider article p {
+  font-size: 1.8em;
+  font-weight: 100;
+  line-height: 24px;
 }
 #four .slider article p span {
   font-weight: 700;
@@ -400,11 +406,11 @@ body {
 #four .slider article:before {
   content: "";
   width: 50px;
-  height: 50px;
+  height: 91px;
   display: block;
   position: absolute;
-  background: url("../img/icons/quote-left.svg") no-repeat top center;
-  left: -53px;
+  background: url("../img/icons/quote-left.svg") no-repeat bottom center;
+  left: -55px;
 }
 #four .slider article:after {
   content: "";
@@ -412,13 +418,13 @@ body {
   height: 50px;
   display: block;
   position: absolute;
-  background: url("../img/icons/quote-right.svg") no-repeat center center;
-  right: -19px;
+  background: url("../img/icons/quote-right.svg") no-repeat top center;
+  right: -18px;
 }
 #four .bullets {
   text-align: center;
   position: absolute;
-  bottom: 19em;
+  bottom: 9em;
   width: 100%;
 }
 #four .bullets .bullet {
@@ -435,6 +441,13 @@ body {
 }
 #four .bullets .bullet.active, #four .bullets .bullet:hover {
   background: #EE9E19;
+}
+#four .loader {
+  width: 0%;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  background: #49403B;
 }
 
 #five {
@@ -512,6 +525,9 @@ body {
   border: 1px solid #EE9E19;
   cursor: pointer;
 }
+#five .contact {
+  margin-top: 9em;
+}
 #five .contact .cta {
   width: 230px;
   height: 60px;
@@ -529,14 +545,13 @@ body {
 .section {
   display: block;
   position: relative;
-  height: 100%;
+  overflow: hidden;
 }
 .section .inner-section {
   position: relative;
   margin: 0 auto;
-  height: 100%;
   max-width: 1440px;
-  padding-bottom: 80px;
+  padding-bottom: 103px;
 }
 .section h3 {
   font-family: "Roboto Condensed";
@@ -559,7 +574,7 @@ body {
   width: 37px;
   border: 2px solid #EE9E19;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 .section .row {
   position: relative;
@@ -583,7 +598,7 @@ body {
 .section .bloc .bloc-text {
   font-weight: 100;
   color: #3D3B3A;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   padding-right: 80px;
 }
 .section .bloc .bloc-text h2 {
@@ -592,10 +607,14 @@ body {
   line-height: 53px;
   margin-bottom: 20px;
 }
+.section .bloc .bloc-text.service {
+  margin-bottom: 22px;
+}
 .section .bloc .bloc-picto li {
   display: inline-block;
   width: 33%;
   text-align: center;
+  float: left;
 }
 .section .bloc .bloc-picto li span {
   width: 99px;
@@ -604,7 +623,7 @@ body {
   border-radius: 50%;
   margin: 0 auto;
   border: 10px solid lightgray;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .section .bloc .bloc-picto li span:before {
   content: "";
@@ -637,7 +656,7 @@ body {
 }
 .section .right {
   width: 47%;
-  margin-right: 13.5%;
+  margin-right: 11.5%;
   float: right;
 }
 .section .landing-image {
@@ -654,13 +673,13 @@ body {
 }
 .section .landing-image.landing-melomane {
   background: url("../img/melomane.png") no-repeat bottom left;
-  margin-left: 6%;
+  margin-left: 7%;
 }
 .section .landing-image.landing-iphone {
-  background: url("../img/iphone6app.png") no-repeat bottom right;
+  background: url("../img/iphone6app.png") no-repeat top right;
+  background-size: 25%;
   margin-right: 11%;
-  background-size: 24%;
-  background-position: 100% -100%;
+  top: 9%;
 }
 .section .landing-image.imgright {
   right: 0;
@@ -1357,45 +1376,80 @@ body {
     font-size: 1.5em;
   }
   #intro .inner-section .bloc-text p:nth-of-type(2) {
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
+  #intro .inner-section {
+    padding: 55px 0;
+  }
   #intro .inner-section h2 {
-    font-size: 7em;
+    font-size: 5em;
   }
   #intro .inner-section h3 {
-    font-size: 2.5em;
+    font-size: 2em;
   }
   #intro .inner-section .arrowdown {
     background: url("../img/icons/arrow-down-white.svg") no-repeat center center;
     width: 96px;
     height: 96px;
     background-size: 100%;
+    left: 35%;
+  }
+
+  .section .inner-section {
+    padding-bottom: 0 !important;
   }
 
   .section .left,
   .section .right {
     width: 100%;
-    margin: 0 17px;
+    margin: 0;
+    padding: 0 17px;
     float: none;
   }
 
   .section .bloc .bloc-text {
     text-align: center;
+    padding: 0;
   }
   .section .bloc .bloc-text h2 {
-    font-size: 3em;
+    font-size: 2.8em;
   }
   .section .bloc .bloc-text p.paragraph {
     font-size: 1.5em;
   }
 
+  .section .bloc .bloc-picto li span {
+    width: 70px;
+    height: 70px;
+    border: 6px solid lightgray;
+  }
+  .section .bloc .bloc-picto li span:before {
+    width: 58px;
+    height: 58px;
+    background-size: 45% !important;
+  }
+  .section .bloc .bloc-picto a {
+    font-size: 1.1em;
+  }
+
   .section .landing-image {
     background-size: 55% !important;
-    background-position: bottom center !important;
+    margin-left: 0% !important;
+    position: relative;
+    height: 45%;
   }
   .section .landing-image.landing-artist {
     margin-right: 0;
+    background-position: bottom center !important;
+  }
+  .section .landing-image.landing-melomane {
+    margin-top: 6em;
+    background: url("../img/melomane_bg_mobile.png") no-repeat top center;
+  }
+  .section .landing-image.landing-iphone {
+    background: url("../img/iphonedown.png") no-repeat bottom center;
+    background-size: 100% !important;
   }
 
   .section h2.title {
@@ -1417,9 +1471,9 @@ body {
     margin: 0 15px;
   }
   #four .slider article p {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 100;
-    line-height: 20px;
+    line-height: 25px;
   }
 
   #five .newsletter article {
@@ -1434,6 +1488,10 @@ body {
   }
   #five .newsletter form#newsletter .submit {
     margin-left: -40px;
+  }
+
+  #five .contact {
+    margin-top: 2em;
   }
 }
 header {
@@ -1840,7 +1898,7 @@ header .header-inner {
 /* Styling the toggle menu link and hiding it */
 #menutoggle {
   display: none;
-  padding: 0.5em 0.5em 3.3em;
+  padding: 0.5em 0.5em 3.5em 1em;
   font-weight: normal;
   text-align: left;
   color: #07100f;
@@ -1905,6 +1963,7 @@ header .header-inner {
     margin: 0;
     display: block;
     outline: none;
+    background: rgba(255, 255, 255, 0.5);
   }
 
   /* When JavaScript is enabled, we hide the menu */

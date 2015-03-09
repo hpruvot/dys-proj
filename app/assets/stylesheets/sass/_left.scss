@@ -252,7 +252,7 @@
 /* Styling the toggle menu link and hiding it */
 #menutoggle{
 	display: none;
-	padding: 0.5em 0.5em 3.3em;
+	padding: 0.5em 0.5em 3.5em 1em;
 	font-weight: normal;
 	text-align: left;
 	color: rgb(7, 16, 15);
@@ -321,6 +321,7 @@
 		margin: 0;
 		display: block;
 		outline: none;
+		background: rgba(255,255,255,0.5);
 	}
 	/* When JavaScript is enabled, we hide the menu */
 	#menu {
