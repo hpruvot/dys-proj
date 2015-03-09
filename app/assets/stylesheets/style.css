@@ -1371,9 +1371,10 @@ body {
 @media (max-width: 640px) {
   #intro .inner-section .bloc-text {
     width: 100%;
+    padding: 12px 10px;
   }
   #intro .inner-section .bloc-text p:nth-of-type(1) {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
   #intro .inner-section .bloc-text p:nth-of-type(2) {
     font-size: 2em;
@@ -1384,16 +1385,14 @@ body {
   }
   #intro .inner-section h2 {
     font-size: 5em;
+    letter-spacing: 6px;
   }
   #intro .inner-section h3 {
     font-size: 2em;
+    letter-spacing: 2px;
   }
   #intro .inner-section .arrowdown {
-    background: url("../img/icons/arrow-down-white.svg") no-repeat center center;
-    width: 96px;
-    height: 96px;
-    background-size: 100%;
-    left: 35%;
+    display: none;
   }
 
   .section .inner-section {
@@ -1417,6 +1416,7 @@ body {
   }
   .section .bloc .bloc-text p.paragraph {
     font-size: 1.5em;
+    line-height: 24px;
   }
 
   .section .bloc .bloc-picto li span {

@@ -838,8 +838,9 @@ $fourteen: $max;
 
 	#intro .inner-section .bloc-text {
 		width: 100%;
+		padding: 12px 10px;
 		p:nth-of-type(1) {
-			font-size: 1.5em;
+			font-size: 1.2em;
 		}
 		p:nth-of-type(2) {
 			font-size: 2em;
@@ -849,16 +850,14 @@ $fourteen: $max;
 		padding: 55px 0;
 		h2 {
 			font-size: 5em;
+			letter-spacing: 6px;
 		}
 		h3 {
 			font-size: 2em;
+			letter-spacing: 2px;
 		}
 		.arrowdown {
-			background: url('#{$folder-icon}/arrow-down-white.svg') no-repeat center center;
-			width: 96px;
-			height: 96px;
-			background-size: 100%;
-			left: 35%;
+			display: none;
 		}
 	}
 
@@ -882,6 +881,7 @@ $fourteen: $max;
 		}
 		p.paragraph {
 			font-size: 1.5em;
+			line-height: 24px;
 		}
 	}
 
