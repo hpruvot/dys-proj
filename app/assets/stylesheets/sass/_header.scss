@@ -21,9 +21,13 @@ header {
 	vertical-align: middle;
 	text-align: center;
 	padding-left: 17px;
-	position: absolute;
+	position: fixed;
   	top: 0;
+  	background: url('#{$folder-image}/Logo.svg') no-repeat center center;
+  	z-index: 100000;
+  	height: 72px;
 	a {
+		display: none;
 		font-family: "alpaca";
 		color: #3D3B3A;
 		line-height: 47px;
@@ -177,6 +181,17 @@ header {
 
 
 @media(max-width:640px) {
+
+	#logo {
+		background: none;
+  		z-index: 1;
+  		height: 45px;
+  		position: absolute;
+		a {
+			display: block;
+		}
+	}
+	
 
 	header {
 		height: 45px;

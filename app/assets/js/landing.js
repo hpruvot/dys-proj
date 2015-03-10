@@ -92,6 +92,11 @@ $(document).ready(function() {
 		    'slow');
 		}
 
+		$('.arrowdown').click(function(e) {
+			e.preventDefault(); 
+			goToDiv($(this).attr("href"));  
+		})
+
 		$("#menu a").click(function(e) { 
 		      // Prevent a page reload when a link is pressed
 		    e.preventDefault(); 

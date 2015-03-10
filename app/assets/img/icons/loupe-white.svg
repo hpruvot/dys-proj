@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 93</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="One-Page-Inscription_V0" sketch:type="MSArtboardGroup" transform="translate(-673.000000, -1831.000000)" filter="url(#filter-1)" fill="#FFFFFF">
+            <g id="MÉLOMANE" sketch:type="MSLayerGroup" transform="translate(-1.000000, 1416.000000)">
+                <g id="Picto1" transform="translate(596.000000, 381.000000)" sketch:type="MSShapeGroup">
+                    <g id="Oval-5-+-Fill-93" transform="translate(46.000000, 0.000000)">
+                        <path d="M37.8561721,46.5298228 C37.8561721,41.7387342 41.7406984,37.8549873 46.5285087,37.8549873 C51.3203697,37.8549873 55.5897031,42.1243544 55.5897031,46.915443 C55.5897031,51.7061266 51.7051768,55.5902785 46.9133158,55.5902785 C42.1255055,55.5902785 37.8561721,51.3213165 37.8561721,46.5298228 L37.8561721,46.5298228 Z M65.2787405,61.0728101 L57.6271553,53.4195443 C58.7815766,51.5238481 59.4458752,49.2972152 59.4458752,46.915443 C59.4458752,39.9957468 53.4509858,34 46.5285087,34 C39.6100823,34 34,39.6097215 34,46.5298228 C34,53.4499241 39.9948894,59.4452658 46.9133158,59.4452658 C49.2140572,59.4452658 51.3689769,58.8222785 53.2241521,57.7399494 L60.9202939,65.4349367 C61.6696551,66.1883544 62.8929366,66.1883544 63.6463483,65.4349367 L65.5541814,63.5270886 C66.3075932,62.7736709 66.0321523,61.8258228 65.2787405,61.0728101 L65.2787405,61.0728101 Z" id="Fill-93"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

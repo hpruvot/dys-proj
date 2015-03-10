@@ -288,7 +288,7 @@ body {
   background: #FBFBFB;
 }
 #two li:nth-of-type(1) span:before {
-  background: url("../img/icons/loupe.svg") no-repeat center center;
+  background: url("../img/icons/loupe-white.svg") no-repeat center center;
   background-size: 40%;
 }
 #two li:nth-of-type(2) span:before {
@@ -310,11 +310,34 @@ body {
 #three ul li {
   margin-bottom: 48px;
 }
+#three ul li:nth-of-type(1) span:before {
+  background: url("../img/trait1.png") no-repeat top center;
+  width: 682px;
+  margin-top: 0.5em;
+}
+#three ul li:nth-of-type(2) span:before {
+  background: url("../img/trait2.png") no-repeat top center;
+  width: 805px;
+  margin-top: -1.5em;
+}
+#three ul li:nth-of-type(3) span:before {
+  background: url("../img/trait3.png") no-repeat top center;
+  width: 860px;
+  margin-top: -2.2em;
+}
 #three ul span {
   font-weight: 700;
   font-size: 2.5em;
   float: left;
   margin-right: 6px;
+}
+#three ul span:before {
+  content: "";
+  display: block;
+  height: 110px;
+  position: absolute;
+  margin-left: 6em;
+  z-index: 2;
 }
 #three ul h4 {
   font-weight: 100;
@@ -649,6 +672,7 @@ body {
   background-size: 25%;
   margin-right: 11%;
   top: 9%;
+  z-index: 0;
 }
 .section .landing-image.imgright {
   right: 0;
@@ -1452,6 +1476,9 @@ body {
     margin-top: 30px;
   }
 
+  #three ul h4:before {
+    display: none;
+  }
   #three ul p {
     padding-right: 0;
   }
@@ -1471,6 +1498,22 @@ body {
     font-size: 2em;
     font-weight: 100;
     line-height: 25px;
+  }
+  #four .slider article:before {
+    background: url("../img/icons/quote-left-big.svg") no-repeat top left;
+    width: 242px;
+    height: 171px;
+    background-size: 50%;
+    left: -2em;
+    top: -2em;
+  }
+  #four .slider article:after {
+    background: url("../img/icons/quote-right-big.svg") no-repeat bottom right;
+    width: 242px;
+    height: 171px;
+    background-size: 50%;
+    right: -3em;
+    bottom: -5em;
   }
 
   #five .newsletter article {
@@ -1514,10 +1557,14 @@ header .header-inner {
   vertical-align: middle;
   text-align: center;
   padding-left: 17px;
-  position: absolute;
+  position: fixed;
   top: 0;
+  background: url("../img/Logo.svg") no-repeat center center;
+  z-index: 100000;
+  height: 72px;
 }
 #logo a {
+  display: none;
   font-family: "alpaca";
   color: #3D3B3A;
   line-height: 47px;
@@ -1667,6 +1714,16 @@ header .header-inner {
 }
 
 @media (max-width: 640px) {
+  #logo {
+    background: none;
+    z-index: 1;
+    height: 45px;
+    position: absolute;
+  }
+  #logo a {
+    display: block;
+  }
+
   header {
     height: 45px;
   }
