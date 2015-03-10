@@ -143,11 +143,25 @@ header {
 						color: transparent;
 						-webkit-background-clip: text;
 					}
+					&.social {
+						float: left;
+  						width: 33%;
+						height: 72px;
+					}
 				}			
 				&.active a{
 					background: $d-gradient;
 					color: transparent;
 					-webkit-background-clip: text;
+				}
+				.tw {
+					background: url('#{$folder-icon}/twitter-white.svg') no-repeat center center;
+				}
+				.gl {
+					background: url('#{$folder-icon}/google+-white.svg') no-repeat center center;
+				}
+				.fb {
+					background: url('#{$folder-icon}/facebook-white.svg') no-repeat center center;
 				}
 			}
 		}
@@ -156,13 +170,60 @@ header {
 
 
 @media(max-width:640px) {
+	/*a { 
+    	pointer-events: none !important;  only use !important if you have to 
+	}*/
 	header {
 		height: 45px;
+	}
+	/* MENU */
+	#home-header #menu {
+		background: $d-gradient;
+		li {
+			padding: 8px 5px;
+			width: 100%;
+			border: none;
+			text-transform: none;
+			position: relative;
+			&:nth-child(1) {
+				background: rgba(255,255,255,0.20);
+				box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.10);
+			}
+			&:nth-child(2) {
+				background: rgba(255,255,255,0.15);
+				box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.10);
+			}
+			&:nth-child(3) {
+				background: rgba(255,255,255,0.10);
+				box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.10);
+			}
+			&:nth-child(4) {
+				background: rgba(255,255,255,0.05);
+				box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.10);
+			}
+			a {
+				font-weight: $thin;
+				font-size: 2.5em;
+				color: $d-white !important;
+				line-height: 66px;
+				padding-left: 0;
+				text-transform: none;
+				div {
+					display: none;
+				}
+				&:hover {
+
+				}
+			}		
+		}
 	}
 }
 @media(max-width: 1024px) {
 	#home-header {
-		height: 45px;
+		height: 100%;
 		background: none;	
+	}
+	body.inactive {
+		overflow: hidden;
 	}
 }

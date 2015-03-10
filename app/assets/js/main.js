@@ -5,19 +5,7 @@ return!0}function Q(a,b,d,e){if(m.acceptData(a)){var f,g,h=m.expando,i=a.nodeTyp
 
 $(document).ready(function(){
 
-	//  The function to change the class
-	var changeClass = function (r,className1,className2) {
-		var regex = new RegExp("(?:^|\\s+)" + className1 + "(?:\\s+|$)");
-		if( regex.test(r.className) ) {
-			r.className = r.className.replace(regex,' '+className2+' ');
-	    }
-	    else{
-			r.className = r.className.replace(new RegExp("(?:^|\\s+)" + className2 + "(?:\\s+|$)"),' '+className1+' ');
-	    }
-	    return r.className;
-	};	
-
-	  /* Responsive menu function */
+	/* Responsive menu function */
 	var menutoggle = function() {
 		if ($( window ).width() < 1024 ) {
 	      	$("#left-bar").addClass("resp");
@@ -46,9 +34,10 @@ $(document).ready(function(){
 
 	//  Toggle the class on click to show / hide the menu
 	document.getElementById('menutoggle').onclick = function() {
-		changeClass(this, 'navtoogle active', 'navtoogle');
-		changeClass(leftbar, 'resp active', 'resp');
+		$('.navtoogle').toggleClass('active');
+		$('#leftbar').toggleClass('resp');
 		$("#container").toggleClass("active");
+		$("body").toggleClass("inactive");
 	}
 
 	$(window).on("resize", function (e) {

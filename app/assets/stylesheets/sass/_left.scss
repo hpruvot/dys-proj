@@ -7,7 +7,7 @@
   height: 100%;
 }
 
-#left-bar.resp, #home-header.resp {
+#left-bar.resp {
 	box-shadow: none;
 	top: 0;
 	right: 0;
@@ -252,15 +252,14 @@
 /* Styling the toggle menu link and hiding it */
 #menutoggle{
 	display: none;
-	padding: 0.5em 0.5em 3.5em 1em;
 	font-weight: normal;
-	text-align: left;
 	color: rgb(7, 16, 15);
 	font-size: 1.2em;
 	background: none;	
 	border: none;
 	cursor: pointer;
-	width: 43px;
+	width: 45px;
+	height: 45px;
 	float: right;
 }
 
@@ -268,41 +267,45 @@
 	@include transition(all 0.4s ease-in);
 	.icon-menu {
 		z-index: 100;
-		position: relative;
-		top: 6px;
+		position: absolute;
 		line-height: 0;
 		font-size: 1.6em;
 		background: transparent;
-		position: relative;
+		height: 16px;
+		width: 20px;
+		top: 0;
+		right: 0;
+		margin: 0.75em 0.5em;
 		&:before,
 	  	&:after {
 		    background: #646261;
 		    backface-visibility: hidden;
 		    content: "";
 		    height: 2px;
-		    left: 0;
 		    transition: 0.75s;
 		    width: 20px;
 		}
 		&:before {
 		    box-shadow: #646261 0 14px 0 0;
 		    position: absolute;
-		    top: 4px;
+		    top: 0;
+		    left: 0;
 		}
 		&:after {
 		    position: absolute;
-		    top: 11px;
+		    top: 7px;
+		    left: 0;
 		}
 	}
 	&.active {
 		.icon-menu {
 			&:before {
 		    	box-shadow: transparent 0 0 0 0;
-		    	top: 11px;
+		    	top: 7px;
 		    	transform: rotate(225deg);
 		    }
 		    &:after {  
-		    	top: 11px;
+		    	top: 7px;
 		    	transform: rotate(315deg);
 		    }
 		}

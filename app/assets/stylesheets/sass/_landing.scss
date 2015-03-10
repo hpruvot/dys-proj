@@ -360,7 +360,7 @@
 			font-weight: $thin;
 			color: $d-black;
 			margin-bottom: 50px;
-			padding-right: 80px;
+			padding-right: 75px;
 			h2 {
 				font-size: 4em;
 				color: $d-black;
@@ -912,10 +912,11 @@ $fourteen: $max;
 		&.landing-artist {
 			margin-right: 0;
 			background-position: bottom center !important;
+			background-image: url("../img/artist_mobile.png");
 		}
 		&.landing-melomane {
 			margin-top: 6em;
-			background: url("../img/melomane_bg_mobile.png") no-repeat top center;
+			background: url("../img/melomane_bg_mobile.png") no-repeat bottom center;
 		}
 		&.landing-iphone {
 			background: url("../img/iphonedown.png") no-repeat bottom center;
@@ -925,6 +926,10 @@ $fourteen: $max;
 
 	.section h2.title {
 		margin-top: 25px;
+	}
+
+	#one, #two, #three {
+		background-image: linear-gradient(-8deg, #ECECEC 0%, #FFFFFF 9%);
 	}
 
 	#one .bloc, #two .bloc, #three .bloc {
