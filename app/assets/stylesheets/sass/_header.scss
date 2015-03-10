@@ -14,13 +14,20 @@ header {
 
 #logo {
 	display: inline-block;
-	font-size: 3em;
+	font-size: 2em;
 	color: $d-black;
-	line-height: 100%;
 	text-transform: uppercase;
 	width: 13%;
 	vertical-align: middle;
 	text-align: center;
+	padding-left: 17px;
+	position: absolute;
+  	top: 0;
+	a {
+		font-family: "alpaca";
+		color: #3D3B3A;
+		line-height: 47px;
+	}
 }
 
 .searchbar {
@@ -170,9 +177,7 @@ header {
 
 
 @media(max-width:640px) {
-	/*a { 
-    	pointer-events: none !important;  only use !important if you have to 
-	}*/
+
 	header {
 		height: 45px;
 	}

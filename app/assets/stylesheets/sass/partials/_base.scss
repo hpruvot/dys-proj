@@ -9,7 +9,7 @@
 	$ultrabold: 900;
 
 	// Fonts families
-	$folder: "../fonts/roboto";
+	$folderRoboto: "../fonts/roboto";
 
 	$robotoblack: "roboto-black-webfont";
 	$robotobold: "roboto-bold-webfont";
@@ -22,12 +22,25 @@
 	@mixin font-face($family, $filename) {
 	  @font-face {
 	    font-family: $family;
-	    src: url('#{$folder}/#{$filename}.eot');
-	    src: url('#{$folder}/#{$filename}.eot?#iefix') format("embedded-opentype");
-	    src: url('#{$folder}/#{$filename}.woff') format("woff");
-	    src: url('#{$folder}/#{$filename}.ttf') format("truetype");
-	    src: url('#{$folder}/#{$filename}.svg#08bb4ba465a902745fc23c83a5d9fdc2') format("svg");
-		}
+	    src: url('#{$folderRoboto}/#{$filename}.eot');
+	    src: url('#{$folderRoboto}/#{$filename}.eot?#iefix') format("embedded-opentype");
+	    src: url('#{$folderRoboto}/#{$filename}.woff') format("woff");
+	    src: url('#{$folderRoboto}/#{$filename}.ttf') format("truetype");
+	    src: url('#{$folderRoboto}/#{$filename}.svg#08bb4ba465a902745fc23c83a5d9fdc2') format("svg");
+	  }
+	}
+	$folderAlpaca : "../fonts/alpaca";
+
+	@font-face {
+	    font-family: 'alpaca';
+	    src: url('#{$folderAlpaca}/Alpaca Scarlett Demo-webfont.eot');
+	    src: url('#{$folderAlpaca}/Alpaca Scarlett Demo-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('#{$folderAlpaca}/Alpaca Scarlett Demo-webfont.woff2') format('woff2'),
+	         url('#{$folderAlpaca}/Alpaca Scarlett Demo-webfont.woff') format('woff'),
+	         url('#{$folderAlpaca}/Alpaca Scarlett Demo-webfont.ttf') format('truetype'),
+	         url('#{$folderAlpaca}/Alpaca Scarlett Demo-webfont.svg#alpaca_scarlett_demoregular') format('svg');
+	    font-weight: normal;
+	    font-style: normal;
 	}
 
 	// Fonts sizes

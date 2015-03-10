@@ -55,6 +55,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 @font-face {
+  font-family: 'alpaca';
+  src: url("../fonts/alpaca/Alpaca Scarlett Demo-webfont.eot");
+  src: url("../fonts/alpaca/Alpaca Scarlett Demo-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/alpaca/Alpaca Scarlett Demo-webfont.woff2") format("woff2"), url("../fonts/alpaca/Alpaca Scarlett Demo-webfont.woff") format("woff"), url("../fonts/alpaca/Alpaca Scarlett Demo-webfont.ttf") format("truetype"), url("../fonts/alpaca/Alpaca Scarlett Demo-webfont.svg#alpaca_scarlett_demoregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "Roboto black";
   src: url("../fonts/roboto/roboto-black-webfont.eot");
   src: url("../fonts/roboto/roboto-black-webfont.eot?#iefix") format("embedded-opentype");
@@ -422,7 +429,7 @@ body {
   margin: 0 auto;
 }
 #five .newsletter h2 {
-  font-family: "AlpacaScarlettDemo";
+  font-family: "alpaca";
   font-size: 3em;
   color: #FFFFFF;
   line-height: 40px;
@@ -486,6 +493,9 @@ body {
 }
 #five .contact {
   margin-top: 9em;
+}
+#five .contact .bloc {
+  padding: 0 10px;
 }
 #five .contact .cta {
   width: 230px;
@@ -1328,23 +1338,36 @@ body {
   }
 }
 @media (max-width: 640px) {
+  #home-header #logo {
+    position: relative;
+  }
+
   #intro .inner-section .bloc-text {
     width: 100%;
-    padding: 12px 10px;
+    padding: 7px 5px;
   }
   #intro .inner-section .bloc-text p:nth-of-type(1) {
     font-size: 1.2em;
+    line-height: 1.5em;
+    letter-spacing: 0.3px;
   }
   #intro .inner-section .bloc-text p:nth-of-type(2) {
-    font-size: 2em;
+    font-size: 2.2em;
+    line-height: 1.1em;
+  }
+
+  #intro {
+    height: 100%;
   }
 
   #intro .inner-section {
     padding: 55px 0;
+    height: 100%;
   }
   #intro .inner-section h2 {
     font-size: 5em;
     letter-spacing: 6px;
+    line-height: 0.5em;
   }
   #intro .inner-section h3 {
     font-size: 2em;
@@ -1374,10 +1397,14 @@ body {
     font-size: 2.8em;
   }
   .section .bloc .bloc-text p.paragraph {
-    font-size: 1.5em;
+    font-size: 1.7em;
     line-height: 24px;
+    margin-bottom: 17px;
   }
 
+  .section .bloc .bloc-picto {
+    margin: 0 -15px;
+  }
   .section .bloc .bloc-picto li span {
     width: 70px;
     height: 70px;
@@ -1389,14 +1416,15 @@ body {
     background-size: 45% !important;
   }
   .section .bloc .bloc-picto a {
-    font-size: 1.1em;
+    font-size: 1.3em;
+    padding: 0 5px;
   }
 
   .section .landing-image {
     background-size: 55% !important;
     margin-left: 0% !important;
     position: relative;
-    height: 45%;
+    height: 270px;
   }
   .section .landing-image.landing-artist {
     margin-right: 0;
@@ -1424,9 +1452,14 @@ body {
     margin-top: 30px;
   }
 
+  #three ul p {
+    padding-right: 0;
+  }
+
   #four .img {
-    height: 228px;
+    height: 100%;
     background: url("../img/img-logo.jpg") no-repeat center center;
+    background-size: cover;
   }
 
   #four .slider article {
@@ -1474,13 +1507,20 @@ header .header-inner {
 
 #logo {
   display: inline-block;
-  font-size: 3em;
+  font-size: 2em;
   color: #3D3B3A;
-  line-height: 100%;
   text-transform: uppercase;
   width: 13%;
   vertical-align: middle;
   text-align: center;
+  padding-left: 17px;
+  position: absolute;
+  top: 0;
+}
+#logo a {
+  font-family: "alpaca";
+  color: #3D3B3A;
+  line-height: 47px;
 }
 
 .searchbar {
@@ -1627,9 +1667,6 @@ header .header-inner {
 }
 
 @media (max-width: 640px) {
-  	/*a { 
-      	pointer-events: none !important;  only use !important if you have to 
-  	}*/
   header {
     height: 45px;
   }
@@ -1729,7 +1766,7 @@ header .header-inner {
 }
 
 @media (max-width: 640px) {
-  #footer .socials {
+  #footer .socials, #footer .mentions {
     display: none;
   }
 }
@@ -2017,6 +2054,10 @@ header .header-inner {
   position: absolute;
   top: 7px;
   left: 0;
+}
+.navtoogle.active {
+  width: 100% !important;
+  background: #FFFFFF !important;
 }
 .navtoogle.active .icon-menu:before {
   box-shadow: transparent 0 0 0 0;

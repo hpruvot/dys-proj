@@ -298,6 +298,8 @@
 		}
 	}
 	&.active {
+		width: 100% !important;
+		background: $d-white !important;
 		.icon-menu {
 			&:before {
 		    	box-shadow: transparent 0 0 0 0;

@@ -224,7 +224,7 @@
 			margin: 0 auto;
 		}
 		h2 {
-			font-family: "AlpacaScarlettDemo";
+			font-family: "alpaca";
 			font-size: 3em;
 			color: $d-white;
 			line-height: 40px;
@@ -290,6 +290,9 @@
 	}
 	.contact {
 		margin-top: 9em;
+		.bloc {
+			padding: 0 10px;
+		}
 		.cta {
 			width: 230px;
 			height: 60px;
@@ -836,21 +839,33 @@ $fourteen: $max;
 }
 @media(max-width: 640px) {
 
+	#home-header #logo {
+		position: relative;
+	}
+
 	#intro .inner-section .bloc-text {
 		width: 100%;
-		padding: 12px 10px;
+		padding: 7px 5px;
 		p:nth-of-type(1) {
 			font-size: 1.2em;
+			line-height: 1.5em;
+			letter-spacing: 0.3px;
 		}
 		p:nth-of-type(2) {
-			font-size: 2em;
+			font-size: 2.2em;
+			line-height: 1.1em;
 		}
+	}
+	#intro {
+		height: 100%;
 	}
 	#intro .inner-section {
 		padding: 55px 0;
+		height: 100%;
 		h2 {
 			font-size: 5em;
 			letter-spacing: 6px;
+			line-height: 0.5em;
 		}
 		h3 {
 			font-size: 2em;
@@ -880,12 +895,14 @@ $fourteen: $max;
 			font-size: 2.8em;
 		}
 		p.paragraph {
-			font-size: 1.5em;
+			font-size: 1.7em;
 			line-height: 24px;
+			margin-bottom: 17px;
 		}
 	}
 
 	.section .bloc .bloc-picto {
+		margin: 0 -15px;
 		li {
 			span {
 				width: 70px;
@@ -900,7 +917,8 @@ $fourteen: $max;
 			}
 		}
 		a {
-			font-size: 1.1em;
+			font-size: 1.3em;
+  			padding: 0 5px;
 		}
 	}
 
@@ -908,7 +926,7 @@ $fourteen: $max;
 		background-size: 55% !important;
 		margin-left: 0% !important;
 		position: relative;
-		height: 45%;
+		height: 270px;
 		&.landing-artist {
 			margin-right: 0;
 			background-position: bottom center !important;
@@ -936,9 +954,14 @@ $fourteen: $max;
 		margin-top: 30px;
 	}
 
+	#three ul p {
+  		padding-right: 0;
+	}
+
 	#four .img {
-		height: 228px;
+		height: 100%;
 		background: url("../img/img-logo.jpg") no-repeat center center;
+		background-size: cover;
 	}
 
 	#four .slider article {
