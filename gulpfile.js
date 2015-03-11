@@ -80,12 +80,12 @@ gulp.task('images', function() {
       svgoPlugins: [{removeViewBox: false}],
       use: [pngquant()]
     }))
-    .pipe(gulp.dest(conf.paths.dist + '/img'));
+    .pipe(gulp.dest(conf.paths.dist + '/images'));
 });
 
 gulp.task('images-copy', function() {
   return gulp.src(conf.paths.images + '/**/*')
-    .pipe(gulp.dest(conf.paths.dist + '/img'));
+    .pipe(gulp.dest(conf.paths.dist + '/images'));
 });
 
 /* Dist scripts minification */

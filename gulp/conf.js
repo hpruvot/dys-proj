@@ -8,7 +8,7 @@ var conf = {
     styles: 'app/assets/stylesheets',
     css: 'app/assets/stylesheets/css',
     sass: 'app/assets/stylesheets/sass',
-    images: 'app/assets/img',
+    images: 'app/assets/images',
     fonts: 'app/assets/fonts'
   },
   compassConf: {
