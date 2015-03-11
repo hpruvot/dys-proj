@@ -928,6 +928,7 @@ header .header-inner {
   background: url("../images/Logo.svg") no-repeat center center;
   z-index: 100000;
   height: 72px;
+  cursor: pointer;
 }
 #logo a {
   display: none;
