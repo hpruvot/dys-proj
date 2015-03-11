@@ -210,16 +210,16 @@ $(document).ready(function() {
 			 setTimeout(resetSlides, 300);
 		}
 
-		$(document).on("click", ".bullet", function(){
-			if($(this).hasClass("active")){
-				return;
-			}
-			var $activeSlide = $(".slide.active");
-			var currentIndex = $activeSlide.index();
-			var targetIndex = $(this).index();
-			var $theSlide = $(".slide:nth-child("+(targetIndex+1)+")");
-			gotoSlide($activeSlide, $theSlide);
-		})
+		// $(document).on("click", ".bullet", function(){
+		// 	if($(this).hasClass("active")){
+		// 		return;
+		// 	}
+		// 	var $activeSlide = $(".slide.active");
+		// 	var currentIndex = $activeSlide.index();
+		// 	var targetIndex = $(this).index();
+		// 	var $theSlide = $(".slide:nth-child("+(targetIndex+1)+")");
+		// 	gotoSlide($activeSlide, $theSlide);
+		// })
 
 		function resetBullets(){
 			$(".bullet.active").removeClass("active");
@@ -238,8 +238,8 @@ $(document).ready(function() {
 			sliderLoader();
 		}
 
-		// sliderLoader();
-		// var sliderAnimation = setInterval(slider, 8000);
+		sliderLoader();
+		var sliderAnimation = setInterval(slider, 8000);
 
 		function sliderLoader() {
 			$("#four .loader").stop();
@@ -249,25 +249,71 @@ $(document).ready(function() {
 			},8000);
 		}
 
-		calculateHeight();	
-
-		function equalizer() {
+		function createEqualizer() {
 			var winwidth = $(window).width();
 			var equalizer = $("#equalizer");
 
-			var nbbar = (winwidth / 16 /4);
-			for(var i=1; i<=nbbar; i++) {
-				var h1 = Math.random() * (375 - 178) + 178;
-				var animation = Math.floor(Math.random() * 4 + 1);
-				for(var j=1; j<=4; j++) {
-        			$("<div class='bar'>").height(h1).css({
-    					'-webkit-animation-name': 'equalize'+ j
-					}).appendTo(equalizer);
-        		}
+			var nbbar = winwidth / 16;
+			for(var i=0; i<nbbar; i++) {
+				// var h1 = Math.random() * (275 - 108) + 108;
+        		$("<div class='bar'>").appendTo(equalizer);
 			}
-			
 		}
+		createEqualizer();
+
+		function equalizer(bar) {
+		  // Syntax: Math.random() * (max-min = range) + min;
+		  // My bars will be at least 70px, and at most 170px tall
+		  var height = Math.random() * 100 + 100;
+		  // Any timing would do the trick, mine is height times 7.5 to get a speedy yet bouncy vibe
+		  var timing = height * 7.5;
+		  // If you need to align them on a baseline, just remove this line and also the "marginTop: marg" from the "animate"
+		  var marg = (170 - height) / 2;
+		  
+		  bar.animate({
+		      height: height,
+		      marginTop: marg
+		  }, timing, function() {
+		      equalizer($(this));
+		  });
+		}
+
+		// Action on play-pause buttons can be added here (should be a wholesome function rather than annonymous)
+		$('#equalizer .bar').each(function(i) {
+			equalizer($(this));
+		});
+
+		calculateHeight();	
+
+		// function equalizer() {
+		// 	var winwidth = $(window).width();
+		// 	var equalizer = $("#equalizer");
+
+		// 	var nbbar = winwidth / 16;
+		// 	for(var i=0; i<nbbar; i++) {
+		// 		var h1 = Math.random() * (275 - 108) + 108;
+  //       		$("<div class='bar'>").height(h1).appendTo(equalizer);
+		// 	}
+		// }
 		// equalizer();
+
+		// var bars = $(".bar");
+
+		// function dl(){
+		//   var pause  = [ 80, 120 ]
+		//       dlay = Math.floor(Math.random() * pause.length);
+		//       return pause[dlay];
+		// }
+
+  //   	function animate(){
+		// 	$('.bar').each(function() {
+		// 		$(this).delay(dl()).animate({
+	 //            	'marginBottom': '-'+(Math.floor(Math.random() * 4) + 0) + '%'
+	 //        	},0);
+		// 	});
+		// }
+
+    	// setInterval(animate,0);
 
 		// This is a functions that scrolls to #{blah}link
 		function goToDiv(id){

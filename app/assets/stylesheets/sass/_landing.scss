@@ -98,31 +98,11 @@
 	} 
 	.bloc {
 		margin-top: 110px;
+		width: 55%;
 	}
 	ul {
 		li{
 			margin-bottom: 48px;
-			&:nth-of-type(1) {
-				span:before {
-					background: url('#{$folder-image}/trait1.png') no-repeat top center;
-					width: 682px;
-					margin-top: 0.5em;
-				}
-			}
-			&:nth-of-type(2) {
-				span:before {
-					background: url('#{$folder-image}/trait2.png') no-repeat top center;
-					width: 805px;
-					margin-top: -1.5em;
-				}
-			}
-			&:nth-of-type(3) {
-				span:before {
-					background: url('#{$folder-image}/trait3.png') no-repeat top center;
-					width: 860px;
-					margin-top: -2.2em;
-				}
-			}
 		}
 		span {
 			font-weight: $bold;
@@ -142,6 +122,8 @@
 			font-weight: $thin;
 			font-size: 2.5em;
 			margin-bottom: 8px;
+			width: 160px;
+  			background: white;
 			
 		}
 		p{
@@ -227,9 +209,8 @@
 			height: 10px;
 			z-index: 14;
 			margin: 0 5px;
-			cursor: pointer;
 			transition: all .3s;
-			&.active, &:hover {
+			&.active {
 				background: $d-orange;
 			}
 		}
@@ -327,6 +308,7 @@
 			width: 230px;
 			height: 60px;
 			margin: 65px auto 0;
+			transition: all .3s;
 			a {
 				font-weight: $bold;
 				font-size: 1.3em;
@@ -334,6 +316,10 @@
 				letter-spacing: 1.73px;
 				text-transform: uppercase;
 				line-height: 60px;
+				transition: all .3s;
+			}
+			&:hover {
+				background: $d-gradient-inverse;
 			}
 		}
 	}
@@ -472,11 +458,11 @@
 			margin-left: 7%;
 		}
 		&.landing-iphone {
-			background: url('#{$folder-image}/iphone6app.png') no-repeat top right;
-			background-size: 25%;
-			margin-right: 11%;
-			top: 9%;
+			background: url('#{$folder-image}/iphone6-traits.png') no-repeat center right;
+			left: -10em !important;
+			top: 3em;
 			z-index: 0;
+			background-size: 952px 768px;
 		}
 		&.imgright {
 			right: 0;	
@@ -487,17 +473,34 @@
 	}
 }
 
+@media(max-width: 1220px) {
+	.section .landing-image.landing-iphone {
+		left: -3em !important;
+	}
+}
+
+@media(max-width: 1135px) {
+	.section .landing-image.landing-iphone {
+		background: url('#{$folder-image}/iphone6-traits-small.png') no-repeat center right;
+		background-size: 731px 751px !important;
+		left: 3em !important;
+	}
+	#three .bloc {
+		margin-left: 7.5%;
+	}
+}
+
 #six {
 	position: relative;
 	width: 100%;
-	height: 375px;
+	height: 175px;
 	overflow: hidden;
 }
 
 #equalizer {
 	position: absolute;
 	width: 100%;
-	bottom: 0;
+	bottom: -1em;
 }
 
 .bar {
@@ -509,355 +512,6 @@
 	&:first-of-type {
 		margin-left: -6px;
 	}
-}
-$max: 375;
-
-// Heights
-$two: $max / 1.076923077;
-$three: $max / 1.166666667;
-$four: $max / 1.272727273;
-$five: $max / 1.4;
-$six: $max / 1.555555556;
-$seven: $max / 1.1;
-$eight: $max / 1.2;
-$nine: $max / 1.555555556;
-$ten: $max / 1.4;
-$eleven: $max / 1.272727273;
-$twelve: $max / 1.166666667;
-$thirteen: $max / 1.076923077;
-$fourteen: $max;
-
-.bar {
-    -webkit-animation-duration: 2s;
-    -webkit-animation-timing-function: ease-in-out;
-    -webkit-animation-delay: 0s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -webkit-animation-play-state: running;
-}
-
-@keyframes equalize1 {
-  0% {
-    height: $four;
-  }
-  4% {
-    height: $two;
-  }
-  8% {
-    height: $four;
-  }
-  12% {
-    height: $seven;
-  }
-  16% {
-    height: $ten;
-  }
-  20% {
-    height: $thirteen;
-  }
-  24% {
-    height: $twelve;
-  }
-  28% {
-    height: $eleven;
-  }
-  32% {
-    height: $eleven;
-  }
-  36% {
-    height: $eight;
-  }
-  40% {
-    height: $ten;
-  }
-  44% {
-    height: $ten;
-  }
-  48% {
-    height: $eleven;
-  }
-  52% {
-    height: $twelve;
-  }
-  56% {
-    height: $thirteen;
-  }
-  60% {
-    height: $twelve;
-  }
-  64% {
-    height: $twelve;
-  }
-  68% {
-    height: $eleven;
-  }
-  72% {
-    height: $ten;
-  }
-  76% {
-    height: $eleven;
-  }
-  80% {
-    height: $twelve;
-  }
-  84% {
-    height: $twelve;
-  }
-  88% {
-    height: $thirteen;
-  }
-  92% {
-    height: $ten;
-  }
-  96% {
-    height: $seven;
-  }
-  100% {
-    height: $four;
-  }
-}
-
-@keyframes equalize2 {
-  0% {
-    height: $two;
-  }
-  4% {
-    height: $four;
-  }
-  8% {
-    height: $three;
-  }
-  12% {
-    height: $seven;
-  }
-  16% {
-    height: $nine;
-  }
-  20% {
-    height: $fourteen;
-  }
-  24% {
-    height: $thirteen;
-  }
-  28% {
-    height: $ten;
-  }
-  32% {
-    height: $thirteen;
-  }
-  36% {
-    height: $eight;
-  }
-  40% {
-    height: $five;
-  }
-  44% {
-    height: $seven;
-  }
-  48% {
-    height: $five;
-  }
-  52% {
-    height: $two;
-  }
-  56% {
-    height: $three;
-  }
-  60% {
-    height: $two;
-  }
-  64% {
-    height: $four;
-  }
-  68% {
-    height: $seven;
-  }
-  72% {
-    height: $nine;
-  }
-  76% {
-    height: $five;
-  }
-  80% {
-    height: $six;
-  }
-  84% {
-    height: $three;
-  }
-  88% {
-    height: $nine;
-  }
-  92% {
-    height: $eight;
-  }
-  96% {
-    height: $twelve;
-  }
-  100% {
-    height: $two;
-  }
-}
-
-@keyframes equalize3 {
-  0% {
-    height: $twelve;
-  }
-  4% {
-    height: $ten;
-  }
-  8% {
-    height: $three;
-  }
-  12% {
-    height: $four;
-  }
-  16% {
-    height: $fourteen;
-  }
-  20% {
-    height: $five;
-  }
-  24% {
-    height: $eight;
-  }
-  28% {
-    height: $three;
-  }
-  32% {
-    height: $fourteen;
-  }
-  36% {
-    height: $thirteen;
-  }
-  40% {
-    height: $ten;
-  }
-  44% {
-    height: $nine;
-  }
-  48% {
-    height: $seven;
-  }
-  52% {
-    height: $three;
-  }
-  56% {
-    height: $fourteen;
-  }
-  60% {
-    height: $eight;
-  }
-  64% {
-    height: $ten;
-  }
-  68% {
-    height: $four;
-  }
-  72% {
-    height: $eleven;
-  }
-  76% {
-    height: $twelve;
-  }
-  80% {
-    height: $seven;
-  }
-  84% {
-    height: $nine;
-  }
-  88% {
-    height: $three;
-  }
-  92% {
-    height: $six;
-  }
-  96% {
-    height: $eleven;
-  }
-  100% {
-    height: $twelve;
-  }
-}
-
-@keyframes equalize4 {
-  0% {
-    height: $thirteen;
-  }
-  4% {
-    height: $fourteen;
-  }
-  8% {
-    height: $twelve;
-  }
-  12% {
-    height: $eleven;
-  }
-  16% {
-    height: $fourteen;
-  }
-  20% {
-    height: $thirteen;
-  }
-  24% {
-    height: $ten;
-  }
-  28% {
-    height: $eleven;
-  }
-  32% {
-    height: $fourteen;
-  }
-  36% {
-    height: $thirteen;
-  }
-  40% {
-    height: $twelve;
-  }
-  44% {
-    height: $fourteen;
-  }
-  48% {
-    height: $ten;
-  }
-  52% {
-    height: $twelve;
-  }
-  56% {
-    height: $eleven;
-  }
-  60% {
-    height: $ten;
-  }
-  64% {
-    height: $thirteen;
-  }
-  68% {
-    height: $fourteen;
-  }
-  72% {
-    height: $ten;
-  }
-  76% {
-    height: $eleven;
-  }
-  80% {
-    height: $twelve;
-  }
-  84% {
-    height: $ten;
-  }
-  88% {
-    height: $eleven;
-  }
-  92% {
-    height: $thirteen;
-  }
-  96% {
-    height: $eleven;
-  }
-  100% {
-    height: $thirteen;
-  }
 }
 
 @media(max-width: 1040px) {
@@ -961,14 +615,14 @@ $fourteen: $max;
 		&.landing-artist {
 			margin-right: 0;
 			background-position: bottom center !important;
-			background-image: url("../img/artist_mobile.png");
+			background-image: url("#{$folder-image}/artist_mobile.png");
 		}
 		&.landing-melomane {
 			margin-top: 6em;
-			background: url("../img/melomane_bg_mobile.png") no-repeat bottom center;
+			background: url("#{$folder-image}/melomane_bg_mobile.png") no-repeat bottom center;
 		}
 		&.landing-iphone {
-			background: url("../img/iphonedown.png") no-repeat bottom center;
+			background: url("#{$folder-image}/iphonedown.png") no-repeat bottom center;
 			background-size: 100% !important;
 		}
 	}
@@ -996,7 +650,7 @@ $fourteen: $max;
 
 	#four .img {
 		height: 100%;
-		background: url("../img/img-logo.jpg") no-repeat center center;
+		background: url("#{$folder-image}/img-logo.jpg") no-repeat center center;
 		background-size: cover;
 	}
 

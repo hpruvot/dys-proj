@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -307,24 +308,10 @@ body {
 }
 #three .bloc {
   margin-top: 110px;
+  width: 55%;
 }
 #three ul li {
   margin-bottom: 48px;
-}
-#three ul li:nth-of-type(1) span:before {
-  background: url("../images/trait1.png") no-repeat top center;
-  width: 682px;
-  margin-top: 0.5em;
-}
-#three ul li:nth-of-type(2) span:before {
-  background: url("../images/trait2.png") no-repeat top center;
-  width: 805px;
-  margin-top: -1.5em;
-}
-#three ul li:nth-of-type(3) span:before {
-  background: url("../images/trait3.png") no-repeat top center;
-  width: 860px;
-  margin-top: -2.2em;
 }
 #three ul span {
   font-weight: 700;
@@ -344,6 +331,8 @@ body {
   font-weight: 100;
   font-size: 2.5em;
   margin-bottom: 8px;
+  width: 160px;
+  background: white;
 }
 #three ul p {
   padding-right: 20%;
@@ -426,10 +415,9 @@ body {
   height: 10px;
   z-index: 14;
   margin: 0 5px;
-  cursor: pointer;
   transition: all .3s;
 }
-#four .bullets .bullet.active, #four .bullets .bullet:hover {
+#four .bullets .bullet.active {
   background: #EE9E19;
 }
 #four .loader {
@@ -525,6 +513,7 @@ body {
   width: 230px;
   height: 60px;
   margin: 65px auto 0;
+  transition: all .3s;
 }
 #five .contact .cta a {
   font-weight: 700;
@@ -533,6 +522,10 @@ body {
   letter-spacing: 1.73px;
   text-transform: uppercase;
   line-height: 60px;
+  transition: all .3s;
+}
+#five .contact .cta:hover {
+  background: linear-gradient(-180deg, #ee7648 0%, #ee9e19 100%);
 }
 
 .section {
@@ -669,11 +662,11 @@ body {
   margin-left: 7%;
 }
 .section .landing-image.landing-iphone {
-  background: url("../images/iphone6app.png") no-repeat top right;
-  background-size: 25%;
-  margin-right: 11%;
-  top: 9%;
+  background: url("../images/iphone6-traits.png") no-repeat center right;
+  left: -10em !important;
+  top: 3em;
   z-index: 0;
+  background-size: 952px 768px;
 }
 .section .landing-image.imgright {
   right: 0;
@@ -682,17 +675,33 @@ body {
   left: 0;
 }
 
+@media (max-width: 1220px) {
+  .section .landing-image.landing-iphone {
+    left: -3em !important;
+  }
+}
+@media (max-width: 1135px) {
+  .section .landing-image.landing-iphone {
+    background: url("../images/iphone6-traits-small.png") no-repeat center right;
+    background-size: 731px 751px !important;
+    left: 3em !important;
+  }
+
+  #three .bloc {
+    margin-left: 7.5%;
+  }
+}
 #six {
   position: relative;
   width: 100%;
-  height: 375px;
+  height: 175px;
   overflow: hidden;
 }
 
 #equalizer {
   position: absolute;
   width: 100%;
-  bottom: 0;
+  bottom: -1em;
 }
 
 .bar {
@@ -706,335 +715,6 @@ body {
   margin-left: -6px;
 }
 
-.bar {
-  -webkit-animation-duration: 2s;
-  -webkit-animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 0s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-direction: alternate;
-  -webkit-animation-play-state: running;
-}
-
-@keyframes equalize1 {
-  0% {
-    height: 294.64286;
-  }
-  4% {
-    height: 348.21429;
-  }
-  8% {
-    height: 294.64286;
-  }
-  12% {
-    height: 340.90909;
-  }
-  16% {
-    height: 267.85714;
-  }
-  20% {
-    height: 348.21429;
-  }
-  24% {
-    height: 321.42857;
-  }
-  28% {
-    height: 294.64286;
-  }
-  32% {
-    height: 294.64286;
-  }
-  36% {
-    height: 312.5;
-  }
-  40% {
-    height: 267.85714;
-  }
-  44% {
-    height: 267.85714;
-  }
-  48% {
-    height: 294.64286;
-  }
-  52% {
-    height: 321.42857;
-  }
-  56% {
-    height: 348.21429;
-  }
-  60% {
-    height: 321.42857;
-  }
-  64% {
-    height: 321.42857;
-  }
-  68% {
-    height: 294.64286;
-  }
-  72% {
-    height: 267.85714;
-  }
-  76% {
-    height: 294.64286;
-  }
-  80% {
-    height: 321.42857;
-  }
-  84% {
-    height: 321.42857;
-  }
-  88% {
-    height: 348.21429;
-  }
-  92% {
-    height: 267.85714;
-  }
-  96% {
-    height: 340.90909;
-  }
-  100% {
-    height: 294.64286;
-  }
-}
-@keyframes equalize2 {
-  0% {
-    height: 348.21429;
-  }
-  4% {
-    height: 294.64286;
-  }
-  8% {
-    height: 321.42857;
-  }
-  12% {
-    height: 340.90909;
-  }
-  16% {
-    height: 241.07143;
-  }
-  20% {
-    height: 375;
-  }
-  24% {
-    height: 348.21429;
-  }
-  28% {
-    height: 267.85714;
-  }
-  32% {
-    height: 348.21429;
-  }
-  36% {
-    height: 312.5;
-  }
-  40% {
-    height: 267.85714;
-  }
-  44% {
-    height: 340.90909;
-  }
-  48% {
-    height: 267.85714;
-  }
-  52% {
-    height: 348.21429;
-  }
-  56% {
-    height: 321.42857;
-  }
-  60% {
-    height: 348.21429;
-  }
-  64% {
-    height: 294.64286;
-  }
-  68% {
-    height: 340.90909;
-  }
-  72% {
-    height: 241.07143;
-  }
-  76% {
-    height: 267.85714;
-  }
-  80% {
-    height: 241.07143;
-  }
-  84% {
-    height: 321.42857;
-  }
-  88% {
-    height: 241.07143;
-  }
-  92% {
-    height: 312.5;
-  }
-  96% {
-    height: 321.42857;
-  }
-  100% {
-    height: 348.21429;
-  }
-}
-@keyframes equalize3 {
-  0% {
-    height: 321.42857;
-  }
-  4% {
-    height: 267.85714;
-  }
-  8% {
-    height: 321.42857;
-  }
-  12% {
-    height: 294.64286;
-  }
-  16% {
-    height: 375;
-  }
-  20% {
-    height: 267.85714;
-  }
-  24% {
-    height: 312.5;
-  }
-  28% {
-    height: 321.42857;
-  }
-  32% {
-    height: 375;
-  }
-  36% {
-    height: 348.21429;
-  }
-  40% {
-    height: 267.85714;
-  }
-  44% {
-    height: 241.07143;
-  }
-  48% {
-    height: 340.90909;
-  }
-  52% {
-    height: 321.42857;
-  }
-  56% {
-    height: 375;
-  }
-  60% {
-    height: 312.5;
-  }
-  64% {
-    height: 267.85714;
-  }
-  68% {
-    height: 294.64286;
-  }
-  72% {
-    height: 294.64286;
-  }
-  76% {
-    height: 321.42857;
-  }
-  80% {
-    height: 340.90909;
-  }
-  84% {
-    height: 241.07143;
-  }
-  88% {
-    height: 321.42857;
-  }
-  92% {
-    height: 241.07143;
-  }
-  96% {
-    height: 294.64286;
-  }
-  100% {
-    height: 321.42857;
-  }
-}
-@keyframes equalize4 {
-  0% {
-    height: 348.21429;
-  }
-  4% {
-    height: 375;
-  }
-  8% {
-    height: 321.42857;
-  }
-  12% {
-    height: 294.64286;
-  }
-  16% {
-    height: 375;
-  }
-  20% {
-    height: 348.21429;
-  }
-  24% {
-    height: 267.85714;
-  }
-  28% {
-    height: 294.64286;
-  }
-  32% {
-    height: 375;
-  }
-  36% {
-    height: 348.21429;
-  }
-  40% {
-    height: 321.42857;
-  }
-  44% {
-    height: 375;
-  }
-  48% {
-    height: 267.85714;
-  }
-  52% {
-    height: 321.42857;
-  }
-  56% {
-    height: 294.64286;
-  }
-  60% {
-    height: 267.85714;
-  }
-  64% {
-    height: 348.21429;
-  }
-  68% {
-    height: 375;
-  }
-  72% {
-    height: 267.85714;
-  }
-  76% {
-    height: 294.64286;
-  }
-  80% {
-    height: 321.42857;
-  }
-  84% {
-    height: 267.85714;
-  }
-  88% {
-    height: 294.64286;
-  }
-  92% {
-    height: 348.21429;
-  }
-  96% {
-    height: 294.64286;
-  }
-  100% {
-    height: 348.21429;
-  }
-}
 @media (max-width: 1040px) {
   #intro .inner-section {
     background: url("../images/home_bg.jpg") no-repeat center center;
@@ -1133,14 +813,14 @@ body {
   .section .landing-image.landing-artist {
     margin-right: 0;
     background-position: bottom center !important;
-    background-image: url("../img/artist_mobile.png");
+    background-image: url("../images/artist_mobile.png");
   }
   .section .landing-image.landing-melomane {
     margin-top: 6em;
-    background: url("../img/melomane_bg_mobile.png") no-repeat bottom center;
+    background: url("../images/melomane_bg_mobile.png") no-repeat bottom center;
   }
   .section .landing-image.landing-iphone {
-    background: url("../img/iphonedown.png") no-repeat bottom center;
+    background: url("../images/iphonedown.png") no-repeat bottom center;
     background-size: 100% !important;
   }
 
@@ -1165,7 +845,7 @@ body {
 
   #four .img {
     height: 100%;
-    background: url("../img/img-logo.jpg") no-repeat center center;
+    background: url("../images/img-logo.jpg") no-repeat center center;
     background-size: cover;
   }
 
