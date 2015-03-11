@@ -149,7 +149,12 @@ header {
 				padding: 0 14px;
 				a {
 					color: $d-black;
-					&:hover {
+					&:not(.social):hover {
+						background: $d-gradient;
+						color: transparent;
+						-webkit-background-clip: text;
+					}
+					&.active {
 						background: $d-gradient;
 						color: transparent;
 						-webkit-background-clip: text;
@@ -159,11 +164,6 @@ header {
   						width: 33%;
 						height: 72px;
 					}
-				}			
-				&.active a{
-					background: $d-gradient;
-					color: transparent;
-					-webkit-background-clip: text;
 				}
 				.tw {
 					background: url('#{$folder-icon}/twitter-white.svg') no-repeat center center;

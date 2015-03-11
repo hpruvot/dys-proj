@@ -100,36 +100,6 @@ $(document).ready(function() {
 
 		calculateHeight();	
 
-		// function equalizer() {
-		// 	var winwidth = $(window).width();
-		// 	var equalizer = $("#equalizer");
-
-		// 	var nbbar = winwidth / 16;
-		// 	for(var i=0; i<nbbar; i++) {
-		// 		var h1 = Math.random() * (275 - 108) + 108;
-  //       		$("<div class='bar'>").height(h1).appendTo(equalizer);
-		// 	}
-		// }
-		// equalizer();
-
-		// var bars = $(".bar");
-
-		// function dl(){
-		//   var pause  = [ 80, 120 ]
-		//       dlay = Math.floor(Math.random() * pause.length);
-		//       return pause[dlay];
-		// }
-
-  //   	function animate(){
-		// 	$('.bar').each(function() {
-		// 		$(this).delay(dl()).animate({
-	 //            	'marginBottom': '-'+(Math.floor(Math.random() * 4) + 0) + '%'
-	 //        	},0);
-		// 	});
-		// }
-
-    	// setInterval(animate,0);
-
 		// This is a functions that scrolls to #{blah}link
 		function goToDiv(id){
 
@@ -143,7 +113,7 @@ $(document).ready(function() {
 			goToDiv($(this).attr("href"));  
 		})
 
-		$("#menu a").click(function(e) { 
+		$("#menu a:not('.social')").click(function(e) { 
 		      // Prevent a page reload when a link is pressed
 		    e.preventDefault(); 
 		    $("#menu li").removeClass("active");
@@ -151,6 +121,7 @@ $(document).ready(function() {
 		      // Call the scroll function         
 		    goToDiv($(this).attr("href"));  
 		});
+		
 
 		/* Image responsive */
 		var respImg = function() {

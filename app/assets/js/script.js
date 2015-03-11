@@ -1,5 +1,9 @@
 $(document).ready(function(){
 
+  if ('ontouchstart' in document) {
+      $('body').removeClass('no-touch');
+  }
+
 	$(function(){
       $("#header").load("header.html"); 
     });
