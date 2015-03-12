@@ -367,18 +367,19 @@ $(document).ready(function() {
 			   type: 'POST',
 			   data: $('form#newsletter').serialize(),
 			   error: function() {
-			      console.log('error')
+			      $('form#newsletter .already').addClass("active").delay(3000).queue(function(){
+				    $(this).removeClass("active");
+				    $(this).dequeue();
+			  	});
 			   },
 			   success: function(data) {
 			    	console.log(data);
+			    	$('form#newsletter .submitted, form#newsletter .submit').addClass("active").delay(3000).queue(function(){
+					    $(this).removeClass("active");
+					    $(this).dequeue();
+				  	});
 			   }
 			});	
-
-	        $('form#newsletter .submitted, form#newsletter .submit').addClass("active").delay(3000).queue(function(){
-			    $(this).removeClass("active");
-			    $(this).dequeue();
-		  });
-
 
 		});
 })

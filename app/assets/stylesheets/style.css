@@ -959,6 +959,9 @@ body {
   #five .newsletter form#newsletter .submit {
     width: 55px;
   }
+  #five .newsletter form#newsletter span.infomail {
+    width: 282px;
+  }
 
   #six .contact {
     margin-top: 2em;
