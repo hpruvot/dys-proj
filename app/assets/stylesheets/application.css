@@ -1305,6 +1305,9 @@ header .header-inner {
   display: inline-block;
   margin-right: 40px;
 }
+#footer .mentions a {
+  color: #A6A6A6;
+}
 #footer .socials {
   display: inline-block;
 }

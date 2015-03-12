@@ -379,6 +379,7 @@ $(document).ready(function() {
 			    	$('form#newsletter .submitted').html(data.message);
 			    	$('form#newsletter .submitted, form#newsletter .submit').addClass("active").delay(3000).queue(function(){
 			    		$('form#newsletter .submitted').html("");
+			    		$('form#newsletter .email').val("");
 					    $(this).removeClass("active");
 					    $(this).dequeue();
 				  	});
