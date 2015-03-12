@@ -47,6 +47,7 @@ $(document).ready(function(){
 		$('#leftbar').toggleClass('resp');
 		$("#container").toggleClass("active");
 		$("body").toggleClass("inactive");
+		$("#home-header").toggleClass("active");
 	}
 
 	/* Item menu */
@@ -338,7 +339,7 @@ $(document).ready(function() {
 		      // Call the scroll function         
 		    goToDiv($(this).attr("href"));  
 		});
-		
+
 
 		/* Image responsive */
 		var respImg = function() {
@@ -351,4 +352,18 @@ $(document).ready(function() {
 			}
 		}
 		respImg();
+
+		/* Form newsletter */
+		$("#newsletter").submit(function(event) {
+			event.preventDefault();
+	        $('form#newsletter .submit').addClass("submitted").delay(3000).queue(function(){
+			    $(this).removeClass("submitted");
+			    $(this).dequeue();
+			});
+	        $('span.submitted').addClass("active").delay(3000).queue(function(){
+			    $(this).removeClass("active");
+			    $(this).dequeue();
+			});
+			$('form#newsletter .email').val("");
+		});
 })

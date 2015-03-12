@@ -158,6 +158,7 @@ body {
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  outline: none;
 }
 
 .link {
@@ -433,7 +434,7 @@ body {
 #five .newsletter {
   background-image: linear-gradient(-180deg, #ee9e19 0%, #ee7648 100%);
   color: #FFFFFF;
-  padding: 45px 0;
+  padding: 45px 0 30px;
 }
 #five .newsletter article {
   margin: 0 auto;
@@ -499,6 +500,21 @@ body {
   background: #ffffff url("../images/icons/arrow-left-orange.svg") no-repeat center center;
   border: 1px solid #EE9E19;
   cursor: pointer;
+  transition: background 0.3s ease-in;
+}
+#five .newsletter form#newsletter .submit.submitted {
+  background: #ffffff url("../images/icons/green_tick.svg") no-repeat center center;
+  background-size: 30%;
+}
+#five .newsletter span.submitted {
+  visibility: hidden;
+  position: relative;
+  font-weight: 300;
+  font-size: 1.5em;
+  line-height: 2em;
+}
+#five .newsletter span.submitted.active {
+  visibility: visible;
 }
 #five .contact {
   margin-top: 9em;
@@ -523,6 +539,31 @@ body {
 }
 #five .contact .cta:hover {
   background: linear-gradient(-180deg, #ee7648 0%, #ee9e19 100%);
+}
+
+#six {
+  position: relative;
+  width: 100%;
+  height: 175px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#equalizer {
+  position: absolute;
+  width: 100%;
+  bottom: -1em;
+}
+
+.bar {
+  background: linear-gradient(-180deg, #ee9e19 0%, #ee7648 100%);
+  width: 10px;
+  margin-right: 6px;
+  display: block;
+  display: inline-block;
+}
+.bar:first-of-type {
+  margin-left: -6px;
 }
 
 .section {
@@ -688,30 +729,6 @@ body {
     margin-left: 7.5%;
   }
 }
-#six {
-  position: relative;
-  width: 100%;
-  height: 175px;
-  overflow: hidden;
-}
-
-#equalizer {
-  position: absolute;
-  width: 100%;
-  bottom: -1em;
-}
-
-.bar {
-  background: linear-gradient(-180deg, #ee9e19 0%, #ee7648 100%);
-  width: 10px;
-  margin-right: 6px;
-  display: block;
-  display: inline-block;
-}
-.bar:first-of-type {
-  margin-left: -6px;
-}
-
 @media (max-width: 1040px) {
   #intro .inner-section {
     background: url("../images/home_bg.jpg") no-repeat center center;
@@ -764,7 +781,7 @@ body {
 
   .section .left,
   .section .right {
-    width: 100%;
+    width: 100% !important;
     margin: 0;
     padding: 0 17px;
     float: none;
@@ -831,6 +848,7 @@ body {
 
   #one .bloc, #two .bloc, #three .bloc {
     margin-top: 30px;
+    margin-left: 0;
   }
 
   #three ul h4:before {
@@ -881,17 +899,21 @@ body {
   }
   #five .newsletter form#newsletter {
     margin: 7em auto;
+    width: 282px;
   }
   #five .newsletter form#newsletter .email {
-    width: 80%;
-    margin-left: 0;
+    width: 227px;
   }
   #five .newsletter form#newsletter .submit {
-    margin-left: -40px;
+    width: 55px;
   }
 
   #five .contact {
     margin-top: 2em;
+  }
+
+  #equalizer {
+    bottom: -8em;
   }
 }
 @media (max-width: 500px) {
@@ -1098,30 +1120,31 @@ header .header-inner {
   #home-header #menu {
     background: linear-gradient(-180deg, #ee9e19 0%, #ee7648 100%);
   }
-  #home-header #menu li {
+  #home-header #menu ul li {
     padding: 8px 5px;
     width: 100%;
     border: none;
     text-transform: none;
     position: relative;
+    font-size: 1.1em;
   }
-  #home-header #menu li:nth-child(1) {
+  #home-header #menu ul li:nth-child(1) {
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
   }
-  #home-header #menu li:nth-child(2) {
+  #home-header #menu ul li:nth-child(2) {
     background: rgba(255, 255, 255, 0.15);
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
   }
-  #home-header #menu li:nth-child(3) {
+  #home-header #menu ul li:nth-child(3) {
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
   }
-  #home-header #menu li:nth-child(4) {
+  #home-header #menu ul li:nth-child(4) {
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
   }
-  #home-header #menu li a {
+  #home-header #menu ul li a {
     font-weight: 100;
     font-size: 2.5em;
     color: #FFFFFF !important;
@@ -1129,14 +1152,18 @@ header .header-inner {
     padding-left: 0;
     text-transform: none;
   }
-  #home-header #menu li a div {
+  #home-header #menu ul li a div {
     display: none;
   }
 }
 @media (max-width: 1024px) {
   #home-header {
-    height: 100%;
+    height: 0;
     background: none;
+    transition: height 0.3s ease-in;
+  }
+  #home-header.active {
+    height: 100%;
   }
 
   body.inactive {

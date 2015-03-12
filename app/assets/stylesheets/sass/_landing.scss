@@ -229,7 +229,7 @@
 	.newsletter {
 		background-image: $d-gradient;
 		color: $d-white;
-		padding: 45px 0;
+		padding: 45px 0 30px;
 		article {
 			margin: 0 auto;
 		}
@@ -295,6 +295,21 @@
 			background: #ffffff url('#{$folder-icon}/arrow-left-orange.svg') no-repeat center center;
 			border: 1px solid #EE9E19;
 			cursor: pointer;
+			@include transition (background 0.3s ease-in);
+			&.submitted {
+				background: #ffffff url('#{$folder-icon}/green_tick.svg') no-repeat center center;
+				background-size: 30%;
+			}
+		}
+		span.submitted {
+			visibility: hidden;
+			position: relative;
+			font-weight: $light;
+			font-size: 1.5em;
+			line-height: 2em;
+			&.active {
+				visibility: visible;
+			}
 		}
 	}
 	.contact {
@@ -322,6 +337,32 @@
 		}
 	}
 }
+
+#six {
+	position: relative;
+	width: 100%;
+	height: 175px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#equalizer {
+	position: absolute;
+	width: 100%;
+	bottom: -1em;
+}
+
+.bar {
+	background: $d-gradient;
+	width: 10px;
+	margin-right: 6px;
+	display: block;
+	display: inline-block;
+	&:first-of-type {
+		margin-left: -6px;
+	}
+}
+
 .section {
 	display: block;
 	position: relative;
@@ -488,30 +529,6 @@
 	}
 }
 
-#six {
-	position: relative;
-	width: 100%;
-	height: 175px;
-	overflow: hidden;
-}
-
-#equalizer {
-	position: absolute;
-	width: 100%;
-	bottom: -1em;
-}
-
-.bar {
-	background: $d-gradient;
-	width: 10px;
-	margin-right: 6px;
-	display: block;
-	display: inline-block;
-	&:first-of-type {
-		margin-left: -6px;
-	}
-}
-
 @media(max-width: 1040px) {
 	#intro {
 		.inner-section {
@@ -565,7 +582,7 @@
 
 	.section .left,
 	.section .right {
-		width: 100%;
+		width: 100% !important;
 		margin: 0;
 		padding: 0 17px;
 		float: none;
@@ -635,6 +652,7 @@
 
 	#one .bloc, #two .bloc, #three .bloc {
 		margin-top: 30px;
+		margin-left: 0;
 	}
 
 	#three {
@@ -689,17 +707,20 @@
 		}
 		form#newsletter {
 			margin: 7em auto;
+			width: 282px;
 			.email {
-				width: 80%;
-				margin-left: 0;
+				width: 227px;
 			}
 			.submit {
-				margin-left: -40px;
+				width: 55px;
 			}
 		}
 	}
 	#five .contact {
 		margin-top: 2em;
+	}
+	#equalizer {
+		bottom: -8em;
 	}
 }
 

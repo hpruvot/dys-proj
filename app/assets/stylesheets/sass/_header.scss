@@ -200,12 +200,13 @@ header {
 	/* MENU */
 	#home-header #menu {
 		background: $d-gradient;
-		li {
+		ul li {
 			padding: 8px 5px;
 			width: 100%;
 			border: none;
 			text-transform: none;
 			position: relative;
+			font-size: 1.1em;
 			&:nth-child(1) {
 				background: rgba(255,255,255,0.20);
 				box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.10);
@@ -241,8 +242,12 @@ header {
 }
 @media(max-width: 1024px) {
 	#home-header {
-		height: 100%;
-		background: none;	
+		height: 0;
+		background: none;
+		@include transition (height 0.3s ease-in);	
+		&.active {
+			height: 100%;
+		}
 	}
 	body.inactive {
 		overflow: hidden;

@@ -42,6 +42,7 @@ $(document).ready(function(){
 		$('#leftbar').toggleClass('resp');
 		$("#container").toggleClass("active");
 		$("body").toggleClass("inactive");
+		$("#home-header").toggleClass("active");
 	}
 
 	/* Item menu */
