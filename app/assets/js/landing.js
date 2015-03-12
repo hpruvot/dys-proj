@@ -140,26 +140,31 @@ $(document).ready(function() {
 			event.preventDefault();
 
 			$.ajax({
-			   url: 'http://preprod.synerghetic.net/0976-14/register.php',
+			   url: 'http://antoine.local/dys-proj/app/register.php',
 			   type: 'POST',
 			   data: $('form#newsletter').serialize(),
 			   error: function() {
-			   	  $('form#newsletter .already').html(data.message);
-			      $('form#newsletter .already').addClass("active").delay(3000).queue(function(){
-			      	$('form#newsletter .already').html("");
-				    $(this).removeClass("active");
-				    $(this).dequeue();
-			  	});
+	   	  		//
 			   },
 			   success: function(data) {
 			    	console.log(data);
-			    	$('form#newsletter .submitted').html(data.message);
-			    	$('form#newsletter .submitted, form#newsletter .submit').addClass("active").delay(3000).queue(function(){
-			    		$('form#newsletter .submitted').html("");
-			    		$('form#newsletter .email').val("");
-					    $(this).removeClass("active");
-					    $(this).dequeue();
-				  	});
+			    	if(data.status){
+					$('form#newsletter .submitted').html(data.message);
+					$('form#newsletter .submitted, form#newsletter .submit').addClass("active").delay(3000).queue(function(){
+						$('form#newsletter .submitted').html("");
+						$('form#newsletter .email').val("");
+						$(this).removeClass("active");
+						$(this).dequeue();
+					});
+			    	} else {
+			    		$('form#newsletter .already').html(data.message);
+		      		$('form#newsletter .already').addClass("active").delay(3000).queue(function(){
+				      	$('form#newsletter .already').html("");
+						$(this).removeClass("active");
+						$(this).dequeue();
+					});
+			    	} 
+
 			   }
 			});	
 
