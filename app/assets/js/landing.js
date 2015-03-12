@@ -140,11 +140,10 @@ $(document).ready(function() {
 			event.preventDefault();
 
 			$.ajax({
-			   url: 'http://antoine.local/dys-proj/app/register.php',
+			   url: 'http://preprod.synerghetic.net/0976-14/app/register.php',
 			   type: 'POST',
 			   data: $('form#newsletter').serialize(),
 			   error: function() {
-			   	console.log(data);
 			      $('form#newsletter .already').addClass("active").delay(3000).queue(function(){
 			      	$(this).text(data.message);
 				    $(this).removeClass("active");
@@ -154,6 +153,7 @@ $(document).ready(function() {
 			   success: function(data) {
 			    	console.log(data);
 			    	$('form#newsletter .submitted, form#newsletter .submit').addClass("active").delay(3000).queue(function(){
+			    		$('form#newsletter .submitted').text(data.message);
 					    $(this).removeClass("active");
 					    $(this).dequeue();
 				  	});
