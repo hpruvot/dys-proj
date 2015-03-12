@@ -138,14 +138,29 @@ $(document).ready(function() {
 		/* Form newsletter */
 		$("#newsletter").submit(function(event) {
 			event.preventDefault();
+
+			$.ajax({
+			   url: 'http://antoine.local/dys-proj/app/register.php',
+			   type: 'POST',
+			   data: $('form#newsletter').serialize(),
+			   error: function() {
+			      console.log('error')
+			   },
+			   success: function(data) {
+			    	console.log(data);
+			   }
+			});	
+
 	        $('form#newsletter .submit').addClass("submitted").delay(3000).queue(function(){
 			    $(this).removeClass("submitted");
 			    $(this).dequeue();
-			});
-	        $('span.submitted').addClass("active").delay(3000).queue(function(){
-			    $(this).removeClass("active");
-			    $(this).dequeue();
-			});
-			$('form#newsletter .email').val("");
+		  });
+	  //       $('span.submitted').addClass("active").delay(3000).queue(function(){
+			//     $(this).removeClass("active");
+			//     $(this).dequeue();
+			// });
+		 //  $('form#newsletter .email').val("");
+
+
 		});
 })
