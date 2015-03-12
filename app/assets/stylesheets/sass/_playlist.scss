@@ -258,7 +258,7 @@
 		height: 60px;
 		line-height: 60px;
 		text-align: center;
-		background: linear-gradient(-180deg, #49403B 0%, #2E2722 100%);
+		@include linear-gradient(#49403B, #2E2722);
 		box-shadow: 1px 0px 0px 0px rgba(60,51,45,0.50);
 		text-transform: uppercase;
 		box-sizing: border-box;
@@ -269,7 +269,7 @@
 			color: $d-white;
 		}
 		&.active {
-			background: $d-gradient;
+			@include linear-gradient($d-orange, $d-orange-dark);
 			a {
 				font-weight: $medium;
 				font-size: 1.3em;

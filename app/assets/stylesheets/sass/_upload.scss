@@ -1,7 +1,7 @@
 .upload-container {
 	float: right;
 	width: 82%;
-	background: $d-gradient;
+	@include linear-gradient($d-orange, $d-orange-dark);
 	margin: 0;
 	height: 100%;
 }

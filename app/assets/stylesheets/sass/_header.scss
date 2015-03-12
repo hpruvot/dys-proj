@@ -151,12 +151,12 @@ header {
 				a {
 					color: $d-black;
 					&:not(.social):hover {
-						background: $d-gradient;
+						@include linear-gradient($d-orange, $d-orange-dark);
 						color: transparent;
 						-webkit-background-clip: text;
 					}
 					&.active {
-						background: $d-gradient;
+						@include linear-gradient($d-orange, $d-orange-dark);
 						color: transparent;
 						-webkit-background-clip: text;
 					}
@@ -199,7 +199,7 @@ header {
 	}
 	/* MENU */
 	#home-header #menu {
-		background: $d-gradient;
+		@include linear-gradient($d-orange, $d-orange-dark);
 		ul li {
 			padding: 8px 5px;
 			width: 100%;

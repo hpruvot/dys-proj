@@ -21,7 +21,7 @@
 		height: 100%;
 	}
 	#menu {
-		background: $d-gradient;
+		@include linear-gradient($d-orange, $d-orange-dark);
 		li {
 			padding: 8px 5px;
 			background: rgba(255,255,255,0.20);

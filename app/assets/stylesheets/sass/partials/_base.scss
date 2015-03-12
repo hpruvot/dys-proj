@@ -53,9 +53,22 @@ $d-grey-light: #D6D6D6;
 $d-grey: #7B7B7B;
 $d-grey-dark: #9B9B9B;
 $d-orange: #EE9E19;
+$d-orange-dark: #EE7648;
+
 $d-webkit-gradient: -webkit-linear-gradient(-180deg, #EE9E19 0%, #EE7648 100%);
 $d-gradient: linear-gradient(-180deg, #EE9E19 0%, #EE7648 100%);
 $d-gradient-inverse: linear-gradient(-180deg, #EE7648 0%, #EE9E19 100%);
+
+@mixin linear-gradient($fromColor, $toColor) {
+  background-color: $toColor; /* Fallback Color */
+  background-image: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(-180deg, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(-180deg, $fromColor, $toColor); /* FF3.6 */
+  background-image:     -ms-linear-gradient(-180deg, $fromColor, $toColor); /* IE10 */
+  background-image:      -o-linear-gradient(-180deg, $fromColor, $toColor); /* Opera 11.10+ */
+  background-image:         linear-gradient(-180deg, $fromColor, $toColor);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+}
 
 // Images
 $folder-icon: '../images/icons';

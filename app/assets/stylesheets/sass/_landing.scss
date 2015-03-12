@@ -227,7 +227,7 @@
 #five {
 	text-align: center;
 	.newsletter {
-		background-image: $d-gradient;
+		@include linear-gradient($d-orange, $d-orange-dark);
 		color: $d-white;
 		padding: 45px 0 30px;
 		article {
@@ -332,7 +332,7 @@
 				transition: all .3s;
 			}
 			&:hover {
-				background: $d-gradient-inverse;
+				@include linear-gradient($d-orange-dark, $d-orange);
 			}
 		}
 	}
@@ -353,7 +353,7 @@
 }
 
 .bar {
-	background: $d-gradient;
+	@include linear-gradient($d-orange, $d-orange-dark);
 	width: 10px;
 	margin-right: 6px;
 	display: block;
