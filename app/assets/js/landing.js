@@ -144,7 +144,9 @@ $(document).ready(function() {
 			   type: 'POST',
 			   data: $('form#newsletter').serialize(),
 			   error: function() {
+			   	console.log(data);
 			      $('form#newsletter .already').addClass("active").delay(3000).queue(function(){
+			      	$(this).text(data.message);
 				    $(this).removeClass("active");
 				    $(this).dequeue();
 			  	});

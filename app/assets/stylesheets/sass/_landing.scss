@@ -383,7 +383,7 @@
 		line-height: 33px;
 		text-transform: uppercase;
 	}
-	h2.title {
+	h2.title, h1.title {
 		font-family: "Roboto";
 		text-transform: uppercase;
 		margin-top: 50px;
@@ -513,6 +513,12 @@
 		&.imgleft {
 			left: 0;	
 		}
+	}
+	.mentions p {
+		width: 70%;
+		margin: 20px auto;
+		opacity: 1;
+		font-weight: 300;
 	}
 }
 

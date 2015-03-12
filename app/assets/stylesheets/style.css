@@ -630,7 +630,7 @@ body {
   line-height: 33px;
   text-transform: uppercase;
 }
-.section h2.title {
+.section h2.title, .section h1.title {
   font-family: "Roboto";
   text-transform: uppercase;
   margin-top: 50px;
@@ -758,6 +758,12 @@ body {
 }
 .section .landing-image.imgleft {
   left: 0;
+}
+.section .mentions p {
+  width: 70%;
+  margin: 20px auto;
+  opacity: 1;
+  font-weight: 300;
 }
 
 @media (max-width: 1220px) {
