@@ -140,7 +140,7 @@ $(document).ready(function() {
 			event.preventDefault();
 
 			$.ajax({
-			   url: 'http://preprod.synerghetic.net/0976-14/app/register.php',
+			   url: 'http://preprod.synerghetic.net/0976-14/register.php',
 			   type: 'POST',
 			   data: $('form#newsletter').serialize(),
 			   error: function() {
