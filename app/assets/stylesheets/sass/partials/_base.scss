@@ -67,7 +67,8 @@ $d-gradient-inverse: linear-gradient(-180deg, #EE7648 0%, #EE9E19 100%);
   background-image:     -ms-linear-gradient(-180deg, $fromColor, $toColor); /* IE10 */
   background-image:      -o-linear-gradient(-180deg, $fromColor, $toColor); /* Opera 11.10+ */
   background-image:         linear-gradient(-180deg, $fromColor, $toColor);
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+  filter: progid:DXImageTransform.Microsoft.gradient(StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}', gradientType='0');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$fromColor}', endColorstr='#{$toColor}', gradientType='0')";
 }
 
 // Images

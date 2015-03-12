@@ -41,8 +41,7 @@ body {
 		text-transform: uppercase;
 		padding-left: 15px;
 		&:hover span {
-			background: $d-webkit-gradient;
-			background: $d-gradient;
+			@include linear-gradient($d-orange, $d-orange-dark);
     		color: transparent;
     		-webkit-background-clip: text;
 		}
@@ -51,7 +50,7 @@ body {
 
 // CTA
 .cta {
-	background-image: $d-gradient;
+	@include linear-gradient($d-orange, $d-orange-dark);
 	border: 2px solid $d-orange;
 	border-radius: 40px;
 }
