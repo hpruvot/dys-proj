@@ -151,15 +151,10 @@ $(document).ready(function() {
 			   }
 			});	
 
-	        $('form#newsletter .submit').addClass("submitted").delay(3000).queue(function(){
-			    $(this).removeClass("submitted");
+	        $('form#newsletter .submitted').addClass("active").delay(3000).queue(function(){
+			    $(this).removeClass("active");
 			    $(this).dequeue();
 		  });
-	  //       $('span.submitted').addClass("active").delay(3000).queue(function(){
-			//     $(this).removeClass("active");
-			//     $(this).dequeue();
-			// });
-		 //  $('form#newsletter .email').val("");
 
 
 		});
