@@ -368,7 +368,7 @@ $(document).ready(function() {
 			   data: $('form#newsletter').serialize(),
 			   error: function() {
 			      $('form#newsletter .already').addClass("active").delay(3000).queue(function(){
-			      	$(this).text(data.message);
+			      	$(this).html(data.message);
 				    $(this).removeClass("active");
 				    $(this).dequeue();
 			  	});
@@ -376,7 +376,7 @@ $(document).ready(function() {
 			   success: function(data) {
 			    	console.log(data);
 			    	$('form#newsletter .submitted, form#newsletter .submit').addClass("active").delay(3000).queue(function(){
-			    		$('form#newsletter .submitted').text(data.message);
+			    		$('form#newsletter .submitted').html(data.message);
 					    $(this).removeClass("active");
 					    $(this).dequeue();
 				  	});
