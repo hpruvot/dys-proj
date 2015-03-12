@@ -144,16 +144,18 @@ $(document).ready(function() {
 			   type: 'POST',
 			   data: $('form#newsletter').serialize(),
 			   error: function() {
+			   	  $('form#newsletter .already').html(data.message);
 			      $('form#newsletter .already').addClass("active").delay(3000).queue(function(){
-			      	$(this).html(data.message);
+			      	$('form#newsletter .already').html("");
 				    $(this).removeClass("active");
 				    $(this).dequeue();
 			  	});
 			   },
 			   success: function(data) {
 			    	console.log(data);
+			    	$('form#newsletter .submitted').html(data.message);
 			    	$('form#newsletter .submitted, form#newsletter .submit').addClass("active").delay(3000).queue(function(){
-			    		$('form#newsletter .submitted').html(data.message);
+			    		$('form#newsletter .submitted').html("");
 					    $(this).removeClass("active");
 					    $(this).dequeue();
 				  	});
