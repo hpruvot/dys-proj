@@ -463,16 +463,6 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#EE9E19', endColorstr='#EE7648', gradientType='0')";
   color: #FFFFFF;
   padding: 45px 0 30px;
-  /*span.submitted {
-  	visibility: hidden;
-  	position: relative;
-  	font-weight: $light;
-  	font-size: 1.5em;
-  	line-height: 2em;
-  	&.active {
-  		visibility: visible;
-  	}
-  }*/
 }
 #five .newsletter article {
   margin: 0 auto;
@@ -540,7 +530,7 @@ body {
   cursor: pointer;
   transition: background 0.3s ease-in;
 }
-#five .newsletter form#newsletter .submit.submitted {
+#five .newsletter form#newsletter .submit.active {
   background: #ffffff url("../images/icons/green_tick.svg") no-repeat center center;
   background-size: 30%;
 }

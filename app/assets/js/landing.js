@@ -151,7 +151,7 @@ $(document).ready(function() {
 			   }
 			});	
 
-	        $('form#newsletter .submitted').addClass("active").delay(3000).queue(function(){
+	        $('form#newsletter .submitted, form#newsletter .submit').addClass("active").delay(3000).queue(function(){
 			    $(this).removeClass("active");
 			    $(this).dequeue();
 		  });

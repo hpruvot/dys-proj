@@ -297,21 +297,11 @@
 			border: 1px solid #EE9E19;
 			cursor: pointer;
 			@include transition (background 0.3s ease-in);
-			&.submitted {
+			&.active {
 				background: #ffffff url('#{$folder-icon}/green_tick.svg') no-repeat center center;
 				background-size: 30%;
 			}
 		}
-		/*span.submitted {
-			visibility: hidden;
-			position: relative;
-			font-weight: $light;
-			font-size: 1.5em;
-			line-height: 2em;
-			&.active {
-				visibility: visible;
-			}
-		}*/
 		span.infomail {
 			display: none;
 			position: absolute;
