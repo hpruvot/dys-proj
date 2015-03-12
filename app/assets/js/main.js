@@ -37,6 +37,7 @@ $(document).ready(function(){
 			$('#leftbar').removeClass('resp');
 			$("#container").removeClass("active");
 			$("body").removeClass("inactive");
+			$("#home-header").removeClass("active");
 		}
 	});
 
