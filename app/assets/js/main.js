@@ -41,6 +41,8 @@ $(document).ready(function(){
 		}
 	});
 
+	/* Item menu */
+	$(window).on("scroll", onScroll);
 
 	//  Toggle the class on click to show / hide the menu
 	document.getElementById('menutoggle').onclick = function() {
@@ -50,9 +52,6 @@ $(document).ready(function(){
 		$("body").toggleClass("inactive");
 		$("#home-header").toggleClass("active");
 	}
-
-	/* Item menu */
-	$(window).on("scroll", onScroll);
 	
 	function onScroll(event){
 		event.preventDefault();
@@ -60,7 +59,12 @@ $(document).ready(function(){
 	    $('#menu li.item a').each(function () {
 	        var currLink = $(this);
 	        var refElement = $(currLink.attr("href"));
-	        if ((refElement.position().top)-70 <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+	        var contact = $("#six");
+	        if((contact.position().top)-200 <= scrollPos && contact.position().top + contact.height() > scrollPos) {
+	        	$('#menu ul li.item a').removeClass("active");
+	            currLink.addClass("active");
+	        }
+	        else if ((refElement.position().top) <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
 	            $('#menu ul li.item a').removeClass("active");
 	            currLink.addClass("active");
 	        }
@@ -323,7 +327,7 @@ $(document).ready(function() {
 		function goToDiv(id){
 
 		    $('html,body').animate({
-		        scrollTop: $(id).offset().top-70},
+		        scrollTop: $(id).offset().top},
 		    'slow');
 		}
 

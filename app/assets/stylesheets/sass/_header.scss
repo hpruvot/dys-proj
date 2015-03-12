@@ -151,13 +151,17 @@ header {
 				a {
 					color: $d-black;
 					&:not(.social):hover {
-						@include linear-gradient($d-orange, $d-orange-dark);
-						color: transparent;
+						color: $d-orange;
+						-webkit-text-fill-color: transparent;
+						background: -webkit-linear-gradient($d-orange, $d-orange-dark);
+						background: -o-linear-gradient($d-orange, $d-orange-dark);
 						-webkit-background-clip: text;
 					}
 					&.active {
-						@include linear-gradient($d-orange, $d-orange-dark);
-						color: transparent;
+						color: $d-orange;
+						-webkit-text-fill-color: transparent;
+						background: -webkit-linear-gradient($d-orange, $d-orange-dark);
+						background: -o-linear-gradient($d-orange, $d-orange-dark);
 						-webkit-background-clip: text;
 					}
 					&.social {

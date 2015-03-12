@@ -1,8 +1,14 @@
 <html> 
   <head> 
     <meta charset="utf-8">
+
+    <title>Dyskit - la nouvelle plateforme musicale</title>
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dyskit, la plateforme musicale qui donne la possibilité aux artistes indépendants de partager leurs créations et d'être reconnus grâce aux votes des auditeurs.">
+
     <script type="text/javascript" src="assets/js/jquery-1.11.2.min.js"></script>
 
      <!-- build:css -->
@@ -17,6 +23,20 @@
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,700italic,900' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:700' rel='stylesheet' type='text/css'>
+
+    <link rel="icon" type="image/png" href="assets/images/logo.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="logo.ico">
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-54690207-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
   
   </head> 
 
@@ -174,11 +194,18 @@
             <fieldset>
               <input type="email" name="email" class="email" placeholder="votre email" required/>
               <input type="submit" name="submit" class="submit action-button" value=""/>
-              <span class="submitted">Merci !</span>
+              <span class="infomail submitted">Merci !</span>
+              <span class="infomail already">Cette addresse existe déjà</span>
+              <span class="infomail incorrect">Cette addresse n'est pas valide</span>
             </fieldset>
           </form>
         </article>
       </div>
+    </div>
+  </section>
+
+  <section id="six" class="section">
+    <div class="inner-section">
       <div class="row contact">
         <article class="bloc">
           <h2 class="title">Une question ?</h2>
@@ -191,7 +218,7 @@
     </div>
   </section>
 
-  <section id="six">
+  <section id="seven">
     <div id="equalizer">
     </div>
   </section>

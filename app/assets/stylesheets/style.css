@@ -366,6 +366,7 @@ body {
   height: 200px;
   background: url("../images/music_bg.jpg") no-repeat center center;
   background-position: 0 70%;
+  background-size: 100%;
 }
 #four .slider {
   height: auto;
@@ -462,6 +463,16 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#EE9E19', endColorstr='#EE7648', gradientType='0')";
   color: #FFFFFF;
   padding: 45px 0 30px;
+  /*span.submitted {
+  	visibility: hidden;
+  	position: relative;
+  	font-weight: $light;
+  	font-size: 1.5em;
+  	line-height: 2em;
+  	&.active {
+  		visibility: visible;
+  	}
+  }*/
 }
 #five .newsletter article {
   margin: 0 auto;
@@ -533,29 +544,31 @@ body {
   background: #ffffff url("../images/icons/green_tick.svg") no-repeat center center;
   background-size: 30%;
 }
-#five .newsletter span.submitted {
-  visibility: hidden;
-  position: relative;
+#five .newsletter span.infomail {
+  display: none;
+  position: absolute;
+  width: 365px;
   font-weight: 300;
   font-size: 1.5em;
   line-height: 2em;
 }
-#five .newsletter span.submitted.active {
-  visibility: visible;
+#five .newsletter span.infomail.active {
+  display: block;
 }
-#five .contact {
-  margin-top: 9em;
+
+#six {
+  text-align: center;
 }
-#five .contact .bloc {
+#six .contact .bloc {
   padding: 0 10px;
 }
-#five .contact .cta {
+#six .contact .cta {
   width: 230px;
   height: 60px;
   margin: 65px auto 0;
   transition: all .3s;
 }
-#five .contact .cta a {
+#six .contact .cta a {
   font-weight: 700;
   font-size: 1.3em;
   color: #FFFFFF;
@@ -564,7 +577,7 @@ body {
   line-height: 60px;
   transition: all .3s;
 }
-#five .contact .cta:hover {
+#six .contact .cta:hover {
   background-color: #EE9E19;
   /* Fallback Color */
   /* Saf4+, Chrome */
@@ -577,7 +590,7 @@ body {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#EE7648', endColorstr='#EE9E19', gradientType='0')";
 }
 
-#six {
+#seven {
   position: relative;
   width: 100%;
   height: 175px;
@@ -619,7 +632,6 @@ body {
 .section .inner-section {
   position: relative;
   margin: 0 auto;
-  max-width: 1440px;
   padding-bottom: 103px;
 }
 .section h3 {
@@ -881,6 +893,7 @@ body {
   .section .landing-image.landing-iphone {
     background: url("../images/iphonedown.png") no-repeat bottom center;
     background-size: 100% !important;
+    top: 0em;
   }
 
   .section h2.title {
@@ -957,7 +970,7 @@ body {
     width: 55px;
   }
 
-  #five .contact {
+  #six .contact {
     margin-top: 2em;
   }
 
@@ -1126,31 +1139,15 @@ header .header-inner {
   color: #3D3B3A;
 }
 #home-header #menu ul li a:not(.social):hover {
-  background-color: #EE7648;
-  /* Fallback Color */
-  /* Saf4+, Chrome */
-  /* Chrome 10+, Saf5.1+, iOS 5+ */
-  /* FF3.6 */
-  /* IE10 */
-  /* Opera 11.10+ */
-  background-image: linear-gradient(to bottom, #ee9e19, #ee7648);
-  filter: progid:DXImageTransform.Microsoft.gradient(StartColorStr='#EE9E19', EndColorStr='#EE7648', gradientType='0');
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#EE9E19', endColorstr='#EE7648', gradientType='0')";
-  color: transparent;
+  color: #EE9E19;
+  -webkit-text-fill-color: transparent;
+  background: -o-linear-gradient(#EE9E19, #EE7648);
   -webkit-background-clip: text;
 }
 #home-header #menu ul li a.active {
-  background-color: #EE7648;
-  /* Fallback Color */
-  /* Saf4+, Chrome */
-  /* Chrome 10+, Saf5.1+, iOS 5+ */
-  /* FF3.6 */
-  /* IE10 */
-  /* Opera 11.10+ */
-  background-image: linear-gradient(to bottom, #ee9e19, #ee7648);
-  filter: progid:DXImageTransform.Microsoft.gradient(StartColorStr='#EE9E19', EndColorStr='#EE7648', gradientType='0');
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#EE9E19', endColorstr='#EE7648', gradientType='0')";
-  color: transparent;
+  color: #EE9E19;
+  -webkit-text-fill-color: transparent;
+  background: -o-linear-gradient(#EE9E19, #EE7648);
   -webkit-background-clip: text;
 }
 #home-header #menu ul li a.social {

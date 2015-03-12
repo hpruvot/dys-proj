@@ -104,7 +104,7 @@ $(document).ready(function() {
 		function goToDiv(id){
 
 		    $('html,body').animate({
-		        scrollTop: $(id).offset().top-70},
+		        scrollTop: $(id).offset().top},
 		    'slow');
 		}
 
