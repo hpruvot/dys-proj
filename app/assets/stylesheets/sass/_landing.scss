@@ -245,11 +245,11 @@
 			letter-spacing: 3px;
 			margin-bottom: 32px;
 		}
-		hr {
+		div.hr {
 			width: 52px;
 			border: 2px solid $d-white;
 			text-align: center;
-			margin-bottom: 29px;
+			margin: 5px auto 29px;
 		}
 		p{
 			font-weight: $light;
@@ -394,11 +394,11 @@
 		text-align: center;
 		color: $d-black;
 	}
-	hr.title {
+	div.hr {
 		width: 37px;
 		border: 2px solid $d-orange;
 		text-align: center;
-		margin-bottom: 25px;
+		margin: 5px auto 25px;
 	}
 	.row {
 		position: relative;
@@ -713,7 +713,7 @@
 
 
 	#five .newsletter {
-		hr {
+		div.hr {
 			margin-bottom: 10em;
 		}
 		article {

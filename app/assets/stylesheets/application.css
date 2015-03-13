@@ -493,11 +493,11 @@ body {
   letter-spacing: 3px;
   margin-bottom: 32px;
 }
-#five .newsletter hr {
+#five .newsletter div.hr {
   width: 52px;
   border: 2px solid #FFFFFF;
   text-align: center;
-  margin-bottom: 29px;
+  margin: 5px auto 29px;
 }
 #five .newsletter p {
   font-weight: 300;
@@ -669,11 +669,11 @@ body {
   text-align: center;
   color: #3D3B3A;
 }
-.section hr.title {
+.section div.hr {
   width: 37px;
   border: 2px solid #EE9E19;
   text-align: center;
-  margin-bottom: 25px;
+  margin: 5px auto 25px;
 }
 .section .row {
   position: relative;
@@ -977,7 +977,7 @@ body {
     bottom: 6em;
   }
 
-  #five .newsletter hr {
+  #five .newsletter div.hr {
     margin-bottom: 10em;
   }
   #five .newsletter article {
@@ -1041,7 +1041,7 @@ header .header-inner {
   cursor: pointer;
 }
 #logo a {
-  display: none;
+  opacity: 0;
   font-family: "alpaca";
   color: #3D3B3A;
   line-height: 47px;
@@ -1164,20 +1164,20 @@ header .header-inner {
 }
 #home-header #menu ul li a {
   color: #3D3B3A;
-}
-#home-header #menu ul li a:not(.social):hover {
-  color: #EE9E19;
-  -webkit-text-fill-color: transparent;
-  background: -webkit-linear-gradient(#EE9E19, #EE7648);
-  background: -o-linear-gradient(#EE9E19, #EE7648);
-  -webkit-background-clip: text;
-}
-#home-header #menu ul li a.active {
-  color: #EE9E19;
-  -webkit-text-fill-color: transparent;
-  background: -webkit-linear-gradient(#EE9E19, #EE7648);
-  background: -o-linear-gradient(#EE9E19, #EE7648);
-  -webkit-background-clip: text;
+  /*&:not(.social):hover {
+  	color: $d-orange;
+  	-webkit-text-fill-color: transparent;
+  	background: -webkit-linear-gradient($d-orange, $d-orange-dark);
+  	background: -o-linear-gradient($d-orange, $d-orange-dark);
+  	-webkit-background-clip: text;
+  }
+  &.active {
+  	color: $d-orange;
+  	-webkit-text-fill-color: transparent;
+  	background: -webkit-linear-gradient($d-orange, $d-orange-dark);
+  	background: -o-linear-gradient($d-orange, $d-orange-dark);
+  	-webkit-background-clip: text;
+  }*/
 }
 #home-header #menu ul li a.social {
   float: left;
@@ -1194,6 +1194,21 @@ header .header-inner {
   background: url("../images/icons/facebook-white.svg") no-repeat center center;
 }
 
+.no-touch #home-header #menu ul li a:not(.social):hover {
+  color: #EE9E19;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(#EE9E19, #EE7648);
+  background: -o-linear-gradient(#EE9E19, #EE7648);
+  -webkit-background-clip: text;
+}
+.no-touch #home-header #menu ul li a.active {
+  color: #EE9E19;
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(#EE9E19, #EE7648);
+  background: -o-linear-gradient(#EE9E19, #EE7648);
+  -webkit-background-clip: text;
+}
+
 @media (max-width: 640px) {
   #logo {
     background: none;
@@ -1202,7 +1217,7 @@ header .header-inner {
     position: absolute;
   }
   #logo a {
-    display: block;
+    opacity: 1;
   }
 
   header {
@@ -1675,6 +1690,9 @@ header .header-inner {
   button.active ~ #menu {
     height: 100%;
     width: 100%;
+  }
+  button.active ~ #menu .lg-hidden {
+    padding-bottom: 4em !important;
   }
 
   button.navtoogle ~ #menu {

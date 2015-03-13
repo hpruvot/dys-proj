@@ -340,6 +340,9 @@
 		height: 100%;
 		width: 100%;
 		//@include transition(height 0.4s ease-in);
+		.lg-hidden {
+			padding-bottom: 4em !important;
+		}
 	}
 	button.navtoogle ~ #menu{	
 		@include transition(height 0.4s ease-in);

@@ -28,7 +28,7 @@ header {
   	height: 72px;
   	cursor: pointer;
 	a {
-		display: none;
+		opacity: 0;
 		font-family: "alpaca";
 		color: #3D3B3A;
 		line-height: 47px;
@@ -150,7 +150,7 @@ header {
 				padding: 0 14px;
 				a {
 					color: $d-black;
-					&:not(.social):hover {
+					/*&:not(.social):hover {
 						color: $d-orange;
 						-webkit-text-fill-color: transparent;
 						background: -webkit-linear-gradient($d-orange, $d-orange-dark);
@@ -163,7 +163,7 @@ header {
 						background: -webkit-linear-gradient($d-orange, $d-orange-dark);
 						background: -o-linear-gradient($d-orange, $d-orange-dark);
 						-webkit-background-clip: text;
-					}
+					}*/
 					&.social {
 						float: left;
   						width: 33%;
@@ -184,6 +184,25 @@ header {
 	}
 }
 
+.no-touch {
+	#home-header #menu ul li a {
+		&:not(.social):hover {
+			color: $d-orange;
+			-webkit-text-fill-color: transparent;
+			background: -webkit-linear-gradient($d-orange, $d-orange-dark);
+			background: -o-linear-gradient($d-orange, $d-orange-dark);
+			-webkit-background-clip: text;
+		}
+		&.active {
+			color: $d-orange;
+			-webkit-text-fill-color: transparent;
+			background: -webkit-linear-gradient($d-orange, $d-orange-dark);
+			background: -o-linear-gradient($d-orange, $d-orange-dark);
+			-webkit-background-clip: text;
+		}
+	}
+}
+
 
 @media(max-width:640px) {
 
@@ -193,7 +212,7 @@ header {
   		height: 45px;
   		position: absolute;
 		a {
-			display: block;
+			opacity: 1;
 		}
 	}
 	
