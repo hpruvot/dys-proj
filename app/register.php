@@ -9,8 +9,8 @@ if($_SERVER['REQUEST_METHOD'] == 'GET') {
 }
 else if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['email'])) {
   $dns = 'mysql:host=localhost;dbname=dyskit_cs';
-  $utilisateur = 'dyskit_cs';
-  $motDePasse = 'dyskit_cs';
+  $utilisateur = 'root';
+  $motDePasse = '';
   $connection = new PDO( $dns, $utilisateur, $motDePasse );
 
   if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
