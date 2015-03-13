@@ -143,12 +143,12 @@ $(document).ready(function() {
 			   url: 'http://antoine.local/dys-proj/app/register.php',
 			   type: 'POST',
 			   data: $('form#newsletter').serialize(),
+			   dataType: 'json',
 			   error: function() {
 	   	  		//
 			   },
 			   success: function(data) {
-			    	console.log(data);
-			    	if(data.status){
+			    	if(data.status) {
 					$('form#newsletter .submitted').html(data.message);
 					$('form#newsletter .submitted, form#newsletter .submit').addClass("active").delay(3000).queue(function(){
 						$('form#newsletter .submitted').html("");
