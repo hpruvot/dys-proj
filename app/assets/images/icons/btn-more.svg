@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="21px" height="7px" viewBox="0 0 21 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 87</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Home-APP-DropDown" sketch:type="MSArtboardGroup" transform="translate(-939.000000, -578.000000)" filter="url(#filter-1)" fill="#FFFFFF">
+            <g id="Center" sketch:type="MSLayerGroup" transform="translate(-7.000000, 2.000000)">
+                <g id="Les-nouveautés-de-la-semaine" transform="translate(287.000000, 378.000000)" sketch:type="MSShapeGroup">
+                    <g id="Bloc-Name/artist-3" transform="translate(540.000000, 61.000000)">
+                        <g id="Effet_hover" transform="translate(20.000000, 56.000000)">
+                            <path d="M116.728261,81 C115.474674,81 114.456522,82.1181818 114.456522,83.5 C114.456522,84.8795455 115.474674,86 116.728261,86 C117.983913,86 119,84.8795455 119,83.5 C119,82.1181818 117.983913,81 116.728261,81 L116.728261,81 Z M109.5,81 C108.246413,81 107.228261,82.1181818 107.228261,83.5 C107.228261,84.8795455 108.246413,86 109.5,86 C110.755652,86 111.771739,84.8795455 111.771739,83.5 C111.771739,82.1181818 110.755652,81 109.5,81 L109.5,81 Z M102.271739,81 C101.018152,81 100,82.1181818 100,83.5 C100,84.8795455 101.018152,86 102.271739,86 C103.527391,86 104.543478,84.8795455 104.543478,83.5 C104.543478,82.1181818 103.527391,81 102.271739,81 L102.271739,81 Z" id="Fill-87"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

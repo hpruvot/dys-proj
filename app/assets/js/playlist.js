@@ -116,4 +116,15 @@ $(document).ready(function(){
 	    }
 
 	}
+
+	/* Left bar */
+	$('#usr-nav .resp-item').click(function(){
+		$('.resp-item').removeClass("active");
+		$(this).addClass("active");
+
+	})
+
+	$(".ov-icon.btn-add").click(function(){
+		$(".pl-tooltip").toggleClass("active");
+	})
 })

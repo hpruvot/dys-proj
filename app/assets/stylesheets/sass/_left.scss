@@ -168,10 +168,10 @@
 
 /* MENU USER */
 #usr-nav {
-	margin-bottom: 45px;
+	margin-bottom: 20px;
 	.usr-items {
 		li {
-			padding: 15px 0 21px;
+			padding: 20px 0 22px;
 			border-bottom: 1px solid rgba(0,0,0,0.1);
 			.usr-profile {
 				background: url('#{$folder-icon}/user.svg') no-repeat;
@@ -196,13 +196,19 @@
 /* MENU PLAYLIST */
 #pl-nav {
 	.pl-title {
-		margin-bottom: 28px;
+		margin-bottom: 23px;
 		padding-left: 20px;
 		span {
 			font-size: $size-base;
 			text-transform: uppercase;
 			font-weight: $bold;
-			margin-bottom: 8px;
+			margin-bottom: 3px;
+			line-height: 2em;
+			cursor: pointer;
+			&:hover {
+				background: url('#{$folder-icon}/add_btn.svg') no-repeat center right;
+				background-position: 90%;
+			}
 		}
 		hr {
 			width: 24px;
@@ -212,16 +218,24 @@
 	}
 	.pl-items {
 		li {
-			padding: 7px 20px;
+			padding: 7px 15px;
 			a{
 				color: $d-black;
 			}
 			.pl-heart {
 				background: url('#{$folder-icon}/heart.svg') no-repeat center center;
+				float: left;
 				background-size: 80%;
 			}
 			.pl-play {
 				background: url('#{$folder-icon}/beamed-note.svg') no-repeat center center;
+				float: left;
+				cursor: pointer;
+			}
+			.pl-dl {
+				float: right;
+				margin-top: -2em;
+				cursor: pointer;
 			}
 			.pl-name {
 				font-weight: $medium;
@@ -229,11 +243,16 @@
 				padding-left: 25px;
 				line-height: 20px;
 			}
-			&:hover .pl-play{
-					background: url('#{$folder-icon}/triangle-right.svg') no-repeat center center;
-					border: 1px solid $d-orange;
-					border-radius: 50%;
-					background-size: 39%;
+			&:hover {
+				.pl-play{
+					background: url('#{$folder-icon}/play_btn.svg') no-repeat center center;
+					width: 24px;
+					height: 24px;
+					margin-left: -2px;
+				}
+				.pl-dl {
+					background: url('#{$folder-icon}/modify_btn.svg') no-repeat center right;
+				}
 			}
 		}
 	}

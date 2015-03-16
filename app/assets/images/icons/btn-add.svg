@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="13px" viewBox="0 0 24 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 67</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Home-APP-DropDown" sketch:type="MSArtboardGroup" transform="translate(-888.000000, -573.000000)" filter="url(#filter-1)" fill="#FFFFFF">
+            <g id="Center" sketch:type="MSLayerGroup" transform="translate(-7.000000, 2.000000)">
+                <g id="Les-nouveautés-de-la-semaine" transform="translate(287.000000, 378.000000)" sketch:type="MSShapeGroup">
+                    <g id="Bloc-Name/artist-3" transform="translate(540.000000, 61.000000)">
+                        <g id="Effet_hover" transform="translate(20.000000, 56.000000)">
+                            <path d="M56.7,76 L50.1,76 C49.4928,76 49,76.4906 49,77.1 C49,77.7072 49.4928,78.2 50.1,78.2 L56.7,78.2 C57.3072,78.2 57.8,77.7072 57.8,77.1 C57.8,76.4906 57.3072,76 56.7,76 L56.7,76 Z M70.34,80.4 L66.6,80.4 L66.6,76.66 C66.6,76.0506 66.1072,76 65.5,76 C64.8928,76 64.4,76.0506 64.4,76.66 L64.4,80.4 L60.77,80.4 C60.1628,80.4 60.11,80.8906 60.11,81.5 C60.11,82.1072 60.1628,82.6 60.77,82.6 L64.4,82.6 L64.4,86.34 C64.4,86.9472 64.8928,87 65.5,87 C66.1072,87 66.6,86.9472 66.6,86.34 L66.6,82.6 L70.34,82.6 C70.9472,82.6 71,82.1072 71,81.5 C71,80.8906 70.9472,80.4 70.34,80.4 L70.34,80.4 Z M56.7,84.8 L50.1,84.8 C49.4928,84.8 49,85.2906 49,85.9 C49,86.5072 49.4928,87 50.1,87 L56.7,87 C57.3072,87 57.8,86.5072 57.8,85.9 C57.8,85.2906 57.3072,84.8 56.7,84.8 L56.7,84.8 Z M56.7,80.4 L50.1,80.4 C49.4928,80.4 49,80.8906 49,81.5 C49,82.1072 49.4928,82.6 50.1,82.6 L56.7,82.6 C57.3072,82.6 57.8,82.1072 57.8,81.5 C57.8,80.8906 57.3072,80.4 56.7,80.4 L56.7,80.4 Z" id="Fill-67"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="16px" height="17px" viewBox="0 0 16 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Delete_btn</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Home-APP-Scroll" sketch:type="MSArtboardGroup" transform="translate(-221.000000, -302.000000)" fill-opacity="0.15" fill="#0A0B09">
+            <g id="LEFT_BAR_main" sketch:type="MSLayerGroup" transform="translate(0.000000, 71.000000)">
+                <g id="Mes-Playlists" transform="translate(18.000000, 141.827535)" sketch:type="MSShapeGroup">
+                    <g id="Name_playlist" transform="translate(0.000000, 86.937084)">
+                        <g id="Delete_btn" transform="translate(203.000000, 3.000000)">
+                            <path d="M4.59290147,14.3766276 L2.9292824,14.735189 C2.76722826,14.4342682 2.57440435,14.1337577 2.2195263,13.7795039 C1.86669957,13.4252502 1.56515579,13.2320209 1.26361202,13.0705862 L1.6225927,11.4057783 L2.10465248,10.924346 C2.10465248,10.924346 3.01133513,10.9423971 4.0328916,11.965774 C5.05649939,12.9887407 5.07496125,13.8956056 5.07496125,13.8956056 L4.59290147,14.3766276 L4.59290147,14.3766276 Z M14.7305161,1.27005986 C13.2494643,-0.210134098 12.1397012,0.0118129455 12.1397012,0.0118129455 L1.0359157,11.1149087 L0,16 L4.88418866,14.9639053 L15.9879741,3.86142492 C15.9879741,3.86142492 16.2115678,2.75066407 14.7305161,1.27005986 L14.7305161,1.27005986 Z" id="Fill-56"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="19px" height="15px" viewBox="0 0 19 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 8</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Home-APP-DropDown" sketch:type="MSArtboardGroup" transform="translate(-839.000000, -572.000000)" filter="url(#filter-1)" fill="#FFFFFF">
+            <g id="Center" sketch:type="MSLayerGroup" transform="translate(-7.000000, 2.000000)">
+                <g id="Les-nouveautés-de-la-semaine" transform="translate(287.000000, 378.000000)" sketch:type="MSShapeGroup">
+                    <g id="Bloc-Name/artist-3" transform="translate(540.000000, 61.000000)">
+                        <g id="Effet_hover" transform="translate(20.000000, 56.000000)">
+                            <path d="M15.1883721,76.0684569 C13.6330233,74.6438477 11.112093,74.6438477 9.55674419,76.0684569 L8.5,77.0360249 L7.44325581,76.0684569 C5.88790698,74.6438477 3.36697674,74.6438477 1.81162791,76.0684569 C0.0627906977,77.6715369 0.0627906977,80.2700419 1.81162791,81.8731219 L8.5,88 L15.1883721,81.8731219 C16.9372093,80.2700419 16.9372093,77.6715369 15.1883721,76.0684569" id="Fill-8"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

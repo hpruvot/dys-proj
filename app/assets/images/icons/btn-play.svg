@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 62 + Fill 241</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Home-APP-DropDown" sketch:type="MSArtboardGroup" transform="translate(-876.000000, -497.000000)">
+            <g id="Center" sketch:type="MSLayerGroup" transform="translate(-7.000000, 2.000000)">
+                <g id="Les-nouveautés-de-la-semaine" transform="translate(287.000000, 378.000000)" sketch:type="MSShapeGroup">
+                    <g id="Bloc-Name/artist-3" transform="translate(540.000000, 61.000000)">
+                        <g id="Effet_hover" transform="translate(20.000000, 56.000000)">
+                            <g id="Oval-62-+-Fill-241" transform="translate(36.000000, 0.000000)">
+                                <circle id="Oval-62" stroke="#FFFFFF" stroke-width="3" fill-opacity="0.35" fill="#000000" cx="24" cy="24" r="24"></circle>
+                                <path d="M29.63496,23.4014853 L19.36128,17.2136699 C18.61272,16.7353508 18,17.0876737 18,17.9953133 L18,30.006955 C18,30.9122613 18.61272,31.2645841 19.36128,30.786265 L29.63496,24.5984496 C29.63496,24.5984496 30,24.3487904 30,24.0011341 C30,23.6511445 29.63496,23.4014853 29.63496,23.4014853" id="Fill-241" fill="#FFFFFF"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

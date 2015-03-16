@@ -1528,10 +1528,10 @@ header .header-inner {
 
 /* MENU USER */
 #usr-nav {
-  margin-bottom: 45px;
+  margin-bottom: 20px;
 }
 #usr-nav .usr-items li {
-  padding: 15px 0 21px;
+  padding: 20px 0 22px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 #usr-nav .usr-items li .usr-profile {
@@ -1553,14 +1553,20 @@ header .header-inner {
 
 /* MENU PLAYLIST */
 #pl-nav .pl-title {
-  margin-bottom: 28px;
+  margin-bottom: 23px;
   padding-left: 20px;
 }
 #pl-nav .pl-title span {
   font-size: 1.2em;
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 8px;
+  margin-bottom: 3px;
+  line-height: 2em;
+  cursor: pointer;
+}
+#pl-nav .pl-title span:hover {
+  background: url("../images/icons/add_btn.svg") no-repeat center right;
+  background-position: 90%;
 }
 #pl-nav .pl-title hr {
   width: 24px;
@@ -1568,17 +1574,25 @@ header .header-inner {
   float: left;
 }
 #pl-nav .pl-items li {
-  padding: 7px 20px;
+  padding: 7px 15px;
 }
 #pl-nav .pl-items li a {
   color: #3D3B3A;
 }
 #pl-nav .pl-items li .pl-heart {
   background: url("../images/icons/heart.svg") no-repeat center center;
+  float: left;
   background-size: 80%;
 }
 #pl-nav .pl-items li .pl-play {
   background: url("../images/icons/beamed-note.svg") no-repeat center center;
+  float: left;
+  cursor: pointer;
+}
+#pl-nav .pl-items li .pl-dl {
+  float: right;
+  margin-top: -2em;
+  cursor: pointer;
 }
 #pl-nav .pl-items li .pl-name {
   font-weight: 500;
@@ -1587,10 +1601,13 @@ header .header-inner {
   line-height: 20px;
 }
 #pl-nav .pl-items li:hover .pl-play {
-  background: url("../images/icons/triangle-right.svg") no-repeat center center;
-  border: 1px solid #EE9E19;
-  border-radius: 50%;
-  background-size: 39%;
+  background: url("../images/icons/play_btn.svg") no-repeat center center;
+  width: 24px;
+  height: 24px;
+  margin-left: -2px;
+}
+#pl-nav .pl-items li:hover .pl-dl {
+  background: url("../images/icons/modify_btn.svg") no-repeat center right;
 }
 
 .hamburger-slim {
@@ -2309,10 +2326,14 @@ p.conditions {
 }
 .pl-single .pl-cover {
   overflow: hidden;
+  position: relative;
 }
 .pl-single .pl-cover img {
   width: 100%;
   height: auto;
+}
+.pl-single .pl-cover:hover .pl-overlay {
+  display: block;
 }
 .pl-single .pl-infos {
   padding: 10px;
@@ -2323,6 +2344,7 @@ p.conditions {
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  position: relative;
 }
 .pl-single .pl-title {
   font-weight: 300;
@@ -2356,6 +2378,131 @@ p.conditions {
   height: 9px;
   display: inline-block;
   margin-right: 6px;
+}
+.pl-single .pl-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.18) 100%);
+  display: none;
+}
+.pl-single .pl-overlay.active {
+  display: block;
+}
+.pl-single .pl-overlay .ov-icon {
+  position: absolute;
+  background: none;
+  border: none;
+  bottom: 0;
+  cursor: pointer;
+}
+.pl-single .pl-overlay .ov-icon:after {
+  content: "";
+  display: block;
+  border: none;
+  padding: 0;
+}
+.pl-single .pl-overlay .btn-play {
+  bottom: 33%;
+  left: 31%;
+}
+.pl-single .pl-overlay .btn-fav {
+  left: 1em;
+}
+.pl-single .pl-overlay .btn-add {
+  left: 5.5em;
+}
+.pl-single .pl-overlay .btn-more {
+  left: 10.5em;
+}
+.pl-single .pl-overlay .btn-play:after {
+  background: url("../images/icons/btn-play.svg") no-repeat center center;
+  width: 48px;
+  height: 48px;
+}
+.pl-single .pl-overlay .btn-fav:after {
+  background: url("../images/icons/btn-fav.svg") no-repeat center center;
+  width: 20px;
+  height: 33px;
+}
+.pl-single .pl-overlay .btn-add:after {
+  background: url("../images/icons/btn-add.svg") no-repeat center center;
+  width: 22px;
+  height: 33px;
+}
+.pl-single .pl-overlay .btn-more:after {
+  background: url("../images/icons/btn-more.svg") no-repeat center center;
+  width: 19px;
+  height: 30px;
+}
+.pl-single .pl-tooltip {
+  position: absolute;
+  width: 222px;
+  top: 1.5em;
+  white-space: normal;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(-180deg, #49403b 0%, #2e2722 100%);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.21);
+  border-radius: 5px;
+  height: 0;
+  overflow: hidden;
+  -moz-transition: height 0.3s ease-in-out;
+  -o-transition: height 0.3s ease-in-out;
+  -webkit-transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+}
+.pl-single .pl-tooltip.active {
+  height: 235px;
+}
+.pl-single .pl-tooltip.active:before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 45%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent #49403B transparent;
+}
+.pl-single .pl-tooltip .inner {
+  padding: 1em 1.5em;
+}
+.pl-single .pl-tooltip p {
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #FFFFFF;
+  line-height: 20px;
+  margin-bottom: 1em;
+}
+.pl-single .pl-tooltip ul {
+  position: relative;
+}
+.pl-single .pl-tooltip li .pl-add {
+  display: inline-block;
+  background: url("../images/icons/tooltip-add.svg") no-repeat center center;
+  float: left;
+  width: 19px;
+  height: 19px;
+  cursor: pointer;
+}
+.pl-single .pl-tooltip li a {
+  font-weight: 500;
+  font-size: 1.3em;
+  color: #F0F0F0;
+  line-height: 18px;
+  padding-left: 2em;
+  margin-bottom: 1.3em;
+}
+.pl-single .pl-tooltip li:hover .pl-add {
+  background: url("../images/icons/tooltip-add-hover.svg") no-repeat center center;
+}
+.pl-single .pl-tooltip li:hover a {
+  color: #FFFFFF;
 }
 
 .at-single {
