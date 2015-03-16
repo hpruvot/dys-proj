@@ -204,8 +204,8 @@ $(document).ready(function(){
 })
 $(document).ready(function(){
 
-  if ('ontouchstart' in document) {
-      $('body').removeClass('no-touch');
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    $('body').removeClass('no-touch');
   }
 
 	$(function(){
