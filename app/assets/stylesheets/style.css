@@ -2664,6 +2664,116 @@ p.conditions {
     width: 50%;
   }
 }
+.tracklist-header {
+  padding-left: 2em;
+  padding-bottom: 3.4em;
+}
+.tracklist-header .tracklist-header-inner > span {
+  font-weight: 500;
+  font-size: 1.3em;
+  color: #9B9B9B;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.tracklist-header h1.title {
+  font-weight: 100;
+  font-size: 3em;
+  color: #3D3B3A;
+  line-height: 29px;
+  margin: 8px 0 17px;
+}
+.tracklist-header h2.subtitle {
+  font-weight: 300;
+  font-size: 1.6em;
+  color: #ABABAB;
+  line-height: 21px;
+}
+.tracklist-header h2.subtitle .date {
+  display: inline-block;
+  color: #5B514C;
+}
+.tracklist-header h2.subtitle .author {
+  display: inline-block;
+  color: #615E5D;
+  font-weight: 400;
+}
+.tracklist-header h2.subtitle .separator, .tracklist-header h2.subtitle .abonnes {
+  display: inline-block;
+  color: #EE9E19;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.tracklist-header div.hr {
+  width: 24px;
+  height: 3px;
+  background: #EE9E19;
+  margin: 1em 0;
+}
+
+.tracklist-wrapper {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.tracklist-playlist {
+  width: 100%;
+}
+
+.tl-header {
+  background: #FFFFFF;
+  border-top: 1px solid #E0E0E0;
+  border-bottom: 1px solid #E0E0E0;
+  width: 100%;
+}
+.tl-header th {
+  border-top: 0;
+  letter-spacing: 1px;
+  line-height: 28px;
+  text-transform: uppercase;
+  vertical-align: bottom;
+  padding: 0 0 0 12px;
+  position: relative;
+  font-weight: 500;
+  font-size: 1.3em;
+  color: #4E4C4B;
+  line-height: 4em;
+  text-transform: uppercase;
+}
+
+.tl-cell, .tl-cell > div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tl-cell {
+  height: 62px;
+  border: 1px solid #F1F1F1;
+  padding-left: 1em;
+}
+
+.tl-row .tl-cover {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  display: block;
+  border-right: none;
+}
+.tl-row .tl-title, .tl-row .tl-artist a, .tl-row .tl-time {
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #656565;
+  line-height: 20px;
+}
+.tl-row .tl-title {
+  border-left: none;
+}
+.tl-row .tl-contributeur a {
+  font-weight: 400;
+  font-size: 1.5em;
+  color: #F5A623;
+  line-height: 20px;
+}
+
 .player-content .plr-cover img {
   max-height: 260px;
 }
