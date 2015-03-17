@@ -81,12 +81,35 @@
 	padding-left: 1em;
 }
 .tl-row {
+	border-left: 5px solid transparent;
+	&.selected {
+		background: rgba(205,205,205,0.15);
+		border-left: 5px solid #EE9E19;
+	}
+	&:hover {
+		.tl-cover .btn-play {
+			display: block;
+		}
+	}
 	.tl-cover {
-		width: 40px;
-		height: 40px;
+		width: 80px;
+		height: 60px;
 		overflow: hidden;
 		display: block;
 		border-right: none;
+		padding: 0.9em 0.9em 0.9em 2em;
+		margin-left: 1em;
+		.btn-play {
+			display: none;
+			width: 40px;
+  			height: 40px;
+  			position: absolute;
+  			background: url('#{$folder-icon}/tr-btn-play.svg') no-repeat center center;
+  			cursor: pointer;
+		}
+		img {
+			width: 40px;
+		}
 	}
 	.tl-title, .tl-artist a, .tl-time {
 		font-weight: $light;
@@ -96,20 +119,28 @@
 	}
 	.tl-title {
 		border-left: none;
+		max-width: 340px;
 	}
 	.tl-artist {
-		
+		max-width: 170px;
 	}
 	.tl-time {
 		
 	}
-	.tl-contributeur a{
-		font-weight: $regular;
-		font-size: 1.5em;
-		color: #F5A623;
-		line-height: 20px;
+	.tl-contributeur {
+		max-width: 140px;
+		a {
+			font-weight: $regular;
+			font-size: 1.5em;
+			color: #F5A623;
+			line-height: 20px;
+		}
 	}
 	.tl-more {
-		
+		display: block;
+		width: 40px;
+		height: 23px;
+		background: url('#{$folder-icon}/tr-more.svg') no-repeat center center;
+		cursor: pointer;
 	}
 }

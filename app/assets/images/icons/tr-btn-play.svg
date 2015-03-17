@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 63 + Fill 242</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="APP---Playlist" sketch:type="MSArtboardGroup" transform="translate(-288.000000, -482.000000)">
+            <g id="CENTER" sketch:type="MSLayerGroup" transform="translate(258.000000, 102.000000)">
+                <g id="Ligne-04" transform="translate(0.000000, 362.000000)" sketch:type="MSShapeGroup">
+                    <g id="Play_btn-2" transform="translate(31.000000, 19.000000)">
+                        <g id="Oval-63-+-Fill-242">
+                            <circle id="Oval-63" stroke="#FFFFFF" cx="11" cy="11" r="11"></circle>
+                            <path d="M14.81748,11.2007427 L9.68064,8.10683495 C9.30636,7.86767542 9,8.04383683 9,8.49765663 L9,14.5034775 C9,14.9561306 9.30636,15.1322921 9.68064,14.8931325 L14.81748,11.7992248 C14.81748,11.7992248 15,11.6743952 15,11.5005671 C15,11.3255723 14.81748,11.2007427 14.81748,11.2007427" id="Fill-242" fill="#FFFFFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
