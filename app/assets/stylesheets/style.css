@@ -2814,3 +2814,8 @@ p.conditions {
 .player-content .plr-cover img {
   max-height: 260px;
 }
+
+.profil-user {
+  background: linear-gradient(-180deg, #ee9e19 0%, #ee7648 100%);
+  height: 307px;
+}
