@@ -24,7 +24,9 @@ var conf = {
       prefix: 'app/assets/js/',
       files: [
         'jquery-1.11.2.min.js',
+        'mediaelement-and-player.min.js',
         'menu.js',
+        'player.js',
         'playlist.js',
         'script.js',
         'landing.js'

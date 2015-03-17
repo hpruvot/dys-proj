@@ -155,6 +155,7 @@
 			background: url('#{$folder-icon}/btn-play.svg') no-repeat center center;
 			width: 48px;
 			height: 48px;
+			background-size: 100%;
 		}
 		.btn-fav:after {
 			background: url('#{$folder-icon}/btn-fav.svg') no-repeat center center;
@@ -214,9 +215,11 @@
 			position: relative;
 		}
 		li {
-			.pl-add {
+			.pl-add:after {
+				content: "";
 				display: inline-block;
 				background: url('#{$folder-icon}/tooltip-add.svg') no-repeat center center;
+				opacity: 0.7;
 				float: left;
 				width: 19px;
 				height: 19px;
@@ -231,8 +234,8 @@
 				margin-bottom: 1.3em;
 			}
 			&:hover {
-				.pl-add {
-					background: url('#{$folder-icon}/tooltip-add-hover.svg') no-repeat center center;
+				.pl-add:after {
+					opacity: 1;
 				}
 				a {
 					color: #FFFFFF;

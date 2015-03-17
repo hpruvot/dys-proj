@@ -1739,7 +1739,7 @@ header .header-inner {
   }
 }
 .upload-container {
-  float: right;
+  float: right !important;
   width: 82%;
   background-color: #EE7648;
   /* Fallback Color */
@@ -2421,6 +2421,7 @@ p.conditions {
   background: url("../images/icons/btn-play.svg") no-repeat center center;
   width: 48px;
   height: 48px;
+  background-size: 100%;
 }
 .pl-single .pl-overlay .btn-fav:after {
   background: url("../images/icons/btn-fav.svg") no-repeat center center;
@@ -2482,9 +2483,11 @@ p.conditions {
 .pl-single .pl-tooltip ul {
   position: relative;
 }
-.pl-single .pl-tooltip li .pl-add {
+.pl-single .pl-tooltip li .pl-add:after {
+  content: "";
   display: inline-block;
   background: url("../images/icons/tooltip-add.svg") no-repeat center center;
+  opacity: 0.7;
   float: left;
   width: 19px;
   height: 19px;
@@ -2498,8 +2501,8 @@ p.conditions {
   padding-left: 2em;
   margin-bottom: 1.3em;
 }
-.pl-single .pl-tooltip li:hover .pl-add {
-  background: url("../images/icons/tooltip-add-hover.svg") no-repeat center center;
+.pl-single .pl-tooltip li:hover .pl-add:after {
+  opacity: 1;
 }
 .pl-single .pl-tooltip li:hover a {
   color: #FFFFFF;
@@ -2760,4 +2763,7 @@ p.conditions {
   .playlist-content .row .pl-single, .playlist-content .row .at-single {
     width: 50%;
   }
+}
+.player-content .plr-cover img {
+  max-height: 260px;
 }

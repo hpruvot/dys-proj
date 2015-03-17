@@ -1,5 +1,5 @@
 .upload-container {
-	float: right;
+	float: right !important;
 	width: 82%;
 	@include linear-gradient($d-orange, $d-orange-dark);
 	margin: 0;

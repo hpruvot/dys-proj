@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Oval 63 + Fill 25</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Home-APP-DropDown" sketch:type="MSArtboardGroup" transform="translate(-804.000000, -713.000000)">
+            <g id="Center" sketch:type="MSLayerGroup" transform="translate(-7.000000, 2.000000)">
+                <g id="Dropdown-Add-Playlist" transform="translate(797.000000, 607.000000)" sketch:type="MSShapeGroup">
+                    <g id="Name_playlist-5" transform="translate(14.000000, 104.000000)">
+                        <g id="Add_btn-2">
+                            <g id="Oval-63-+-Fill-25">
+                                <circle id="Oval-63" fill="#EF9E19" cx="9.5" cy="9.5" r="9.5"></circle>
+                                <path d="M13.0488506,8.81752874 L10.1824713,8.81752874 L10.1824713,5.95114943 C10.1824713,5.57306034 9.87699713,5.54166667 9.5,5.54166667 C9.12313937,5.54166667 8.81752874,5.57306034 8.81752874,5.95114943 L8.81752874,8.81752874 L5.95114943,8.81752874 C5.57428879,8.81752874 5.54166667,9.12191092 5.54166667,9.5 C5.54166667,9.87672414 5.57428879,10.1824713 5.95114943,10.1824713 L8.81752874,10.1824713 L8.81752874,13.0488506 C8.81752874,13.4255747 9.12313937,13.4583333 9.5,13.4583333 C9.87699713,13.4583333 10.1824713,13.4255747 10.1824713,13.0488506 L10.1824713,10.1824713 L13.0488506,10.1824713 C13.4258477,10.1824713 13.4583333,9.87672414 13.4583333,9.5 C13.4583333,9.12191092 13.4258477,8.81752874 13.0488506,8.81752874" id="Fill-25" fill="#FFFFFF" transform="translate(9.500000, 9.500000) rotate(-315.000000) translate(-9.500000, -9.500000) "></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
