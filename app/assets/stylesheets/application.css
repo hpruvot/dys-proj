@@ -3063,3 +3063,80 @@ p.conditions {
   width: 37px;
   height: 37px;
 }
+
+.list-uploads ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.8em 0;
+  height: 11em;
+}
+.list-uploads ul li .lu-cover {
+  width: 70px;
+  height: 90px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+.list-uploads ul li .lu-cover img {
+  width: 100%;
+}
+.list-uploads ul li .lu-cover .time {
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #9B9B9B;
+  line-height: 16px;
+  display: block;
+}
+.list-uploads ul li .lu-artist {
+  display: inline-block;
+  padding: 1.8em 2em;
+}
+.list-uploads ul li .lu-artist .title {
+  font-weight: 300;
+  font-size: 2em;
+  color: #3D3B3A;
+  line-height: 26px;
+}
+.list-uploads ul li .lu-artist a {
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #3D3B3A;
+  line-height: 20px;
+  opacity: 0.69;
+}
+.list-uploads ul li .lu-artist p.date {
+  font-weight: 700;
+  font-size: 1.1em;
+  opacity: 0.69;
+  color: rgba(0, 0, 0, 0.4);
+  line-height: 15px;
+  text-transform: uppercase;
+}
+.list-uploads ul li .lu-artist span {
+  display: inline-block;
+}
+.list-uploads ul li .lu-listenings, .list-uploads ul li .lu-votes {
+  display: inline-block;
+  padding: 1.8em 2em;
+}
+.list-uploads ul li .lu-listenings p, .list-uploads ul li .lu-votes p {
+  font-weight: 700;
+  font-size: 1.2em;
+  color: #9B9B9B;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.list-uploads ul li .lu-listenings span, .list-uploads ul li .lu-votes span {
+  font-size: 3.5em;
+  color: #3D3B3A;
+  line-height: 46px;
+}
+.list-uploads ul li .lu-stats {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  float: right;
+  float: right;
+  background: url("../images/icons/stats.svg") no-repeat center right;
+  background-size: 100%;
+}

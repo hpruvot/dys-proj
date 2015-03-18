@@ -152,3 +152,84 @@
 		}
 	}
 }
+
+.list-uploads {
+	ul {
+		li {
+			border-bottom: 1px solid rgba(0,0,0,0.1);
+			padding: 1.8em 0;
+			height: 11em;
+			.lu-cover {
+				width: 70px;
+				height: 90px;
+				display: inline-block;
+				position: relative;
+				overflow: hidden;
+				float: left;
+				img {
+					width: 100%;
+				}
+				.time {
+					font-weight: $bold;
+					font-size: 1.2em;
+					color: #9B9B9B;
+					line-height: 16px;
+					display: block;
+				}
+			}
+			.lu-artist {
+				display: inline-block;
+				padding: 1.8em 2em;
+				.title {
+					font-weight: $light;
+					font-size: 2em;
+					color: #3D3B3A;
+					line-height: 26px;
+				}
+				a {
+					font-weight: $light;
+					font-size: 1.5em;
+					color: #3D3B3A;
+					line-height: 20px;
+					opacity: 0.69;
+				}
+				p.date {
+					font-weight: $bold;
+					font-size: 1.1em;
+					opacity: 0.69;
+					color: rgba(0,0,0,0.40);
+					line-height: 15px;
+					text-transform: uppercase;
+				}
+				span {
+					display: inline-block;
+				}
+			}
+			.lu-listenings, .lu-votes {
+				display: inline-block;
+				padding: 1.8em 2em;
+				p {
+					font-weight: $bold;
+					font-size: 1.2em;
+					color: #9B9B9B;
+					line-height: 16px;
+					text-transform: uppercase;
+				}
+				span {
+					font-size: 3.5em;
+					color: #3D3B3A;
+					line-height: 46px;
+				}
+			}
+			.lu-stats {
+				width: 40px;
+				height: 40px;
+				display: inline-block;
+  				float: right;
+				float: right;
+				background: url('#{$folder-icon}/stats.svg') no-repeat center right;
+				background-size: 100%;
+			}
+		}
+	}
+}
