@@ -96,3 +96,59 @@
 	}
 }
 
+.list-abonnes {
+	ul {
+		li {
+			border-bottom: 1px solid rgba(0,0,0,0.1);
+			padding: 1.8em 0;
+			height: 11em;
+			.la-avatar {
+				width: 70px;
+				height: 70px;
+				display: inline-block;
+				position: relative;
+				border-radius: 50%;
+				overflow: hidden;
+				float: left;
+				img {
+					height: 100%;
+				}
+			}
+			.la-artist {
+				display: inline-block;
+				padding: 1.8em 2em;
+				a {
+					font-weight: $light;
+					font-size: 2em;
+					color: #3D3B3A;
+					line-height: 26px;
+				}
+				p {
+					font-weight: $medium;
+					font-size: 1.5em;
+					color: #B1B1B1;
+					line-height: 20px;
+					text-transform: uppercase;
+				}
+				span {
+					display: inline-block;
+				}
+			}
+			.la-remove {
+				display: inline-block;
+				width: 37px;
+				height: 37px;
+				float: right;
+				cursor: pointer;
+				padding: 1.8em 0;
+				span {
+					background: url('#{$folder-icon}/delete_btn_orange.svg') no-repeat center right;
+					background-size: 100%;
+					display: block;
+					width: 37px;
+  					height: 37px;
+				}
+			}
+		}
+	}
+}

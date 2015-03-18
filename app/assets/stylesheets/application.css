@@ -3010,3 +3010,56 @@ p.conditions {
   border-bottom: 2px solid #FFFFFF;
   padding-bottom: 3px;
 }
+
+.list-abonnes ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.8em 0;
+  height: 11em;
+}
+.list-abonnes ul li .la-avatar {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+}
+.list-abonnes ul li .la-avatar img {
+  height: 100%;
+}
+.list-abonnes ul li .la-artist {
+  display: inline-block;
+  padding: 1.8em 2em;
+}
+.list-abonnes ul li .la-artist a {
+  font-weight: 300;
+  font-size: 2em;
+  color: #3D3B3A;
+  line-height: 26px;
+}
+.list-abonnes ul li .la-artist p {
+  font-weight: 500;
+  font-size: 1.5em;
+  color: #B1B1B1;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.list-abonnes ul li .la-artist span {
+  display: inline-block;
+}
+.list-abonnes ul li .la-remove {
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  float: right;
+  cursor: pointer;
+  padding: 1.8em 0;
+}
+.list-abonnes ul li .la-remove span {
+  background: url("../images/icons/delete_btn_orange.svg") no-repeat center right;
+  background-size: 100%;
+  display: block;
+  width: 37px;
+  height: 37px;
+}
