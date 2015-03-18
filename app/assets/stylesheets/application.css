@@ -116,7 +116,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 100%;
 }
 #container.resp {
-  margin: 45px 260px 0 0;
+  margin: 0 260px 0 0;
   width: 100%;
 }
 #container.resp.active {
@@ -2739,6 +2739,32 @@ p.conditions {
 }
 #pl-nav-resp.resp {
   display: block;
+}
+#pl-nav-resp.profil li.item {
+  background: #EE7648;
+  height: 43px;
+  border-right: none;
+  padding: 11px 0;
+}
+#pl-nav-resp.profil li.item a {
+  font-weight: 500;
+  color: #FFFFFF;
+  line-height: 23px;
+}
+#pl-nav-resp.profil li.item span {
+  display: inline-block;
+}
+#pl-nav-resp.profil li.item.active {
+  background: #F8F8F8;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+#pl-nav-resp.profil li.item.active a {
+  color: #EE9E19;
+  text-transform: uppercase;
+}
+#pl-nav-resp.profil li.item.active:after {
+  display: none;
 }
 
 @media (max-width: 640px) {

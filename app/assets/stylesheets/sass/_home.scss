@@ -443,6 +443,34 @@
 	&.resp {
 		display: block;
 	}
+	&.profil {
+		li.item {
+			background: #EE7648;
+			height: 43px;
+			border-right: none;
+			padding: 11px 0;
+			a {
+				font-weight: $medium;
+				color: #FFFFFF;
+				line-height: 23px;
+			}
+			span {
+				display: inline-block;
+			}
+			&.active {
+				background: #F8F8F8;
+				border-top-right-radius: 5px;
+				border-top-left-radius: 5px;
+				a {
+					color: #EE9E19;
+					text-transform: uppercase;
+				}
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
 }
 @media(max-width: 640px){
 	.playlist-content .row {
