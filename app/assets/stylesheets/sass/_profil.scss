@@ -95,6 +95,9 @@
 		}
 	}
 }
+#usr-fav {
+	display: block;
+}
 
 .list-abonnes {
 	ul {
@@ -310,4 +313,8 @@
 			}
 		}
 	}
+}
+
+#usr-abonnes, #usr-suivis, #usr-uploads {
+	display: none;
 }

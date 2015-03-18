@@ -127,4 +127,15 @@ $(document).ready(function(){
 	$(".ov-icon.btn-add").click(function(){
 		$(".pl-tooltip").toggleClass("active");
 	})
+
+	/* Profil usr nav */
+	$('#nav-profil-user .item').on('click',function () {
+      $('#nav-profil-user .item').not(this).removeClass('active');
+      $(this).addClass('active');
+      var index = $(this).index(),
+      newTarget = $('.playlist-content .row').eq(index).slideDown();
+      console.log(index);
+      console.log(newTarget);
+      $('.playlist-content .row').not(newTarget).slideUp();
+    });
 })

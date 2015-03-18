@@ -113,6 +113,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 #container {
   display: inline;
   float: left;
+  height: 100%;
 }
 #container.resp {
   margin: 45px 260px 0 0;
@@ -2911,6 +2912,10 @@ p.conditions {
   padding-bottom: 3px;
 }
 
+#usr-fav {
+  display: block;
+}
+
 .list-abonnes ul li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 1.8em 0;
@@ -3118,4 +3123,8 @@ p.conditions {
 .list-uploads ul li .lu-stats:hover p {
   width: 100%;
   visibility: visible;
+}
+
+#usr-abonnes, #usr-suivis, #usr-uploads {
+  display: none;
 }
