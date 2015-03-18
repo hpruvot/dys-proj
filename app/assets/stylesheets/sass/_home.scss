@@ -50,7 +50,6 @@
 	overflow: hidden;
 }
 
-
 .pl-single {
 	position: relative;
 	display: inline-block;
@@ -62,6 +61,7 @@
 	.pl-cover {
 		overflow: hidden;
 		position: relative;
+		background: #CDC6C6;
 		img {
 			width: 100%;
 			height: auto;
@@ -241,6 +241,25 @@
 					color: #FFFFFF;
 				}
 			}
+		}
+	}
+}
+
+.pl-multiple .pl-infos {
+	background: #EE9E19;
+	box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.10);
+	.pl-title {
+		color: #FFFFFF;
+	}
+	.pl-abonnes {
+		opacity: 0.6;
+		font-weight: $medium;
+		font-size: 1.1em;
+		color: #FFFFFF;
+		line-height: 15px;
+		text-transform: uppercase;
+		span {
+			display: inline-block;
 		}
 	}
 }

@@ -2250,6 +2250,7 @@ p.conditions {
 .pl-single .pl-cover {
   overflow: hidden;
   position: relative;
+  background: #CDC6C6;
 }
 .pl-single .pl-cover img {
   width: 100%;
@@ -2424,6 +2425,25 @@ p.conditions {
 }
 .pl-single .pl-tooltip li:hover a {
   color: #FFFFFF;
+}
+
+.pl-multiple .pl-infos {
+  background: #EE9E19;
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.pl-multiple .pl-infos .pl-title {
+  color: #FFFFFF;
+}
+.pl-multiple .pl-infos .pl-abonnes {
+  opacity: 0.6;
+  font-weight: 500;
+  font-size: 1.1em;
+  color: #FFFFFF;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+.pl-multiple .pl-infos .pl-abonnes span {
+  display: inline-block;
 }
 
 .at-single {
@@ -2812,36 +2832,93 @@ p.conditions {
   cursor: pointer;
 }
 
+/* 4 COVERS FOR PLAYLIST */
+.song-cover {
+  width: 50%;
+  height: 50%;
+  display: inline-block;
+  float: left;
+}
+
+.cta.follow {
+  border: 1px solid #EE9E19;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 1.2em;
+  line-height: 32px;
+  text-transform: uppercase;
+  width: 106px;
+  float: right;
+  background: none;
+  margin-right: 2em;
+  margin-top: -2.7em;
+  cursor: pointer;
+  z-index: 30;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.cta.follow a {
+  display: block;
+  color: #F5A623;
+}
+.cta.follow:hover {
+  background: #fff;
+}
+
 .player-content .plr-cover img {
   max-height: 260px;
 }
 
-.profil-user {
+#my-profil-user {
   background: linear-gradient(-180deg, #ee9e19 0%, #ee7648 100%);
   height: 307px;
   text-align: center;
 }
 
-#header-profil-user {
+#profil-user {
+  background: linear-gradient(-180deg, #49403b 0%, #2e2722 100%);
+  height: 307px;
+  text-align: center;
+}
+#profil-user .infos-user {
+  margin-bottom: 15px;
+}
+#profil-user .infos-user li {
+  display: inline-block;
+  margin: 0 13px;
+}
+#profil-user .infos-user li a {
+  opacity: 0.69;
+  font-weight: 500;
+  font-size: 1.1em;
+  color: #EFEFEF;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+#profil-user .infos-user li span {
+  display: inline-block;
+}
+
+.header-profil-user {
   color: #fff;
   padding-top: 4.3em;
 }
-#header-profil-user .avatar {
+.header-profil-user .avatar {
   width: 116px;
   height: 116px;
   display: block;
   margin: 0 auto;
   position: relative;
 }
-#header-profil-user .avatar .inner {
+.header-profil-user .avatar .inner {
   overflow: hidden;
   border-radius: 50%;
   border: 3px solid #FFFFFF;
 }
-#header-profil-user .avatar img {
+.header-profil-user .avatar img {
   height: 100%;
 }
-#header-profil-user .avatar .modify {
+.header-profil-user .avatar .modify {
   width: 33px;
   height: 33px;
   border-radius: 50%;
@@ -2853,14 +2930,14 @@ p.conditions {
   right: 0;
   cursor: pointer;
 }
-#header-profil-user .avatar .modify:before {
+.header-profil-user .avatar .modify:before {
   content: "";
   display: block;
   background: url("../images/icons/camera.svg") no-repeat center center;
   width: 100%;
   height: 100%;
 }
-#header-profil-user .name {
+.header-profil-user .name {
   font-weight: 300;
   font-size: 2em;
   color: #FFFFFF;
@@ -2868,7 +2945,7 @@ p.conditions {
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
   margin: 1em 0 0.4em;
 }
-#header-profil-user .name span {
+.header-profil-user .name span {
   display: inline-block;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 3px;
@@ -2881,7 +2958,7 @@ p.conditions {
   line-height: 17px;
   padding: 0 3px;
 }
-#header-profil-user .description {
+.header-profil-user .description {
   opacity: 0.85;
   font-weight: 300;
   font-size: 1.5em;

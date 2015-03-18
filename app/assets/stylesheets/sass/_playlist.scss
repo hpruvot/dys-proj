@@ -144,3 +144,36 @@
 		cursor: pointer;
 	}
 }
+
+/* 4 COVERS FOR PLAYLIST */
+.song-cover {
+  width: 50%;
+  height: 50%;
+  display: inline-block;
+  float: left;
+}
+
+.cta.follow {
+	border: 1px solid #EE9E19;
+	border-radius: 40px;
+	font-weight: $bold;
+	font-size: 1.2em;
+	line-height: 32px;
+	text-transform: uppercase;
+	width: 106px;
+	float: right;
+	background: none;
+	margin-right: 2em;
+	margin-top: -2.7em;
+	cursor: pointer;
+	z-index: 30;
+  	position: relative;
+	@include transition (all 0.2s ease-in-out);
+	a {
+		display: block;
+		color: #F5A623;
+	}
+	&:hover {
+		background: #fff;
+	}
+}
