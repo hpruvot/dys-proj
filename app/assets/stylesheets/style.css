@@ -2964,10 +2964,45 @@ p.conditions {
   height: 37px;
 }
 
+.list-uploads ul {
+  margin-left: -20px;
+  margin-right: -20px;
+}
 .list-uploads ul li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 1.8em 0;
-  height: 11em;
+  padding: 1em 2em 1.8em;
+  height: 17em;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.list-uploads ul li:hover {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+}
+.list-uploads ul li:hover .lu-modify {
+  visibility: visible;
+}
+.list-uploads ul li .lu-modify {
+  display: inline-block;
+  margin-bottom: 2.4em;
+  float: left;
+  width: 100%;
+  visibility: hidden;
+}
+.list-uploads ul li .lu-modify span.modify, .list-uploads ul li .lu-modify span.delete {
+  display: block;
+  background-size: 50%;
+  width: 17px;
+  height: 17px;
+  float: left;
+  cursor: pointer;
+}
+.list-uploads ul li .lu-modify span.modify {
+  background: url("../images/icons/modify_btn.svg") no-repeat center center;
+}
+.list-uploads ul li .lu-modify span.delete {
+  background: url("../images/icons/trash.svg") no-repeat center center;
+  margin: 0 18px;
 }
 .list-uploads ul li .lu-cover {
   width: 70px;
@@ -2976,6 +3011,7 @@ p.conditions {
   position: relative;
   overflow: hidden;
   float: left;
+  text-align: center;
 }
 .list-uploads ul li .lu-cover img {
   width: 100%;
@@ -2986,10 +3022,15 @@ p.conditions {
   color: #9B9B9B;
   line-height: 16px;
   display: block;
+  margin-top: 5px;
 }
 .list-uploads ul li .lu-artist {
-  display: inline-block;
-  padding: 1.8em 2em;
+  padding: 0 2em;
+  float: left;
+  width: 33%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .list-uploads ul li .lu-artist .title {
   font-weight: 300;
@@ -3011,13 +3052,16 @@ p.conditions {
   color: rgba(0, 0, 0, 0.4);
   line-height: 15px;
   text-transform: uppercase;
+  margin-top: 10px;
 }
 .list-uploads ul li .lu-artist span {
   display: inline-block;
 }
 .list-uploads ul li .lu-listenings, .list-uploads ul li .lu-votes {
-  display: inline-block;
-  padding: 1.8em 2em;
+  padding: 0 2em;
+  float: left;
+  width: 20%;
+  max-width: 190px;
 }
 .list-uploads ul li .lu-listenings p, .list-uploads ul li .lu-votes p {
   font-weight: 700;
@@ -3027,16 +3071,51 @@ p.conditions {
   text-transform: uppercase;
 }
 .list-uploads ul li .lu-listenings span, .list-uploads ul li .lu-votes span {
-  font-size: 3.5em;
+  font-size: 3em;
   color: #3D3B3A;
   line-height: 46px;
 }
 .list-uploads ul li .lu-stats {
   width: 40px;
+  max-width: 170px;
   height: 40px;
   display: inline-block;
   float: right;
-  float: right;
-  background: url("../images/icons/stats.svg") no-repeat center right;
-  background-size: 100%;
+  border: 2px solid #EE9E19;
+  border-radius: 10px;
+  margin-top: 1.5em;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+.list-uploads ul li .lu-stats:before {
+  content: "";
+  display: block;
+  background: url("../images/icons/stats.svg") no-repeat center center;
+  background-size: 50%;
+  width: 40px;
+  height: 100%;
+  float: left;
+}
+.list-uploads ul li .lu-stats p {
+  line-height: 36px;
+  width: 0;
+  font-weight: 700;
+  font-size: 1.4em;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  visibility: hidden;
+}
+.list-uploads ul li .lu-stats:hover {
+  width: 160px;
+  background: #EE9E19;
+}
+.list-uploads ul li .lu-stats:hover:before {
+  content: "";
+  display: block;
+  background: url("../images/icons/stats_hover.svg") no-repeat center center;
+  width: 40px;
+}
+.list-uploads ul li .lu-stats:hover p {
+  width: 100%;
+  visibility: visible;
 }

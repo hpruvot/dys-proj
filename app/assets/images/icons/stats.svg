@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="42px" height="42px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="18px" height="20px" viewBox="0 0 18 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
-    <title>Voir TOut</title>
+    <title>Fill 275</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="APP---Profil-Uploads" sketch:type="MSArtboardGroup" transform="translate(-1119.000000, -682.000000)">
+        <g id="APP---Profil-Uploads" sketch:type="MSArtboardGroup" transform="translate(-1131.000000, -693.000000)" fill="#EF9E19">
             <g id="Center" sketch:type="MSLayerGroup" transform="translate(260.000000, 72.000000)">
                 <g id="ABONNÉS" transform="translate(0.000000, 325.000000)" sketch:type="MSShapeGroup">
                     <g id="Up1" transform="translate(0.000000, 221.000000)">
-                        <g id="Voir-TOut" transform="translate(860.000000, 65.000000)">
-                            <rect id="Rectangle-332" stroke="#EF9E19" stroke-width="1.4" x="0" y="0" width="40" height="40" rx="10"></rect>
-                            <path d="M14.375,23.3333333 L11.9,23.3333333 C11.279,23.3333333 11,23.8288889 11,24.4444444 L11,30 L15.5,30 L15.5,24.4444444 C15.5,23.8288889 14.996,23.3333333 14.375,23.3333333 L14.375,23.3333333 Z M21.125,16.6666667 L18.65,16.6666667 C18.029,16.6666667 17.75,17.1622222 17.75,17.7777778 L17.75,30 L22.25,30 L22.25,17.7777778 C22.25,17.1622222 21.746,16.6666667 21.125,16.6666667 L21.125,16.6666667 Z M27.875,10 L25.4,10 C24.779,10 24.5,10.4955556 24.5,11.1111111 L24.5,30 L29,30 L29,11.1111111 C29,10.4955556 28.496,10 27.875,10 L27.875,10 Z" id="Fill-275" fill="#EF9E19"></path>
+                        <g id="Voir-TOut" transform="translate(871.000000, 75.000000)">
+                            <path d="M3.375,13.3333333 L0.9,13.3333333 C0.279,13.3333333 0,13.8288889 0,14.4444444 L0,20 L4.5,20 L4.5,14.4444444 C4.5,13.8288889 3.996,13.3333333 3.375,13.3333333 L3.375,13.3333333 Z M10.125,6.66666667 L7.65,6.66666667 C7.029,6.66666667 6.75,7.16222222 6.75,7.77777778 L6.75,20 L11.25,20 L11.25,7.77777778 C11.25,7.16222222 10.746,6.66666667 10.125,6.66666667 L10.125,6.66666667 Z M16.875,0 L14.4,0 C13.779,0 13.5,0.495555556 13.5,1.11111111 L13.5,20 L18,20 L18,1.11111111 C18,0.495555556 17.496,0 16.875,0 L16.875,0 Z" id="Fill-275"></path>
                         </g>
                     </g>
                 </g>
