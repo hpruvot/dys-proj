@@ -26,6 +26,11 @@
 		}
 	}
 }
+#user-playlists, #user-uploads {
+	.row-title span {
+		display: inline-block;
+	}
+}
 .header-profil-user {
 	color: #fff;
 	padding-top: 4.3em;

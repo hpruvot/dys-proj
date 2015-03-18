@@ -2899,6 +2899,10 @@ p.conditions {
   display: inline-block;
 }
 
+#user-playlists .row-title span, #user-uploads .row-title span {
+  display: inline-block;
+}
+
 .header-profil-user {
   color: #fff;
   padding-top: 4.3em;
