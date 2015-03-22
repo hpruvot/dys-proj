@@ -1,0 +1,26 @@
+[
+    {
+        "track":1,
+        "name":"I'm Alive",
+        "artist":"Céline Dion",
+        "length":"03:28",
+        "file":"im_alive",
+        "cover": "CelineDion"
+    },
+    {
+        "track":2,
+        "name":"Keep The Streets Empty For Me",
+        "artist":"Fever Ray",
+        "length":"05:33",
+        "file":"Fever Ray _Keep The Streets Empty For Me_",
+        "cover": "FeverRay"
+    },
+    {
+        "track":3,
+        "name":"Sexual Healing (Remix)",
+        "artist":"Marvin Gaye",
+        "length":"06:09",
+        "file":"Sexual Healing (Remix)",
+        "cover": ""
+    }
+]

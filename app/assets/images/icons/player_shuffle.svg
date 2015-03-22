@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="19px" height="16px" viewBox="0 0 19 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 92</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Mes-artistes-suivis" sketch:type="MSArtboardGroup" transform="translate(-1192.000000, -348.000000)" filter="url(#filter-1)" fill="#FFFFFF" opacity="0.7">
+            <g id="RIGHT_BAR" sketch:type="MSLayerGroup" transform="translate(1180.000000, 72.000000)">
+                <g id="PLAYER_Right" sketch:type="MSShapeGroup">
+                    <g id="Control_bar" transform="translate(0.000000, 259.507689)">
+                        <path d="M26.3290625,26.3528971 L25.7691444,26.3528971 C24.6543781,26.3528971 23.7989741,25.7920236 23.0039347,24.9603283 C22.9242406,25.066093 22.8442297,25.1718578 22.7637434,25.279225 C22.4143888,25.7439487 22.038575,26.2407224 21.6239441,26.7342911 C22.6989425,27.7951433 24.0008234,28.5963912 25.7691444,28.5963912 L26.3290625,28.5963912 L26.3290625,30.5193861 L29.65625,27.6348937 L26.3290625,24.7504014 L26.3290625,26.3528971 L26.3290625,26.3528971 Z M18.099185,22.4780624 C18.2237169,22.3162103 18.3495163,22.1479483 18.4764247,21.9796862 C18.7860116,21.5678448 19.1133434,21.1335684 19.4676097,20.7008946 C18.4214469,19.7121547 17.1585416,18.9814166 15.4707069,18.9814166 L13.8125,18.9814166 L13.8125,21.2249107 L15.4707069,21.2249107 C16.5220981,21.2249107 17.3423291,21.7248894 18.099185,22.4780624 L18.099185,22.4780624 Z M25.7691444,21.0646611 L26.3290625,21.0646611 L26.3290625,22.6783744 L29.65625,19.793882 L26.3290625,16.9093896 L26.3290625,18.8211671 L25.7691444,18.8211671 C22.8429622,18.8211671 21.1929941,21.0149838 19.7372703,22.9507986 C18.4281012,24.6895065 17.2976497,26.1926476 15.4707069,26.1926476 L13.8125,26.1926476 L13.8125,28.4361416 L15.4707069,28.4361416 C18.3972059,28.4361416 20.0468572,26.2439274 21.5027394,24.3081125 C22.81175,22.5678021 23.94236,21.0646611 25.7691444,21.0646611 L25.7691444,21.0646611 Z" id="Fill-92"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

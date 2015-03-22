@@ -434,56 +434,78 @@
     <!-- RIGHT BAR  --> 
     <div id="right-bar" class="grid_3">
       <div class="inner-right player-content">
-        <div class="column center plr-cover">
-          <img src="assets/images/Covers/Fratellis.jpg">
-        </div>
+      
         <div class="column add-bottom">
           <div id="mainwrap">
-            <div id="nowPlay">
-              <span class="left" id="npAction">Paused...</span>
-              <span class="right" id="npTitle"></span>
-            </div>
-            <div id="audiowrap">
-              <div id="audio0">
+
+            <div id="audio_wrap" class="audio-wrapper">
+
+              <div class="audio-cover plr-cover column center">
+                <img src="" id="acCover">
+                <div id="nowPlay">
+                  <span class="audio-song-name" id="asaTitle"></span>
+                  <span class="audio-song-artist" id="asaArtist"></span>
+                  <!-- Time -->
+                  <div class="audio-time">  
+                    <div class="audio-current-time" id="atCurrent"></div>  
+                    <div class="audio-total-time" id="atTotal"></div>  
+                  </div> 
+                </div>
+              </div>
+
+            <!--   <div id="audio_player">
                 <audio preload id="audio1" controls="controls">Your browser does not support HTML5 Audio!</audio>
+              </div> -->
+              <audio id="audio_player" preload="true" controls="controls" data-music>
+                <!-- <source id="oggSource" src="" type="audio/ogg"></source> -->
+                <source id="mp3Source" src="" type="audio/mp3"></source>
+              </audio>
+
+              <div class="audio_controls">
+
+                <!-- Progress bar -->
+                <div class="audio-progress">  
+                  <div class="audio-seek-bar">  
+                    <div class="audio-play-bar"></div>  
+                  </div>  
+                </div>  
+
+                <!-- Player controls -->
+                <ul class="audio-buttons">  
+                  <li><a class="audio-shuffle"></a></li>  
+                  <li id="audio-prev"><a class="audio-prev"></a></li>
+                  <li><a id="audio-playpause" class="audio-play-pause play"></a></li>   
+                  <li id="audio-next"><a class="audio-next"></a></li>
+                  <li id="audio-muteunmute"><a class="audio-mute-unmute unmute"></a></li>
+                </ul>
+
+                <!-- Player more -->
+                <ul class="audio-more">  
+                  <li><a class="track-heart"></a></li>  
+                  <li><a class="track-actions"></a></li>  
+                  <li><a class="track-more"></a></li>   
+                </ul>
+
               </div>
-              <div id="tracks">
-                <a id="btnPrev">&laquo;</a>
-                <a id="btnNext">&raquo;</a>
-              </div>
+
             </div>
             <div id="plwrap">
+              <p>A suivre...</p>
               <ul id="plUL">
                 <li>
                   <div class="plItem">
-                    <div class="plNum">01.</div>
-                    <div class="plTitle">L'apologie</div>
-                    <div class="plAuthor">Matmatah</div>
-                    <div class="plLength">2:46</div>
+                    <div class="plCover"><img src="assets/images/Covers/Fratellis.jpg"></div>
+                    <div class="plTitle">Moth's Wings</div>
+                    <div class="plArtist">Passion Pit</div>
+                    <div class="plAuthor">par<span>Passion Pit</span></div>
                   </div>
                 </li>
                 <li>
                   <div class="plItem">
-                    <div class="plNum">02.</div>
-                    <div class="plTitle">Les Moutons</div>
-                    <div class="plAuthor">Matmatah</div>
-                    <div class="plLength">8:30</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="plItem">
-                    <div class="plNum">03.</div>
-                    <div class="plTitle">La ville de La Rochelle</div>
-                    <div class="plAuthor">Tri Yann</div>
-                    <div class="plLength">5:01</div>
-                  </div>
-                </li>
-                <li>
-                  <div class="plItem">
-                    <div class="plNum">04.</div>
-                    <div class="plTitle">Les Echevins de Nantes</div>
-                    <div class="plAuthor">Tri Yann</div>
-                    <div class="plLength">8:32</div>
+                    <div class="plCover"><img src="assets/images/Covers/Fratellis.jpg"></div>
+                    <div class="plTitle">Moth's Wings</div>
+                    <div class="plArtist">Passion Pit</div>
+                    <div class="plAuthor">par <span> Passion Pit</span></div>
                   </div>
                 </li>
               </ul>

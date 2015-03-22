@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="11px" height="14px" viewBox="0 0 11 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Volume Max</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.35 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Mes-artistes-suivis" sketch:type="MSArtboardGroup" transform="translate(-1404.000000, -350.000000)" filter="url(#filter-1)" fill="#FFFFFF" opacity="0.9">
+            <g id="RIGHT_BAR" sketch:type="MSLayerGroup" transform="translate(1180.000000, 72.000000)">
+                <g id="PLAYER_Right" sketch:type="MSShapeGroup">
+                    <g id="Control_bar" transform="translate(0.000000, 259.507689)">
+                        <path d="M228.759375,21.6656256 L232.456076,19.0508869 C233.331198,18.4318982 234.040625,18.8104191 234.040625,19.8752902 L234.040625,28.7924136 C234.040625,29.8667077 233.328372,30.2338067 232.456076,29.6168169 L228.759375,27.0020782 L227.019189,27.0020782 C225.93854,27.0020782 225.0625,26.1208716 225.0625,25.0452822 L225.0625,23.6224216 C225.0625,22.541713 225.938608,21.6656256 227.019189,21.6656256 L228.759375,21.6656256 Z" id="Volume-Max"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

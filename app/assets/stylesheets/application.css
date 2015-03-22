@@ -3009,6 +3009,184 @@ p.conditions {
   max-height: 260px;
 }
 
+#audio_player {
+  display: none;
+}
+
+.audio-cover {
+  position: relative;
+}
+.audio-cover #nowPlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0 4px;
+}
+.audio-cover #nowPlay .audio-song-artist {
+  font-weight: 300;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 16px;
+  padding-left: 8px;
+}
+.audio-cover #nowPlay .audio-song-name {
+  font-weight: 300;
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 19px;
+  padding-left: 8px;
+}
+
+.audio-time {
+  width: 100%;
+  height: 15px;
+}
+.audio-time .audio-current-time, .audio-time .audio-total-time {
+  font-weight: 400;
+  font-size: 9.19px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 12px;
+}
+.audio-time .audio-current-time {
+  float: left;
+}
+.audio-time .audio-total-time {
+  float: right;
+}
+
+.audio-progress {
+  height: 3.5px;
+  width: 100%;
+  background: rgba(238, 157, 25, 0.3);
+  cursor: pointer;
+}
+.audio-progress .audio-seek-bar {
+  width: 0%;
+}
+.audio-progress .audio-play-bar {
+  background: #F5A623;
+  width: 0%;
+  height: 100%;
+}
+
+.audio-buttons {
+  height: 50px;
+  width: 100%;
+  background-image: linear-gradient(-180deg, #49403b 0%, #2e2722 100%);
+}
+.audio-buttons li {
+  float: left;
+  width: 20%;
+  height: 100%;
+}
+.audio-buttons li a {
+  height: 100%;
+  cursor: pointer;
+}
+.audio-buttons li a.audio-shuffle {
+  background: url("../images/icons/player_shuffle.svg") no-repeat center center;
+}
+.audio-buttons li a.audio-prev {
+  background: url("../images/icons/player_prev.svg") no-repeat center center;
+}
+.audio-buttons li a.audio-play-pause {
+  background: url("../images/icons/player_play.svg") no-repeat center center;
+}
+.audio-buttons li a.audio-play-pause.pause {
+  background: url("../images/icons/player_pause.svg") no-repeat center center;
+}
+.audio-buttons li a.audio-next {
+  background: url("../images/icons/player_next.svg") no-repeat center center;
+}
+.audio-buttons li a.audio-mute-unmute {
+  background: url("../images/icons/player_mute.svg") no-repeat center center;
+}
+.audio-buttons li a.audio-mute-unmute.mute {
+  background: url("../images/icons/player_unmute.svg") no-repeat center center;
+}
+
+.audio-more {
+  height: 47px;
+  width: 100%;
+  background-image: linear-gradient(-180deg, #ee9e19 0%, #ee7648 100%);
+  box-shadow: inset 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+.audio-more li {
+  width: 33.33%;
+  height: 100%;
+  float: left;
+}
+.audio-more a {
+  height: 100%;
+  cursor: pointer;
+}
+.audio-more .track-heart {
+  background: url("../images/icons/player_heart.svg") no-repeat center center;
+}
+.audio-more .track-actions {
+  background: url("../images/icons/player_actions.svg") no-repeat center center;
+  box-shadow: -1px 0px 0px 0px #CE6320;
+}
+.audio-more .track-more {
+  background: url("../images/icons/player_more.svg") no-repeat center center;
+  box-shadow: -1px 0px 0px 0px #CE6320;
+}
+
+#plWrap {
+  padding: 11px;
+}
+#plWrap p {
+  font-weight: 500;
+  font-size: 12px;
+  color: #4E4C4B;
+  line-height: 16px;
+}
+#plWrap #plUL li {
+  margin: 15px 0 25px;
+}
+#plWrap #plUL li .plItem .plCover {
+  width: 59px;
+  height: 59px;
+  float: left;
+  margin-right: 10px;
+}
+#plWrap #plUL li .plItem .plCover img {
+  width: 100%;
+}
+#plWrap #plUL li .plItem .plTitle {
+  font-weight: 300;
+  font-size: 14px;
+  color: #3D3B3A;
+  line-height: 19px;
+}
+#plWrap #plUL li .plItem .plArtist {
+  opacity: 0.69;
+  font-weight: 300;
+  font-size: 12px;
+  color: #3D3B3A;
+  line-height: 16px;
+}
+#plWrap #plUL li .plItem .plAuthor {
+  font-weight: 100;
+  font-size: 12px;
+  color: rgba(61, 58, 58, 0.7);
+  line-height: 15px;
+}
+#plWrap #plUL li .plItem .plAuthor:before {
+  content: "";
+  background: url("../images/icons/pl-arrow.svg") no-repeat center center;
+  width: 7px;
+  height: 9px;
+  display: inline-block;
+  margin-right: 6px;
+}
+#plWrap #plUL li .plItem .plAuthor span {
+  font-weight: 500;
+  color: #EE9E19;
+  display: inline-block;
+  margin-left: 2px;
+}
+
 #my-profil-user {
   background: linear-gradient(-180deg, #ee9e19 0%, #ee7648 100%);
   height: 307px;
