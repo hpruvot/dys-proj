@@ -441,10 +441,12 @@
             <div id="audio_wrap" class="audio-wrapper">
 
               <div class="audio-cover plr-cover column center">
+                <div class="acOverlay"></div>
                 <img src="" id="acCover">
                 <div id="nowPlay">
                   <span class="audio-song-name" id="asaTitle"></span>
                   <span class="audio-song-artist" id="asaArtist"></span>
+                  <div class="plAuthor" id="asaAuthor">par<span></span></div>
                   <!-- Time -->
                   <div class="audio-time">  
                     <div class="audio-current-time" id="atCurrent"></div>  
@@ -472,7 +474,7 @@
 
                 <!-- Player controls -->
                 <ul class="audio-buttons">  
-                  <li><a class="audio-shuffle"></a></li>  
+                  <li id="audio-shuffle"><a class="audio-shuffle"></a></li>  
                   <li id="audio-prev"><a class="audio-prev"></a></li>
                   <li><a id="audio-playpause" class="audio-play-pause play"></a></li>   
                   <li id="audio-next"><a class="audio-next"></a></li>

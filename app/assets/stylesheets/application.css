@@ -3016,6 +3016,12 @@ p.conditions {
 .audio-cover {
   position: relative;
 }
+.audio-cover .acOverlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.56) 100%);
+}
 .audio-cover #nowPlay {
   position: absolute;
   bottom: 0;
@@ -3035,6 +3041,16 @@ p.conditions {
   color: #FFFFFF;
   line-height: 19px;
   padding-left: 8px;
+}
+.audio-cover #nowPlay .plAuthor {
+  position: absolute;
+  right: 0;
+  bottom: 16px;
+  padding-right: 10px;
+  color: rgba(255, 244, 239, 0.7);
+}
+.audio-cover #nowPlay .plAuthor:before {
+  background: url("../images/icons/pl-arrow-white.svg") no-repeat center center;
 }
 
 .audio-time {
@@ -3067,6 +3083,18 @@ p.conditions {
   background: #F5A623;
   width: 0%;
   height: 100%;
+  position: relative;
+}
+.audio-progress .audio-play-bar:after {
+  content: "";
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
+  width: 3px;
+  height: 12px;
+  position: absolute;
+  right: 0;
+  bottom: -4px;
 }
 
 .audio-buttons {
@@ -3166,13 +3194,14 @@ p.conditions {
   color: #3D3B3A;
   line-height: 16px;
 }
-#plWrap #plUL li .plItem .plAuthor {
+
+.plAuthor {
   font-weight: 100;
   font-size: 12px;
   color: rgba(61, 58, 58, 0.7);
   line-height: 15px;
 }
-#plWrap #plUL li .plItem .plAuthor:before {
+.plAuthor:before {
   content: "";
   background: url("../images/icons/pl-arrow.svg") no-repeat center center;
   width: 7px;
@@ -3180,11 +3209,11 @@ p.conditions {
   display: inline-block;
   margin-right: 6px;
 }
-#plWrap #plUL li .plItem .plAuthor span {
+.plAuthor span {
   font-weight: 500;
   color: #EE9E19;
   display: inline-block;
-  margin-left: 2px;
+  margin-left: 5px;
 }
 
 #my-profil-user {
