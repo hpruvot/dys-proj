@@ -5,6 +5,7 @@
         "artist":"Céline Dion",
         "length":"03:28",
         "file":"im_alive",
+        "author": "Lambert Wilson",
         "cover": "CelineDion"
     },
     {
@@ -13,6 +14,7 @@
         "artist":"Fever Ray",
         "length":"05:33",
         "file":"Fever Ray _Keep The Streets Empty For Me_",
+        "author": "FeverRay",
         "cover": "FeverRay"
     },
     {
@@ -21,6 +23,7 @@
         "artist":"Marvin Gaye",
         "length":"06:09",
         "file":"Sexual Healing (Remix)",
+        "author": "MarvinGaye",
         "cover": ""
     }
 ]

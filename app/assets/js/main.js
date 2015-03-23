@@ -333,19 +333,21 @@ player.loadTrack = function(id) {
             $(player.audio)[0].pause();
         },
         success : function(data){
-            var source = data[id].file;
 
+            var source = data[id].file;
             player.audio.setAttribute("src",""+mediaPath + source + extension+"");
+            // Track infos
             songTitle.text(data[id].name);
             songArtist.text(data[id].artist);
             songTotalTime.text(data[id].length);
+
             if(data[id].cover) {
                 songCover.attr("src",coverPath + data[id].cover + ".jpg");
             }else {
                 songCover.attr("src",coverPath + "default.png");
             }
             
-
+            // Play track
             $(player.audio)[0].load();
             $(player.audio)[0].play();
 
@@ -353,11 +355,25 @@ player.loadTrack = function(id) {
 
             player.button.classList.remove('play');
             player.button.classList.add('pause');
+
+            $("#plUL").empty();
+
+            for (var i = id+1; i < data.length; i++) {
+                if(data[i].cover) {
+                    data[i].cover = data[i].cover + ".jpg";
+                }else {
+                    data[i].cover = "default.png";
+                }
+                $("#plUL").append("<li><div class='plItem'><div class='plCover'><img src='"+coverPath+data[i].cover+"'></div><div class='plTitle'>"+data[i].name+"</div><div class='plArtist'>"+data[i].artist+"</div><div class='plAuthor'>par<span>"+data[i].author+"</span></div></div></li>");
+            }
         }
     });
 
+    player.audio.onended = function(){
+        player.loadTrack(id+1);
+    }
 
-
+    // Prev track
     player.prevTrack = function() {
         if((id - 1) > -1) {
             id--;
@@ -373,6 +389,7 @@ player.loadTrack = function(id) {
         console.log(id);
     };
 
+    //Next track
     player.nextTrack = function() {
         if((id + 1) < tracksTotal) {
             id++;
@@ -387,8 +404,12 @@ player.loadTrack = function(id) {
         }
     }
 
-    $('.plSel').removeClass('plSel');
-    $('#plUL li:eq(' + id + ')').addClass('plSel');
+    // player.toFollow() = function(data) {
+    //     $("#plUL");
+    // }
+
+    // $('.plSel').removeClass('plSel');
+    // $('#plUL li:eq(' + id + ')').addClass('plSel');
 
 }
 
