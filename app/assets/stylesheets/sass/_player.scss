@@ -181,6 +181,9 @@
 					font-size: 14px;
 					color: #3D3B3A;
 					line-height: 19px;
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
 				}
 				.plArtist {
 					opacity: 0.69;

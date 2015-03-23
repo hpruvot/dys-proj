@@ -24,8 +24,6 @@ player.buttonNext = document.getElementById("audio-next");
 player.buttonShuffle = document.getElementById("audio-shuffle");
 player.pB = $('.audio-progress');
 
-player.audio.load();
-
 player.playPause = function(e){
     player.button.classList.remove('play');
     if(player.audio.paused){
@@ -218,15 +216,16 @@ player.shuffle = function (e){
     });   
 }
 
-player.loadTrack(0);
-
-
-player.button.addEventListener('click',player.playPause,false);
-player.buttonMute.addEventListener('click',player.muteUnmute,false);
-player.audio.addEventListener('timeupdate',player.updateProgress,false);
-player.buttonNext.addEventListener('click',player.nextTrack,false);
-player.buttonPrev.addEventListener('click',player.prevTrack,false);
-player.buttonShuffle.addEventListener('click',player.shuffle,false);
-player.pB.on('click',player.setTime);
+if(player.audio){
+    player.audio.load();
+    player.loadTrack(0);
+    player.button.addEventListener('click',player.playPause,false);
+    player.buttonMute.addEventListener('click',player.muteUnmute,false);
+    player.audio.addEventListener('timeupdate',player.updateProgress,false);
+    player.buttonNext.addEventListener('click',player.nextTrack,false);
+    player.buttonPrev.addEventListener('click',player.prevTrack,false);
+    player.buttonShuffle.addEventListener('click',player.shuffle,false);
+    player.pB.on('click',player.setTime);
+}
  
 });
