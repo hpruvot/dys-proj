@@ -1,11 +1,11 @@
-.playlist-container {
+.playlist-container, .stats-container {
 	margin: 0 auto;
 	width: 100%;
 	background: #FBF6F2;
 	color: $d-black;
 }
 
-.playlist-content {
+.playlist-content, .stats-content {
 	overflow: hidden;
 	margin: 0 260px;
 	.pub {

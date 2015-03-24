@@ -2186,18 +2186,18 @@ p.conditions {
   display: none;
 }
 
-.playlist-container {
+.playlist-container, .stats-container {
   margin: 0 auto;
   width: 100%;
   background: #FBF6F2;
   color: #3D3B3A;
 }
 
-.playlist-content {
+.playlist-content, .stats-content {
   overflow: hidden;
   margin: 0 260px;
 }
-.playlist-content .pub {
+.playlist-content .pub, .stats-content .pub {
   width: 100%;
   height: 260px;
   background: #D8D8D8;
@@ -3761,4 +3761,97 @@ p.conditions {
 
 #usr-abonnes, #usr-suivis, #usr-uploads {
   display: none;
+}
+
+.stats-details {
+  padding: 20px;
+}
+.stats-details .sd-block {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 20px 20px 10px;
+  text-align: center;
+}
+.stats-details .sd-block .sd-header {
+  height: 35px;
+}
+.stats-details .sd-block .sd-header .left, .stats-details .sd-block .sd-header .right {
+  width: 50%;
+  float: left;
+}
+.stats-details .sd-block .sd-header .left .sd-title, .stats-details .sd-block .sd-header .left .sd-subtitle, .stats-details .sd-block .sd-header .right .sd-title, .stats-details .sd-block .sd-header .right .sd-subtitle {
+  font-weight: 700;
+  font-size: 1.3em;
+  line-height: 18px;
+  opacity: 0.69;
+  text-transform: uppercase;
+}
+.stats-details .sd-block .sd-header .left {
+  text-align: left;
+}
+.stats-details .sd-block .sd-header .left .sd-title {
+  color: rgba(0, 0, 0, 0.65);
+}
+.stats-details .sd-block .sd-header .left .sd-subtitle {
+  opacity: 0.69;
+  font-weight: 300;
+  font-size: 1.2em;
+  color: #9B9B9B;
+  line-height: 16px;
+  text-transform: none;
+}
+.stats-details .sd-block .sd-header .right {
+  text-align: right;
+}
+.stats-details .sd-block .sd-header .right .sd-title {
+  color: rgba(0, 0, 0, 0.4);
+}
+.stats-details .sd-block .sd-header .right .sd-subtitle {
+  color: #3D3B3A;
+}
+.stats-details .sd-votes {
+  width: 50%;
+}
+.stats-details .sd-votes .chart-container {
+  width: 157px;
+  height: 157px;
+  border-radius: 50%;
+  position: relative;
+  background: #3D3B3A;
+  box-shadow: inset 0px -1px 2px 0px rgba(0, 0, 0, 0.15);
+  margin: 9px auto;
+}
+.stats-details .sd-votes .chart-content {
+  position: absolute;
+  width: 126px;
+  height: 126px;
+  border-radius: 50%;
+  background: #fff;
+  top: 1.6em;
+  left: 1.6em;
+}
+.stats-details .legend-votes {
+  font-weight: 400;
+  font-size: 1.1em;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 15px;
+  display: inline-block;
+  margin: 0 3em;
+}
+.stats-details .legend-votes span {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin-right: 1em;
+}
+.stats-details .legend-votes.neg-votes span {
+  background: #3D3B3A;
+}
+.stats-details .legend-votes.pos-votes span {
+  background-image: linear-gradient(-180deg, #ee9e19 0%, #ee7648 100%);
+}
+
+canvas {
+  position: relative;
 }

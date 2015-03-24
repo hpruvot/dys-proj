@@ -1,0 +1,129 @@
+<html> 
+  <head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="assets/js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="assets/js/chart.min.js"></script>
+    <script type="text/javascript" src="assets/js/stats.js"></script>
+     <!-- build:css -->
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">
+    <!-- endbuild -->
+
+    <!-- build:js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <!-- endbuild -->
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+  
+  </head> 
+
+  <body>
+    <!-- HEADER -->
+    <header id="header">
+    </header>
+
+    <!-- LEFT BAR  --> 
+    <div id="left-bar" class="grid_3">
+      <div class="inner-left">
+        <div id="menu">
+          <nav id="usr-nav">
+            <ul class="usr-items">
+              <li id="search-resp" class="lg-hidden resp-item">
+                <form action="#" method="post" onsubmit="return false;">
+                  <input type="text" class="form-control input-text" data-ta-id="input" placeholder="Rechercher">
+                </form>
+              </li>
+              <li class="lg-hidden resp-item"><a href="" class="link menu"><div class="usr-icon usr-home"></div><span>Accueil</span></a></li>
+              <li class="resp-item"><a href="" class="link menu"><div class="icon usr-profile"></div><span>Mon profil</span></a></li>
+              <li class="resp-item"><a href="" class="link menu"><div class="icon usr-artists"></div><span>Mes artistes suivis</span></a></li>
+            </ul>
+          </nav>
+
+          <nav id="pl-nav">
+            <div class="pl-title resp-item">
+              <span>Mes playlists</span>
+              <hr>
+            </div>
+            <ul class="pl-items">
+              <li>
+                <div class="icon pl-heart"></div>
+                <a href="" class="pl-name">Coup de coeur</a>
+              </li>
+              <li>
+                <div class="icon pl-play"></div>
+                <a href="" class="pl-name">Nova Like - Le Grand Mix</a>
+                <div class="icon pl-dl"></div>
+              </li>
+              <li>
+                <div class="icon pl-play"></div>
+                <a href="" class="pl-name">Electro-Swing</a>
+                <div class="icon pl-dl"></div>
+              </li>
+              <li>
+                <div class="icon pl-play"></div>
+                <a href="" class="pl-name">Folklore Breton</a>
+                <div class="icon pl-dl"></div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>  
+
+    <!-- MAIN CONTAINER  --> 
+
+    <div id="container" class="grid_10 stats-container">
+      <div class="inner-container stats-content">
+        <section class="stats-global"></section>
+        <section class="stats-details">
+          <div class="sd-block sd-votes">
+            <div class="sd-header">
+              <div class="left">
+                <div class="sd-title">Votes</div>
+                <div class="sd-subtitle">depuis son ajout</div>
+              </div>
+              <div class="right">
+                <div class="sd-title">Total</div>
+                <div class="sd-subtitle">1768</div>
+              </div>
+            </div>
+            <div class="chart-container">
+              <div class="chart-content">
+                
+              </div>
+              <canvas id="chart-votes" width="158" height="158"></canvas>
+            </div>
+            <div class="sd-footer">
+              <div class="legend-votes neg-votes"><span></span>Votes négatifs</div>
+              <div class="legend-votes pos-votes"><span></span>Votes positifs</div>
+            </div>
+          </div>
+          <div class="sd-block sd-socials"></div>
+          <div class="sd-block sd-origins"></div>
+          <div class="sd-block sd-evolution"></div>
+          <div class="sd-block sd-comments"></div>
+        </section>
+
+      </div>
+    </div>
+    <!-- END MAIN CONTENT  --> 
+
+    <!-- RIGHT BAR  --> 
+    <div id="right-bar" class="grid_3">
+      <div class="inner-right player-content">
+        <div class="column center plr-cover">
+          <img src="assets/images/Covers/Fratellis.jpg">
+        </div>
+      </div>
+    </div>
+    <!-- firefox svg blurring trick -->
+    <svg id="svg-image-blur">
+      <filter id="blur-effect">
+        <feGaussianBlur stdDeviation="10" />
+      </filter>
+    </svg>
+  </body> 
+
+
+</html>
