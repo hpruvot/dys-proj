@@ -28,8 +28,7 @@ var conf = {
         'menu.js',
         'player.js',
         'playlist.js',
-        'script.js',
-        'landing.js'
+        'script.js'
       ]
     }
   },

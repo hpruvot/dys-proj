@@ -8,7 +8,8 @@ a {
 	text-decoration: none;
 }
 
-body {
+html {
+	overflow-y: auto;
 	font-size: 62.5%;
 }
 
@@ -16,15 +17,15 @@ body {
 	clear: both;
 }
 
-html {
-  height: 100%;
-}
 body {
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
-  min-width: initial;
   padding-top: 72px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  overflow-y: auto;
 }
 *{
 	box-sizing: border-box;

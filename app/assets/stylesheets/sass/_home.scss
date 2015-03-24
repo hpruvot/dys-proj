@@ -14,43 +14,10 @@
 		background: #D8D8D8;
 		margin-bottom: 48px;
 	}
-	.row {
-		position: relative;
-		margin: 20px;
-		.hr {
-			width: 24px;
-			height: 3px;
-			background: $d-orange;
-			margin: 10px 0 30px;
-		}
-		.row-title {
-			font-weight: $bold;
-			font-size: 1.3em;
-			color: $d-black;
-			line-height: 18px;
-			text-transform: uppercase;
-		}
-		.playlists, .artists {
-			white-space: nowrap;
-			width: 100%;
-			margin-bottom: 30px;
-			margin-left: -10px;
-			margin-right: -10px;
-		}
-		&.active {
-			display: block;
-		}
-	}
-	.row-artists {
-		height: 340px;
-	}
+	
 }
 
-.carousel {
-	overflow: hidden;
-}
-
-.pl-single {
+/*.pl-single {
 	position: relative;
 	display: inline-block;
 	width: 20%;
@@ -243,7 +210,7 @@
 			}
 		}
 	}
-}
+}*/
 
 .pl-multiple .pl-infos {
 	background: #EE9E19;
@@ -277,128 +244,6 @@
 	}
 }
 
-.at-header {
-	position: relative;
-	&:before {
-		content: "";
-		width: 80%;
-		height: 80%;
-		position: absolute;
-		left: 0;
-		top: 35%;
-		z-index: 0;
-		background: $d-white;
-		border-left: 1px solid #ECECEC;
-	}
-	.at-avatar {
-		margin-right: 0;
-		width: 29%;
-	}
-	.at-name {
-		display: inline-block;
-		padding-left: 10px;
-		width: 66%;
-		&:before {
-			content: "";
-			width: 68%;
-			height: 40%;
-			background: #FBF6F2;
-			display: block;
-			position: absolute;
-			top: 35%;
-			right: 3px;
-			z-index: 2;
-			border-bottom-left-radius: 5px;
-			border-bottom: 1px solid #ECECEC;
-			border-left: 1px solid #ECECEC;
-		}
-		.at-pseudo {
-			font-weight: $light;
-			font-size: 1.4em;
-			color: $d-black;
-			line-height: 16px;
-			margin-bottom: 5px;
-			position: relative;
-			z-index: 3;
-		}
-		.at-cta {
-			position: relative;
-			z-index: 3;
-			border: 1px solid $d-orange;
-			border-radius: 40px;
-			font-weight: $bold;
-			font-size: 1em;
-			line-height: 25px;
-			width: 75px;
-			height: 24px;
-			text-align: center;
-			text-transform: uppercase;
-			cursor: pointer;
-			@include transition(all 0.1s ease-in);
-			&.follow {
-				color: #F5A623;
-				&:hover {
-					background: $d-orange;
-					color: $d-white;
-				}
-			}
-			&.followed {
-				background: $d-orange;
-				color: $d-white;
-			}
-		}
-	}
-	.at-span {
-		position: relative;
-		&:before {
-			content: "";
-			width: 61%;
-			height: 16px;
-			position: absolute;
-			right: 0;
-			bottom: 0;
-			z-index: 2;
-			background: #FFFFFF;
-			border-right: 1px solid #ECECEC;
-			border-top: 1px solid #ECECEC;
-			border-top-right-radius: 5px;
-		}
-		span {
-			opacity: 0.5;
-			font-weight: $bold;
-			font-size: 0.9em;
-			color: $d-black;
-			line-height: 11px;
-			text-transform: uppercase;
-			padding: 5px 13px;
-			position: relative;
-		}
-	}
-}
-
-.row-slider {
-	position: absolute;
-	right: 0;
-	top: 20px;
-	li {
-		width: 22px;
-		height: 25px;
-		display: block;
-		float: left;
-		cursor: pointer;
-		&.prev {
-			background: url('#{$folder-icon}/pl-left.png') no-repeat center center;
-		}
-		&.next {
-			background: url('#{$folder-icon}/pl-right.png') no-repeat center center;
-		}
-		&.desactive {
-			opacity: 0.5;
-			pointer-events: none;
-			cursor: default;
-		}
-	}
-}
 
 /* RESPONSIVE */
 #pl-nav-resp {
