@@ -196,13 +196,11 @@
 		}
 	}
 }
-.row-artists {
-	height: 340px;
-}
 
 .carousel {
 	overflow: hidden;
 	margin-top: 32px;
+	padding-bottom: 10px;
 	.carousel-inner {
 		white-space: nowrap;
 		width: 100%;

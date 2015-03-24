@@ -113,6 +113,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 #container {
   display: inline;
   float: left;
+  padding-bottom: 30px;
 }
 #container.resp {
   margin: 0 260px 0 0;
@@ -2758,13 +2759,10 @@ p.conditions {
   cursor: default;
 }
 
-.row-artists {
-  height: 340px;
-}
-
 .carousel {
   overflow: hidden;
   margin-top: 32px;
+  padding-bottom: 10px;
 }
 .carousel .carousel-inner {
   white-space: nowrap;
